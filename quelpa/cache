@@ -1,0 +1,1 @@
+((font-lock+ :repo "emacsmirror/font-lock-plus" :fetcher github))
