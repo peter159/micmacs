@@ -1,4 +1,4 @@
-;;; init-font.el ---                                 -*- lexical-binding: t; -*-
+;;; init-general-functions.el ---                    -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019  
 
@@ -24,21 +24,18 @@
 
 ;;; Code:
 
-(mark-time-here)
+;; serve as time mark
+(defun mark-time-here()
+  "return current time in float, this used as a mark time star"
+  (interactive)
+  (setq time-marked (float-time)))
 
-;; setup english word font and size
-(set-face-attribute 'default nil :font (format "Fira Code Retina-%S" 11))
+;; serve to get time difference between `current' and `time-marked'
+(defun get-time-diff(time-marked)
+  "return seconds passed from current to `time-start'"
+  (interactive)
+  (setq diff (time-subtract (float-time) time-marked))
+  (float-time diff))
 
-;; fix the delay when showing text in chinese
-(dolist (charset '(kana han cjk-misc bopomofo))
-  (set-fontset-font (frame-parameter nil 'font) charset
-                    (font-spec :family "Microsoft Yahei" :size 11))
-		    ;; (font-spec :family "等距更纱黑体 SC" :size 12))
-  )
-
-(use-package fontify-face
-	     :ensure t)
-
-(provide 'init-font)
-(message "init-font loaded in '%.2f' seconds ..." (get-time-diff time-marked))
-;;; init-font.el ends here
+(provide 'init-general-functions)
+;;; init-general-functions.el ends here

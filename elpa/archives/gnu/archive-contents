@@ -666,7 +666,7 @@
        ((:keywords "matching")
 	(:url . "https://github.com/abo-abo/swiper"))])
  (ivy-explorer .
-	       [(0 3 1)
+	       [(0 3 2)
 		((emacs
 		  (25))
 		 (ivy
@@ -908,7 +908,7 @@
 	  ((:url . "http://elpa.gnu.org/packages/oauth2.html")
 	   (:keywords "comm"))])
  (objed .
-	[(0 7 1)
+	[(0 7 2)
 	 ((emacs
 	   (25))
 	  (cl-lib
@@ -1411,7 +1411,7 @@
        ((:keywords "multimedia" "xpm")
 	(:url . "http://www.gnuvola.org/software/xpm/"))])
  (xr .
-     [(1 5)
+     [(1 6)
       nil "Convert string regexp to rx notation" tar
       ((:keywords "lisp" "maint" "regexps")
        (:url . "http://elpa.gnu.org/packages/xr.html"))])

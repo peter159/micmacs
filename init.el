@@ -14,62 +14,76 @@
 
 ;; Load path
 ;; Optimize: Force "lisp"" and "site-lisp" at the head to reduce the startup time.
-;; (defun update-load-path (&rest _)
-;;   "Update `load-path'."
-;;   (push (expand-file-name "site-lisp" user-emacs-directory) load-path)
-;;   (push (expand-file-name "lisp" user-emacs-directory) load-path))
+(defun update-load-path (&rest _)
+  "Update `load-path'."
+  (push (expand-file-name "site-lisp" user-emacs-directory) load-path)
+  (push (expand-file-name "lisp" user-emacs-directory) load-path))
 
-;; ;; (defun add-subdirs-to-load-path (&rest _)
-;; ;;   "Add subdirectories to `load-path'."
-;; ;;   (let ((default-directory
-;; ;; 	  (expand-file-name "site-lisp" user-emacs-directory)))
-;; ;;     (normal-top-level-add-subdirs-to-load-path)))
+;; (defun add-subdirs-to-load-path (&rest _)
+;;   "Add subdirectories to `load-path'."
+;;   (let ((default-directory
+;; 	  (expand-file-name "site-lisp" user-emacs-directory)))
+;;     (normal-top-level-add-subdirs-to-load-path)))
 
 ;; (advice-add #'package-initialize :after #'update-load-path)
 ;; ;; (advice-add #'package-initialize :after #'add-subdirs-to-load-path)
 
-;; (update-load-path)
+(update-load-path)
 ;; ;; (add-subdirs-to-load-path)
 
 ;; Initialize packages
 (package-initialize)
 
-;; ********************************************************************************************************
-;;                                          for debuging usage only
-;; ********************************************************************************************************
-;; Display the total loading time in the minibuffer
+;; ;; ********************************************************************************************************
+;; ;;                                          for debuging usage only
+;; ;; ********************************************************************************************************
+;; ;; Display the total loading time in the minibuffer
 (defun display-startup-echo-area-message ()
   "Display startup echo area message."
   (message "Initialized in %s" (emacs-init-time)))
 
-;; Benchmark loading time file by file and display it in the *Messages* buffer
-(when init-file-debug
-  (require 'benchmark))
+;; ;; Benchmark loading time file by file and display it in the *Messages* buffer
+;; (when init-file-debug
+;;   (require 'benchmark)
+;;   (let ((lisp-dir "~/.emacs.d/lisp"))
+;;   (add-to-list 'load-path lisp-dir)
+;;   (mapc (lambda (fname)
+;;           (let ((feat (intern (file-name-base fname))))
+;;             (if init-file-debug
+;;                 (message "Feature '%s' loaded in %.2fs" feat
+;;                          (benchmark-elapse (require feat fname)))
+;;               (require feat fname))))
+;;         (directory-files lisp-dir t "\\.el"))))
 
-(let ((lisp-dir "~/.emacs.d/lisp"))
-  (add-to-list 'load-path lisp-dir)
-  (mapc (lambda (fname)
-          (let ((feat (intern (file-name-base fname))))
-            (if init-file-debug
-                (message "Feature '%s' loaded in %.2fs" feat
-                         (benchmark-elapse (require feat fname)))
-              (require feat fname))))
-        (directory-files lisp-dir t "\\.el")))
-;; ********************************************************************************************************
-;;                                            for debuging usage only 
-;; ********************************************************************************************************
+;; ;; (let ((lisp-dir "~/.emacs.d/lisp"))
+;; ;;   (add-to-list 'load-path lisp-dir)
+;; ;;   (mapc (lambda (fname)
+;; ;;           (let ((feat (intern (file-name-base fname))))
+;; ;;             (if init-file-debug
+;; ;;                 (message "Feature '%s' loaded in %.2fs" feat
+;; ;;                          (benchmark-elapse (require feat fname)))
+;; ;;               (require feat fname))))
+;; ;;         (directory-files lisp-dir t "\\.el")))
+;; ;; ********************************************************************************************************
+;; ;;                                            for debuging usage only 
+;; ;; ********************************************************************************************************
 
 ;; requre features from lisp
 
-(require 'init-interface)
-;; (require 'init-evil)
+(require 'init-general-functions)
+(require 'init-package-management)
+(require 'init-ui)
 (require 'init-font)
+(require 'init-evil)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (fontify-face use-package))))
+ '(package-selected-packages
+   (quote
+    (evil-surround quelpa-use-package fontify-face evil-leader evil-escape evil-commentary evil-anzu))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
