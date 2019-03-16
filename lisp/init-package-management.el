@@ -52,10 +52,12 @@
   (setq quelpa-checkout-melpa-p nil))
 
 (use-package quelpa-use-package
-	     :ensure t
-	     :init
-	     (require 'quelpa-use-package)
-	     (quelpa-use-package-activate-advice))
+  :ensure t
+  :init
+  (require 'quelpa-use-package)
+  (quelpa-use-package-activate-advice))
+(use-package diminish :ensure t)
+(use-package bind-key :ensure t)
 
 (provide 'init-package-management)
 

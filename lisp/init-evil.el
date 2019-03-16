@@ -104,9 +104,33 @@
     (define-key evil-visual-state-map (kbd "#")
       'evil-visualstar/begin-search-backward)))
 
+(use-package evil-fringe-mark
+  :ensure t
+  :config
+  (setq-default right-fringe-width 25)
+  (setq-default evil-fringe-mark-side 'right-fringe)
+  (global-evil-fringe-mark-mode))
+
 (use-package evil-magit
   :ensure t
   :hook (magit-mode . evil-magit-init))
+
+;; using outline-minor-mode for evil folding
+(use-package outline-mode
+  :ensure nil
+  :hook (prog-mode . outline-minor-mode)
+  :init
+  ;; (evil-define-key 'normal outline-mode-map (kbd "zK") 'outline-show-branches) ; Show all children recursively but no body.
+  ;; (evil-define-key 'normal outline-mode-map (kbd "zk") 'outline-show-children) ; Direct children only unlike `outline-show-branches'
+  (define-key evil-normal-state-map (kbd "zB") 'outline-hide-body) ; Hide all bodies
+  (define-key evil-normal-state-map (kbd "zb") 'outline-show-all)  ; Hide current body
+  (define-key evil-normal-state-map (kbd "ze") 'outline-show-entry) ; Show current body only, not subtree, reverse of outline-hide-entry
+  (define-key evil-normal-state-map (kbd "zl") 'outline-hide-leaves) ; Like `outline-hide-body' but for current subtree only
+  (define-key evil-normal-state-map (kbd "zp") 'outline-hide-other)    ; Hide all nodes and bodies except current body.
+  (define-key evil-normal-state-map (kbd "zj") 'outline-forward-same-level)
+  (define-key evil-normal-state-map (kbd "zk") 'outline-backward-same-level)
+  (define-key evil-normal-state-map (kbd "M-j") 'outline-move-subtree-down)
+  (define-key evil-normal-state-map (kbd "M-k") 'outline-move-subtree-up))
 
 (provide 'init-evil)
 (message "init-evil loaded in '%.2f' seconds ..." (get-time-diff time-marked))
