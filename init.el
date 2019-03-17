@@ -1,6 +1,7 @@
-;;; init.el ---mimic spacemac but simpler
+;;; init.el ---MiMacs
 
 ;;; commentary
+;; This to trying to mimic spacemacs features but simpler and easy to manage
 
 ;;; code
 
