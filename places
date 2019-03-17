@@ -1,10 +1,14 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/leader-key-binding.el" . 2512)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 3742)
+(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 39)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/server/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/server/server"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/server"))
+ ("d:/msys64/mingw64/bin/"
+  (dired-filename . "d:/msys64/mingw64/bin/2to3-3.7"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/leader-key-binding.el" . 2512)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/places" . 74)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/projectile-bookmarks.eld" . 18)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
-  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/projectile-bookmarks.eld"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/amx-items" . 236))
