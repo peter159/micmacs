@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ package-list-packages
+ magit-pull
  restart-emacs
  auto-insert
  ivy-mode
  describe-key
  anaconda-mode
- window-toggle-side-windows
- revert-buffer-with-coding-system
 )
 
 ;; ----- amx-data -----
@@ -34,4 +34,6 @@
  (window-toggle-side-windows . 2)
  (anaconda-mode . 2)
  (describe-key . 4)
+ (magit-pull . 1)
+ (package-list-packages . 1)
 )
