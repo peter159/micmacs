@@ -8,6 +8,12 @@ auto-save-list
 tramp
 .\#*
 
+# cache
+.cache
+
+# anaconda-mode
+.anaconda-mode
+
 # Org-mode
 .org-id-locations
 *_archive
@@ -51,13 +57,13 @@ flycheck_*.el
 # /quelpa/
 
 # transient folder
-/transient/
+/transient/*
 
 # anaconda folder
 /anaconda-mode/
 
 # persp folder
-/persp-confs/
+# /persp-confs/
 
 # cache
 .cache*
