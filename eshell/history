@@ -1,7 +1,0 @@
-git status
-git add .
-git remote -v
-git config --global user.name
-git config --global user.email
-ff
-exit

@@ -1,10 +1,12 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/leader-key-binding.el" . 2512)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 3742)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/places" . 74)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/projectile-bookmarks.eld" . 18)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
-  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/projectile-bookmarks.eld"))
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/"
-  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist"))
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/amx-items" . 236))
+(("c:/msys64/mingw64/share/emacs/26.1/lisp/server.el" . 12986)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-default.el" . 2702)
+ ("c:/Users/lipe6002/.emacs.d/README.md" . 214)
+ ("c:/Users/lipe6002/.emacs.d/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/README.md"))
+ ("c:/Users/lipe6002/.emacs.d/ref/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/.gitignore"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-default.el"))
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 3105)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1007))
