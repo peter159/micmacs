@@ -60,7 +60,7 @@
     (scroll-bar-mode -1))
 
 ;; Line and Column
-(setq-default fill-column 120)
+(setq-default fill-column 100)
 ;; (tool-bar-mode -1)
 ;; (menu-bar-mode -1)
 (setq column-number-mode t)
@@ -87,6 +87,9 @@
 ;; Start server
 (use-package server
   :ensure nil
+  :config
+  (defun server-ensure-safe-dir (dir) "Noop" t)
+  (server-start)
   :hook (after-init . server-mode))
 
 ;; History

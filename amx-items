@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ server-start
  package-list-packages
  magit-pull
  restart-emacs
  auto-insert
  ivy-mode
  describe-key
- anaconda-mode
 )
 
 ;; ----- amx-data -----
@@ -36,4 +36,5 @@
  (describe-key . 4)
  (magit-pull . 1)
  (package-list-packages . 1)
+ (server-start . 3)
 )
