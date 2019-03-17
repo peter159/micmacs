@@ -26,22 +26,28 @@
 
 (mark-time-here)
 
-;; install `use-package' if not installed
+; install `use-package' if not installed
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 
-;; should set before loading 'use-package'
+;; should set before loading `use-package'
 (eval-and-compile
   ;; (setq use-package-always-ensure t)
   (setq use-package-always-defer t)
   (setq use-package-expand-minimally t)
   (setq use-package-enable-imenu-support t))
 
+;; (message "    ---- 1/6 of init-package-management loaded using '%.2f' seconds ..." (get-time-diff time-marked))
+;; (mark-time-here)
+
 (eval-when-compile
   ;; Following line is not needed if use-package.el is in ~/.emacs.d
   ;; (add-to-list 'load-path "<path where use-package is installed>")
   (require 'use-package))
+
+;; (message "    ---- 1/3 of init-package-management loaded using '%.2f' seconds ..." (get-time-diff time-marked))
+;; (mark-time-here)
 
 ;; install and load quelpa
 (use-package quelpa
@@ -51,15 +57,22 @@
   (setq quelpa-update-melpa-p nil)
   (setq quelpa-checkout-melpa-p nil))
 
+;; (message "    ---- 1/2 of init-package-management loaded using '%.2f' seconds ..." (get-time-diff time-marked))
+;; (mark-time-here)
+
 (use-package quelpa-use-package
   :ensure t
   :init
   (require 'quelpa-use-package)
-  (quelpa-use-package-activate-advice))
+  ;; (quelpa-use-package-activate-advice)
+  )
+
+;; (message "    ---- 2/3 of init-package-management loaded using '%.2f' seconds ..." (get-time-diff time-marked))
+;; (mark-time-here)
+
 (use-package diminish :ensure t)
 (use-package bind-key :ensure t)
 
 (provide 'init-package-management)
-
 (message "init-package-management loaded in '%.2f' seconds ..." (get-time-diff time-marked))
 ;;; init-package-management.el ends here

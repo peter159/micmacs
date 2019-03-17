@@ -3,7 +3,7 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'evil)
+
 (use-package dashboard
   :hook (dashboard-mode  . (lambda ()
 			     (display-line-numbers-mode -1)

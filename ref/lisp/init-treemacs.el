@@ -3,7 +3,7 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'winum)
+
 (use-package treemacs
   :defines winum-keymap
   :commands (treemacs-follow-mode

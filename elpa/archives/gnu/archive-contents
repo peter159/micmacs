@@ -7,7 +7,7 @@
 	      ((:url . "https://github.com/abo-abo/ace-window")
 	       (:keywords "window" "location"))])
  (ack .
-      [(1 5)
+      [(1 6)
        nil "interface to ack-like tools" tar
        ((:keywords "tools" "processes" "convenience")
 	(:url . "https://github.com/leoliu/ack-el"))])
@@ -263,7 +263,7 @@
 		((:keywords "convenience")
 		 (:url . "http://elpa.gnu.org/packages/cycle-quotes.html"))])
  (darkroom .
-	   [(0 1)
+	   [(0 2)
 	    ((cl-lib
 	      (0 5)))
 	    "Remove visual distractions and focus on writing" single

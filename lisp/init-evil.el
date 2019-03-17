@@ -26,26 +26,34 @@
 
 (mark-time-here)
 
-(defun mark-time-start()
-  "return current time in float, this used as a mark time star"
-  (interactive)
-  (setq mark-time (float-time)))
-(mark-time-start)
+(use-package evil-leader
+  :ensure t
+  :defer nil
+  :init
+  (global-evil-leader-mode))
 
-(defun get-time-diff(time-start)
-  "return seconds passed from current to `time-start'"
-  (interactive)
-  (setq diff (time-subtract (float-time) time-start))
-  (float-time diff))
+;; (message "    ---- 1/12 of init-evil loaded using '%.2f' seconds ..." (get-time-diff time-marked))
+;; (mark-time-here)
 
-(get-time-diff mark-time)
+(use-package evil-major-leader
+  :ensure nil
+  :quelpa
+  (evil-major-leader 
+    :repo "Peter-Chou/evil-major-leader" 
+    :fetcher github)
+  :init
+  (global-evil-major-leader-mode))
 
-(use-package evil-leader :ensure t)
+;; (message "    ---- 1/6 of init-evil loaded using '%.2f' seconds ..." (get-time-diff time-marked))
+;; (mark-time-here)
+
+;; (use-package evil-leader :ensure t :defer nil)
 (use-package evil-anzu :ensure t)
 (use-package evil
+  :ensure t
   :init
-  (require 'evil-leader)
-  (global-evil-leader-mode)
+  ;; (require 'evil-leader)
+  ;; (global-evil-leader-mode t)
 
   (setq evil-want-C-u-scroll t)
   (when evil-want-C-u-scroll
@@ -95,6 +103,7 @@
   (global-evil-surround-mode))
 
 (use-package evil-visualstar
+  :ensure t
   :commands (evil-visualstar/begin-search-forward
              evil-visualstar/begin-search-backward)
   :init

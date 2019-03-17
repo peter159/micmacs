@@ -1,0 +1,37 @@
+
+;; ----- amx-history -----
+(
+ restart-emacs
+ auto-insert
+ ivy-mode
+ describe-key
+ anaconda-mode
+ window-toggle-side-windows
+ revert-buffer-with-coding-system
+)
+
+;; ----- amx-data -----
+(
+ (pdb . 1)
+ (auto-insert . 25)
+ (auto-insert-mode . 1)
+ (ivy-mode . 16)
+ (other-frame . 1)
+ (popwin:close-popup-window . 1)
+ (evil-major-leader-mode . 3)
+ (evil-mode . 3)
+ (hl-line-mode . 2)
+ (show-paren-mode . 1)
+ (smerge-mode . 1)
+ (restart-emacs . 7)
+ (flycheck-error-list-next-error . 1)
+ (eval-defun . 1)
+ (kill-buffer-and-window . 1)
+ (rename-file . 1)
+ (goto-char . 1)
+ (python-mode . 2)
+ (revert-buffer-with-coding-system . 3)
+ (window-toggle-side-windows . 2)
+ (anaconda-mode . 2)
+ (describe-key . 4)
+)

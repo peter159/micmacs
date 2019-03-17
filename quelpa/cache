@@ -1,0 +1,1 @@
+((evil-major-leader :repo "Peter-Chou/evil-major-leader" :fetcher github) (font-lock+ :repo "emacsmirror/font-lock-plus" :fetcher github) (prettify-utils :repo "Ilazki/prettify-utils.el" :fetcher github) (sql-indent :fetcher github :repo "alex-hhh/emacs-sql-indent" :files ("sql-indent.el")))

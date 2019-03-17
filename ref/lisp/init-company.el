@@ -3,7 +3,11 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'use-package)
+
+(eval-when-compile
+  (require 'init-const)
+  (require 'init-variable))
+
 (use-package company
   :diminish company-mode
   :defines (company-dabbrev-ignore-case company-dabbrev-downcase)
@@ -35,7 +39,7 @@
 	company-dabbrev-downcase nil)
   (define-key emacs-lisp-mode-map (kbd "C-M-i") 'company-complete))
 
-(when (>= emacs-major-version 26)
+(when emacs/>=26p
   (use-package company-box
     :diminish
     :functions (all-the-icons-faicon

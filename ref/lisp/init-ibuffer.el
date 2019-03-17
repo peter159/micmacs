@@ -3,7 +3,7 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'all-the-icons)
+
 (use-package ibuffer
   :ensure nil
   :functions (all-the-icons-icon-for-buffer

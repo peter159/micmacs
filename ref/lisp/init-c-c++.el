@@ -4,7 +4,6 @@
 
 ;;; Code:
 
-(require 'use-package)
 ;; C/C++/Objective-C support
 (use-package ccls
   :defines projectile-project-root-files-top-down-recurring
@@ -34,4 +33,4 @@
 
 (provide 'init-c-c++)
 
-;; ;;; init-c-c++.el ends here
+;;; init-c-c++.el ends here

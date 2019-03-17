@@ -147,8 +147,7 @@
 (use-package elec-pair
   :ensure nil
   :hook (after-init . electric-pair-mode)
-  ;; :init (setq electric-pair-inhibit-predicate 'electric-pair-conservative-inhibit))
-  :init (setq electric-pair-mode t))
+  :init (setq electric-pair-inhibit-predicate 'electric-pair-conservative-inhibit))
 
 ;; Make bindings that stick around
 (use-package hydra)

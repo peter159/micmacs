@@ -17,6 +17,8 @@
 (use-package doom-modeline
   :hook ((after-init . doom-modeline-mode)
          (doom-modeline-mode . setup-custom-doom-modeline))
+  :custom-face
+  (doom-modeline-buffer-file ((t (:inherit font-lock-string-face :weight bold))))
   :config
   (progn
     (setq
@@ -25,7 +27,8 @@
      doom-modeline-lsp nil
      doom-modeline-persp-name nil
      doom-modeline-github nil
-     doom-modeline-buffer-file-name-style 'truncate-with-project
+     ;; doom-modeline-buffer-file-name-style 'truncate-with-project
+     doom-modeline-buffer-file-name-style 'file-name
      doom-modeline-major-mode-color-icon t)
 
     (doom-modeline-def-segment my-python-venv
@@ -54,12 +57,12 @@
   (doom-themes-enable-bold t)
   :config
   (progn
+    ;; enable custom treemacs themes
+    ;; (doom-themes-treemacs-config)
     ;; Enable flashing mode-line on errors
     (doom-themes-visual-bell-config)
     ;; Corrects (and improves) org-mode's native fontification.
-    (doom-themes-org-config)
-    ;; enable custom treemacs themes
-    (doom-themes-treemacs-config)))
+    (doom-themes-org-config)))
 
 (load-theme 'doom-dracula t)
 

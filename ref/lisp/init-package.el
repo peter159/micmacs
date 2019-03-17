@@ -9,7 +9,7 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-;; Should set before loading 'use-package'
+;; Should set before loading `use-package'
 (eval-and-compile
   (setq use-package-always-ensure t)
   (setq use-package-always-defer t)
@@ -25,12 +25,11 @@
   (setq quelpa-update-melpa-p nil)
   (setq quelpa-checkout-melpa-p nil))
 
+;; Required by `use-package'
 (use-package quelpa-use-package
   :init
   (require 'quelpa-use-package)
   (quelpa-use-package-activate-advice))
-
-;; Required by `use-package'
 (use-package diminish)
 (use-package bind-key)
 

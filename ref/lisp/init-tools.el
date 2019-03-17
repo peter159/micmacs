@@ -5,13 +5,14 @@
 ;;; Code:
 
 (use-package which-key
+  :ensure t
   :diminish which-key-mode
   :bind (:map help-map ("C-h" . which-key-C-h-dispatch))
   :hook (after-init . which-key-mode)
   :init
   (setq which-key-idle-delay 0.2)
-  (setq which-key-separator " ")
-  (setq which-key-prefix-prefix " ")
+  (setq which-key-separator "")
+  (setq which-key-prefix-prefix "")
 
   ;; Needed to avoid nil variable error before update to recent which-key
   (defvar which-key-replacement-alist nil)
@@ -37,20 +38,24 @@
             which-key-replacement-alist))))
 
 (use-package hungry-delete
+  :ensure t
   :hook (after-init . global-hungry-delete-mode)
   :config
   (setq-default hungry-delete-chars-to-skip " \t\f\v"))
 
 (use-package expand-region
+  :ensure t
   :init
   (setq expand-region-contract-fast-key "V"
         expand-region-reset-fast-key "r"))
 
 (use-package editorconfig
+  :ensure t
   :diminish editorconfig-mode
   :hook (after-init . editorconfig-mode))
 
 (use-package rg
+  :ensure t
   :hook (after-init . rg-enable-default-bindings)
   :config
   (setq rg-group-result t)
@@ -63,18 +68,19 @@
     (bind-key "s R" #'rg-project projectile-command-map)))
 
 (use-package avy
+  :ensure t
   :defer nil
   :init
   (setq avy-timeout-seconds 0.0))
 
-(use-package centered-cursor-mode)
+(use-package centered-cursor-mode :ensure t)
 
-(use-package restart-emacs)
+(use-package restart-emacs :ensure t)
 
-(use-package carbon-now-sh)
-(use-package daemons)                   ; system services/daemons
-(use-package diffview)                  ; side-by-side diff view
-(use-package esup)                      ; Emacs startup profiler
+(use-package carbon-now-sh :ensure t)
+(use-package daemons :ensure t)                   ; system services/daemons
+(use-package diffview :ensure t)                  ; side-by-side diff view
+(use-package esup :ensure t)                      ; Emacs startup profiler
 
 
 (provide 'init-tools)

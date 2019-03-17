@@ -30,6 +30,8 @@
   (interactive)
   (setq time-marked (float-time)))
 
+(mark-time-here)
+
 ;; serve to get time difference between `current' and `time-marked'
 (defun get-time-diff(time-marked)
   "return seconds passed from current to `time-start'"
@@ -38,4 +40,5 @@
   (float-time diff))
 
 (provide 'init-general-functions)
+(message "init-general-functions loaded in '%.2f seconds ...'" (get-time-diff time-marked))
 ;;; init-general-functions.el ends here
