@@ -1,12 +1,10 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/msys64/mingw64/share/emacs/26.1/lisp/server.el" . 12986)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-default.el" . 2702)
- ("c:/Users/lipe6002/.emacs.d/README.md" . 214)
+(("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 718)
+ ("c:/Users/lipe6002/Downloads/test/test-anaconda.py" . 118)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 232)
+ ("c:/Users/lipe6002/Downloads/test/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/test/text.py"))
  ("c:/Users/lipe6002/.emacs.d/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/README.md"))
- ("c:/Users/lipe6002/.emacs.d/ref/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/.gitignore"))
- ("c:/Users/lipe6002/.emacs.d/lisp/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-default.el"))
- ("c:/Users/lipe6002/.emacs.d/init.el" . 3105)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1007))
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/history"))
+ ("c:/Users/lipe6002/Downloads/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/test")))
