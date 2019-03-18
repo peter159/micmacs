@@ -1,20 +1,26 @@
 
 ;; ----- amx-history -----
 (
- ranger-paste
- ranger-copy
- markdown-preview
- markdown-mode
+ package-list-packages
+ expand-jump-to-next-slot
+ expand-region-abbrevs
  restart-emacs
- cd
- rg
+ auto-insert
+ ivy-mode
+ ivy-avy
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 1)
+ (restart-emacs . 2)
  (markdown-mode . 1)
- (markdown-preview . 1)
+ (markdown-preview . 2)
  (ranger-copy . 1)
  (ranger-paste . 1)
+ (ivy-avy . 1)
+ (ivy-mode . 1)
+ (auto-insert . 1)
+ (expand-region-abbrevs . 1)
+ (expand-jump-to-next-slot . 1)
+ (package-list-packages . 1)
 )

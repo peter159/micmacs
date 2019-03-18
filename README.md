@@ -9,3 +9,9 @@ git clone git@github.com:peter159/mimacs.git ~/.emacs.d
 ```
 C:\msys64\mingw64\bin\emacsclientw.exe -cna C:\msys64\mingw64\bin\runemacs.exe
 ```
+## Fonts, is sometime critical for UI thing, here recommend to use `Fira Code Retina` for English and `等距更纱黑体 SC` for Chinese, can download these to from here
+```
+[Fira Code Retina-%S] https://github.com/tonsky/FiraCode
+[Fira Code Symbols] https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip
+[等距更纱黑体 SC] https://github.com/be5invis/Sarasa-Gothic/releases #install all that with -sc-
+```

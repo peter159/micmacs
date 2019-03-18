@@ -1,10 +1,34 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 718)
+(("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-autoloads.el" . 9894)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1412)
+ ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-font.el" . 841)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-program.el" . 3125)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-treemacs.el" . 4325)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 3159)
+ ("c:/Users/lipe6002/.emacs.d/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-yasnippet.el"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.r" . 139)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/Rtest/test.r"))
+ ("c:/msys64/mingw64/bin/"
+  (dired-filename . "c:/msys64/mingw64/bin/xzless"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 916)
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el" . 1027)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-c-c++.el" . 955)
+ ("c:/Users/lipe6002/.emacs.d/elpa/ess-20190314.1538/ess-custom.el" . 46066)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-elisp.el" . 1063)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-org.el" . 3489)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 1943)
+ ("c:/Users/lipe6002/.emacs.d/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 1541)
+ ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 842)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ui.el" . 1173)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/frame.el" . 99725)
+ ("c:/Users/lipe6002/.emacs.d/README.md" . 547)
  ("c:/Users/lipe6002/Downloads/test/test-anaconda.py" . 118)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 232)
  ("c:/Users/lipe6002/Downloads/test/"
   (dired-filename . "c:/Users/lipe6002/Downloads/test/text.py"))
- ("c:/Users/lipe6002/.emacs.d/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/history"))
  ("c:/Users/lipe6002/Downloads/"
   (dired-filename . "c:/Users/lipe6002/Downloads/test")))

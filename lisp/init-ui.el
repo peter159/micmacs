@@ -38,6 +38,7 @@
 
 ;; forbid emacs startup screen and make full screen default
 (setq inhibit-splash-screen t)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 (add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
 
 ;; display time

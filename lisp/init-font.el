@@ -32,8 +32,8 @@
 ;; fix the delay when showing text in chinese
 (dolist (charset '(kana han cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font) charset
-                    ;; (font-spec :family "Microsoft Yahei" :size 11))
-		    (font-spec :family "等距更纱黑体 SC" :size 13))
+                    ;; (font-spec :family "Microsoft Yahei" :size 12))
+		    (font-spec :family "等距更纱黑体 SC" :size 12))
   )
 
 ;; (use-package unicode-fonts
