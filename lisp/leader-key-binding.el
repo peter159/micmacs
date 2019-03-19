@@ -206,6 +206,7 @@
   "bR" 'petmacs/revert-current-buffer
   "bs" 'petmacs/goto-scratch-buffer
   "bx" 'kill-buffer-and-window
+  "bk" 'kill-buffer-and-window
   "bh" 'petmacs/goto-dashboard
   "bY" 'petmacs/copy-whole-buffer-to-clipboard
   "ba" 'persp-add-buffer
@@ -225,17 +226,17 @@
 (which-key-add-key-based-replacements
   (format "%s w" petmacs-evil-leader-key) "windows")
 (evil-leader/set-key
-  "wm" 'petmacs/toggle-maximize-buffer
-  "wH" 'evil-window-move-far-left
-  "wL" 'evil-window-move-far-right
-  "wJ" 'evil-window-move-very-bottom
-  "wK" 'evil-window-move-very-top
-  "wh" 'evil-window-left
-  "wl" 'evil-window-right
-  "wj" 'evil-window-down
-  "wk" 'evil-window-up
-  "wv" 'evil-window-vsplit
-  "wh" 'evil-window-split
+  "wm"  'petmacs/toggle-maximize-buffer
+  "wH"  'evil-window-move-far-left
+  "wL"  'evil-window-move-far-right
+  "wJ"  'evil-window-move-very-bottom
+  "wK"  'evil-window-move-very-top
+  "wh"  'evil-window-left
+  "wl"  'evil-window-right
+  "wj"  'evil-window-down
+  "wk"  'evil-window-up
+  "wv"  'evil-window-vsplit
+  "ws"  'evil-window-split
   "wc"  'olivetti-mode
   "wd"  'delete-window
   "wF"  'make-frame

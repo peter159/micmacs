@@ -1,9 +1,19 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
+(("c:/Users/lipe6002/.emacs.d/ref/lisp/leader-keybindings.el" . 5175)
+ ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 6741)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1062)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/window.el" . 351598)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp/leader-keybindings.el"))
+ ("c:/Users/lipe6002/.emacs.d/ref/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el"))
+ ("c:/Users/lipe6002/.emacs.d/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 237)
+ ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
  ("c:/Users/lipe6002/.emacs.d/init.el" . 3813)
- ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 161)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 982)
- ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 6770)
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/tensorflow_regression/RegForest.r" . 525)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 152894)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2122)
@@ -16,10 +26,6 @@
   (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code/pretty-code.el"))
  ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el"))
- ("c:/Users/lipe6002/.emacs.d/lisp/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-company.el"))
- ("c:/Users/lipe6002/.emacs.d/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp"))
  ("c:/Users/lipe6002/.emacs.d/lisp/init-font.el" . 1258)
  ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/2019Season1Launch/bos-download/PySpark/code/" . 111)
  ("c:/msys64/mingw64/bin/"
@@ -27,10 +33,6 @@
  ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 2657)
  ("c:/Users/lipe6002/.emacs.d/elpa/all-the-icons-20190313.1420/all-the-icons.el" . 24993)
  ("c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el" . 1386)
- ("c:/Users/lipe6002/.emacs.d/ref/lisp/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el"))
- ("c:/Users/lipe6002/.emacs.d/ref/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp"))
  ("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-mode.el" . 19907)
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.py" . 121)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 1212)
