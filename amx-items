@@ -1,9 +1,9 @@
 
 ;; ----- amx-history -----
 (
+ shell
  company-box-doc-manually
  describe-key
- company-quickhelp-mode
  company-mode
  restart-emacs
  auto-insert
@@ -30,4 +30,5 @@
  (company-mode . 1)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
+ (shell . 1)
 )

@@ -29,7 +29,7 @@
 (use-package ess
   :ensure t
   :init
-  (require 'ess-site)
+  ;; (require 'ess-site)
   (setq inferior-R-program-name "C:/Program Files/R/R-3.4.4/bin/x64/Rterm.exe")
   (setq ess-enable-smart-equal nil)
   (setq ess-ask-for-ess-directory nil)
@@ -40,25 +40,19 @@
   (setq ess-offset-continued 'straight)
   
   (use-package electric-spacing
-    :ensure t
-    :defer nil)
+    :ensure t)
+
+  :hook (after-init . electric-spacing-mode)
 
   :config
   (add-hook 'ess-mode-hook #'electric-spacing-mode)
+  (add-hook 'inferior-ess-mode-hook 'electric-spacing-mode)
   (add-hook 'inferior-ess-mode-hook 'electric-pair-mode)
+  (add-hook 'ess-r-package-mode-hook 'electric-spacing-mode)
   (add-hook 'ess-r-package-mode-hook 'electric-pair-mode)
-  (define-key evil-insert-state-map (kbd "M--") '(lambda()
-						  (interactive)
-						  (insert " <- ")))
-  (define-key evil-insert-state-map (kbd ".") '(lambda()
-						 (interactive)
-						 (insert ".")))
-  (define-key evil-insert-state-map (kbd "C--") '(lambda()
-						  (interactive)
-						  (insert "-")))
-  (define-key evil-insert-state-map (kbd "M--") '(lambda()
-						  (interactive)
-						  (insert " <- ")))
+  (define-key evil-insert-state-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
+  (define-key evil-insert-state-map (kbd ".") '(lambda()(interactive)(insert ".")))
+  (define-key evil-insert-state-map (kbd "C--") '(lambda()(interactive)(insert "-")))
   )
 
 (provide 'init-ess)
