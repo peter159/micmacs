@@ -36,12 +36,6 @@
 		    (font-spec :family "等距更纱黑体 SC" :size 12))
   )
 
-;; (use-package unicode-fonts
-;;   :ensure t
-;;   :when (member "DejaVu Sans Mono" (font-family-list))
-;;   :init
-;;   (set-face-attribute 'default nil :font "DejaVu Sans Mono-11"))
-
 (use-package fontify-face :ensure t)
 
 (provide 'init-font)

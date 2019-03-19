@@ -32,9 +32,9 @@
   :commands (eshell/alias
              eshell-send-input eshell-flatten-list
              eshell-interactive-output-p eshell-parse-command)
-  :hook ((eshell-mode . (lambda ()
+  :hook ((eshell-mode . (lambda()
                           (bind-key "C-l" 'petmacs/eshell-clear eshell-mode-map)))
-	 (eshell-mode  . (lambda () (display-line-numbers-mode -1)(hl-line-mode -1)))
+	 (eshell-mode  . (lambda() (display-line-numbers-mode -1)(hl-line-mode -1)))
 	 (eshell-after-prompt . petmacs//protect-eshell-prompt)
 	 )
   :preface
@@ -78,7 +78,7 @@ is achieved by adding the relevant text properties."
     (autoload 'epe-theme-pipeline "eshell-prompt-extras")
     (setq eshell-highlight-prompt nil
           ;; add new line adhead of tty
-          eshell-prompt-function (lambda ()
+          eshell-prompt-function (lambda()
                                    (concat "\n" (epe-theme-pipeline))))))
 
 ;; Fish-like history autosuggestions
@@ -104,7 +104,7 @@ is achieved by adding the relevant text properties."
 ;; `cd' to frequent directory in eshell
 (use-package eshell-z
   :ensure t
-  :hook (eshell-mode . (lambda () (require 'eshell-z))))
+  :hook (eshell-mode . (lambda() (require 'eshell-z))))
 
 (provide 'init-eshell)
 (message "init-eshell loaded in '%.2f' seconds ..." (get-time-diff time-marked))

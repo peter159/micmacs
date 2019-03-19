@@ -60,7 +60,7 @@
     (scroll-bar-mode -1))
 
 ;; Line and Column
-(setq-default fill-column 100)
+(setq-default fill-column 80)
 ;; (tool-bar-mode -1)
 ;; (menu-bar-mode -1)
 (setq column-number-mode t)

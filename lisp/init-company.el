@@ -48,28 +48,31 @@
 	 ("C-d" . company-show-doc-buffer))
   :hook (after-init . global-company-mode)
   :config
-  (setq company-tooltip-align-annotations t ; aligns annotation to the right
-	company-tooltip-limit 12            ; bigger popup window
-	company-idle-delay .1               ; decrease delay before autocompletion popup shows
-	company-echo-delay 0                ; remove annoying blinking
+  (setq company-tooltip-align-annotations nil ; when t, aligns annotation to the right
+	company-tooltip-limit 12	      ; bigger popup window
+	company-idle-delay .1		      ; decrease delay before autocompletion popup shows
+	company-echo-delay 0		      ; remove annoying blinking
 	company-minimum-prefix-length 2
 	company-require-match nil
 	company-dabbrev-ignore-case nil
 	company-dabbrev-downcase nil)
   (define-key emacs-lisp-mode-map (kbd "C-M-i") 'company-complete))
 
-;; (when (>= emacs-major-version 25)
-;;   (use-package company-box
-;;     :ensure t
-;;     :diminish
-;;     :functions (all-the-icons-faicon
-;;                 all-the-icons-material
-;;                 all-the-icons-octicon
-;;                 all-the-icons-alltheicon)
-;;     :hook (company-mode . company-box-mode)
-;;     :init (setq company-box-enable-icon (display-graphic-p))
-;;     :config
-;;     (setq company-box-backends-colors nil)))
+(when (>= emacs-major-version 25)
+  (use-package company-box
+    :ensure t
+    :diminish
+    :functions (all-the-icons-faicon
+                all-the-icons-material
+                all-the-icons-octicon
+                all-the-icons-alltheicon)
+    :hook (company-mode . company-box-mode)
+    :init
+    (setq company-box-enable-icon nil) ;(display-graphic-p)
+    (setq company-box-doc-enable nil)  ;do not show tooltip at popup
+    :config
+    (setq company-box-backends-colors nil))
+  (define-key emacs-lisp-mode-map (kbd "M-h") 'company-box-doc-manually))
 
 (provide 'init-company)
 (message "init-company loaded in '%.2f' seconds" (get-time-diff time-marked))

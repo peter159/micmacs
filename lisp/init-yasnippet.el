@@ -34,5 +34,5 @@
 (use-package yasnippet-snippets :ensure t)	
 
 (provide 'init-yasnippet)
-(message "init-yasnippet loaded in '%s.2f' seconds ..." (get-time-diff time-marked))
+(message "init-yasnippet loaded in '%.2f' seconds ..." (get-time-diff time-marked))
 ;;; init-yasnippet.el ends here
