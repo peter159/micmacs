@@ -1,38 +1,62 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 107)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 886)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 999)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 1548)
- ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 1884)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 3607)
- ("c:/Users/lipe6002/.emacs.d/README.md" . 551)
+(("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2150)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 923)
+ ("c:/Users/lipe6002/.emacs.d/elpa/all-the-icons-20190313.1420/all-the-icons.el" . 24993)
+ ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box.el" . 3258)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 3198)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el" . 1386)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-company.el"))
  ("c:/Users/lipe6002/.emacs.d/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/README.md"))
- ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.r" . 37)
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref"))
+ ("c:/Users/lipe6002/.emacs.d/ref/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 3827)
+ ("c:/msys64/mingw64/bin/"
+  (dired-filename . "c:/msys64/mingw64/bin/MagickWand-config"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 125)
+ ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
+ ("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-mode.el" . 19907)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.py" . 121)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 1212)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/Rtest/test.py"))
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/elec-pair.el" . 24622)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 1733)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/R/ggplot_vars_eda.r" . 597)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/R/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/R/ggplot_vars_eda.r"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/R"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.r" . 305)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/timeseries/fullcode.R" . 1773)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/timeseries/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/Rtest/timeseries/fullcode.R"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/call_py.py" . 40)
+ ("c:/Users/lipe6002/.emacs.d/README.md" . 551)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-default.el" . 2072)
  ("c:/Users/lipe6002/Downloads/test/test-anaconda.py" . 116)
  ("c:/Users/lipe6002/Anaconda3/Lib/site-packages/sklearn/ensemble/forest.py" . 29856)
- ("c:/Users/lipe6002/Downloads/tobed/Rtest/"
-  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/Rtest/test.r"))
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/elisp-mode.el" . 1520)
  ("c:/Users/lipe6002/.emacs.d/elpa/company-20190316.101/company-capf.el" . 1351)
  ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box-doc.el" . 5799)
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/tooltip.el" . 10639)
- ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box.el" . 4765)
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/frame.el" . 70184)
  ("c:/Users/lipe6002/.emacs.d/elpa/company-20190316.101/company.el" . 10983)
  ("c:/Users/lipe6002/.emacs.d/elpa/company-20190316.101/company-dabbrev.el" . 2064)
  ("c:/Users/lipe6002/.emacs.d/elpa/use-package-20181119.2350/use-package-core.el" . 58828)
- ("c:/Users/lipe6002/.emacs.d/elpa/all-the-icons-20190313.1420/all-the-icons.el" . 1264)
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/compile.el" . 121891)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-eshell.el" . 859)
  ("c:/Users/lipe6002/.emacs.d/elpa/ess-20190314.1538/ess-autoloads.el" . 22181)
  ("c:/Users/lipe6002/.emacs.d/elpa/eshell-z-20170117.438/eshell-z.el" . 15002)
  ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 2399)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-Ress.el" . 888)
- ("c:/Users/lipe6002/.emacs.d/lisp/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-eshell.el"))
  ("c:/Users/lipe6002/.emacs.d/lisp/init-yasnippet.el" . 963)
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/subr.el" . 11835)
  ("c:/msys64/mingw64/share/emacs/26.1/src/keymap.c" . 31168)
@@ -48,8 +72,6 @@
  ("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-autoloads.el" . 9894)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-program.el" . 3125)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-treemacs.el" . 4325)
- ("c:/msys64/mingw64/bin/"
-  (dired-filename . "c:/msys64/mingw64/bin/xzless"))
  ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el" . 1027)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-c-c++.el" . 955)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-elisp.el" . 1063)

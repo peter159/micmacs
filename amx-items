@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
+ restart-emacs
+ show-all
+ electric-indent-mode
  shell
  company-box-doc-manually
  describe-key
  company-mode
- restart-emacs
- auto-insert
- ivy-mode
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 3)
+ (restart-emacs . 8)
  (markdown-mode . 1)
  (markdown-preview . 2)
  (ranger-copy . 1)
@@ -23,7 +23,7 @@
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 2)
- (show-all . 1)
+ (show-all . 2)
  (describe-key . 2)
  (electric-spacing-mode . 3)
  (evil-goto-definition . 1)
@@ -31,4 +31,5 @@
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
  (shell . 1)
+ (electric-indent-mode . 4)
 )

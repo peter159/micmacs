@@ -58,7 +58,7 @@
 	company-dabbrev-downcase nil)
   (define-key emacs-lisp-mode-map (kbd "C-M-i") 'company-complete))
 
-(when (>= emacs-major-version 25)
+(when (>= emacs-major-version 25)	;FIXME always show void-functions all-the icons-faicon
   (use-package company-box
     :ensure t
     :diminish
@@ -71,8 +71,8 @@
     (setq company-box-enable-icon nil) ;(display-graphic-p)
     (setq company-box-doc-enable nil)  ;do not show tooltip at popup
     :config
-    (setq company-box-backends-colors nil))
-  (define-key emacs-lisp-mode-map (kbd "M-h") 'company-box-doc-manually))
+    (setq company-box-backends-colors nil)))
+;; (define-key emacs-lisp-mode-map (kbd "M-h") 'company-box-doc-manually))
 
 (provide 'init-company)
 (message "init-company loaded in '%.2f' seconds" (get-time-diff time-marked))
