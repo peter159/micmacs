@@ -45,6 +45,40 @@
   (advice-remove 'counsel-projectile-switch-project-action
                  'petmacs/ivy-persp-switch-project-advice))
 
+;; from https://gist.github.com/3402786
+(defun petmacs/toggle-maximize-buffer ()
+  "Maximize buffer"
+  (interactive)
+  (save-excursion
+    (if (and (= 1 (length (window-list)))
+             (assoc ?_ register-alist))
+        (jump-to-register ?_)
+      (progn
+        (window-configuration-to-register ?_)
+        (delete-other-windows)))))
+
+
+;; https://tsdh.wordpress.com/2007/03/28/deleting-windows-vertically-or-horizontally/
+(defun petmacs/maximize-horizontally ()
+  "Delete all windows to the left and right of the current window."
+  (interactive)
+  (require 'windmove)
+  (save-excursion
+    (while (condition-case nil (windmove-left) (error nil))
+      (delete-window))
+    (while (condition-case nil (windmove-right) (error nil))
+      (delete-window))))
+
+(defun petmacs/maximize-vertically ()
+  "Delete all windows above and below the current window."
+  (interactive)
+  (require 'windmove)
+  (save-excursion
+    (while (condition-case nil (windmove-up) (error nil))
+      (delete-window))
+    (while (condition-case nil (windmove-down) (error nil))
+      (delete-window))))
+
 (defun petmacs/evil-goto-definition-other-window ()
   "Jump to definition around point in other window."
   (interactive)

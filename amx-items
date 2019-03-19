@@ -1,7 +1,7 @@
 
 ;; ----- amx-history -----
 (
- eshell/clear
+ petmacs/toggle-maximize-buffer
  restart-emacs
  show-all
  electric-indent-mode
@@ -33,4 +33,5 @@
  (shell . 1)
  (electric-indent-mode . 4)
  (eshell/clear . 3)
+ (petmacs/toggle-maximize-buffer . 4)
 )

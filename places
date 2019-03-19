@@ -1,9 +1,14 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/2019Season1Launch/bos-download/PySpark/code/parse_file.r" . 37)
+(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 3813)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 161)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 982)
+ ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 6770)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/tensorflow_regression/RegForest.r" . 525)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 152894)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2122)
  ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box.el" . 8176)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-program.el" . 3268)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1308)
  ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el" . 3535)
  ("c:/Users/lipe6002/.emacs.d/site-lisp/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code"))
@@ -11,8 +16,6 @@
   (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code/pretty-code.el"))
  ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el"))
- ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 3765)
  ("c:/Users/lipe6002/.emacs.d/lisp/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-company.el"))
  ("c:/Users/lipe6002/.emacs.d/"
@@ -28,7 +31,6 @@
   (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el"))
  ("c:/Users/lipe6002/.emacs.d/ref/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp"))
- ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 125)
  ("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-mode.el" . 19907)
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.py" . 121)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 1212)
@@ -66,7 +68,6 @@
  ("c:/Users/lipe6002/.emacs.d/lisp/init-eshell.el" . 859)
  ("c:/Users/lipe6002/.emacs.d/elpa/ess-20190314.1538/ess-autoloads.el" . 22181)
  ("c:/Users/lipe6002/.emacs.d/elpa/eshell-z-20170117.438/eshell-z.el" . 15002)
- ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 2399)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-Ress.el" . 888)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-yasnippet.el" . 963)
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/subr.el" . 11835)
@@ -75,7 +76,6 @@
  ("c:/Users/lipe6002/.emacs.d/lisp/init-evil.el" . 2874)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-maps.el" . 1457)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-common.el" . 10368)
- ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 74049)
  ("c:/Users/lipe6002/"
   (dired-filename . "c:/Users/lipe6002/IdeaProjects"))
  ("c:/Users/lipe6002/.emacs.d/auto-save-list/" . 170)
