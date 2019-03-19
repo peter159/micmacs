@@ -1,9 +1,13 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2150)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 923)
+(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 3244)
+ ("c:/msys64/mingw64/bin/"
+  (dired-filename . "c:/msys64/mingw64/bin/bzless"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2756)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 931)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 2657)
  ("c:/Users/lipe6002/.emacs.d/elpa/all-the-icons-20190313.1420/all-the-icons.el" . 24993)
  ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box.el" . 3258)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 3198)
  ("c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el" . 1386)
  ("c:/Users/lipe6002/.emacs.d/ref/lisp/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el"))
@@ -13,11 +17,7 @@
   (dired-filename . "c:/Users/lipe6002/.emacs.d/ref"))
  ("c:/Users/lipe6002/.emacs.d/ref/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp"))
- ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 3827)
- ("c:/msys64/mingw64/bin/"
-  (dired-filename . "c:/msys64/mingw64/bin/MagickWand-config"))
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 125)
- ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
  ("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-mode.el" . 19907)
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.py" . 121)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 1212)

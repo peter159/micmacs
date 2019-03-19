@@ -58,7 +58,7 @@
 	company-dabbrev-downcase nil)
   (define-key emacs-lisp-mode-map (kbd "C-M-i") 'company-complete))
 
-(when (>= emacs-major-version 25)	;FIXME always show void-functions all-the icons-faicon
+(when (>= emacs-major-version 25) 
   (use-package company-box
     :ensure t
     :diminish
@@ -68,11 +68,13 @@
                 all-the-icons-alltheicon)
     :hook (company-mode . company-box-mode)
     :init
+    ;; (use-package all-the-icons :ensure t :defer nil)
+    (require 'all-the-icons)		;FIXME maybe all-the-icons not support auto-loads?
     (setq company-box-enable-icon nil) ;(display-graphic-p)
     (setq company-box-doc-enable nil)  ;do not show tooltip at popup
     :config
-    (setq company-box-backends-colors nil)))
-;; (define-key emacs-lisp-mode-map (kbd "M-h") 'company-box-doc-manually))
+    (setq company-box-backends-colors nil)
+    (define-key emacs-lisp-mode-map (kbd "M-h") 'company-box-doc-manually)))
 
 (provide 'init-company)
 (message "init-company loaded in '%.2f' seconds" (get-time-diff time-marked))
