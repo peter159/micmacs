@@ -1,20 +1,31 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 3244)
- ("c:/msys64/mingw64/bin/"
-  (dired-filename . "c:/msys64/mingw64/bin/bzless"))
- ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2756)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 931)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 2657)
- ("c:/Users/lipe6002/.emacs.d/elpa/all-the-icons-20190313.1420/all-the-icons.el" . 24993)
- ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box.el" . 3258)
- ("c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el" . 1386)
- ("c:/Users/lipe6002/.emacs.d/ref/lisp/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el"))
+(("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/2019Season1Launch/bos-download/PySpark/code/parse_file.r" . 37)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2122)
+ ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box.el" . 8176)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-program.el" . 3268)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1308)
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el" . 3535)
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code"))
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code/pretty-code.el"))
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el"))
+ ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 3765)
  ("c:/Users/lipe6002/.emacs.d/lisp/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-company.el"))
  ("c:/Users/lipe6002/.emacs.d/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref"))
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-font.el" . 1258)
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/2019Season1Launch/bos-download/PySpark/code/" . 111)
+ ("c:/msys64/mingw64/bin/"
+  (dired-filename . "c:/msys64/mingw64/bin/bzless"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 2657)
+ ("c:/Users/lipe6002/.emacs.d/elpa/all-the-icons-20190313.1420/all-the-icons.el" . 24993)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el" . 1386)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el"))
  ("c:/Users/lipe6002/.emacs.d/ref/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp"))
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 125)
@@ -62,7 +73,6 @@
  ("c:/msys64/mingw64/share/emacs/26.1/src/keymap.c" . 31168)
  ("c:/Users/lipe6002/.emacs.d/elpa/electric-spacing-20161209.1957/electric-spacing.el" . 3965)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-evil.el" . 2874)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-font.el" . 1266)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-maps.el" . 1457)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-common.el" . 10368)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 74049)
@@ -70,9 +80,7 @@
   (dired-filename . "c:/Users/lipe6002/IdeaProjects"))
  ("c:/Users/lipe6002/.emacs.d/auto-save-list/" . 170)
  ("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-autoloads.el" . 9894)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-program.el" . 3125)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-treemacs.el" . 4325)
- ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el" . 1027)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-c-c++.el" . 955)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-elisp.el" . 1063)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-org.el" . 3489)

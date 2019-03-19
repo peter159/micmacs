@@ -105,7 +105,7 @@
 (require 'init-yaml)
 (require 'init-sql)
 
-(require 'init-eshell)
+;; (require 'init-eshell)
 (require 'init-misc)
 
 (require 'leader-core-functions)

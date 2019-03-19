@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ eshell/clear
  restart-emacs
  show-all
  electric-indent-mode
  shell
  company-box-doc-manually
  describe-key
- company-mode
 )
 
 ;; ----- amx-data -----
@@ -32,4 +32,5 @@
  (company-box-doc-manually . 2)
  (shell . 1)
  (electric-indent-mode . 4)
+ (eshell/clear . 3)
 )
