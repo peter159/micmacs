@@ -1,20 +1,48 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/Downloads/tobed/Rtest/" . 38)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 3957)
+(("c:/Users/lipe6002/.emacs.d/lisp/init-shell.el" . 5855)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1381)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 572)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 4404)
+ ("c:/Users/lipe6002/.emacs.d/elpa/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/amx-20181011.2251"))
+ ("c:/Users/lipe6002/.emacs.d/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-sql.el"))
+ ("c:/Users/lipe6002/.emacs.d/server/server" . 56)
+ ("c:/Users/lipe6002/.emacs.d/server/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/server/server"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 3054)
+ ("c:/"
+  (dired-filename . "c:/Rtools"))
+ ("c:/Users/lipe6002/"
+  (dired-filename . "c:/Users/lipe6002/project"))
+ ("c:/Users/"
+  (dired-filename . "c:/Users/lipe6002"))
+ ("c:/Users/lipe6002/.emacs.d/anaconda-mode/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13"))
+ ("c:/Users/lipe6002/.emacs.d/.cache/layouts/persp-auto-save" . 72)
+ ("c:/Users/lipe6002/.emacs.d/.cache/layouts/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/.cache/layouts/persp-auto-save"))
+ ("c:/Users/lipe6002/.emacs.d/.cache/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/.cache/layouts"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/shell/README.org" . 981)
+ ("c:/Users/lipe6002/.emacs.d/lisp/shell/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/shell/README.org"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/shell/img/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/shell/img/shell.png"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/yasnippet-snippets-20190316.1019/snippets/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/yasnippet-snippets-20190316.1019/snippets/antlr-mode"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/yasnippet-snippets-20190316.1019/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/yasnippet-snippets-20190316.1019/yasnippet-snippets-autoloads.el"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/" . 38)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-ui.el" . 856)
  ("c:/msys64/mingw64/share/emacs/26.1/src/editfns.c" . 80339)
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 37)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1226)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-ibuffer.el" . 1303)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-evil.el" . 1838)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-leader-20140606.1243/evil-leader.el" . 6158)
- ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 897)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 75266)
- ("c:/Users/lipe6002/.emacs.d/lisp/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-elisp.el"))
- ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 1045)
- ("c:/Users/lipe6002/.emacs.d/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/snippets"))
  ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2062)
  ("c:/msys64/mingw64/bin/"
   (dired-filename . "c:/msys64/mingw64/bin/bzip2recover.exe"))
@@ -34,7 +62,6 @@
  ("c:/Users/lipe6002/.emacs.d~~/core/core-configuration-layer.el" . 17319)
  ("c:/Users/lipe6002/.emacs.d~~/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d~~/init.el"))
- ("c:/Users/lipe6002/.emacs.d/lisp/init-shell.el" . 5212)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-eshell.el" . 900)
  ("c:/Users/lipe6002/.emacs.d/elpa/shell-pop-20170304.1416/shell-pop.el" . 4906)
  ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 81)
@@ -45,13 +72,9 @@
  ("c:/msys64/mingw64/share/emacs/26.1/src/process.c" . 228206)
  ("c:/Users/lipe6002/.emacs.d/lisp/shell/funcs.el" . 2645)
  ("c:/Users/lipe6002/.emacs.d/lisp/shell/packages.el" . 4895)
- ("c:/Users/lipe6002/.emacs.d/lisp/shell/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/shell/packages.el"))
  ("c:/msys64/mingw64/share/emacs/26.1/src/data.c" . 18869)
  ("c:/msys64/mingw64/share/emacs/26.1/src/w32fns.c" . 266662)
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/shell.el" . 28235)
- ("c:/Users/lipe6002/"
-  (dired-filename . "c:/Users/lipe6002/project"))
  ("c:/Users/lipe6002/.spacemacs.d/lisp/init-function.el" . 1012)
  ("c:/Users/lipe6002/.spacemacs.d/lisp/"
   (dired-filename . "c:/Users/lipe6002/.spacemacs.d/lisp/init-function.el"))
@@ -72,8 +95,6 @@
  ("c:/msys64/mingw64/share/emacs/26.1/src/callint.c" . 8740)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-elisp.el" . 1334)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-default.el" . 2411)
- ("c:/Users/"
-  (dired-filename . "c:/Users/lipe6002"))
  ("c:/Users/lipe6002/.emacs.d/lisp/init-font.el" . 993)
  ("c:/Users/lipe6002/.emacs.d/elpa/beacon-20190104.1931/beacon.el" . 819)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-misc.el" . 82)

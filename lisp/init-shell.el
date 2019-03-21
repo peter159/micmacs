@@ -149,7 +149,8 @@
     (w32-send-sys-command)
     (delete-window)))
 
-(define-key emacs-lisp-mode-map (kbd "C-S-c") 'open-mintty-terminal)
+;; (define-key emacs-lisp-mode-map (kbd "C-S-c") 'open-mintty-terminal)
+(define-key global-map (kbd "C-S-c") 'open-mintty-terminal)
 
 (defun my-shell-here()
   "open shell here and automatically close window when quiting the shell"

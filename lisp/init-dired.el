@@ -34,7 +34,7 @@
   :ensure nil
   :hook 
   (dired-mode . dired-omit-mode)
-  (dired-mode . evil-motion-state)	;fixed "/" search
+  ;; (dired-mode . evil-motion-state)	;fixed "/" search, but ret/gg/Sg not working, suggest to use ranger
   :preface
   (defun petmacs/dired-goto-parent-directory ()
     "go up a level using same buffer"

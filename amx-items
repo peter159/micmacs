@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
+ restart-emacs
+ recentf-open-files
+ open-mintty-terminal
+ dired-goto-file
  evil-motion-state
+ dired-find-alternate-file
  doom-modeline-mode
- ibuffer-mode
- evil-major-leader-mode
- evil-leader/set-key-for-mode
- evil-leader-mode
- evil-mode
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 41)
+ (restart-emacs . 42)
  (markdown-mode . 1)
  (markdown-preview . 2)
  (ranger-copy . 1)
@@ -37,7 +37,7 @@
  (top-level . 1)
  (swiper . 1)
  (swiper-recenter-top-bottom . 10)
- (recentf-open-files . 28)
+ (recentf-open-files . 29)
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
@@ -50,17 +50,19 @@
  (petmacs/pop-eshell . 3)
  (petmacs/eshell-clear . 2)
  (eshell . 3)
- (open-mintty-terminal . 5)
+ (open-mintty-terminal . 6)
  (eval-buffer . 1)
  (fci-mode . 3)
  (recenter . 6)
  (ess-display-help-on-object . 1)
  (load-theme . 2)
- (evil-motion-state . 9)
+ (evil-motion-state . 13)
  (evil-mode . 2)
  (evil-leader-mode . 2)
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
  (ibuffer-mode . 2)
  (doom-modeline-mode . 2)
+ (dired-find-alternate-file . 2)
+ (dired-goto-file . 1)
 )
