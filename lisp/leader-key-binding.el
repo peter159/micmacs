@@ -30,7 +30,8 @@
 (evil-major-leader/set-leader "\,")
 
 (evil-leader/set-key
-  "'"   'petmacs/pop-eshell
+  ;; "'"   'petmacs/pop-eshell
+  "'"   'my-shell-here
   "?"   'counsel-descbinds
   "/"   'counsel-projectile-rg
   "v"   'er/expand-region
@@ -206,7 +207,7 @@
   "bR" 'petmacs/revert-current-buffer
   "bs" 'petmacs/goto-scratch-buffer
   "bx" 'kill-buffer-and-window
-  "bk" 'kill-buffer-and-window
+  "bk" 'kill-buffer
   "bh" 'petmacs/goto-dashboard
   "bY" 'petmacs/copy-whole-buffer-to-clipboard
   "ba" 'persp-add-buffer

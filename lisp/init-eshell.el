@@ -23,88 +23,79 @@
 ;; 
 
 ;;; Code:
+(mark-time-here)			;TODO need to transplant from spacemacs
 
-(mark-time-here)
+(defun shell/init-eshell ()
+  (use-package eshell
+    :defer t
+    :init
+    (progn
+      (spacemacs/register-repl 'eshell 'eshell)
+      (setq eshell-cmpl-cycle-completions nil
+            ;; auto truncate after 20k lines
+            eshell-buffer-maximum-lines 20000
+            ;; history size
+            eshell-history-size 350
+            ;; no duplicates in history
+            eshell-hist-ignoredups t
+            ;; buffer shorthand -> echo foo > #'buffer
+            eshell-buffer-shorthand t
+            ;; my prompt is easy enough to see
+            eshell-highlight-prompt nil
+            ;; treat 'echo' like shell echo
+            eshell-plain-echo-behavior t
+            ;; cache directory
+            eshell-directory-name (concat spacemacs-cache-directory "eshell/"))
 
-(use-package eshell
-  :ensure nil
-  :defines (compilation-last-buffer eshell-prompt-function)
-  :commands (eshell/alias
-             eshell-send-input eshell-flatten-list
-             eshell-interactive-output-p eshell-parse-command)
-  :hook ((eshell-mode . (lambda()
-                          (bind-key "C-l" 'petmacs/eshell-clear eshell-mode-map)))
-	 (eshell-mode  . (lambda() (display-line-numbers-mode -1)(hl-line-mode -1)))
-	 (eshell-after-prompt . petmacs//protect-eshell-prompt)
-	 )
-  :preface
-  (defun petmacs/eshell-clear ()
-    "Clear the eshell buffer."
-    (interactive)
-    (let ((inhibit-read-only t))
-      (erase-buffer)
-      (eshell-send-input)))
+      (when shell-protect-eshell-prompt
+        (add-hook 'eshell-after-prompt-hook 'spacemacs//protect-eshell-prompt))
 
-  (defun petmacs//protect-eshell-prompt ()
-    "Protect Eshell's prompt like Comint's prompts.
+      (autoload 'eshell-delchar-or-maybe-eof "em-rebind")
 
-E.g. `evil-change-whole-line' won't wipe the prompt. This
-is achieved by adding the relevant text properties."
-    (let ((inhibit-field-text-motion t))
-      (add-text-properties
-       (point-at-bol)
-       (point)
-       '(rear-nonsticky t
-			inhibit-line-move-field-capture t
-			field output
-			read-only t
-			front-sticky (field inhibit-line-move-field-capture)))))
-  :init
-  ;; add alias to eshell
-  (setq eshell-aliases-file (expand-file-name "alias" user-emacs-directory))
-  )
+      (add-hook 'eshell-mode-hook 'spacemacs//init-eshell)
+      (add-hook 'eshell-mode-hook 'spacemacs/disable-hl-line-mode))
+    :config
+    (progn
 
-(use-package eshell-prompt-extras
-  :ensure t
-  :custom-face
-  (epe-pipeline-delimiter-face ((t (:foreground "#fd780f" :weight bold))))
-  (epe-pipeline-host-face ((t (:foreground "#3cd8a2" :weight bold))))
-  (epe-pipeline-time-face ((t (:foreground "#e2c504"))))
-  (epe-pipeline-user-face ((t (:foreground "#ef2d2d" :weight bold))))
-  :init
-  (with-eval-after-load "esh-opt"
-    ;; (require 'virtualenvwrapper)
-    ;; (venv-initialize-eshell)
-    (autoload 'epe-theme-pipeline "eshell-prompt-extras")
-    (setq eshell-highlight-prompt nil
-          ;; add new line adhead of tty
-          eshell-prompt-function (lambda()
-                                   (concat "\n" (epe-theme-pipeline))))))
+      ;; Work around bug in eshell's preoutput-filter code.
+      ;; Eshell doesn't call preoutput-filter functions in the context of the eshell
+      ;; buffer. This breaks the xterm color filtering when the eshell buffer is updated
+      ;; when it's not currently focused.
+      ;; To remove if/when fixed upstream.
+      (defun eshell-output-filter@spacemacs-with-buffer (fn process string)
+        (let ((proc-buf (if process (process-buffer process)
+                          (current-buffer))))
+          (when proc-buf
+            (with-current-buffer proc-buf
+              (funcall fn process string)))))
+      (advice-add
+       #'eshell-output-filter
+       :around
+       #'eshell-output-filter@spacemacs-with-buffer)
 
-;; Fish-like history autosuggestions
-;; disable because of lagging
-;; (use-package esh-autosuggest
-;;   :pin melpa-stable
-;;   :defines ivy-display-functions-alist
-;;   :preface
-;;   (defun setup-eshell-ivy-completion ()
-;;     (setq-local ivy-display-functions-alist
-;;                 (remq (assoc 'ivy-completion-in-region ivy-display-functions-alist)
-;; 		      ivy-display-functions-alist)))
-;;   :bind (:map eshell-mode-map
-;; 	      ([remap eshell-pcomplete] . completion-at-point))
-;;   :hook ((eshell-mode . esh-autosuggest-mode)
-;;          (eshell-mode . setup-eshell-ivy-completion)))
+      (require 'esh-opt)
 
-;; Eldoc support
-(use-package esh-help
-  :ensure t
-  :init (setup-esh-help-eldoc))
+      ;; quick commands
+      (defalias 'eshell/e 'find-file-other-window)
+      (defalias 'eshell/d 'dired)
+      (setenv "PAGER" "cat")
 
-;; `cd' to frequent directory in eshell
-(use-package eshell-z
-  :ensure t
-  :hook (eshell-mode . (lambda() (require 'eshell-z))))
+      ;; support `em-smart'
+      (when shell-enable-smart-eshell
+        (require 'em-smart)
+        (setq eshell-where-to-jump 'begin
+              eshell-review-quick-commands nil
+              eshell-smart-space-goes-to-end t)
+        (add-hook 'eshell-mode-hook 'eshell-smart-initialize))
+
+      ;; Visual commands
+      (require 'em-term)
+      (mapc (lambda (x) (add-to-list 'eshell-visual-commands x))
+            '("el" "elinks" "htop" "less" "ssh" "tmux" "top"))
+
+      ;; automatically truncate buffer after output
+      (when (boundp 'eshell-output-filter-functions)
+        (add-hook 'eshell-output-filter-functions #'eshell-truncate-buffer)))))
 
 (provide 'init-eshell)
 (message "init-eshell loaded in '%.2f' seconds ..." (get-time-diff time-marked))

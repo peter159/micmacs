@@ -18,7 +18,8 @@
 (defun update-load-path (&rest _)
   "Update `load-path'."
   (push (expand-file-name "site-lisp" user-emacs-directory) load-path)
-  (push (expand-file-name "lisp" user-emacs-directory) load-path))
+  (push (expand-file-name "lisp" user-emacs-directory) load-path)
+  (push (expand-file-name "list/shell" user-emacs-directory) load-path))
 
 (defun add-subdirs-to-load-path (&rest _)
   "Add subdirectories to `load-path'."
@@ -92,7 +93,7 @@
 (require 'init-yasnippet)
 (require 'init-treemacs)
 
-(require 'init-program)
+(require 'init-program-basis)
 ;; (require 'init-flycheck)
 ;; (require 'init-lsp)
 (require 'init-elisp)
@@ -106,6 +107,7 @@
 (require 'init-sql)
 
 ;; (require 'init-eshell)
+(require 'init-shell)
 (require 'init-misc)
 
 (require 'leader-core-functions)

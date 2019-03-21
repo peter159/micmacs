@@ -34,6 +34,8 @@
   :commands (ibuffer-current-buffer
              ibuffer-find-file
              ibuffer-do-sort-by-alphabetic)
+  :hook
+  (ibuffer-mode . evil-motion-state)
   :bind ("C-x C-b" . ibuffer)
   :init
   (setq ibuffer-filter-group-name-face '(:inherit (font-lock-string-face bold)))
@@ -60,6 +62,10 @@
   :config
   (with-eval-after-load 'counsel
     (defalias 'ibuffer-find-file 'counsel-find-file))
+  ;; (define-key ibuffer-mode-map (kbd "j") 'evil-next-line)
+  ;; (define-key ibuffer-mode-map (kbd "k") 'evil-previous-line)
+  ;; (define-key ibuffer-mode-map (kbd "h") 'evil-backward-char)
+  ;; (define-key ibuffer-mode-map (kbd "l") 'evil-forward-char)
 
   ;; Group ibuffer's list by project root
   (use-package ibuffer-projectile

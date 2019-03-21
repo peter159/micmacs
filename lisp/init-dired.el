@@ -32,7 +32,9 @@
 ;; Directory operations
 (use-package dired
   :ensure nil
-  :hook (dired-mode . dired-omit-mode)
+  :hook 
+  (dired-mode . dired-omit-mode)
+  (dired-mode . evil-motion-state)	;fixed "/" search
   :preface
   (defun petmacs/dired-goto-parent-directory ()
     "go up a level using same buffer"

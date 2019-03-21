@@ -70,7 +70,10 @@
      doom-modeline-github nil
      ;; doom-modeline-buffer-file-name-style 'truncate-with-project
      doom-modeline-buffer-file-name-style 'file-name
-     doom-modeline-major-mode-color-icon t)
+     doom-modeline-major-mode-color-icon t
+     doom-modeline-minor-modes nil
+     doom-modeline-env-version t
+     doom-modeline-env-enable-python t)
 
     (doom-modeline-def-segment my-python-venv
       "The current python virtual environment state."

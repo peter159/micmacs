@@ -1,8 +1,8 @@
-;;; init-program.el ---                              -*- lexical-binding: t; -*-
+;;; init-program-basis.el ---                        -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019  
 
-;; Author:  <peter.linyi@DESKTOP-PMTGUNT>
+;; Author:  <lipe6002@SHA-LPC-03254>
 ;; Keywords: 
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -27,16 +27,15 @@
 (mark-time-here)
 
 (use-package fill-column-indicator
-  :ensure t
   :hook (prog-mode . (lambda ()
 		       (fci-mode 1)
-		       (fci-update-all-windows t)))
+		       (fci-update-all-windows t)
+		       ))
   :init
-  (setq fci-rule-color "#808080"	;FFA631
+  (setq fci-rule-color "#808080"
 	fci-rule-use-dashes t))
 
 (use-package imenu-list
-  :ensure t
   :defer t
   :hook (imenu-list-major-mode . (lambda ()
 				   (display-line-numbers-mode -1)
@@ -52,11 +51,9 @@
   (evil-define-key 'normal imenu-list-major-mode-map [down-mouse-1] 'imenu-list-display-entry))
 
 (use-package rainbow-delimiters
-  :ensure t
   :hook (prog-mode . rainbow-delimiters-mode))
 
 (use-package prettify-utils
-  :ensure nil
   :quelpa
   (prettify-utils :repo "Ilazki/prettify-utils.el" :fetcher github))
 
@@ -104,16 +101,16 @@
 ;;   (petmacs/complete-setup-pretty-code))
 
 (use-package electric-operator
-  :ensure t
   :hook ((c-mode-common . electric-operator-mode)
          (python-mode . electric-operator-mode)
          (electric-operator-mode . (lambda ()
-				     (electric-operator-add-rules-for-mode 'c++-mode
+                                     (electric-operator-add-rules-for-mode 'c++-mode
                                                                            (cons "*" nil)
                                                                            (cons "&" nil))
                                      (electric-operator-add-rules-for-mode 'c-mode
                                                                            (cons "*" nil))))))
 
-(provide 'init-program)
-(message "init-program loaded in '%.2f' seconds ..." (get-time-diff time-marked))
-;;; init-program.el ends here
+
+(provide 'init-program-basis)
+;; (message "init-program-basis loaded in '%.2f' seconds ..." (get-time-diff time-marked))
+;;; init-program-basis.el ends here
