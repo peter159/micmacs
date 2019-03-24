@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- company-mode
- petmacs/pyvenv-workon
- petmacs/pyvenv-activate
- petmacs/python-start-or-switch-repl
- petmacs/python-quit-repl
- delete-directory
- complete-symbol
+ fci-mode
+ recenter-top-bottom
+ scroll-up-line
+ scroll-down
+ clear-rectangle
+ vim-empty-lines-mode
+ inferior-shell
 )
 
 ;; ----- amx-data -----
@@ -18,8 +18,8 @@
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 4)
- (auto-insert . 4)
+ (ivy-mode . 5)
+ (auto-insert . 5)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 2)
@@ -42,8 +42,8 @@
  (eval-defun . 1)
  (eval-expression . 4)
  (electric-operator-mode . 3)
- (move-to-window-line-top-bottom . 1)
- (my-shell-here . 28)
+ (move-to-window-line-top-bottom . 2)
+ (my-shell-here . 29)
  (kill-buffer . 1)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
@@ -52,7 +52,7 @@
  (eshell . 3)
  (open-mintty-terminal . 6)
  (eval-buffer . 2)
- (fci-mode . 3)
+ (fci-mode . 22)
  (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 2)
@@ -91,4 +91,15 @@
  (petmacs/python-start-or-switch-repl . 1)
  (petmacs/pyvenv-activate . 3)
  (petmacs/pyvenv-workon . 3)
+ (scroll-up . 1)
+ (move-beginning-of-line . 1)
+ (move-end-of-line . 1)
+ (move-past-close-and-reindent . 1)
+ (eshell-z . 1)
+ (inferior-shell . 1)
+ (vim-empty-lines-mode . 1)
+ (clear-rectangle . 3)
+ (scroll-down . 2)
+ (scroll-up-line . 1)
+ (recenter-top-bottom . 1)
 )

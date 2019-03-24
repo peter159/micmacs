@@ -81,3 +81,5 @@ A prefix argument is handled like `recenter':
   (interactive "P")
   (setq arg 'bottom))
 
+
+(recenter 'bottom)

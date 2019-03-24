@@ -38,7 +38,7 @@
   "Update `load-path'."
   (push (expand-file-name "site-lisp" user-emacs-directory) load-path)
   (push (expand-file-name "lisp" user-emacs-directory) load-path)
-  (push (expand-file-name "list/shell" user-emacs-directory) load-path))
+  (push (expand-file-name "list/init-shell" user-emacs-directory) load-path))
 
 (defun add-subdirs-to-load-path (&rest _)
   "Add subdirectories to `load-path'."
@@ -90,14 +90,15 @@
 (require 'init-c-c++)
 (require 'init-python)
 (require 'init-ess)
-;; (require 'init-Ress)
+;; (require 'init-Ress)			;tobed
 ;; (require 'init-org)
 (require 'init-json)
 (require 'init-yaml)
 (require 'init-sql)
 
-;; (require 'init-eshell)
+;; (require 'init-eshell)			;tobed
 (require 'init-shell)
+;; (require 'init-shell_bak)		;tobed
 (require 'init-misc)
 
 (require 'leader-core-functions)

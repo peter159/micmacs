@@ -33,7 +33,8 @@
 		       ))
   :init
   (setq fci-rule-color "#808080"
-	fci-rule-use-dashes t))
+	fci-rule-use-dashes t
+	fci-dash-pattern 0.75))
 
 (use-package imenu-list
   :defer t

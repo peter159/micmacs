@@ -24,7 +24,7 @@
 
 ;;; Code:
 
-(setq comint-move-point-for-output t) ;; move point to the end of buffer on new output
+;; (setq comint-move-point-for-output t) ;; move point to the end of buffer on new output
 
 (setq shell-pop-window-position 'bottom
       shell-pop-window-size     30
@@ -156,10 +156,14 @@
   "open shell here and automatically close window when quiting the shell"
   (interactive)
   (let ((file-name-directory (buffer-file-name)))
-    (call-interactively 'spacemacs/default-pop-shell)))
+    (call-interactively 'spacemacs/default-pop-shell)
+    ;; (other-buffer -1)
+    ;; (recenter 11)
+    ;; (message "end of line: %s" (window-body-height))
+    ))
 
 (defvar shell-default-shell (if (eq window-system 'w32)
-                                'eshell
+                                'shell
 			      'ansi-term)
   "Default shell to use in Spacemacs. Possible values are `eshell', `shell',
 `term', `ansi-term' and `multi-term'.")
@@ -202,7 +206,9 @@ SHELL is the SHELL function to use (i.e. when FUNC represents a terminal)."
 		      ,(concat "*" name "*")
 		      (lambda nil (,func ,shell)))))
 	 (shell-pop index)
-	 (spacemacs/resize-shell-to-desired-width)))))
+	 (spacemacs/resize-shell-to-desired-width)
+	 ;; (recenter (window-body-height)) ; TODO hope to move focus to end of screen, but doesn't work
+	 ))))
 
 (make-shell-pop-command eshell)
 (make-shell-pop-command term shell-pop-term-shell)
