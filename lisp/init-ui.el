@@ -33,13 +33,19 @@
 (electric-pair-mode 1)
 (setq-default make-backup-files nil)
 
-(require 'recentf)
-(recentf-mode 1)
+(use-package recentf
+  :ensure nil
+  :config
+  (recentf-mode 1))
 
 ;; forbid emacs startup screen and make full screen default
 (setq inhibit-splash-screen t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+(defun make-full-screen()
+  "make full screen"
+  (modify-frame-parameters nil `((fullscreen . fullboth) (maximized . fullscreen))))
 (add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
+(add-hook 'focus-in-hook 'make-full-screen) ;make full screen even when server killed frame
 
 ;; display time
 (display-time-mode t) 
@@ -68,9 +74,10 @@
      doom-modeline-lsp nil
      doom-modeline-persp-name nil
      doom-modeline-github nil
-     ;; doom-modeline-buffer-file-name-style 'truncate-with-project
+     ;; doom-modeline-buffer-file-name-style 'truncate-with-project ;cause stuck
      doom-modeline-buffer-file-name-style 'file-name
      doom-modeline-major-mode-color-icon t
+     doom-modeline-enable-word-count t
      doom-modeline-minor-modes nil
      doom-modeline-env-version t
      doom-modeline-env-enable-python t)
@@ -81,7 +88,8 @@
         (if (eq python-shell-virtualenv-root nil)
             ""
           (propertize
-           (let ((base-dir-name (file-name-nondirectory (substring python-shell-virtualenv-root 0 -1))))
+           ;; (let ((base-dir-name (file-name-nondirectory (substring python-shell-virtualenv-root 0 -1))))
+           (let ((base-dir-name (file-name-nondirectory python-shell-virtualenv-root)))
              (if (< 10 (length base-dir-name))
                  (format " (%s..)" (substring base-dir-name 0 8))
                (format " (%s)" base-dir-name)))
@@ -134,7 +142,7 @@
   :init
   (global-vim-empty-lines-mode))
 
-(use-package hide-mode-line
+(use-package hide-mode-line		;hide modeline in specified mode when not needed
   :ensure t
   :hook (((completion-list-mode
            completion-in-region-mode

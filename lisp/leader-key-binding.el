@@ -225,7 +225,7 @@
 
 ;; leader-w family
 (which-key-add-key-based-replacements
-  (format "%s w" petmacs-evil-leader-key) "windows")
+  (format "%s w" petmacs-evil-leader-key) "window")
 (evil-leader/set-key
   "wm"  'petmacs/toggle-maximize-buffer
   "wH"  'evil-window-move-far-left

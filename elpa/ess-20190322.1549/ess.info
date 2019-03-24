@@ -2541,10 +2541,9 @@ File: ess.info,  Node: Object names,  Next: Function arguments,  Up: Completion
 ==============================
 
 The <TAB> key is for completion.  The value of the variable
-'ess-first-tab-never-complete' controls when completion is allowed
-controls when completion is allowed to occur.  In 'ess-mode' <TAB> first
-tries to indent, and if there is nothing to indent, complete the object
-name instead.
+'ess-first-tab-never-complete' controls when completion is allowed to
+occur.  In 'ess-mode' <TAB> first tries to indent, and if there is
+nothing to indent, complete the object name instead.
 
 'TAB'
      'comint-dynamic-complete' Complete the R object name or filename
@@ -4555,7 +4554,7 @@ Key index
                                                                (line 18)
 * ESC C-q:                               Indenting.            (line 49)
 * M-;:                                   Indenting.            (line 65)
-* M-?:                                   Object names.         (line 34)
+* M-?:                                   Object names.         (line 33)
 * M-C-q:                                 Indenting.            (line 49)
 * M-n l:                                 Sweave and AUCTeX.    (line 24)
 * M-n P:                                 Sweave and AUCTeX.    (line 30)
@@ -4582,7 +4581,7 @@ Function and program index
                                                               (line  31)
 * comint-copy-old-input:                 Transcript resubmit. (line  16)
 * comint-delete-output:                  Last command.        (line  24)
-* comint-dynamic-complete:               Object names.        (line  13)
+* comint-dynamic-complete:               Object names.        (line  12)
 * comint-forward-matching-input:         Process buffer motion.
                                                               (line  32)
 * comint-history-isearch-backward-regexp: Command History.    (line  32)
@@ -4633,7 +4632,7 @@ Function and program index
 * ess-indent-command:                    Roxygen.             (line  90)
 * ess-indent-exp:                        Indenting.           (line  48)
 * ess-indent-or-complete:                Indenting.           (line  34)
-* ess-list-object-completions:           Object names.        (line  33)
+* ess-list-object-completions:           Object names.        (line  32)
 * ess-load-file:                         Hot keys.            (line  49)
 * ess-load-file <1>:                     Loading.             (line  11)
 * ess-mark-function:                     Other edit buffer commands.
@@ -4649,7 +4648,7 @@ Function and program index
                                                               (line   9)
 * ess-request-a-process:                 Multiple ESS processes.
                                                               (line  18)
-* ess-resynch:                           Object names.        (line  53)
+* ess-resynch:                           Object names.        (line  52)
 * ess-roxy-hide-all:                     Roxygen.             (line  71)
 * ess-roxy-move-beginning-of-line:       Roxygen.             (line  97)
 * ess-roxy-next-entry:                   Roxygen.             (line  68)
@@ -4700,7 +4699,7 @@ Function and program index
 * R:                                     Starting up.         (line  11)
 * S:                                     Starting up.         (line  11)
 * search():                              Hot keys.            (line  34)
-* search() <1>:                          Object names.        (line  20)
+* search() <1>:                          Object names.        (line  19)
 * source():                              Evaluating code.     (line  18)
 * source() <1>:                          Loading.             (line  11)
 * STERM:                                 Statistical Process running in ESS?.
@@ -4797,13 +4796,13 @@ Concept Index
 * completion in edit buffer:             Other edit buffer commands.
                                                               (line  24)
 * completion of object names:            Object names.        (line   6)
-* completion on file names:              Object names.        (line  40)
-* completion on lists:                   Object names.        (line  38)
+* completion on file names:              Object names.        (line  39)
+* completion on lists:                   Object names.        (line  37)
 * completion, when prompted for object names: Edit buffer.    (line  14)
 * creating new objects:                  Edit buffer.         (line  14)
 * credits:                               Credits.             (line   6)
 * customization:                         Customization.       (line   6)
-* data frames:                           Object names.        (line  21)
+* data frames:                           Object names.        (line  20)
 * deleting output:                       Last command.        (line  24)
 * directories:                           Starting up.         (line  11)
 * dump file directories:                 Source Directories.  (line  20)
@@ -4854,7 +4853,7 @@ Concept Index
 * keyboard short cuts:                   Hot keys.            (line  43)
 * killing temporary buffers:             Hot keys.            (line  71)
 * killing the ESS process:               Hot keys.            (line  71)
-* lists, completion on:                  Object names.        (line  38)
+* lists, completion on:                  Object names.        (line  37)
 * motion in transcript mode:             Transcript Mode.     (line  17)
 * multi-line commands, resubmitting:     Transcript resubmit. (line  33)
 * multiple ESS processes:                Multiple ESS processes.
@@ -4968,61 +4967,61 @@ Node: Source Directories101256
 Node: Help104409
 Node: Completion108853
 Node: Object names109068
-Node: Function arguments111741
-Node: Minibuffer completion112684
-Node: Company113158
-Node: Icicles113545
-Node: Developing with ESS114865
-Node: ESS tracebug115311
-Node: Getting started with tracebug118318
-Node: Editing documentation120476
-Node: R documentation files121026
-Node: Roxygen124953
-Node: Namespaced Evaluation129356
-Node: Extras131354
-Node: ESS ElDoc132378
-Node: ESS Flymake133874
-Node: Handy commands134968
-Node: Highlighting136165
-Node: Parens137200
-Node: Graphics137676
-Node: printer138347
-Node: X11139103
-Node: winjava139442
-Node: Imenu139854
-Node: Toolbar140701
-Node: Xref141109
-Node: Rdired141432
-Node: Rutils142486
-Node: Org144880
-Node: Sweave and AUCTeX145825
-Node: ESS for R148377
-Node: ESS(R)--Editing files148677
-Node: iESS(R)--Inferior ESS processes149196
-Node: Philosophies for using ESS(R)151841
-Node: Example ESS usage152768
-Node: ESS for SAS154989
-Node: ESS(SAS)--Design philosophy155712
-Node: ESS(SAS)--Editing files156665
-Node: ESS(SAS)--TAB key158519
-Node: ESS(SAS)--Batch SAS processes159885
-Node: ESS(SAS)--Function keys for batch processing164911
-Node: iESS(SAS)--Interactive SAS processes174397
-Node: iESS(SAS)--Common problems178151
-Node: ESS(SAS)--Graphics179674
-Node: ESS(SAS)--Windows180457
-Node: ESS for BUGS181035
-Node: ESS for JAGS182791
-Node: Mailing lists/bug reports186143
-Node: Bugs186407
-Node: Reporting Bugs188032
-Node: Mailing Lists188925
-Node: Help with Emacs189672
-Node: Customization190204
-Node: Indices190978
-Node: Key index191153
-Node: Function and program index196431
-Node: Variable index206070
-Node: Concept index209631
+Node: Function arguments111705
+Node: Minibuffer completion112648
+Node: Company113122
+Node: Icicles113509
+Node: Developing with ESS114829
+Node: ESS tracebug115275
+Node: Getting started with tracebug118282
+Node: Editing documentation120440
+Node: R documentation files120990
+Node: Roxygen124917
+Node: Namespaced Evaluation129320
+Node: Extras131318
+Node: ESS ElDoc132342
+Node: ESS Flymake133838
+Node: Handy commands134932
+Node: Highlighting136129
+Node: Parens137164
+Node: Graphics137640
+Node: printer138311
+Node: X11139067
+Node: winjava139406
+Node: Imenu139818
+Node: Toolbar140665
+Node: Xref141073
+Node: Rdired141396
+Node: Rutils142450
+Node: Org144844
+Node: Sweave and AUCTeX145789
+Node: ESS for R148341
+Node: ESS(R)--Editing files148641
+Node: iESS(R)--Inferior ESS processes149160
+Node: Philosophies for using ESS(R)151805
+Node: Example ESS usage152732
+Node: ESS for SAS154953
+Node: ESS(SAS)--Design philosophy155676
+Node: ESS(SAS)--Editing files156629
+Node: ESS(SAS)--TAB key158483
+Node: ESS(SAS)--Batch SAS processes159849
+Node: ESS(SAS)--Function keys for batch processing164875
+Node: iESS(SAS)--Interactive SAS processes174361
+Node: iESS(SAS)--Common problems178115
+Node: ESS(SAS)--Graphics179638
+Node: ESS(SAS)--Windows180421
+Node: ESS for BUGS180999
+Node: ESS for JAGS182755
+Node: Mailing lists/bug reports186107
+Node: Bugs186371
+Node: Reporting Bugs187996
+Node: Mailing Lists188889
+Node: Help with Emacs189636
+Node: Customization190168
+Node: Indices190942
+Node: Key index191117
+Node: Function and program index196395
+Node: Variable index206034
+Node: Concept index209595
 
 End Tag Table

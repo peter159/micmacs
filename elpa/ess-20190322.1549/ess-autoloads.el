@@ -301,6 +301,12 @@ Major mode for editing R source.  See `ess-mode' for more help.
 
 (add-to-list 'auto-mode-alist '("CITATION\\'" . ess-r-mode))
 
+(autoload 'ess-r-redefine-runners "ess-r-mode" "\
+Regenerate runners, i.e. `M-x R-*` possibilities.
+ Call `fmakunbound' on all elements of `ess-r-created-runners', then define new runners.
+
+\(fn &optional VERBOSE)" t nil)
+
 (autoload 'ess-r-transcript-mode "ess-r-mode" "\
 A Major mode for R transcript files.
 

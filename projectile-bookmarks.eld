@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/.emacs.d~~/" "~/.spacemacs.d/" "~/Downloads/tobed/RpackageDev/Rpkg/" "~/Anaconda3/Lib/site-packages/sklearn/ensemble/")
+("~/.emacs.d/" "~/Downloads/tobed/pytest/" "~/.emacs.d -bak-mimic/" "~/.emacs.d~~/" "~/.spacemacs.d/" "~/Downloads/tobed/RpackageDev/Rpkg/" "~/Anaconda3/Lib/site-packages/sklearn/ensemble/")

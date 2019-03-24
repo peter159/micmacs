@@ -1,9 +1,28 @@
-;;; init.el ---MiMacs
+;;; init.el --- MainEntry                            -*- lexical-binding: t; -*-
 
-;;; commentary
-;; This to trying to mimic spacemacs features but simpler and easy to manage
+;; Copyright (C) 2019  
 
-;;; code
+;; Author:  <lipe6002@SHA-LPC-03254>
+;; Keywords: 
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; 
+
+;;; Code:
 
 ;;; require package manager, config archives source and initialize all
 (require 'package)
@@ -36,39 +55,10 @@
 ;; Initialize packages
 (package-initialize)
 
-;; ;; ********************************************************************************************************
-;; ;;                                          for debuging usage only
-;; ;; ********************************************************************************************************
 ;; ;; Display the total loading time in the minibuffer
 (defun display-startup-echo-area-message ()
   "Display startup echo area message."
   (message "Initialized in %s" (emacs-init-time)))
-
-;; ;; Benchmark loading time file by file and display it in the *Messages* buffer
-;; (when init-file-debug
-;;   (require 'benchmark)
-;;   (let ((lisp-dir "~/.emacs.d/lisp"))
-;;   (add-to-list 'load-path lisp-dir)
-;;   (mapc (lambda (fname)
-;;           (let ((feat (intern (file-name-base fname))))
-;;             (if init-file-debug
-;;                 (message "Feature '%s' loaded in %.2fs" feat
-;;                          (benchmark-elapse (require feat fname)))
-;;               (require feat fname))))
-;;         (directory-files lisp-dir t "\\.el"))))
-
-;; ;; (let ((lisp-dir "~/.emacs.d/lisp"))
-;; ;;   (add-to-list 'load-path lisp-dir)
-;; ;;   (mapc (lambda (fname)
-;; ;;           (let ((feat (intern (file-name-base fname))))
-;; ;;             (if init-file-debug
-;; ;;                 (message "Feature '%s' loaded in %.2fs" feat
-;; ;;                          (benchmark-elapse (require feat fname)))
-;; ;;               (require feat fname))))
-;; ;;         (directory-files lisp-dir t "\\.el")))
-;; ;; ********************************************************************************************************
-;; ;;                                            for debuging usage only 
-;; ;; ********************************************************************************************************
 
 ;; requre features from lisp
 

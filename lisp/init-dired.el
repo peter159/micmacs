@@ -76,11 +76,12 @@
   :bind (:map dired-mode-map
               ("S" . hydra-dired-quick-sort/body)))
 
-;; ;; bind with all-the-icons
-;; (use-package all-the-icons-dired
-;;   :hook (dired-mode . all-the-icons-dired-mode)
-;;   :init
-;;   (require 'font-lock+))
+;; bind with all-the-icons
+(use-package all-the-icons-dired
+  :ensure t
+  :hook (dired-mode . all-the-icons-dired-mode)
+  :init
+  (require 'font-lock+))
 
 (use-package diredfl
   :ensure t
@@ -128,7 +129,8 @@
   ;; allow '-' to enter ranger
   (define-key evil-normal-state-map (kbd "-") 'deer)
   :config
-  (define-key ranger-mode-map (kbd "-") 'ranger-up-directory))
+  (define-key ranger-mode-map (kbd "-") 'ranger-up-directory)
+  (define-key ranger-mode-map (kbd "+") 'dired-create-directory))
 
 (provide 'init-dired)
 (message "init-dired loaded in '%.2f' seconds" (get-time-diff time-marked))

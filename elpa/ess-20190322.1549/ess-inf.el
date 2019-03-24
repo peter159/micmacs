@@ -1812,13 +1812,14 @@ meaning as for `ess-eval-region'."
   inferior-ess-mode-menu inferior-ess-mode-map
   "Menu for use in Inferior S mode"
   '("iESS"
-    ["What is this? (beta)"   ess-mouse-me                  t]
-    ["Quit"                 ess-quit                        t]
+    ["Quit"			ess-quit			t]
+    ["Reload process"		inferior-ess-reload             t]
+    ["What is this? (beta)"     ess-mouse-me			t]
     ;; ["Send and move"  ess-transcript-send-command-and-move  t]
-    ["Copy command"   comint-copy-old-input                 t]
-    ["Send command"   inferior-ess-send-input               t]
-    ["Switch to Script Buffer" ess-switch-to-inferior-or-script-buffer t]
-    ["Get help on S object"   ess-display-help-on-object    t]
+    ["Copy command"		comint-copy-old-input		t]
+    ["Send command"		inferior-ess-send-input		t]
+    ["Switch to script buffer"	ess-switch-to-inferior-or-script-buffer t]
+    ["Get help on S object"	ess-display-help-on-object	t]
     "------"
     ("Process"
      ["Process Echoes" (lambda () (interactive)
@@ -1830,16 +1831,16 @@ meaning as for `ess-eval-region'."
       :filter ess--generate-eval-visibly-submenu ))
     "------"
     ("Utils"
-     ;; need a toggle switch for above, AJR.
-     ["Attach directory"        ess-execute-attach      t]
-     ["Display object list"     ess-execute-objects	t]
-     ["Display search list"     ess-execute-search	t]
-     ["Edit S Object"	ess-dump-object-into-edit-buffer t]
-     ["Enter S command"         ess-execute             t]
-     ["Jump to Error"           ess-parse-errors        t]
-     ["Load source file"    ess-load-file           t]
+     ["Attach directory"	ess-execute-attach	t]
+     ["Display object list"	ess-execute-objects	t]
+     ["Display search list"	ess-execute-search	t]
+     ["Edit S object"  ess-dump-object-into-edit-buffer t]
+     ["Enter S command"		ess-execute		t]
+     ["Jump to error"		ess-parse-errors	t]
+     ["Load source file"	ess-load-file		t]
      ["Resynch S completions"	ess-resynch		t]
-     ;; ["Recreate R and S versions known to ESS" (ess-r-s-versions-creation+menu) t]
+     ["Recreate R versions known to ESS"
+      (lambda () (interactive) (ess-r-redefine-runners 'verbose)) t]
      )
     "------"
     ("start-dev" :visible nil); <-- ??
@@ -2283,7 +2284,7 @@ is run automatically by \\[ess-quit]."
                      ess-local-process-name
                      (equal ess-local-process-name the-procname))
             (kill-buffer buf)))))
-    (display-buffer buf '(nil (inhibit-same-window . t)))
+    (display-buffer buf)
     buf))
 
 (defun inferior-ess-reload (&optional start-args)
@@ -2300,10 +2301,12 @@ START-ARGS gets passed to the dialect-specific
     (let ((project-find-functions nil)
           (ess-directory-function nil)
           (ess-startup-directory (ess-get-working-directory))
-          (ess-ask-for-ess-directory nil))
+          (ess-ask-for-ess-directory nil)
+          (proc (ess-get-process)))
       (ess-quit 'no-save)
-      (inferior-ess--wait-for-exit (ess-get-process))
-      (inferior-ess-reload--override start-args))))
+      (inferior-ess--wait-for-exit proc)
+      (with-current-buffer (process-buffer proc)
+        (inferior-ess-reload--override start-args)))))
 
 (cl-defmethod inferior-ess-reload--override (start-args)
   (user-error "Reloading not implemented for %s %s" ess-dialect start-args))
@@ -2580,10 +2583,13 @@ directory in the `load-path'."
   (interactive)
   (if (ess-make-buffer-current) nil
     (error "Not an ESS process buffer"))
-  (setq ess-sl-modtime-alist nil)
-  (setq ess-object-list nil)
-  (setq ess-object-name-db nil)         ; perhaps it would be better to reload?
+  (setq
+   ess-sl-modtime-alist nil
+   ess-object-list nil
+   ess-object-name-db nil ; perhaps it would be better to reload?
+   )
   (ess-process-put 'sp-for-help-changed? t)
+  ;; Action! :
   (ess-get-modtime-list))
 
 (defun ess-filename-completion ()
@@ -2689,19 +2695,18 @@ don't recompile first object in the search list."
          (cache-name (or cache-var-name 'ess-sl-modtime-alist))
          pack newalist)
     (while searchlist
-      (setq pack (car searchlist))
-      (setq newalist
-            (append
-             newalist
-             (list (or (assoc pack (symbol-value cache-name))
-                       (append
-                        (list pack (ess-dir-modtime pack))
-                        (prog2
-                            (message "Forming completions for %s..." pack)
-                            (ess-object-names pack index)
-                          (message "Forming completions for %s...done" pack)))))))
-      (setq index (1+ index))
-      (setq searchlist (cdr searchlist)))
+      (setq
+       pack  (car searchlist)
+       newalist (append newalist
+               (list (or (assoc pack (symbol-value cache-name))
+                         (append
+                          (list pack (ess-dir-modtime pack))
+                          (prog2
+                              (message "Forming completions for %s..." pack)
+                              (ess-object-names pack index)
+                            (message "Forming completions for %s...done" pack))))))
+       index  (1+ index)
+       searchlist  (cdr searchlist)))
     ;;DBG:
     (ess-write-to-dribble-buffer
      (format "(%s): created new alist of length %d\n"

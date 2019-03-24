@@ -29,21 +29,9 @@
 (eval-when-compile
   (require 'init-const))
 
-;; ;; use exec-path-from-shell in linux / mac
-;; (when (or (eq system-type 'gnu/linux) (eq system-type 'darwin))
-;;   (use-package exec-path-from-shell
-;;     :init
-;;     (setq exec-path-from-shell-check-startup-files nil)
-;;     (setq exec-path-from-shell-variables '("PATH" "MANPATH" "PYTHONPATH" "GOPATH"))
-;;     (setq exec-path-from-shell-arguments '("-l"))
-;;     (exec-path-from-shell-initialize)))
-
-;; ;; maximize emacs after initialization
-;; (toggle-frame-maximized)
-
 ;; ;; use UTF-8 as default encoding
-;; (set-language-environment petmacs-default-language-env)
-;; (set-default-coding-systems petmacs-default-coding-env)
+;; (set-language-environment "UTF-8")
+;; (set-default-coding-systems 'utf-8)
 
 ;; (fset 'yes-or-no-p 'y-or-n-p)
 ;; (setq inhibit-startup-screen t)
@@ -61,10 +49,10 @@
 
 ;; Line and Column
 (setq-default fill-column 80)
-;; (tool-bar-mode -1)
-;; (menu-bar-mode -1)
+;; (tool-bar-mode -1)			; move to ui
+;; (menu-bar-mode -1)			; move to ui
 (setq column-number-mode t)
-(setq line-number-mode t)
+;; (setq line-number-mode t)
 
 ;; Don't open a file in a new frame
 (when (boundp 'ns-pop-up-frames)
@@ -74,7 +62,7 @@
 (when (boundp 'x-gtk-use-system-tooltips)
   (setq x-gtk-use-system-tooltips nil))
 
-;; (setq recenter-positions '(middle top bottom))
+;; (setq recenter-positions '(top middle bottom))
 
 ;; Mouse & Smooth Scroll
 ;; Scroll one line at a time (less "jumpy" than defaults)
@@ -188,10 +176,11 @@
 ;;    :fetcher github)
 ;;   :hook (after-init . global-undo-tree-mode))
 
-(use-package undo-tree
-  :ensure t
-  :diminish
-  :hook (after-init . global-undo-tree-mode))
+;; (use-package undo-tree
+;;   :ensure t
+;;   :diminish
+;;   :hook (after-init . global-undo-tree-mode))
+(global-undo-tree-mode -1)
 
 ;; Handling capitalized subwords in a nomenclature
 (use-package subword

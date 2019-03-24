@@ -1,33 +1,33 @@
 
 ;; ----- amx-history -----
 (
- restart-emacs
- recentf-open-files
- open-mintty-terminal
- dired-goto-file
- evil-motion-state
- dired-find-alternate-file
- doom-modeline-mode
+ company-mode
+ petmacs/pyvenv-workon
+ petmacs/pyvenv-activate
+ petmacs/python-start-or-switch-repl
+ petmacs/python-quit-repl
+ delete-directory
+ complete-symbol
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 42)
+ (restart-emacs . 51)
  (markdown-mode . 1)
  (markdown-preview . 2)
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 3)
- (auto-insert . 3)
+ (ivy-mode . 4)
+ (auto-insert . 4)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 2)
  (show-all . 2)
  (describe-key . 2)
  (electric-spacing-mode . 3)
- (evil-goto-definition . 1)
- (company-mode . 1)
+ (evil-goto-definition . 2)
+ (company-mode . 3)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
  (shell . 1)
@@ -37,7 +37,7 @@
  (top-level . 1)
  (swiper . 1)
  (swiper-recenter-top-bottom . 10)
- (recentf-open-files . 29)
+ (recentf-open-files . 38)
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
@@ -51,13 +51,13 @@
  (petmacs/eshell-clear . 2)
  (eshell . 3)
  (open-mintty-terminal . 6)
- (eval-buffer . 1)
+ (eval-buffer . 2)
  (fci-mode . 3)
- (recenter . 6)
+ (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 2)
- (evil-motion-state . 13)
- (evil-mode . 2)
+ (evil-motion-state . 19)
+ (evil-mode . 7)
  (evil-leader-mode . 2)
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
@@ -65,4 +65,30 @@
  (doom-modeline-mode . 2)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
+ (other-window . 1)
+ (python-shell-send-buffer . 1)
+ (anaconda-mode-find-references . 2)
+ (petmacs/python-execute-file . 3)
+ (forward-list . 1)
+ (xref-find-references . 1)
+ (dired-find-file . 2)
+ (undo-tree-redo . 1)
+ (rg . 1)
+ (ess-mode . 6)
+ (package-refresh-contents . 1)
+ (dired-tree-up . 2)
+ (dired-upcase . 1)
+ (dired-do-copy . 1)
+ (dired-do-load . 1)
+ (ranger-travel . 2)
+ (hydra-dired-quick-sort/body . 1)
+ (dired-create-directory . 1)
+ (ranger-mode . 2)
+ (ranger-to-dired . 1)
+ (complete-symbol . 1)
+ (delete-directory . 2)
+ (petmacs/python-quit-repl . 1)
+ (petmacs/python-start-or-switch-repl . 1)
+ (petmacs/pyvenv-activate . 3)
+ (petmacs/pyvenv-workon . 3)
 )
