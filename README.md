@@ -5,7 +5,7 @@ MicMacs is actually a mimic of spacemacs, but simpler for management, you can co
 git clone git@github.com:peter159/mimacs.git ~/.emacs.d
 ```
 
-For server user, since emacs is running a deamon for server, make a short cut applying something like the below to use it(change the path to your path). Look at wiki[https://www.emacswiki.org/emacs/EmacsMsWindowsIntegration] to see the explanation of how emacsclient works
+For server user, since emacs is running a deamon for server, make a short cut applying something like the below to use it(change the path to your path). Look at [wiki](https://www.emacswiki.org/emacs/EmacsMsWindowsIntegration) to see the explanation of how emacsclient works
 ```bash
 C:\msys64\mingw64\bin\emacsclientw.exe -cna C:\msys64\mingw64\bin\runemacs.exe
 ```
@@ -15,3 +15,6 @@ Fonts, is sometime critical for UI thing, here recommend to use `Fira Code Retin
 [Fira Code Symbols] https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip
 [µÈ¾à¸üÉ´ºÚÌå SC] https://github.com/be5invis/Sarasa-Gothic/releases #install all that with -sc-
 ```
+
+# SCREENSHOT
+![snapshot]("./img/snapshot.png")

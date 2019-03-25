@@ -1,8 +1,16 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py" . 9801)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 2873)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-markdown.el" . 1126)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1214)
+(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 114)
+ ("c:/Users/lipe6002/.emacs.d/README.html" . 103)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-markdown.el" . 1053)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 2849)
+ ("c:/Users/lipe6002/.emacs.d/README.md" . 18)
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py" . 9801)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/DESCRIPTION" . 60)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/R/storemapping_core_v1.2.r" . 2214)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 857)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 2299)
+ ("c:/Users/lipe6002/.emacs.d/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/README.md"))
  ("c:/Users/lipe6002/.emacs.d/lisp/init-program-basis.el" . 1118)
  ("c:/Users/lipe6002/.emacs.d/elpa/fill-column-indicator-20171209.1924/fill-column-indicator.el" . 13597)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-ui.el" . 4677)
@@ -10,13 +18,8 @@
  ("c:/Users/lipe6002/.emacs.d/lisp/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el"))
  ("c:/Users/lipe6002/.emacs.d/lisp/init-ivy.el" . 5318)
- ("c:/Users/lipe6002/.emacs.d/"
-  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp"))
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.r" . 230)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 1922)
- ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 114)
  ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/Dev_storematching.R" . 242)
- ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/R/storemapping_core_v1.2.r" . 2319)
  ("c:/Users/lipe6002/.emacs.d/lisp/leader-core-functions.el" . 4031)
  ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 9988)
  ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/"
@@ -35,7 +38,6 @@
   (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/stkshare/R"))
  ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/"
   (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/NAMESPACE"))
- ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/DESCRIPTION" . 60)
  ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre_0.3.0.tar.gz" . 1664)
  ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/R/"
   (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/R/storemapping_core_v1.2.r"))
@@ -236,7 +238,6 @@
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/timeseries/"
   (dired-filename . "c:/Users/lipe6002/Downloads/tobed/Rtest/timeseries/fullcode.R"))
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/call_py.py" . 40)
- ("c:/Users/lipe6002/.emacs.d/README.md" . 551)
  ("c:/Users/lipe6002/Downloads/test/test-anaconda.py" . 116)
  ("c:/Users/lipe6002/Anaconda3/Lib/site-packages/sklearn/ensemble/forest.py" . 29856)
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/elisp-mode.el" . 1520)
