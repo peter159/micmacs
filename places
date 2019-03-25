@@ -1,8 +1,9 @@
 ;;; -*- coding: utf-8 -*-
 (("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py" . 9801)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 2429)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 2873)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-markdown.el" . 1126)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1214)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-program-basis.el" . 1118)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1229)
  ("c:/Users/lipe6002/.emacs.d/elpa/fill-column-indicator-20171209.1924/fill-column-indicator.el" . 13597)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-ui.el" . 4677)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-default.el" . 5698)

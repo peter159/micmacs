@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ auto-insert
+ ivy-mode
  fci-mode
  aggressive-indent-mode
  electric-indent-mode
  restart-emacs
  recentf-open-files
- company-mode
- anaconda-mode
 )
 
 ;; ----- amx-data -----
@@ -18,8 +18,8 @@
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 5)
- (auto-insert . 5)
+ (ivy-mode . 6)
+ (auto-insert . 6)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 2)
@@ -52,7 +52,7 @@
  (eshell . 3)
  (open-mintty-terminal . 6)
  (eval-buffer . 2)
- (fci-mode . 28)
+ (fci-mode . 31)
  (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 3)
