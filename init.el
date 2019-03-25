@@ -96,11 +96,29 @@
 (require 'init-yaml)
 (require 'init-sql)
 
-;; (require 'init-eshell)			;tobed
 (require 'init-shell)
-;; (require 'init-shell_bak)		;tobed
 (require 'init-misc)
 
 (require 'leader-core-functions)
 (require 'leader-key-binding)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("55ff1b187304abeb43eb61ff3151deee8d64e749c5b622981ad0f6399defce06" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(aw-leading-char-face ((t (:height 4.0 :foreground "#f1fa8c"))))
+ '(doom-modeline-buffer-file ((t (:inherit font-lock-string-face :weight bold))))
+ '(git-gutter:added ((t (:background "#50fa7b"))))
+ '(git-gutter:deleted ((t (:background "#ff79c6"))))
+ '(git-gutter:modified ((t (:background "#f1fa8c"))))
+ '(hl-todo ((t (:box t :inherit (quote hl-todo)))))
+ '(linum-highlight-face ((t (:inherit (quote default) :background "SystemWindow" :foreground "SystemWindowText")))))

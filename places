@@ -1,8 +1,10 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py" . 9764)
+(("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 720)
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py" . 9764)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 927)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 1876)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-Ress.el" . 3567)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-ui.el" . 4677)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 2947)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1287)
  ("c:/Users/lipe6002/.emacs.d/lisp/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-shell.el"))
  ("c:/Users/lipe6002/.emacs.d/"
@@ -94,7 +96,6 @@
  ("c:/msys64/mingw64/share/emacs/26.1/src/eval.c" . 24466)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-const.el" . 1356)
  ("c:/msys64/mingw64/share/emacs/26.1/src/emacs.c" . 75276)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 907)
  ("c:/Users/lipe6002/.emacs.d/elpa/ess-20190322.1549/ess-site.el" . 4348)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-default.el" . 975)
  ("c:/Users/lipe6002/.emacs.d/elpa/ess-20190322.1549/ess-mode.el" . 2368)
@@ -236,7 +237,6 @@
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/tooltip.el" . 10639)
  ("c:/Users/lipe6002/.emacs.d/elpa/company-20190316.101/company.el" . 10983)
  ("c:/Users/lipe6002/.emacs.d/elpa/company-20190316.101/company-dabbrev.el" . 2064)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-Ress.el" . 888)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-yasnippet.el" . 963)
  ("c:/Users/lipe6002/.emacs.d/elpa/electric-spacing-20161209.1957/electric-spacing.el" . 3965)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-maps.el" . 1457)

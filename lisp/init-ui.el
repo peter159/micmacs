@@ -136,7 +136,7 @@
    `(linum-highlight-face
      ((t (:inherit 'default :background ,(face-background 'default) :foreground ,(face-foreground 'default)))))))
 
-;; (use-package vim-empty-lines-mode
+;; (use-package vim-empty-lines-mode	;TODO cause conflict with shell mode
 ;;   :ensure t
 ;;   :hook ((eshell-mode . (lambda () (vim-empty-lines-mode -1))))
 ;;   :init

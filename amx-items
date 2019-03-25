@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ load-theme
  inferior-ess-r-mode
  tool-bar-mode
  linum-mode
  scroll-bar-mode
  menu-bar-mode
  fci-mode
- restart-emacs
 )
 
 ;; ----- amx-data -----
@@ -55,7 +55,7 @@
  (fci-mode . 25)
  (recenter . 7)
  (ess-display-help-on-object . 1)
- (load-theme . 2)
+ (load-theme . 3)
  (evil-motion-state . 19)
  (evil-mode . 7)
  (evil-leader-mode . 2)
