@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ fci-mode
+ aggressive-indent-mode
  electric-indent-mode
  restart-emacs
  recentf-open-files
  company-mode
  anaconda-mode
- load-theme
- tool-bar-mode
 )
 
 ;; ----- amx-data -----
@@ -52,7 +52,7 @@
  (eshell . 3)
  (open-mintty-terminal . 6)
  (eval-buffer . 2)
- (fci-mode . 25)
+ (fci-mode . 28)
  (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 3)
@@ -109,4 +109,7 @@
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
  (anaconda-mode . 1)
+ (ess-display-help-in-browser . 1)
+ (ess-display-package-index . 2)
+ (aggressive-indent-mode . 2)
 )

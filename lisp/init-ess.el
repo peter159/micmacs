@@ -58,6 +58,7 @@
   (define-key ess-mode-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
   (define-key ess-mode-map (kbd ".") '(lambda()(interactive)(insert ".")))
   (define-key ess-mode-map (kbd "C--") '(lambda()(interactive)(insert "-")))
+  ;; (define-key ess-mode-map (kbd "gd") 'ess-display-help-on-object)
   )
 
 (provide 'init-ess)

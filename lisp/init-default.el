@@ -62,8 +62,6 @@
 (when (boundp 'x-gtk-use-system-tooltips)
   (setq x-gtk-use-system-tooltips nil))
 
-;; (setq recenter-positions '(top middle bottom))
-
 ;; Mouse & Smooth Scroll
 ;; Scroll one line at a time (less "jumpy" than defaults)
 ;; (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
@@ -78,7 +76,7 @@
 (use-package server
   :ensure nil
   :config
-  (defun server-ensure-safe-dir (dir) "Noop" t)
+  (defun server-ensure-safe-dir (dir) "Noop" t) ;stop warning for server owner nil
   (server-start)
   :hook (after-init . server-mode))
 
