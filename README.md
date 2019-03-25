@@ -1,6 +1,6 @@
 # MICMACS
 
-MicMacs is actually a mimic of spacemacs, but simpler for management, you can copy from the following hub using git the following way, enjoy it!!
+MicMacs is trying to make a mimic of spacemacs, but simpler for management, you can copy from the following hub using git the following way, enjoy it!!
 ```bash
 git clone git@github.com:peter159/mimacs.git ~/.emacs.d
 ```
@@ -16,5 +16,5 @@ Fonts, is sometime critical for UI thing, here recommend to use `Fira Code Retin
 [µÈ¾à¸üÉ´ºÚÌå SC] https://github.com/be5invis/Sarasa-Gothic/releases #install all that with -sc-
 ```
 
-# SCREENSHOT
+# SNAPSHOT
 ![snapshot](./img/snapshot.png)

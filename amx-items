@@ -1,20 +1,20 @@
 
 ;; ----- amx-history -----
 (
- markdown-live-preview-mode
+ markdown-live-preview-switch-to-output
+ markdown-live-preview-re-export
  markdown-preview
- auto-insert
- ivy-mode
- fci-mode
- aggressive-indent-mode
- electric-indent-mode
+ markdown-preview-grip
+ markdown-live-preview-export
+ markdown-view-mode
+ markdown-live-preview-mode
 )
 
 ;; ----- amx-data -----
 (
  (restart-emacs . 53)
  (markdown-mode . 1)
- (markdown-preview . 3)
+ (markdown-preview . 12)
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
@@ -112,5 +112,10 @@
  (ess-display-help-in-browser . 1)
  (ess-display-package-index . 2)
  (aggressive-indent-mode . 2)
- (markdown-live-preview-mode . 1)
+ (markdown-live-preview-mode . 5)
+ (markdown-view-mode . 1)
+ (markdown-preview-grip . 2)
+ (markdown-live-preview-export . 1)
+ (markdown-live-preview-re-export . 1)
+ (markdown-live-preview-switch-to-output . 1)
 )
