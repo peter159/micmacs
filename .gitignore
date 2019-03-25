@@ -42,7 +42,7 @@ dist/
 flycheck_*.el
 
 # server auth directory
-/server/
+# /server/
 
 # projectiles files
 .projectile
@@ -68,7 +68,7 @@ flycheck_*.el
 # cache
 .cache*
 
-recentf
+# recentf
 history
 places
 smex-items
