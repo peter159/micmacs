@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
+ restart-emacs
+ recentf-open-files
+ company-mode
+ anaconda-mode
  load-theme
- inferior-ess-r-mode
  tool-bar-mode
  linum-mode
- scroll-bar-mode
- menu-bar-mode
- fci-mode
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 52)
+ (restart-emacs . 53)
  (markdown-mode . 1)
  (markdown-preview . 2)
  (ranger-copy . 1)
@@ -27,7 +27,7 @@
  (describe-key . 2)
  (electric-spacing-mode . 3)
  (evil-goto-definition . 2)
- (company-mode . 3)
+ (company-mode . 5)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
  (shell . 1)
@@ -37,7 +37,7 @@
  (top-level . 1)
  (swiper . 1)
  (swiper-recenter-top-bottom . 10)
- (recentf-open-files . 39)
+ (recentf-open-files . 40)
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
@@ -108,4 +108,5 @@
  (menu-bar-mode . 2)
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
+ (anaconda-mode . 1)
 )

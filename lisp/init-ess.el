@@ -29,7 +29,6 @@
 (use-package ess
   :ensure t
   :init
-  (require 'ess-site)
   (setq inferior-R-program-name "C:/Program Files/R/R-3.4.4/bin/x64/Rterm.exe")
   (setq ess-enable-smart-equal nil)
   (setq ess-ask-for-ess-directory nil)
@@ -45,6 +44,7 @@
   :hook (after-init . electric-spacing-mode)
 
   :config
+  (require 'ess-site)
   (add-hook 'ess-mode-hook #'electric-spacing-mode)
   (add-hook 'inferior-ess-mode-hook 'electric-spacing-mode)
   (add-hook 'inferior-ess-mode-hook 'electric-pair-mode)

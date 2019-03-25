@@ -109,7 +109,10 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("55ff1b187304abeb43eb61ff3151deee8d64e749c5b622981ad0f6399defce06" default))))
+    ("55ff1b187304abeb43eb61ff3151deee8d64e749c5b622981ad0f6399defce06" default)))
+ '(package-selected-packages
+   (quote
+    (ess-site yasnippet-snippets yapfify yaml-mode winum which-key virtualenvwrapper vim-empty-lines-mode unicode-fonts treemacs-projectile treemacs-evil toc-org symbol-overlay sqlup-mode sql-indent smart-semicolon shell-pop rg restart-emacs ranger rainbow-delimiters quelpa-use-package pyvenv prettify-utils prettier-js pos-tip popwin persp-mode-projectile-bridge org-preview-html org-pomodoro org-dashboard org-bullets olivetti ob-ipython multi-term magit-todos lsp-ui json-mode ivy-yasnippet ivy-xref ivy-hydra imenu-list hungry-delete hlinum highlight-indent-guides hide-mode-line gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-gutter fontify-face font-lock+ flycheck flx fill-column-indicator expand-region evil-visualstar evil-surround evil-major-leader evil-magit evil-fringe-mark evil-escape evil-commentary evil-anzu esup ess eshell-z eshell-prompt-extras esh-help elisp-refs electric-spacing electric-operator editorconfig doom-themes doom-modeline diredfl diminish diffview default-text-scale daemons counsel-tramp counsel-projectile company-lsp company-box company-anaconda centered-cursor-mode ccls carbon-now-sh browse-at-remote beacon amx all-the-icons-dired aggressive-indent))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

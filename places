@@ -1,18 +1,18 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/.emacs.d/init.el" . 1340)
+(("c:/Users/lipe6002/Downloads/tobed/Rtest/test.r" . 43)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 2823)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 1331)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1074)
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py" . 959)
  ("c:/Users/lipe6002/.emacs.d/.gitignore" . 49)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 981)
  ("c:/Users/lipe6002/.emacs.d/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/snippets"))
- ("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py" . 9781)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 1876)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-Ress.el" . 3567)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-ui.el" . 4677)
  ("c:/Users/lipe6002/.emacs.d/lisp/"
   (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-shell.el"))
  ("c:/Users/lipe6002/.emacs.d/lisp/init-general-functions.el" . 1486)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 9237)
- ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.r" . 176)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-program-basis.el" . 998)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-tool.el" . 3445)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-font.el" . 107)
