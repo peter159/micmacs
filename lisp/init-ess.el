@@ -30,13 +30,18 @@
   :ensure t
   :init
   (setq inferior-R-program-name "C:/Program Files/R/R-3.4.4/bin/x64/Rterm.exe")
-  (setq ess-enable-smart-equal nil)
-  (setq ess-ask-for-ess-directory nil)
-  (setq ess-default-style 'RStudio-)
-  (setq ess-help-own-frame nil)
-  (setq ess-help-reuse-window nil)
-  (setq ess-indent-offset 2)
-  (setq ess-offset-continued 'straight)
+  (setq ess-enable-smart-equal nil
+	ess-first-continued-statement-offset 2
+	ess-continued-statement-offset 0
+        ess-expression-offset 2
+	ess-nuke-trailing-whitespace-p t
+	ess-ask-for-ess-directory nil
+	;; ess-default-style 'default	;'Rstudio-
+	ess-default-style 'Rstudio-	;'Rstudio-
+	ess-help-own-frame nil
+	ess-help-reuse-window nil
+	ess-indent-offset 2
+	ess-offset-continued 'straight)
   
   (use-package electric-spacing
     :ensure t)

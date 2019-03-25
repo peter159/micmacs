@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ electric-indent-mode
  restart-emacs
  recentf-open-files
  company-mode
  anaconda-mode
  load-theme
  tool-bar-mode
- linum-mode
 )
 
 ;; ----- amx-data -----
@@ -31,7 +31,7 @@
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
  (shell . 1)
- (electric-indent-mode . 4)
+ (electric-indent-mode . 6)
  (eshell/clear . 3)
  (petmacs/toggle-maximize-buffer . 4)
  (top-level . 1)
