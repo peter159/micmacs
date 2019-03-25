@@ -45,6 +45,7 @@
 (setq comint-scroll-to-bottom-on-output t)
 (setq comint-move-point-for-output t)
 ;; ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+;; (setq load-prefer-newer t)
 
 (provide 'init-general-functions)
 (message "init-general-functions loaded in '%.2f seconds ...'" (get-time-diff time-marked))
