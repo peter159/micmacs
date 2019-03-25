@@ -39,6 +39,13 @@
   (setq diff (time-subtract (float-time) time-marked))
   (float-time diff))
 
+;; ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+(setq comint-prompt-read-only t)
+(setq comint-scroll-to-bottom-on-input t)
+(setq comint-scroll-to-bottom-on-output t)
+(setq comint-move-point-for-output t)
+;; ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 (provide 'init-general-functions)
 (message "init-general-functions loaded in '%.2f seconds ...'" (get-time-diff time-marked))
 ;;; init-general-functions.el ends here

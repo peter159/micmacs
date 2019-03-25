@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
+ inferior-ess-r-mode
+ tool-bar-mode
+ linum-mode
+ scroll-bar-mode
+ menu-bar-mode
  fci-mode
- recenter-top-bottom
- scroll-up-line
- scroll-down
- clear-rectangle
- vim-empty-lines-mode
- inferior-shell
+ restart-emacs
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 51)
+ (restart-emacs . 52)
  (markdown-mode . 1)
  (markdown-preview . 2)
  (ranger-copy . 1)
@@ -37,7 +37,7 @@
  (top-level . 1)
  (swiper . 1)
  (swiper-recenter-top-bottom . 10)
- (recentf-open-files . 38)
+ (recentf-open-files . 39)
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
@@ -52,7 +52,7 @@
  (eshell . 3)
  (open-mintty-terminal . 6)
  (eval-buffer . 2)
- (fci-mode . 22)
+ (fci-mode . 25)
  (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 2)
@@ -102,4 +102,10 @@
  (scroll-down . 2)
  (scroll-up-line . 1)
  (recenter-top-bottom . 1)
+ (grep . 1)
+ (linum-mode . 2)
+ (scroll-bar-mode . 2)
+ (menu-bar-mode . 2)
+ (tool-bar-mode . 6)
+ (inferior-ess-r-mode . 1)
 )

@@ -244,14 +244,20 @@ If the error list is visible, hide it.  Otherwise, show it."
     (flush-lines "^[ ]*import ipdb")
     (flush-lines "^[ ]*ipdb.set_trace()")))
 
-;; :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+;; :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 (use-package python
   :ensure nil
   :defines gud-pdb-command-name pdb-path
+  ;; :hook
+  ;; (inferior-python-mode . comint-scroll-to-bottom-on-input) ;TODO hope to scroll bottom
+  ;; (inferior-python-mode . comint-scroll-to-bottom-on-output) ;TODO hope to scroll bottom
   :config
   ;; Disable readline based native completion
-  (setq python-shell-completion-native-enable nil)
+  (setq python-shell-completion-native-enable nil
+	;; comint-scroll-to-bottom-on-input 'all ;TODO give param
+	;; comint-scroll-to-bottom-on-output 'all ;TODO give param
+	)
 
   (add-hook 'inferior-python-mode-hook
             (lambda ()
