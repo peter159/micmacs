@@ -17,4 +17,4 @@ Fonts, is sometime critical for UI thing, here recommend to use `Fira Code Retin
 ```
 
 # SCREENSHOT
-![snapshot]("./img/snapshot.png")
+![snapshot](./img/snapshot.png)
