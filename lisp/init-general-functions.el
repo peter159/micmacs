@@ -46,6 +46,9 @@
 (setq comint-move-point-for-output t)
 ;; ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ;; (setq load-prefer-newer t)
+(setq print-level 1)	 ;the following three settings said to faster the system
+(setq print-length 1)
+(setq print-circle t)
 
 (provide 'init-general-functions)
 (message "init-general-functions loaded in '%.2f seconds ...'" (get-time-diff time-marked))
