@@ -1,11 +1,280 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 71)
- ("g:/Projects/Pypkg/stocketl/crawl/aList.py" . 120)
- ("g:/Projects/Pypkg/stocketl/database/sync_db.py" . 1247)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 2954)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-shell.el" . 5570)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 1315)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-general-functions.el" . 1574)
- ("d:/msys64/mingw64/share/emacs/26.1/src/lread.c" . 151341)
+(("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 720)
+ ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 186)
+ ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_db.py" . 4792)
+ ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/test_multiprocess.py" . 67)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 2623)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 4497)
+ ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/test_multiprocess.py"))
+ ("c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/api/environment.py" . 12032)
+ ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/crawl/aList.py" . 860)
+ ("c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/api/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/api/environment.py"))
+ ("c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/api"))
+ ("c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi"))
+ ("c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg"))
+ ("c:/Users/lipe6002/.emacs.d/anaconda-mode/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/anaconda-mode/0.1.13"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-shell.el" . 5706)
+ ("c:/Users/lipe6002/.emacs.d/elpa/pyvenv-20181228.1722/pyvenv.el" . 11245)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-general-functions.el" . 1272)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 10561)
+ ("c:/Users/lipe6002/Downloads/tobed/pypkg/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl"))
+ ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-markdown.el" . 3760)
+ ("c:/Users/lipe6002/.emacs.d/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/README.md"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/markdown-toc-20170711.1949/markdown-toc-autoloads.el" . 1221)
+ ("c:/Users/lipe6002/.emacs.d/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/lisp/init-markdown.el"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-const.el" . 1030)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 1262)
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py" . 9801)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/DESCRIPTION" . 60)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/R/storemapping_core_v1.2.r" . 2214)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-program-basis.el" . 1118)
+ ("c:/Users/lipe6002/.emacs.d/elpa/fill-column-indicator-20171209.1924/fill-column-indicator.el" . 13597)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ui.el" . 4677)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-default.el" . 5698)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ivy.el" . 5318)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.r" . 230)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/Dev_storematching.R" . 242)
+ ("c:/Users/lipe6002/.emacs.d/lisp/leader-core-functions.el" . 4031)
+ ("c:/Users/lipe6002/.emacs.d/lisp/leader-key-binding.el" . 9988)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/wisdom_0.2.0.zip"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dplyr/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dplyr/R"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/bak_storeMapping/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/bak_storeMapping/FullIDMatching"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/R"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/pipmodel/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/pipmodel/R"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/stkshare/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/stkshare/R"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/NAMESPACE"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre_0.3.0.tar.gz" . 1664)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/R/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/R/storemapping_core_v1.2.r"))
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/storematching/R/create_storemapping_templates.r" . 574)
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/test.py" . 860)
+ ("c:/Users/lipe6002/.emacs.d/.gitignore" . 447)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-tool.el" . 3445)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-font.el" . 107)
+ ("c:/Users/lipe6002/Documents/PortablePrograms/emax64~/share/emacs/26.1/lisp/custom.el" . 8230)
+ ("c:/Users/lipe6002/Documents/PortablePrograms/emax64~/share/emacs/26.1/lisp/comint.el" . 10773)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/python.el" . 224053)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/comint.el" . 17126)
+ ("c:/Users/lipe6002/Documents/PortablePrograms/emax64~/share/emacs/26.1/lisp/"
+  (dired-filename . "c:/Users/lipe6002/Documents/PortablePrograms/emax64~/share/emacs/26.1/lisp/comint.el"))
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/"
+  (dired-filename . "c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/python.el"))
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/window.el" . 360630)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/window.c" . 192982)
+ ("c:/Users/lipe6002/.emacs.d/elpa/shell-pop-20170304.1416/shell-pop.el" . 7135)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/callint.c" . 8944)
+ ("c:/Users/lipe6002/.emacs.d/elpa/eshell-z-20170117.438/eshell-z.el" . 15074)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/init-eshell.el" . 659)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/fileio.c" . 1017)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/"
+  (dired-filename . "c:/msys64/mingw64/share/emacs/26.1/src/fileio.c"))
+ ("c:/msys64/mingw64/share/emacs/26.1/src/fns.c" . 36452)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/simple.el" . 172088)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/compile.el" . 36)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/subr.el" . 130498)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/buffer.c" . 11564)
+ ("c:/Users/lipe6002/.emacs.d/recentf" . 10643)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/env.el" . 7871)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/files.el" . 44189)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/loaddefs.el" . 1062061)
+ ("c:/Users/lipe6002/addPatt.R" . 144)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/cedet/semantic.el" . 45633)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/callproc.c" . 48777)
+ ("c:/Users/lipe6002/"
+  (dired-filename . "c:/Users/lipe6002/addPatt.R"))
+ ("c:/Users/lipe6002/Music/"
+  (dired-filename . "c:/Users/lipe6002/Music/desktop.ini"))
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/pytest/pycook/chapter1.py"))
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/pycookbook/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/pytest/pycook/pycookbook/somefile.txt"))
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/pycook/pycookbook/somefile.txt" . 300)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/dired-x.el" . 1729)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/dired-aux.el" . 1301)
  ("c:/Users/"
-  (dired-filename . "c:/Users/lipe6002")))
+  (dired-filename . "c:/Users/lipe6002"))
+ ("c:/Users/lipe6002/.emacs.d/server/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/server/server"))
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code"))
+ ("c:/Users/lipe6002/.spyder/"
+  (dired-filename . "c:/Users/lipe6002/.spyder/.ropeproject"))
+ ("c:/Users/lipe6002/.smartpls3/"
+  (dired-filename . "c:/Users/lipe6002/.smartpls3/.metadata"))
+ ("c:/Users/lipe6002/.ssh/"
+  (dired-filename . "c:/Users/lipe6002/.ssh/adlm"))
+ ("c:/Users/lipe6002/.vscode-kanban/" . 49)
+ ("c:/Users/lipe6002/Anaconda3/"
+  (dired-filename . "c:/Users/lipe6002/Anaconda3/DLLs"))
+ ("c:/Users/lipe6002/.tooling/"
+  (dired-filename . "c:/Users/lipe6002/.tooling/gradle"))
+ ("c:/msys64/mingw64/bin/"
+  (dired-filename . "c:/msys64/mingw64/bin/libtool"))
+ ("c:/msys64/mingw64/"
+  (dired-filename . "c:/msys64/mingw64/bin"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-elisp.el" . 1334)
+ ("c:/Users/lipe6002/.emacs.d/elpa/ranger-20170817.1557/ranger.el" . 93848)
+ ("c:/Users/lipe6002/.emacs.d/elpa/diredfl-20180211.214/diredfl.el" . 1359)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/eval.c" . 24466)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/emacs.c" . 75276)
+ ("c:/Users/lipe6002/.emacs.d/elpa/ess-20190322.1549/ess-site.el" . 4348)
+ ("c:/Users/lipe6002/.emacs.d/elpa/ess-20190322.1549/ess-mode.el" . 2368)
+ ("c:/Users/lipe6002/.emacs.d/elpa/ess-20190322.1549/ess.el" . 1852)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-company.el" . 2461)
+ ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box-doc.el" . 5764)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-evil.el" . 4965)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-fringe-mark-20180728.647/evil-fringe-mark.el" . 18933)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-escape-20180910.1234/evil-escape.el" . 4600)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-surround-20181218.1957/evil-surround.el" . 4786)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-major-leader-20190223.2107/evil-major-leader-autoloads.el" . 679)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-major-leader-20190223.2107/evil-major-leader-pkg.el" . 318)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-major-leader-20190223.2107/evil-major-leader.el" . 3197)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-major-leader-20190223.2107/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/evil-major-leader-20190223.2107/evil-major-leader.el"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/doom-modeline-20190316.1701/doom-modeline-core.el" . 3913)
+ ("c:/Users/lipe6002/.emacs.d/elpa/doom-themes-20190313.2220/doom-themes.el" . 8266)
+ ("c:/Users/lipe6002/.emacs.d/elpa/vim-empty-lines-mode-20150111.426/vim-empty-lines-mode.el" . 7492)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/faces.el" . 70600)
+ ("c:/Users/lipe6002/.emacs.d/elpa/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/git-timemachine-20190314.1153"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/font-lock+-20180102.339/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/font-lock+-20180102.339/font-lock+-pkg.el"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/font-utils-20150806.1751/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/font-utils-20150806.1751/font-utils-autoloads.el"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/git-commit-20190102.107/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/git-commit-20190102.107/git-commit-pkg.el"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/git-timemachine-20190314.1153/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/git-timemachine-20190314.1153/git-timemachine-autoloads.el"))
+ ("c:/msys64/mingw64/share/emacs/26.1/src/keyboard.c" . 345950)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/international/mule-cmds.el" . 14940)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/xdisp.c" . 1030178)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/data.c" . 12334)
+ ("c:/Users/lipe6002/.emacs.d/elpa/centered-cursor-mode-20190306.1006/centered-cursor-mode.el" . 9629)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/w32fns.c" . 266552)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/frame.el" . 99111)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/frame.c" . 99245)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/startup.el" . 13491)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-package-management.el" . 880)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/recentf.el" . 50447)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/subword.el" . 4605)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/vc/ediff.el" . 9107)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/dispnew.c" . 190621)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/saveplace.el" . 1021)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/autorevert.el" . 4022)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/alloc.c" . 206114)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/keymap.c" . 31168)
+ ("c:/Users/lipe6002/.emacs.d/elpa/bind-key-20180513.430/bind-key.el" . 5081)
+ ("c:/Users/lipe6002/.emacs.d/elpa/use-package-20181119.2350/use-package-core.el" . 56502)
+ ("c:/Users/lipe6002/.emacs.d~~/init.el" . 1511)
+ ("c:/msys64/mingw64/share/emacs/26.1/src/lread.c" . 30083)
+ ("c:/Users/lipe6002/.emacs.d~~/core/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d~~/core/core-custom-settings.el"))
+ ("c:/Users/lipe6002/.emacs.d~~/core/core-configuration-layer.el" . 126660)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/"
+  (dired-filename . "c:/msys64/mingw64/share/emacs/26.1/lisp/startup.el"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 97639)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/emacs-lisp/nadvice.el" . 19111)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/emacs-lisp/package.el" . 62802)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/minibuffer.el" . 42965)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r" . 510)
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/tpyspk.py" . 5)
+ ("c:/Users/lipe6002/.emacs.d/elpa/anaconda-mode-20190111.1524/anaconda-mode.el" . 21548)
+ ("c:/Users/lipe6002/Anaconda3/Lib/collections/__init__.py" . 11339)
+ ("c:/Users/lipe6002/Downloads/tobed/pytest/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/pytest/test.py"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/Rtest/test2.r"))
+ ("c:/Users/lipe6002/Downloads/tobed/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/pytest"))
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ibuffer.el" . 2342)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-states.el" . 1582)
+ ("c:/Users/lipe6002/.emacs.d/elpa/ace-window-20190219.947/ace-window.el" . 30305)
+ ("c:/Users/lipe6002/.emacs.d/elpa/yasnippet-snippets-20190316.1019/snippets/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/yasnippet-snippets-20190316.1019/snippets/antlr-mode"))
+ ("c:/Users/lipe6002/.emacs.d/elpa/yasnippet-snippets-20190316.1019/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/elpa/yasnippet-snippets-20190316.1019/yasnippet-snippets-autoloads.el"))
+ ("c:/msys64/mingw64/share/emacs/26.1/src/editfns.c" . 80339)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-leader-20140606.1243/evil-leader.el" . 6158)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-macros.el" . 5694)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-vars.el" . 28590)
+ ("c:/Users/lipe6002/.emacs.d/elpa/rainbow-delimiters-20170929.1132/rainbow-delimiters.el" . 3517)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-highlight.el" . 3523)
+ ("c:/Users/lipe6002/.emacs.d~~/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d~~/init.el"))
+ ("c:/msys64/mingw64/share/emacs/26.1/src/process.c" . 228206)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/shell.el" . 28235)
+ ("c:/Users/lipe6002/.spacemacs.d/lisp/init-function.el" . 1012)
+ ("c:/Users/lipe6002/.spacemacs.d/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.spacemacs.d/lisp/init-function.el"))
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/eshell/esh-mode.el" . 23186)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/emacs-lisp/byte-run.el" . 9541)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/eshell/em-alias.el" . 6031)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/eshell/em-prompt.el" . 1674)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/emacs-lisp/cl-macs.el" . 30726)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/eshell/eshell.el" . 9478)
+ ("c:/Users/lipe6002/.emacs.d/elpa/beacon-20190104.1931/beacon.el" . 819)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-misc.el" . 82)
+ ("c:/msys64/InstallationLog.txt" . 72)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/leader-keybindings.el" . 5175)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/ref/lisp/leader-keybindings.el"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/tensorflow_regression/RegForest.r" . 525)
+ ("c:/Users/lipe6002/.emacs.d/elpa/company-box-20190311.1745/company-box.el" . 8176)
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el" . 3535)
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-code/pretty-code.el"))
+ ("c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/"
+  (dired-filename . "c:/Users/lipe6002/.emacs.d/site-lisp/pretty-fonts/pretty-fonts.el"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/2019Season1Launch/bos-download/PySpark/code/" . 111)
+ ("c:/Users/lipe6002/.emacs.d/elpa/all-the-icons-20190313.1420/all-the-icons.el" . 24993)
+ ("c:/Users/lipe6002/.emacs.d/ref/lisp/init-company.el" . 1386)
+ ("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-mode.el" . 19907)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/test.py" . 121)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/elec-pair.el" . 24622)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/R/ggplot_vars_eda.r" . 597)
+ ("c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/R/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/RpackageDev/Rpkg/dapre/R/ggplot_vars_eda.r"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/timeseries/fullcode.R" . 1773)
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/timeseries/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/tobed/Rtest/timeseries/fullcode.R"))
+ ("c:/Users/lipe6002/Downloads/tobed/Rtest/call_py.py" . 40)
+ ("c:/Users/lipe6002/Downloads/test/test-anaconda.py" . 116)
+ ("c:/Users/lipe6002/Anaconda3/Lib/site-packages/sklearn/ensemble/forest.py" . 29856)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/elisp-mode.el" . 1520)
+ ("c:/Users/lipe6002/.emacs.d/elpa/company-20190316.101/company-capf.el" . 1351)
+ ("c:/msys64/mingw64/share/emacs/26.1/lisp/tooltip.el" . 10639)
+ ("c:/Users/lipe6002/.emacs.d/elpa/company-20190316.101/company.el" . 10983)
+ ("c:/Users/lipe6002/.emacs.d/elpa/company-20190316.101/company-dabbrev.el" . 2064)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-yasnippet.el" . 963)
+ ("c:/Users/lipe6002/.emacs.d/elpa/electric-spacing-20161209.1957/electric-spacing.el" . 3965)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-maps.el" . 1457)
+ ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-common.el" . 10368)
+ ("c:/Users/lipe6002/.emacs.d/auto-save-list/" . 170)
+ ("c:/Users/lipe6002/.emacs.d/elpa/treemacs-20190315.1117/treemacs-autoloads.el" . 9894)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-treemacs.el" . 4325)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-c-c++.el" . 955)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-org.el" . 3489)
+ ("c:/Users/lipe6002/Downloads/test/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/test/text.py"))
+ ("c:/Users/lipe6002/Downloads/"
+  (dired-filename . "c:/Users/lipe6002/Downloads/test")))

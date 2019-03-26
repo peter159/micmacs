@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- markdown-live-preview-switch-to-output
- markdown-live-preview-re-export
- markdown-preview
- markdown-preview-grip
- markdown-live-preview-export
- markdown-view-mode
- markdown-live-preview-mode
+ restart-emacs
+ doom-modeline-mode
+ anaconda-mode-find-definitions
+ anaconda-mode-show-doc
+ evil-goto-definition
+ tags-reset-tags-tables
+ recentf-open-files
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 53)
+ (restart-emacs . 55)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -26,7 +26,7 @@
  (show-all . 2)
  (describe-key . 2)
  (electric-spacing-mode . 3)
- (evil-goto-definition . 2)
+ (evil-goto-definition . 5)
  (company-mode . 5)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
@@ -62,7 +62,7 @@
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
  (ibuffer-mode . 2)
- (doom-modeline-mode . 2)
+ (doom-modeline-mode . 4)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
  (other-window . 1)
@@ -114,8 +114,13 @@
  (aggressive-indent-mode . 2)
  (markdown-live-preview-mode . 5)
  (markdown-view-mode . 1)
- (markdown-preview-grip . 2)
+ (markdown-preview-grip . 6)
  (markdown-live-preview-export . 1)
  (markdown-live-preview-re-export . 1)
  (markdown-live-preview-switch-to-output . 1)
+ (magit-push . 1)
+ (tags-reset-tags-tables . 1)
+ (anaconda-mode-find-definitions . 3)
+ (anaconda-mode-show-doc . 1)
+ (ranger-mark . 1)
 )
