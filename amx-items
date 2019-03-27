@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ profiler-report
+ profiler-start
+ indent-region
  restart-emacs
  doom-modeline-mode
  anaconda-mode-find-definitions
  anaconda-mode-show-doc
- evil-goto-definition
- tags-reset-tags-tables
- recentf-open-files
 )
 
 ;; ----- amx-data -----
@@ -123,4 +123,7 @@
  (anaconda-mode-find-definitions . 3)
  (anaconda-mode-show-doc . 1)
  (ranger-mark . 1)
+ (indent-region . 1)
+ (profiler-start . 2)
+ (profiler-report . 1)
 )

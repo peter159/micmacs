@@ -60,6 +60,9 @@
   "Display startup echo area message."
   (message "Initialized in %s" (emacs-init-time)))
 
+;; (profiler-cpu-start)
+;; (profiler-memory-start)
+
 ;; requre features from lisp
 
 (require 'init-general-functions)
