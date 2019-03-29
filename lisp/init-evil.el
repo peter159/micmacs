@@ -81,7 +81,10 @@
       (evil-visual-restore))
     ;; Overload shifts so that they don't lose the selection
     (define-key evil-visual-state-map (kbd "<") 'petmacs//evil-visual-shift-left)
-    (define-key evil-visual-state-map (kbd ">") 'petmacs//evil-visual-shift-right)))
+    (define-key evil-visual-state-map (kbd ">") 'petmacs//evil-visual-shift-right)
+    (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
+    (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
+    (define-key evil-insert-state-map (kbd "C-d") 'delete-char)))
 
 ;; use 'fd' to escape nearly everything from evil-mode
 (use-package evil-escape
