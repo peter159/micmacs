@@ -1,9 +1,10 @@
 ;;; -*- coding: utf-8 -*-
 (("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 186)
- ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_update_concept.py" . 2000)
+ ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_update_holder.py" . 526)
+ ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1058)
  ("c:/Users/lipe6002/.emacs.d/init.el" . 2414)
+ ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_update_concept.py" . 2000)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-evil.el" . 2597)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1231)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 6306)
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/crawl/concept.py" . 1840)
  ("c:/Users/lipe6002/.emacs.d/elpa/yapfify-20180830.733/yapfify.el" . 3679)
