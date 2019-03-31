@@ -84,6 +84,10 @@
     (define-key evil-visual-state-map (kbd ">") 'petmacs//evil-visual-shift-right)
     (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
     (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
+    (define-key evil-normal-state-map (kbd "C-a") 'move-beginning-of-line)
+    (define-key evil-normal-state-map (kbd "C-e") 'move-end-of-line) 
+    (define-key evil-insert-state-map (kbd "C-k") 'kill-line)
+    (define-key evil-insert-state-map (kbd "C-y") 'yank)
     (define-key evil-insert-state-map (kbd "C-d") 'delete-char)))
 
 ;; use 'fd' to escape nearly everything from evil-mode

@@ -297,6 +297,8 @@ If the error list is visible, hide it.  Otherwise, show it."
 
 (use-package virtualenvwrapper :ensure t)
 
+;; TODO need docstring
+
 (provide 'init-python)
 (message "init-python loaded in '%.2f' seconds ..." (get-time-diff time-marked))
 ;;; init-python.el ends here

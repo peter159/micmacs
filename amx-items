@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ replace-string
  yapf-mode
  previous-line
  profiler-start
  indent-region
  restart-emacs
  doom-modeline-mode
- anaconda-mode-find-definitions
 )
 
 ;; ----- amx-data -----
@@ -128,4 +128,5 @@
  (profiler-report . 1)
  (yapf-mode . 3)
  (previous-line . 2)
+ (replace-string . 1)
 )

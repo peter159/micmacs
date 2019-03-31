@@ -145,8 +145,9 @@
   (progn
     ;; (shell-command "c:/msys64/usr/bin/mintty --window=max /bin/env MSYSTEM=MINGW64 /bin/bash --login -i &")
     ;; (w32-shell-execute "runas" "d:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 DISABLE_AWESOME_FONT=1 /bin/bash --login -i")
-    (w32-shell-execute "runas" "c:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 /bin/bash --login -i")
-    ;; (w32-shell-execute "runas" "d:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 /bin/bash --login -i") ;home computer
+    (condition-case nil
+	(w32-shell-execute "runas" "c:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 /bin/bash --login -i")
+      (error (w32-shell-execute "runas" "d:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 /bin/bash --login -i"))) ;eval either is ture
     ;; (w32-send-sys-command)
     (delete-window)))
 
