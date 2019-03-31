@@ -1,9 +1,20 @@
 ;;; -*- coding: utf-8 -*-
 (("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 71)
- ("g:/Projects/Pypkg/stocketl/crawl/dividends_shares.py" . 150)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 922)
+ ("g:/Projects/Pypkg/stocketl/database/"
+  (dired-filename . "g:/Projects/Pypkg/stocketl/database/mysql_obj.py"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 2763)
+ ("g:/Projects/Pypkg/stocketl/crawl/pre_announce.py" . 1440)
+ ("g:/Projects/Pypkg/stocketl/crawl/dividends_shares.py" . 928)
+ ("g:/Projects/Pypkg/stocketl/database/sync_update_pre_announcement.py" . 2714)
+ ("g:/Projects/Pypkg/stocketl/database/sync_update_dividends_shares.py" . 2797)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 1601)
+ ("g:/Projects/Pypkg/stocketl/database/create_db.py" . 4307)
+ ("g:/Projects/Pypkg/stocketl/crawl/__init__.py" . 480)
  ("g:/Projects/Pypkg/stocketl/crawl/"
   (dired-filename . "g:/Projects/Pypkg/stocketl/crawl/dividends_shares.py"))
+ ("g:/Projects/Pypkg/stocketl/"
+  (dired-filename . "g:/Projects/Pypkg/stocketl/database"))
+ ("g:/Projects/Pypkg/stocketl/crawl/coreFinance.py" . 3960)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/site-lisp"))
  ("c:/Users/peter.linyi/AppData/Roaming/"
@@ -12,9 +23,6 @@
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/ranger-20170817.1557/ranger.el"))
  ("g:/Projects/Pypkg/"
   (dired-filename . "g:/Projects/Pypkg/stocketl"))
- ("g:/Projects/Pypkg/stocketl/database/sync_update_pre_announcement.py" . 3073)
- ("g:/Projects/Pypkg/stocketl/"
-  (dired-filename . "g:/Projects/Pypkg/stocketl/crawl"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/ref/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/ref/img"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/"
@@ -25,9 +33,6 @@
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/site-lisp/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/site-lisp/pretty-code"))
  ("g:/Projects/Pypkg/stocketl/crawl/__pycache__/" . 51)
- ("g:/Projects/Pypkg/stocketl/crawl/pre_announce.py" . 476)
- ("g:/Projects/Pypkg/stocketl/crawl/coreFinance.py" . 88)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 2763)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-flycheck.el" . 1449)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/ranger-20170817.1557/ranger.el" . 95824)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/leader-key-binding.el" . 1735)
@@ -36,12 +41,10 @@
  ("g:/Projects/Pypkg/stocketl/crawl/holder.py" . 602)
  ("g:/Projects/Pypkg/stocketl/crawl/concept.py" . 1484)
  ("g:/Projects/Pypkg/stocketl/crawl/aList.py" . 688)
- ("g:/Projects/Pypkg/stocketl/database/create_db.py" . 2640)
  ("g:/Projects/Pypkg/stocketl/database/sync_update_list_finance.py" . 3435)
  ("g:/Projects/Pypkg/stocketl/utils.py" . 61)
  ("g:/Projects/Pypkg/stocketl/database/sync_update_holder.py" . 1065)
  ("g:/Projects/Pypkg/stocketl/database/sync_update_concept.py" . 1880)
- ("g:/Projects/Pypkg/stocketl/crawl/__init__.py" . 280)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-python.el" . 10086)
  ("g:/Projects/Pypkg/stocketl/crawl/Holder.py" . 66)
  ("g:/Projects/Pypkg/stocketl/database/config.py" . 85)

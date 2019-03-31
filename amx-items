@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- flymake-mode
  quit-window
+ flycheck-next-error
+ flycheck-previous-error
+ flycheck-buffer
+ flycheck-info
+ flymake-mode
  kill-buffer
- replace-string
- yapf-mode
- previous-line
- profiler-start
 )
 
 ;; ----- amx-data -----
@@ -129,6 +129,10 @@
  (yapf-mode . 3)
  (previous-line . 2)
  (replace-string . 1)
- (quit-window . 2)
+ (quit-window . 5)
  (flymake-mode . 1)
+ (flycheck-info . 1)
+ (flycheck-buffer . 1)
+ (flycheck-next-error . 15)
+ (flycheck-previous-error . 1)
 )
