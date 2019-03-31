@@ -131,7 +131,8 @@
   :config
   (define-key ranger-mode-map (kbd "-") 'ranger-up-directory)
   (define-key ranger-mode-map (kbd "+") 'dired-create-directory)
-  (define-key ranger-mode-map (kbd "m") 'ranger-mark))
+  (define-key ranger-mode-map (kbd "m") 'ranger-mark)
+  (define-key ranger-mode-map (kbd "q") 'quit-window))
 
 (provide 'init-dired)
 (message "init-dired loaded in '%.2f' seconds" (get-time-diff time-marked))
