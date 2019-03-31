@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ flymake-mode
+ quit-window
+ kill-buffer
  replace-string
  yapf-mode
  previous-line
  profiler-start
- indent-region
- restart-emacs
- doom-modeline-mode
 )
 
 ;; ----- amx-data -----
@@ -44,7 +44,7 @@
  (electric-operator-mode . 3)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 29)
- (kill-buffer . 1)
+ (kill-buffer . 2)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
  (petmacs/pop-eshell . 3)
@@ -129,4 +129,6 @@
  (yapf-mode . 3)
  (previous-line . 2)
  (replace-string . 1)
+ (quit-window . 2)
+ (flymake-mode . 1)
 )
