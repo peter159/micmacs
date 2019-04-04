@@ -1,7 +1,7 @@
 
 ;; ----- amx-history -----
 (
- ranger-travel
+ dired-find-file
  sh-mode
  replace-string
  quit-window
@@ -71,7 +71,7 @@
  (petmacs/python-execute-file . 3)
  (forward-list . 1)
  (xref-find-references . 1)
- (dired-find-file . 2)
+ (dired-find-file . 3)
  (undo-tree-redo . 1)
  (rg . 1)
  (ess-mode . 6)

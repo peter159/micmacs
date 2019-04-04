@@ -37,7 +37,6 @@
 	ess-nuke-trailing-whitespace-p t
 	ess-ask-for-ess-directory nil
 	ess-default-style 'default	;'Rstudio-
-	;; ess-default-style 'Rstudio-	;'Rstudio-
 	ess-help-own-frame nil
 	ess-help-reuse-window nil
 	ess-indent-offset 2
@@ -57,8 +56,8 @@
   (add-hook 'ess-r-package-mode-hook 'electric-pair-mode)
   (define-key ess-mode-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
   (define-key ess-mode-map (kbd ".") '(lambda()(interactive)(insert ".")))
+  (define-key inferior-ess-mode-map (kbd ".") '(lambda()(interactive)(insert ".")))
   (define-key ess-mode-map (kbd "C--") '(lambda()(interactive)(insert "-")))
-  ;; (define-key ess-mode-map (kbd "gd") 'ess-display-help-on-object)
   )
 
 (provide 'init-ess)

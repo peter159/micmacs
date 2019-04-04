@@ -1,7 +1,12 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 186)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 2872)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 2042)
+(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 346)
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.r" . 217)
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.r"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/fmcg/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/fmcg/part-00000-f4488023-6aa0-450a-aea3-523bd565045c-c000.csv"))
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 2849)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 894)
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/mapshow/" . 51)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 2504)
  ("c:/Users/lipe6002/.emacs.d/lisp/"
