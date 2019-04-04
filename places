@@ -1,12 +1,12 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 346)
- ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.r" . 217)
+(("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1182)
+ ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 346)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 2873)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 2083)
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.r" . 4)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 1762)
  ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/"
   (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.r"))
- ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/fmcg/"
-  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/fmcg/part-00000-f4488023-6aa0-450a-aea3-523bd565045c-c000.csv"))
- ("c:/Users/lipe6002/.emacs.d/init.el" . 2849)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 894)
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/mapshow/" . 51)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 2504)
  ("c:/Users/lipe6002/.emacs.d/lisp/"
@@ -20,7 +20,6 @@
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_update_list.py" . 971)
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_update_concept.py" . 1922)
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_update_holder.py" . 1502)
- ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 899)
  ("c:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/python.el" . 48539)
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_update_list_finance.py" . 3985)
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/crawl/holder.py" . 1143)
@@ -28,7 +27,6 @@
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/config.py" . 85)
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/"
   (dired-filename . "c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/database/sync_update_list_finance.py"))
- ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 8393)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-treemacs.el" . 2497)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-evil.el" . 2597)
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 6306)

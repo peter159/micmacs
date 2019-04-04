@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ package-list-packages
  dired-find-file
  sh-mode
  replace-string
  quit-window
  flycheck-next-error
  flycheck-previous-error
- flycheck-buffer
 )
 
 ;; ----- amx-data -----
@@ -22,7 +22,7 @@
  (auto-insert . 6)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
- (package-list-packages . 2)
+ (package-list-packages . 3)
  (show-all . 2)
  (describe-key . 2)
  (electric-spacing-mode . 3)
