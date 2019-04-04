@@ -29,15 +29,15 @@
 (use-package ess
   :ensure t
   :init
-  (setq inferior-R-program-name "C:/Program Files/R/R-3.4.4/bin/x64/Rterm.exe")
+  (setq inferior-ess-r-program "C:/Program Files/R/R-3.4.4/bin/x64/Rterm.exe") ;inferior-R-program-name
   (setq ess-enable-smart-equal nil
 	ess-first-continued-statement-offset 2
 	ess-continued-statement-offset 0
         ess-expression-offset 2
 	ess-nuke-trailing-whitespace-p t
 	ess-ask-for-ess-directory nil
-	;; ess-default-style 'default	;'Rstudio-
-	ess-default-style 'Rstudio-	;'Rstudio-
+	ess-default-style 'default	;'Rstudio-
+	;; ess-default-style 'Rstudio-	;'Rstudio-
 	ess-help-own-frame nil
 	ess-help-reuse-window nil
 	ess-indent-offset 2

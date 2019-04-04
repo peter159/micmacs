@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ ranger-travel
  sh-mode
  replace-string
  quit-window
  flycheck-next-error
  flycheck-previous-error
  flycheck-buffer
- flycheck-info
 )
 
 ;; ----- amx-data -----
@@ -80,7 +80,7 @@
  (dired-upcase . 1)
  (dired-do-copy . 1)
  (dired-do-load . 1)
- (ranger-travel . 2)
+ (ranger-travel . 4)
  (hydra-dired-quick-sort/body . 1)
  (dired-create-directory . 1)
  (ranger-mode . 2)
