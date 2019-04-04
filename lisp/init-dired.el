@@ -64,6 +64,7 @@
   (evil-define-key 'normal dired-mode-map (kbd "RET") 'dired-find-alternate-file) 
   ;; was dired-advertised-find-file
   (evil-define-key 'normal dired-mode-map (kbd "f") 'dired-find-alternate-file) 
+  (evil-define-key 'normal dired-mode-map (kbd "F") 'ranger-travel) 
   ;; was dired-up-director
   (evil-define-key 'normal dired-mode-map (kbd "^") 'petmacs/dired-goto-parent-directory)  
   ;; kill current buffer when leaving dired mode
@@ -132,7 +133,8 @@
   (define-key ranger-mode-map (kbd "-") 'ranger-up-directory)
   (define-key ranger-mode-map (kbd "+") 'dired-create-directory)
   (define-key ranger-mode-map (kbd "m") 'ranger-mark)
-  (define-key ranger-mode-map (kbd "q") 'quit-window))
+  (define-key ranger-mode-map (kbd "q") 'quit-window)
+  (define-key ranger-mode-map (kbd "f") 'ranger-travel))
 
 (provide 'init-dired)
 (message "init-dired loaded in '%.2f' seconds" (get-time-diff time-marked))

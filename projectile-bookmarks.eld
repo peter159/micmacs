@@ -1,1 +1,1 @@
-("~/.emacs.d/" "g:/Projects/Pypkg/stocketl/" "d:/Anaconda3/Lib/site-packages/sklearn/ensemble/" "d:/Anaconda3/Lib/site-packages/numpy/" "~/.emacs.d~~/" "~/.spacemacs.d/")
+("~/.emacs.d/" "~/Downloads/tobed/pypkg/stocketl/" "~/.emacs.d~~/" "~/.spacemacs.d/")
