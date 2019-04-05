@@ -46,8 +46,11 @@
 	 ;; ("C-/" . company-search-candidates)
 	 ;; ("C-M-/" . company-filter-candidates)
 	 ("C-d" . company-show-doc-buffer))
-  :hook (after-init . global-company-mode)
+  :hook
+  (after-init . global-company-mode)
+  (after-init . company-statistics-mode)
   :config
+  (use-package company-statistics :ensure t)
   (setq company-tooltip-align-annotations nil ; when t, aligns annotation to the right
 	company-tooltip-limit 12	      ; bigger popup window
 	company-idle-delay .1		      ; decrease delay before autocompletion popup shows

@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Downloads/tobed/pypkg/stocketl/" "~/.emacs.d~~/" "~/.spacemacs.d/")
+("g:/Projects/Pypkg/stocketl/" "~/.emacs.d/" "~/.emacs.d~~/" "~/.spacemacs.d/")
