@@ -1,1 +1,1 @@
-("g:/Projects/Pypkg/stocketl/" "~/.emacs.d/" "~/.emacs.d~~/" "~/.spacemacs.d/")
+("~/.emacs.d/" "~/.emacs.d~~/" "~/.spacemacs.d/")

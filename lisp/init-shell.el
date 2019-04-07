@@ -149,7 +149,8 @@
 	(w32-shell-execute "runas" "c:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 /bin/bash --login -i")
       (error (w32-shell-execute "runas" "d:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 /bin/bash --login -i"))) ;eval either is ture
     ;; (w32-send-sys-command)
-    (delete-window)))
+    ;; (delete-window)
+    ))
 
 ;; (define-key emacs-lisp-mode-map (kbd "C-S-c") 'open-mintty-terminal)
 (define-key global-map (kbd "C-S-c") 'open-mintty-terminal)
