@@ -1,12 +1,31 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 346)
- ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.r" . 37)
- ("c:/Users/lipe6002/.emacs.d/init.el" . 3096)
+(("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc/Mars/test_alg/recommendation/preprocess.py" . 1313)
+ ("c:/Users/lipe6002/.emacs.d/.cache/treemacs-persist" . 486)
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc/Mars/test_alg/reco.py" . 1254)
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.py" . 227)
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc/Mars/test_alg/" . 100)
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.py"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc/Mars"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc/Mars/"
+  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc/Mars/test_alg"))
+ ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.r" . 960)
+ ("c:/Users/lipe6002/.emacs.d/init.el" . 3022)
+ ("c:/Users/lipe6002/.emacs.d/lisp/init-shell.el" . 5903)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-ess.el" . 1709)
  ("c:/Users/lipe6002/.emacs.d/persp-confs/persp-auto-save" . 1182)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-python.el" . 1762)
- ("c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/"
-  (dired-filename . "c:/Users/lipe6002/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/NationalLaunch201806/Modeling/Calibration/fmcg_73_to_66/check_fmcg.r"))
  ("c:/Users/lipe6002/Downloads/tobed/Rtest/mapshow/" . 51)
  ("c:/Users/lipe6002/.emacs.d/lisp/init-dired.el" . 2504)
  ("c:/Users/lipe6002/.emacs.d/lisp/"
@@ -32,6 +51,5 @@
  ("c:/Users/lipe6002/.emacs.d/elpa/evil-20190222.1212/evil-commands.el" . 6306)
  ("c:/Users/lipe6002/Downloads/tobed/pypkg/stocketl/crawl/concept.py" . 1840)
  ("c:/Users/lipe6002/.emacs.d/elpa/yapfify-20180830.733/yapfify.el" . 3679)
- ("c:/Users/lipe6002/.emacs.d/lisp/init-shell.el" . 5860)
  ("c:/Users/"
   (dired-filename . "c:/Users/lipe6002")))
