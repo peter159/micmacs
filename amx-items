@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- ranger-travel
- package-list-packages
- dired-find-file
- sh-mode
  replace-string
- quit-window
- flycheck-next-error
+ emmet-mode
+ web-mode
+ package-install
+ package-refresh-contents
+ auto-insert
+ ivy-mode
 )
 
 ;; ----- amx-data -----
@@ -18,8 +18,8 @@
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 6)
- (auto-insert . 6)
+ (ivy-mode . 7)
+ (auto-insert . 7)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 3)
@@ -27,7 +27,7 @@
  (describe-key . 2)
  (electric-spacing-mode . 3)
  (evil-goto-definition . 5)
- (company-mode . 5)
+ (company-mode . 8)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
  (shell . 1)
@@ -52,7 +52,7 @@
  (eshell . 3)
  (open-mintty-terminal . 6)
  (eval-buffer . 2)
- (fci-mode . 31)
+ (fci-mode . 33)
  (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 3)
@@ -75,7 +75,7 @@
  (undo-tree-redo . 1)
  (rg . 1)
  (ess-mode . 6)
- (package-refresh-contents . 1)
+ (package-refresh-contents . 2)
  (dired-tree-up . 2)
  (dired-upcase . 1)
  (dired-do-copy . 1)
@@ -108,7 +108,7 @@
  (menu-bar-mode . 2)
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
- (anaconda-mode . 1)
+ (anaconda-mode . 4)
  (ess-display-help-in-browser . 1)
  (ess-display-package-index . 2)
  (aggressive-indent-mode . 2)
@@ -128,7 +128,7 @@
  (profiler-report . 1)
  (yapf-mode . 3)
  (previous-line . 2)
- (replace-string . 2)
+ (replace-string . 5)
  (quit-window . 5)
  (flymake-mode . 1)
  (flycheck-info . 1)
@@ -136,4 +136,9 @@
  (flycheck-next-error . 15)
  (flycheck-previous-error . 1)
  (sh-mode . 1)
+ (ruler-mode . 2)
+ (anaconda-mode-complete . 3)
+ (package-install . 2)
+ (web-mode . 1)
+ (emmet-mode . 1)
 )

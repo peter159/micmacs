@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Documents/Nielsen_Jobs_2018/DataMining/CRMap/Source/Intelligeo/intelligeo-distributed-model/" "~/Documents/Nielsen_Jobs_2018/DataMining/CRMap/ModelingWork/AdHoc/Mars/test_alg/recommendation/" "~/Downloads/tobed/pypkg/stocketl/" "~/.emacs.d~~/" "~/.spacemacs.d/")
+("~/.emacs.d/" "g:/Projects/Pypkg/stocketl/" "g:/Projects/Pypkg/stockintel2/" "f:/pytest/RetailAssortment/assortment_optimization/" "f:/pytest/recommendationSystem/recommendation/" "~/.emacs.d~~/" "~/.spacemacs.d/")

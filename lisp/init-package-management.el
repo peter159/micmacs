@@ -31,6 +31,10 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+;; set for package refresh
+(unless package-archive-contents
+  (package-refresh-contents))
+
 ;; should set before loading `use-package'
 (eval-and-compile
   ;; (setq use-package-always-ensure t)
