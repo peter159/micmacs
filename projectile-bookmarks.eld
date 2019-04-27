@@ -1,1 +1,1 @@
-("~/.emacs.d/" "g:/Projects/Pypkg/stocketl/" "g:/Projects/Pypkg/stockintel2/" "f:/pytest/RetailAssortment/assortment_optimization/" "f:/pytest/recommendationSystem/recommendation/" "~/.emacs.d~~/" "~/.spacemacs.d/")
+("~/.emacs.d/" "g:/Projects/Rpkg/" "g:/Projects/Pypkg/stocketl/" "g:/Projects/Pypkg/stockintel2/" "d:/Anaconda3/Lib/site-packages/numpy/lib/" "f:/pytest/RetailAssortment/assortment_optimization/" "f:/pytest/recommendationSystem/recommendation/" "~/.emacs.d~~/" "~/.spacemacs.d/")

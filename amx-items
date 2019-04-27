@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
+ restart-emacs
+ shell-command
  replace-string
- emmet-mode
- web-mode
- package-install
- package-refresh-contents
- auto-insert
- ivy-mode
+ kill-buffer
+ evil-leader/set-key
+ recentf-open-files
+ fci-mode
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 55)
+ (restart-emacs . 56)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -44,7 +44,7 @@
  (electric-operator-mode . 3)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 29)
- (kill-buffer . 2)
+ (kill-buffer . 3)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
  (petmacs/pop-eshell . 3)
@@ -103,7 +103,7 @@
  (scroll-up-line . 1)
  (recenter-top-bottom . 1)
  (grep . 1)
- (linum-mode . 2)
+ (linum-mode . 3)
  (scroll-bar-mode . 2)
  (menu-bar-mode . 2)
  (tool-bar-mode . 6)
@@ -126,9 +126,9 @@
  (indent-region . 1)
  (profiler-start . 2)
  (profiler-report . 1)
- (yapf-mode . 3)
+ (yapf-mode . 4)
  (previous-line . 2)
- (replace-string . 5)
+ (replace-string . 13)
  (quit-window . 5)
  (flymake-mode . 1)
  (flycheck-info . 1)
@@ -141,4 +141,13 @@
  (package-install . 2)
  (web-mode . 1)
  (emmet-mode . 1)
+ (deer . 1)
+ (yapfify-buffer . 1)
+ (yapfify-region . 2)
+ (ess-r-fix-T-F . 1)
+ (evil-leader/set-key . 1)
+ (shell-command . 1)
+ (hs-toggle-hiding . 2)
+ (hs-hide-all . 2)
+ (hs-show-block . 1)
 )
