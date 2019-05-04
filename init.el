@@ -88,7 +88,7 @@
 
 (require 'init-program-basis)
 (require 'init-flycheck)
-;; (require 'init-lsp)
+(require 'init-lsp)
 ;; (require 'init-eglot)
 (require 'init-elisp)
 (require 'init-c-c++)

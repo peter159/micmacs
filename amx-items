@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- eglot
- lsp-mode-menu
+ flycheck-next-error
+ electric-spacing-mode
+ electric-operator-mode
  lsp
  xref-find-definitions
- xref-find-references
- xref-goto-xref
- restart-emacs
+ lsp-ui-peek-find-definitions
+ lsp-ui-mode
 )
 
 ;; ----- amx-data -----
@@ -25,7 +25,7 @@
  (package-list-packages . 5)
  (show-all . 2)
  (describe-key . 2)
- (electric-spacing-mode . 3)
+ (electric-spacing-mode . 4)
  (evil-goto-definition . 5)
  (company-mode . 8)
  (company-quickhelp-mode . 4)
@@ -41,7 +41,7 @@
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
- (electric-operator-mode . 3)
+ (electric-operator-mode . 4)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 29)
  (kill-buffer . 3)
@@ -70,7 +70,7 @@
  (anaconda-mode-find-references . 2)
  (petmacs/python-execute-file . 3)
  (forward-list . 1)
- (xref-find-references . 12)
+ (xref-find-references . 13)
  (dired-find-file . 3)
  (undo-tree-redo . 1)
  (rg . 1)
@@ -133,7 +133,7 @@
  (flymake-mode . 1)
  (flycheck-info . 1)
  (flycheck-buffer . 1)
- (flycheck-next-error . 15)
+ (flycheck-next-error . 20)
  (flycheck-previous-error . 1)
  (sh-mode . 1)
  (ruler-mode . 2)
@@ -154,13 +154,13 @@
  (smart-semicolon-mode . 2)
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 2)
- (lsp-ui-mode . 3)
+ (lsp-ui-mode . 4)
  (lsp-ui-doc-show . 5)
  (evil-move . 1)
  (lsp-find-definition . 20)
  (lsp-mode . 6)
  (lsp-lens-mode . 1)
- (lsp . 40)
+ (lsp . 44)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -169,20 +169,21 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 2)
+ (lsp-ui-peek-find-definitions . 3)
  (lsp-restart-workspace . 1)
  (lsp-ui-peek-mode . 1)
  (eglot . 7)
  (eglot-reconnect . 1)
  (eglot-rename . 4)
  (eglot-help-at-point . 2)
- (xref-find-definitions . 32)
+ (xref-find-definitions . 34)
  (insert-buffer . 1)
  (eglot-format . 1)
  (eglot-clear-status . 1)
  (eglot-code-actions . 1)
- (eglot-format-buffer . 1)
+ (eglot-format-buffer . 2)
  (eglot-signal-didChangeConfiguration . 1)
- (xref-goto-xref . 1)
+ (xref-goto-xref . 2)
  (lsp-mode-menu . 1)
+ (xref-show-location-at-point . 1)
 )

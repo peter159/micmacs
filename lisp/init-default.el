@@ -30,8 +30,8 @@
   (require 'init-const))
 
 ;; ;; use UTF-8 as default encoding
-;; (set-language-environment "UTF-8")
-;; (set-default-coding-systems 'utf-8)
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
 
 ;; (fset 'yes-or-no-p 'y-or-n-p)
 ;; (setq inhibit-startup-screen t)

@@ -49,7 +49,7 @@
   	  (append '("compile_commands.json"
   		    ".ccls")
   		  projectile-project-root-files-top-down-recurring)))
-  (define-key c++-mode-map [remap evil-goto-definition] #'xref-find-definitions)
+  (define-key c++-mode-map [remap evil-goto-definition] 'xref-find-definitions)
   (define-key c++-mode-map (kbd "C-h") 'eglot-help-at-point)
   )
 
