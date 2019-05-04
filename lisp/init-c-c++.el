@@ -31,8 +31,9 @@
   :defines projectile-project-root-files-top-down-recurring
   :hook ((c-mode c++-mode objc-mode cuda-mode) . (lambda ()
                                                    (require 'ccls)
-                                                   ;; (lsp)
-						   (eglot-ensure))) ;lsp not working, use eglot temporary
+                                                   (lsp)
+						   (eglot-ensure) ;lsp not working, use eglot temporary
+						   )) 
   :init
   (setq ccls-executable (file-truename "d:/ccls/Release/ccls"))
   (setq ccls-initialization-options
@@ -44,6 +45,7 @@
   (setq ccls-sem-highlight-method 'font-lock)
 
   :config
+  (add-hook 'eglot--managed-mode-hook (lambda() (flymake-mode -1)))
   (with-eval-after-load 'projectile
     (setq projectile-project-root-files-top-down-recurring
   	  (append '("compile_commands.json"

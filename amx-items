@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- flycheck-next-error
- electric-spacing-mode
- electric-operator-mode
+ flymake-mode
+ eglot-format-buffer
+ eglot
+ company-mode
  lsp
- xref-find-definitions
- lsp-ui-peek-find-definitions
- lsp-ui-mode
+ switch-to-buffer
+ flycheck-next-error
 )
 
 ;; ----- amx-data -----
@@ -27,7 +27,7 @@
  (describe-key . 2)
  (electric-spacing-mode . 4)
  (evil-goto-definition . 5)
- (company-mode . 8)
+ (company-mode . 12)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
  (shell . 1)
@@ -130,10 +130,10 @@
  (previous-line . 2)
  (replace-string . 13)
  (quit-window . 5)
- (flymake-mode . 1)
+ (flymake-mode . 4)
  (flycheck-info . 1)
  (flycheck-buffer . 1)
- (flycheck-next-error . 20)
+ (flycheck-next-error . 21)
  (flycheck-previous-error . 1)
  (sh-mode . 1)
  (ruler-mode . 2)
@@ -160,7 +160,7 @@
  (lsp-find-definition . 20)
  (lsp-mode . 6)
  (lsp-lens-mode . 1)
- (lsp . 44)
+ (lsp . 45)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -172,18 +172,21 @@
  (lsp-ui-peek-find-definitions . 3)
  (lsp-restart-workspace . 1)
  (lsp-ui-peek-mode . 1)
- (eglot . 7)
- (eglot-reconnect . 1)
- (eglot-rename . 4)
+ (eglot . 8)
+ (eglot-reconnect . 3)
+ (eglot-rename . 6)
  (eglot-help-at-point . 2)
  (xref-find-definitions . 34)
  (insert-buffer . 1)
  (eglot-format . 1)
  (eglot-clear-status . 1)
  (eglot-code-actions . 1)
- (eglot-format-buffer . 2)
+ (eglot-format-buffer . 18)
  (eglot-signal-didChangeConfiguration . 1)
  (xref-goto-xref . 2)
  (lsp-mode-menu . 1)
  (xref-show-location-at-point . 1)
+ (flycheck-mode . 1)
+ (flymake-goto-diagnostic . 1)
+ (switch-to-buffer . 1)
 )
