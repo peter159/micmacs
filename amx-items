@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ eglot
+ lsp-mode-menu
+ lsp
+ xref-find-definitions
+ xref-find-references
+ xref-goto-xref
  restart-emacs
- shell-command
- replace-string
- kill-buffer
- evil-leader/set-key
- recentf-open-files
- fci-mode
 )
 
 ;; ----- amx-data -----
@@ -18,11 +18,11 @@
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 7)
- (auto-insert . 7)
+ (ivy-mode . 8)
+ (auto-insert . 9)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
- (package-list-packages . 3)
+ (package-list-packages . 5)
  (show-all . 2)
  (describe-key . 2)
  (electric-spacing-mode . 3)
@@ -70,12 +70,12 @@
  (anaconda-mode-find-references . 2)
  (petmacs/python-execute-file . 3)
  (forward-list . 1)
- (xref-find-references . 1)
+ (xref-find-references . 12)
  (dired-find-file . 3)
  (undo-tree-redo . 1)
  (rg . 1)
  (ess-mode . 6)
- (package-refresh-contents . 2)
+ (package-refresh-contents . 6)
  (dired-tree-up . 2)
  (dired-upcase . 1)
  (dired-do-copy . 1)
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 2)
  (anaconda-mode-complete . 3)
- (package-install . 2)
+ (package-install . 4)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -150,4 +150,39 @@
  (hs-toggle-hiding . 2)
  (hs-hide-all . 2)
  (hs-show-block . 1)
+ (lsp-find-type-definition . 5)
+ (smart-semicolon-mode . 2)
+ (ccls-tree-next-line . 4)
+ (ccls-member-hierarchy . 2)
+ (lsp-ui-mode . 3)
+ (lsp-ui-doc-show . 5)
+ (evil-move . 1)
+ (lsp-find-definition . 20)
+ (lsp-mode . 6)
+ (lsp-lens-mode . 1)
+ (lsp . 40)
+ (company-lsp . 1)
+ (ccls-reload . 2)
+ (ccls-tree-mode . 3)
+ (ccls-tree-quit . 1)
+ (ccls-tree-press . 1)
+ (ccls-tree-yank-path . 1)
+ (ccls-clear-code-lens . 1)
+ (ccls-tree-press-and-horizontal-split . 1)
+ (lsp-ui-peek-find-definitions . 2)
+ (lsp-restart-workspace . 1)
+ (lsp-ui-peek-mode . 1)
+ (eglot . 7)
+ (eglot-reconnect . 1)
+ (eglot-rename . 4)
+ (eglot-help-at-point . 2)
+ (xref-find-definitions . 32)
+ (insert-buffer . 1)
+ (eglot-format . 1)
+ (eglot-clear-status . 1)
+ (eglot-code-actions . 1)
+ (eglot-format-buffer . 1)
+ (eglot-signal-didChangeConfiguration . 1)
+ (xref-goto-xref . 1)
+ (lsp-mode-menu . 1)
 )

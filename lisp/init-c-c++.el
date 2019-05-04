@@ -30,10 +30,11 @@
   :ensure t
   :defines projectile-project-root-files-top-down-recurring
   :hook ((c-mode c++-mode objc-mode cuda-mode) . (lambda ()
-                                                  (require 'ccls)
-                                                  (lsp)))
+                                                   (require 'ccls)
+                                                   ;; (lsp)
+						   (eglot-ensure))) ;lsp not working, use eglot temporary
   :init
-  (setq ccls-executable (file-truename "~/ccls/Release/ccls"))
+  (setq ccls-executable (file-truename "d:/ccls/Release/ccls"))
   (setq ccls-initialization-options
   	(if (boundp 'ccls-initialization-options)
   	    (append ccls-initialization-options `(:cache (:directory ,(expand-file-name "~/.ccls-cache"))))
@@ -47,7 +48,10 @@
     (setq projectile-project-root-files-top-down-recurring
   	  (append '("compile_commands.json"
   		    ".ccls")
-  		  projectile-project-root-files-top-down-recurring))))
+  		  projectile-project-root-files-top-down-recurring)))
+  (define-key c++-mode-map [remap evil-goto-definition] #'xref-find-definitions)
+  (define-key c++-mode-map (kbd "C-h") 'eglot-help-at-point)
+  )
 
 (use-package smart-semicolon
   :ensure t
