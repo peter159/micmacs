@@ -1,1 +1,1 @@
-("~/.emacs.d/" "f:/cpp_proj/udacity/first_week/" "f:/cpp_proj/udacity/" "g:/Projects/Pypkg/data_preparation/" "g:/Projects/Pypkg/stockintel2/" "f:/cpp_proj/" "g:/Projects/Pypkg/stocketl/" "g:/Projects/Rpkg/" "d:/Anaconda3/Lib/site-packages/numpy/lib/" "f:/pytest/RetailAssortment/assortment_optimization/" "f:/pytest/recommendationSystem/recommendation/" "~/.emacs.d~~/" "~/.spacemacs.d/")
+("~/.emacs.d/" "~/.emacs.d~~/" "~/.spacemacs.d/")

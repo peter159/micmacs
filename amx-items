@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ vinegar/up-directory
+ dired-jump
+ describe-key
+ quit-windows-on
+ kill-buffer
+ find-alternate-file
  flymake-mode
- eglot-format-buffer
- eglot
- company-mode
- lsp
- switch-to-buffer
- flycheck-next-error
 )
 
 ;; ----- amx-data -----
@@ -24,7 +24,7 @@
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 5)
  (show-all . 2)
- (describe-key . 2)
+ (describe-key . 3)
  (electric-spacing-mode . 4)
  (evil-goto-definition . 5)
  (company-mode . 12)
@@ -44,7 +44,7 @@
  (electric-operator-mode . 4)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 29)
- (kill-buffer . 3)
+ (kill-buffer . 4)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
  (petmacs/pop-eshell . 3)
@@ -189,4 +189,8 @@
  (flycheck-mode . 1)
  (flymake-goto-diagnostic . 1)
  (switch-to-buffer . 1)
+ (find-alternate-file . 1)
+ (quit-windows-on . 1)
+ (vinegar/up-directory . 9)
+ (dired-jump . 1)
 )
