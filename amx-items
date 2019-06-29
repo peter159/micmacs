@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- vinegar/up-directory
- dired-jump
- describe-key
- quit-windows-on
- kill-buffer
- find-alternate-file
+ scroll-up
+ replace-string
+ ruler-mode
+ ranger-mode
+ eglot
  flymake-mode
+ restart-emacs
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 56)
+ (restart-emacs . 57)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -83,7 +83,7 @@
  (ranger-travel . 5)
  (hydra-dired-quick-sort/body . 1)
  (dired-create-directory . 1)
- (ranger-mode . 2)
+ (ranger-mode . 4)
  (ranger-to-dired . 1)
  (complete-symbol . 1)
  (delete-directory . 2)
@@ -91,7 +91,7 @@
  (petmacs/python-start-or-switch-repl . 1)
  (petmacs/pyvenv-activate . 3)
  (petmacs/pyvenv-workon . 3)
- (scroll-up . 1)
+ (scroll-up . 2)
  (move-beginning-of-line . 1)
  (move-end-of-line . 1)
  (move-past-close-and-reindent . 1)
@@ -128,15 +128,15 @@
  (profiler-report . 1)
  (yapf-mode . 4)
  (previous-line . 2)
- (replace-string . 13)
+ (replace-string . 14)
  (quit-window . 5)
- (flymake-mode . 4)
+ (flymake-mode . 8)
  (flycheck-info . 1)
  (flycheck-buffer . 1)
  (flycheck-next-error . 21)
  (flycheck-previous-error . 1)
  (sh-mode . 1)
- (ruler-mode . 2)
+ (ruler-mode . 4)
  (anaconda-mode-complete . 3)
  (package-install . 4)
  (web-mode . 1)
@@ -172,8 +172,8 @@
  (lsp-ui-peek-find-definitions . 3)
  (lsp-restart-workspace . 1)
  (lsp-ui-peek-mode . 1)
- (eglot . 8)
- (eglot-reconnect . 3)
+ (eglot . 12)
+ (eglot-reconnect . 4)
  (eglot-rename . 6)
  (eglot-help-at-point . 2)
  (xref-find-definitions . 34)
@@ -181,7 +181,7 @@
  (eglot-format . 1)
  (eglot-clear-status . 1)
  (eglot-code-actions . 1)
- (eglot-format-buffer . 18)
+ (eglot-format-buffer . 24)
  (eglot-signal-didChangeConfiguration . 1)
  (xref-goto-xref . 2)
  (lsp-mode-menu . 1)

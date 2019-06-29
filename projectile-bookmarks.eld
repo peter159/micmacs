@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/.emacs.d~~/" "~/.spacemacs.d/")
+("~/.emacs.d/" "f:/deeplearning/captcha_break/" "g:/Projects/Pypkg/data_preparation/" "d:/Anaconda3/envs/ml/Lib/site-packages/numpy/" "f:/cpp_proj/udacity/first_week/" "~/.emacs.d~~/" "~/.spacemacs.d/")

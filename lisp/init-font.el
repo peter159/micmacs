@@ -31,9 +31,10 @@
 
 ;; fix the delay when showing text in chinese
 (dolist (charset '(kana han cjk-misc bopomofo))
-  (set-fontset-font (frame-parameter nil 'font) charset
-                    ;; (font-spec :family "Microsoft Yahei" :size 12))
-		    (font-spec :family "等距更纱黑体 SC" :size 14))
+  (if (display-graphic-p)		;to avoid error 'fontset tty' in linux shell environment
+      (set-fontset-font (frame-parameter nil 'font) charset
+			;; (font-spec :family "Microsoft Yahei" :size 12))
+			(font-spec :family "等距更纱黑体 SC" :size 14)))
   )
 
 (use-package fontify-face :ensure t)
