@@ -29,7 +29,8 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (global-linum-mode -1)
-(scroll-bar-mode -1)
+(if (fboundp 'scroll-bar-mode)
+    (scroll-bar-mode -1))
 (electric-pair-mode 1)
 (setq-default make-backup-files nil)
 

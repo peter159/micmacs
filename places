@@ -1,5 +1,6 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 597)
+(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 721)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 597)
  ("f:/deeplearning/test/autoencoder.py" . 159)
  ("f:/deeplearning/learn_keras/vgg.py" . 943)
  ("f:/deeplearning/learn_keras/vgg16.py" . 391)
@@ -41,7 +42,6 @@
  ("g:/Projects/Pypkg/data_preparation/release_inputs/__init__.py" . 70)
  ("d:/Anaconda3/envs/ml/Lib/site-packages/"
   (dired-filename . "d:/Anaconda3/envs/ml/Lib/site-packages/featexp"))
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 1124)
  ("f:/Kaggle/HomeCredit/"
   (dired-filename . "f:/Kaggle/HomeCredit/sol1"))
  ("f:/cpp_proj/udacity/first_week/enum.cpp" . 370)

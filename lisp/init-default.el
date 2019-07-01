@@ -77,7 +77,9 @@
 (use-package server
   :ensure nil
   :config
-  (defun server-ensure-safe-dir (dir) "Noop" t) ;stop warning for server owner nil
+  (when (eq system-type 'windows-nt)
+    (defun server-ensure-safe-dir (dir) "Noop" t) ;stop warning for server owner nil
+    )
   (server-start)
   :hook (after-init . server-mode))
 
