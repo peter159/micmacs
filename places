@@ -1,7 +1,69 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 721)
+(("d:/msys64/mingw64/bin/"
+  (dired-filename . "d:/msys64/mingw64/bin/gspawn-win64-helper-console.exe"))
+ ("f:/JavaTest/day01/HelloWorld.java" . 42)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-java.el" . 920)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 1006)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 2871)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/lsp-java-20190726.817/lsp-java.el" . 1018)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-lsp.el" . 1215)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 597)
- ("f:/deeplearning/test/autoencoder.py" . 159)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/lsp-java-20190726.817/lsp-java-autoloads.el" . 1087)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/request-20190727.1416/request-autoloads.el" . 404)
+ ("f:/JavaTest/day01/"
+  (dired-filename . "f:/JavaTest/day01/HelloWorld.java"))
+ ("f:/JavaTest/"
+  (dired-filename . "f:/JavaTest/day01"))
+ ("e:/PersonalProjects/NikeSegmentation(201906)/segmentation/0726/cluser.r" . 53)
+ ("f:/deeplearning/test/autoencoder.py" . 67)
+ ("f:/JavaTest/day01/helloworld.java" . 171)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-c-c++.el" . 2203)
+ ("f:/"
+  (dired-filename . "f:/JavaTest"))
+ ("f:/deeplearning/"
+  (dired-filename . "f:/deeplearning/test"))
+ ("f:/deeplearning/test/"
+  (dired-filename . "f:/deeplearning/test/keras_api.py"))
+ ("e:/PersonalProjects/NikeSegmentation(201906)/segmentation/0726/"
+  (dired-filename . "e:/PersonalProjects/NikeSegmentation(201906)/segmentation/0726/Segmentation Model 0724.xlsx"))
+ ("e:/PersonalProjects/NikeSegmentation(201906)/segmentation/"
+  (dired-filename . "e:/PersonalProjects/NikeSegmentation(201906)/segmentation/0726"))
+ ("d:/Anaconda3/Lib/site-packages/tensorflow/__init__.py" . 199)
+ ("f:/deeplearning/captcha_break/cnn_cpu.py" . 1642)
+ ("f:/deeplearning/captcha_break/captcha_tf2.py" . 1714)
+ ("d:/Anaconda3/envs/tf2b/Lib/site-packages/tensorflow/python/keras/utils/data_utils.py" . 11095)
+ ("f:/deeplearning/test/keras_api.py" . 1502)
+ ("f:/deeplearning/test/auto_encoder_tf2a.py" . 1927)
+ ("f:/deeplearning/test/test_api.py" . 107)
+ ("f:/deeplearning/test/test_tf2b.py" . 706)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/parso-0.3.1-py3.7.egg/parso/python/tree.py" . 2182)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/evaluate/base_context.py" . 324)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/evaluate/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/evaluate/base_context.py"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi/evaluate"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg/jedi"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.13.3-py3.7.egg"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/parso-0.3.1-py3.7.egg/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/parso-0.3.1-py3.7.egg/parso"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/parso-0.3.1-py3.7.egg/parso/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/parso-0.3.1-py3.7.egg/parso/python"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/parso-0.3.1-py3.7.egg/parso/python/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/parso-0.3.1-py3.7.egg/parso/python/grammar33.txt"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode"))
+ ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/layers/core.py" . 31421)
+ ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/__init__.py" . 17756)
+ ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/"
+  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/__init__.py"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-ui.el" . 1025)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-const.el" . 1461)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-dired.el" . 1988)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-default.el" . 2356)
  ("f:/deeplearning/learn_keras/vgg.py" . 943)
  ("f:/deeplearning/learn_keras/vgg16.py" . 391)
  ("f:/deeplearning/learn_keras/vgg.png" . 7)
@@ -17,7 +79,6 @@
  ("f:/deeplearning/learn_keras/api_model.py" . 222)
  ("f:/deeplearning/learn_keras/news_models.py" . 267)
  ("f:/deeplearning/learn_keras/simple_sequential.py" . 48)
- ("f:/deeplearning/captcha_break/cnn_cpu.py" . 2242)
  ("d:/Anaconda3/envs/deep/Lib/site-packages/keras/layers/core.py" . 28567)
  ("d:/Anaconda3/envs/deep/Lib/site-packages/keras/layers/"
   (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/keras/layers/cudnn_recurrent.py"))
@@ -48,10 +109,6 @@
  ("f:/cpp_proj/udacity/first_week/board.csv" . 66)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-flycheck.el"))
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 2459)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-dired.el" . 5403)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
-  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp"))
  ("d:/msys64/mingw64/share/emacs/26.1/lisp/dired-x.el" . 17993)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/leader-key-binding.el" . 3094)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/use-package-20181119.2350/use-package-core.el" . 57370)
@@ -73,7 +130,6 @@
  ("f:/cpp_proj/udacity/second_week/Asearch.cpp" . 3867)
  ("f:/cpp_proj/udacity/test/begin_end.cpp" . 182)
  ("f:/cpp_proj/udacity/second_week/Asearch_from_start.cpp" . 2865)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-c-c++.el" . 1077)
  ("d:/msys64/mingw64/include/c++/8.3.0/bits/basic_string.h" . 16227)
  ("f:/cpp_proj/udacity/first_week/final_work.cpp" . 245)
  ("d:/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h" . 9761)
@@ -102,9 +158,7 @@
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-flycheck.el" . 1612)
  ("f:/cpp_proj/udacity/first_week/formating_printed_board.cpp" . 910)
  ("d:/msys64/mingw64/include/c++/8.3.0/iostream" . 2114)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-ui.el" . 4156)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-package-management.el" . 835)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-default.el" . 933)
  ("f:/cpp_proj/udacity/first_week/test.cpp" . 259)
  ("f:/cpp_proj/udacity/first_week/parse_line_from_file.cpp" . 425)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-project.el" . 876)
@@ -114,7 +168,6 @@
  ("f:/cpp_proj/udacity/first_week/exercise_enum.cpp" . 416)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/projectile-20190126.1117/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/projectile-20190126.1117/projectile-pkg.el"))
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-lsp.el" . 1002)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/lsp-mode-20190430.1952/lsp-mode.el" . 217978)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/eglot-20190430.935/eglot.el" . 33424)
  ("d:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/cc-mode.el" . 76964)

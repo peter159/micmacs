@@ -1,12 +1,12 @@
 
 ;; ----- amx-history -----
 (
- scroll-up
- replace-string
- ruler-mode
- ranger-mode
- eglot
- flymake-mode
+ java-mode
+ lsp-java-update-server
+ petmacs/mvn-clean-compile
+ package-install
+ package-refresh-contents
+ auto-insert
  restart-emacs
 )
 
@@ -18,8 +18,8 @@
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 8)
- (auto-insert . 9)
+ (ivy-mode . 9)
+ (auto-insert . 10)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 5)
@@ -75,7 +75,7 @@
  (undo-tree-redo . 1)
  (rg . 1)
  (ess-mode . 6)
- (package-refresh-contents . 6)
+ (package-refresh-contents . 7)
  (dired-tree-up . 2)
  (dired-upcase . 1)
  (dired-do-copy . 1)
@@ -83,7 +83,7 @@
  (ranger-travel . 5)
  (hydra-dired-quick-sort/body . 1)
  (dired-create-directory . 1)
- (ranger-mode . 4)
+ (ranger-mode . 5)
  (ranger-to-dired . 1)
  (complete-symbol . 1)
  (delete-directory . 2)
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 4)
+ (package-install . 6)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -158,7 +158,7 @@
  (lsp-ui-doc-show . 5)
  (evil-move . 1)
  (lsp-find-definition . 20)
- (lsp-mode . 6)
+ (lsp-mode . 7)
  (lsp-lens-mode . 1)
  (lsp . 45)
  (company-lsp . 1)
@@ -193,4 +193,10 @@
  (quit-windows-on . 1)
  (vinegar/up-directory . 9)
  (dired-jump . 1)
+ (emacs-lisp-mode . 2)
+ (sql-product-interactive . 1)
+ (petmacs/mvn-clean-compile . 2)
+ (java-mode . 5)
+ (lsp-java-build-project . 1)
+ (lsp-java-update-server . 2)
 )
