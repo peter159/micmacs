@@ -2,12 +2,12 @@
 ;; ----- amx-history -----
 (
  java-mode
- lsp-java-update-server
  petmacs/mvn-clean-compile
  package-install
  package-refresh-contents
  auto-insert
  restart-emacs
+ lsp
 )
 
 ;; ----- amx-data -----
