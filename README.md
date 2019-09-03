@@ -14,7 +14,7 @@ Fonts, is sometimes critical for UI thing, here recommend to use `Fira Code Reti
 ```bash
 [Fira Code Retina-%S](https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip)
 [Fira Code Symbols](https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip)
-[µÈ¾à¸üÉ´ºÚÌå SC](https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.7.2/sarasa-gothic-ttf-0.7.2.7z) #install all that with -sc-
+[Sarasa-Gothic](https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.7.2/sarasa-gothic-ttf-0.7.2.7z) #install all that with -sc-
 ```
 
 # SNAPSHOT
