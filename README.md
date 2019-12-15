@@ -1,6 +1,34 @@
 # MICMACS
 
-MicMacs is trying to make a mimic of spacemacs, but simpler for management, you can copy from the following hub using git the following way, enjoy it!!
+---
+
+## Prerequisites
+MicMacs requires fonts for better display
+
+- Fonts
+  - [Fira Code](https://github.com/tonsky/FiraCode)
+  - [Fira Code Symbol](https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip)
+  - [all the icons](https://github.com/domtronn/all-the-icons.el/tree/master/fonts)  
+
+- global tools
+  - [ripgrep](https://github.com/BurntSushi/ripgrep) in your $PATH
+- Python related Packages
+```sh
+pip install pylint yapf isort
+```
+
+- C/C++ packages
+  - build [ccls](https://github.com/MaskRay/ccls) language server at $HOME path
+
+- nodejs packages
+```sh
+npm install -g eslint_d prettier markdownlint-cli vmd
+```
+
+use mirror if you have timeout error.
+
+## Install
+MicMacs is trying to mimic and simplify spacemacs, and simpler for management, you can copy from the following hub using git the following way, enjoy it!!
 ```bash
 git clone git@github.com:peter159/mimacs.git ~/.emacs.d
 ```
@@ -17,5 +45,5 @@ Fonts, is sometimes critical for UI thing, here recommend to use `Fira Code Reti
 [Sarasa-Gothic](https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.7.2/sarasa-gothic-ttf-0.7.2.7z) #install all that with -sc-
 ```
 
-# SNAPSHOT
+## SNAPSHOT
 ![snapshot](./img/snapshot.png)
