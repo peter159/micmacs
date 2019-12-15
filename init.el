@@ -29,8 +29,10 @@
 
 ;; use mirror
 (setq-default package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-				 ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-				 ("melpa-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa-stable/")))
+				 ;; ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+				 ;; ("melpa-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa-stable/")
+				 ("melpa" . "http://elpa.emacs-china.org/melpa/")
+				 ("melpa-stable" . "http://elpa.emacs-china.org/melpa-stable/")))
 
 ;; Load path
 ;; Optimize: Force "lisp"" and "site-lisp" at the head to reduce the startup time.
@@ -95,7 +97,7 @@
 (require 'init-java)
 (require 'init-python)
 (require 'init-ess)
-;; (require 'init-org)
+(require 'init-org)
 (require 'init-html)
 (require 'init-markdown)
 (require 'init-json)

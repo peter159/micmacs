@@ -38,8 +38,9 @@
   (require 'org)
   (setq org-directory "~/org"
         org-default-notes-file (expand-file-name "notes.org" org-directory)
-        org-todo-keywords '((sequence "TODO(T)" "DOING(I)" "HANGUP(H)" "|" "DONE(D)" "CANCEL(C)")
-                            (sequence "⚑(t)" "🏴(i)" "❓(h)" "|" "✔(d)" "✘(c)"))
+        ;; org-todo-keywords '((sequence "TODO(T)" "DOING(I)" "HANGUP(H)" "|" "DONE(D)" "CANCEL(C)")
+        ;;                     (sequence "⚑(t)" "🏴(i)" "❓(h)" "|" "✔(d)" "✘(c)")) ;TODO font not showing correctly
+	org-todo-keywords '((sequence "TODO(t)" "DOING(I)" "HANGUP(H)" "|" "DONE(D)" "CANCEL(C)"))
         org-todo-keyword-faces '(("HANGUP" . warning)
                                  ("❓" . warning))
         org-pretty-entities t

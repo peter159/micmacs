@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ menu-bar-mode
+ all-the-icons-install-fonts
+ replace-string
+ package-reinstall
+ fci-mode
+ format-find-file
  java-mode
- petmacs/mvn-clean-compile
- package-install
- package-refresh-contents
- auto-insert
- restart-emacs
- lsp
 )
 
 ;; ----- amx-data -----
@@ -52,7 +52,7 @@
  (eshell . 3)
  (open-mintty-terminal . 6)
  (eval-buffer . 2)
- (fci-mode . 33)
+ (fci-mode . 38)
  (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 3)
@@ -105,7 +105,7 @@
  (grep . 1)
  (linum-mode . 3)
  (scroll-bar-mode . 2)
- (menu-bar-mode . 2)
+ (menu-bar-mode . 5)
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
  (anaconda-mode . 4)
@@ -128,7 +128,7 @@
  (profiler-report . 1)
  (yapf-mode . 4)
  (previous-line . 2)
- (replace-string . 14)
+ (replace-string . 16)
  (quit-window . 5)
  (flymake-mode . 8)
  (flycheck-info . 1)
@@ -196,7 +196,10 @@
  (emacs-lisp-mode . 2)
  (sql-product-interactive . 1)
  (petmacs/mvn-clean-compile . 2)
- (java-mode . 5)
+ (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
+ (package-reinstall . 3)
+ (format-find-file . 1)
+ (all-the-icons-install-fonts . 1)
 )
