@@ -1,32 +1,32 @@
 
 ;; ----- amx-history -----
 (
- package-reinstall
- package-menu-execute
- package-menu-mark-upgrades
- package-list-packages
- package-refresh-contents
- kill-buffer
- list-packages
+ anaconda-mode-find-definitions
+ evil-goto-definition
+ restart-emacs
+ anaconda-mode
+ lsp
+ recentf-open-files
+ fci-mode
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 57)
+ (restart-emacs . 63)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 11)
- (auto-insert . 12)
+ (ivy-mode . 13)
+ (auto-insert . 13)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 6)
  (show-all . 2)
  (describe-key . 3)
  (electric-spacing-mode . 4)
- (evil-goto-definition . 5)
+ (evil-goto-definition . 6)
  (company-mode . 12)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
@@ -108,7 +108,7 @@
  (menu-bar-mode . 7)
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
- (anaconda-mode . 5)
+ (anaconda-mode . 7)
  (ess-display-help-in-browser . 1)
  (ess-display-package-index . 2)
  (aggressive-indent-mode . 2)
@@ -120,7 +120,7 @@
  (markdown-live-preview-switch-to-output . 1)
  (magit-push . 1)
  (tags-reset-tags-tables . 1)
- (anaconda-mode-find-definitions . 3)
+ (anaconda-mode-find-definitions . 5)
  (anaconda-mode-show-doc . 1)
  (ranger-mark . 1)
  (indent-region . 1)
@@ -142,7 +142,7 @@
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
- (yapfify-buffer . 1)
+ (yapfify-buffer . 2)
  (yapfify-region . 2)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
@@ -150,14 +150,14 @@
  (hs-toggle-hiding . 2)
  (hs-hide-all . 2)
  (hs-show-block . 1)
- (lsp-find-type-definition . 5)
+ (lsp-find-type-definition . 6)
  (smart-semicolon-mode . 2)
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 2)
  (lsp-ui-mode . 4)
  (lsp-ui-doc-show . 5)
  (evil-move . 1)
- (lsp-find-definition . 20)
+ (lsp-find-definition . 25)
  (lsp-mode . 7)
  (lsp-lens-mode . 1)
  (lsp . 45)
@@ -169,7 +169,7 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 3)
+ (lsp-ui-peek-find-definitions . 4)
  (lsp-restart-workspace . 1)
  (lsp-ui-peek-mode . 1)
  (eglot . 12)
@@ -212,4 +212,6 @@
  (list-packages . 1)
  (package-menu-mark-upgrades . 1)
  (package-menu-execute . 1)
+ (lsp-format-buffer . 1)
+ (lsp-format-region . 1)
 )

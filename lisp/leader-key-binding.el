@@ -269,6 +269,52 @@
 (petmacs//set-key-prefix-name "h" "help")
 (petmacs//set-key-prefix-name "v" "virtualenv")
 
+;; ;;; lsp major mode settings
+;; (dolist (mode petmacs-lsp-active-modes)
+;;   (evil-leader/set-key-for-mode mode
+;;     ;; format
+;;     "m=b" #'lsp-format-buffer
+;;     "m=r" #'lsp-format-region
+;;     ;; goto
+;;     "mgr" #'lsp-find-references
+;;     "mgt" #'lsp-find-type-definition
+;;     "mgd" #'xref-find-definitions
+;;     "mgD" #'lsp-find-declaration
+;;     "mgi" #'lsp-find-implementation
+;;     "mgk" #'petmacs/lsp-avy-goto-word
+;;     "mgK" #'petmacs/lsp-avy-goto-symbol
+;;     "mgM" #'lsp-ui-imenu
+;;     ;; goto other window
+;;     "mGr" #'petmacs/lsp-find-references-other-window
+;;     "mGt" #'petmacs/lsp-find-type-definition-other-window
+;;     "mGd" #'petmacs/lsp-find-definition-other-window
+;;     "mGD" #'petmacs/lsp-find-declaration-other-window
+;;     "mGi" #'petmacs/lsp-find-implementation-other-window
+;;     ;; peek
+;;     "mpd" #'lsp-ui-peek-find-definitions
+;;     "mpi" #'lsp-ui-peek-find-implementation
+;;     "mpr" #'lsp-ui-peek-find-references
+;;     "mpRn" #'lsp-ui-find-next-reference
+;;     "mpRp" #'lsp-ui-find-prev-reference
+;;     ;; backend
+;;     "mba" #'lsp-execute-code-action
+;;     "mbd" #'lsp-describe-session
+;;     "mbr" #'lsp-restart-workspace
+;;     "mbs" #'lsp-shutdown-workspace
+;;     ;; refactor
+;;     "mrr" #'lsp-rename
+;;     ;; toggles
+;;     "mTd" #'lsp-ui-doc-mode
+;;     "mTs" #'lsp-ui-sideline-mode
+;;     "mTF" #'petmacs/lsp-ui-doc-func
+;;     "mTS" #'petmacs/lsp-ui-sideline-symb
+;;     "mTI" #'petmacs/lsp-ui-sideline-ignore-duplicate
+;;     "mTl" #'lsp-lens-mode
+;;     ;; folders
+;;     "mFs" #'lsp-workspace-folders-switch
+;;     "mFr" #'lsp-workspace-folders-remove
+;;     "mFa" #'lsp-workspace-folders-add)
+;;   )
 
 ;;; json
 (evil-leader/set-key-for-mode 'json-mode "m=" 'prettier-js)
@@ -291,6 +337,43 @@
 (evil-leader/set-key-for-mode 'python-mode "mva" 'pyvenv-activate)
 (evil-leader/set-key-for-mode 'python-mode "mvd" 'pyvenv-deactivate)
 (evil-leader/set-key-for-mode 'python-mode "mvw" 'pyvenv-workon)
+
+;; ;;; python major mode
+;; (evil-leader/set-key-for-mode 'python-mode
+;;   "m=" 'yapfify-buffer
+;;   "m." 'petmacs/python-load-venv-file
+;;   "mcc" 'petmacs/python-execute-file
+;;   "mcC" 'petmacs/python-execute-file-focus
+;;   "mck" 'petmacs/quit-subjob
+;;   "mdb" 'petmacs/python-insert-breakpoint
+;;   "mdd" 'petmacs/python-delete-breakpoint
+;;   "mdh" 'petmacs/python-highlight-breakpoint
+;;   "mga" 'anaconda-mode-find-assignments
+;;   "mgg" 'anaconda-mode-find-definitions
+;;   "mgG" 'anaconda-mode-find-definitions-other-window
+;;   "mgu" 'anaconda-mode-find-references
+;;   "mhh" 'anaconda-mode-show-doc
+;;   "mri" 'petmacs/python-remove-unused-imports
+;;   "mrI" 'py-isort-buffer
+;;   "msB" 'petmacs/python-shell-send-buffer-switch
+;;   "msb" 'petmacs/python-shell-send-buffer
+;;   "msb" 'petmacs/python-shell-send-buffer
+;;   "msF" 'petmacs/python-shell-send-defun-switch
+;;   "msf" 'petmacs/python-shell-send-defun
+;;   "msi" 'petmacs/python-start-or-switch-repl
+;;   "msr" 'petmacs/python-shell-send-region
+;;   "msR" 'petmacs/python-shell-send-region-switch
+;;   "msk" 'petmacs/python-interrupt-repl
+;;   "msq" 'petmacs/python-quit-repl
+;;   "mva" 'pyvenv-activate
+;;   "mvd" 'pyvenv-deactivate
+;;   "mvw" 'pyvenv-workon
+;;   "mvpa" 'pipenv-activate
+;;   "mvpd" 'pipenv-deactivate
+;;   "mvpi" 'pipenv-install
+;;   "mvpo" 'pipenv-open
+;;   "mvps" 'pipenv-shell
+;;   "mvpu" 'pipenv-uninstall)
 
 (if (eq system-type 'windows-nt)
     (progn

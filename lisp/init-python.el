@@ -50,6 +50,21 @@ as the pyenv version then also return nil. This works around https://github.com/
           executable))
     (executable-find command)))
 
+(defun petmacs/python-load-venv-file ()
+  "Set pyvenv virtualenv from \".venv\" by looking in parent directories. handle directory or file"
+  (interactive)
+  (let ((root-path (locate-dominating-file default-directory
+                                           ".venv")))
+    (when root-path
+      (let* ((file-path (expand-file-name ".venv" root-path))
+             (virtualenv
+              (if (file-directory-p file-path)
+                  file-path
+                (with-temp-buffer
+                  (insert-file-contents-literally file-path)
+                  (buffer-substring-no-properties (line-beginning-position)
+                                                  (line-end-position))))))))))
+
 (defun petmacs/python-execute-file (arg)
   "Execute a python script in a shell."
   (interactive "P")
