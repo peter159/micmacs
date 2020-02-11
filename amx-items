@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- menu-bar-mode
- all-the-icons-install-fonts
- replace-string
  package-reinstall
- fci-mode
- format-find-file
- java-mode
+ package-menu-execute
+ package-menu-mark-upgrades
+ package-list-packages
+ package-refresh-contents
+ kill-buffer
+ list-packages
 )
 
 ;; ----- amx-data -----
@@ -18,11 +18,11 @@
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 9)
- (auto-insert . 10)
+ (ivy-mode . 11)
+ (auto-insert . 12)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
- (package-list-packages . 5)
+ (package-list-packages . 6)
  (show-all . 2)
  (describe-key . 3)
  (electric-spacing-mode . 4)
@@ -44,19 +44,19 @@
  (electric-operator-mode . 4)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 29)
- (kill-buffer . 4)
+ (kill-buffer . 5)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
  (petmacs/pop-eshell . 3)
  (petmacs/eshell-clear . 2)
  (eshell . 3)
  (open-mintty-terminal . 6)
- (eval-buffer . 2)
+ (eval-buffer . 4)
  (fci-mode . 38)
  (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 3)
- (evil-motion-state . 19)
+ (evil-motion-state . 20)
  (evil-mode . 7)
  (evil-leader-mode . 2)
  (evil-leader/set-key-for-mode . 2)
@@ -75,7 +75,7 @@
  (undo-tree-redo . 1)
  (rg . 1)
  (ess-mode . 6)
- (package-refresh-contents . 7)
+ (package-refresh-contents . 9)
  (dired-tree-up . 2)
  (dired-upcase . 1)
  (dired-do-copy . 1)
@@ -105,10 +105,10 @@
  (grep . 1)
  (linum-mode . 3)
  (scroll-bar-mode . 2)
- (menu-bar-mode . 5)
+ (menu-bar-mode . 7)
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
- (anaconda-mode . 4)
+ (anaconda-mode . 5)
  (ess-display-help-in-browser . 1)
  (ess-display-package-index . 2)
  (aggressive-indent-mode . 2)
@@ -124,11 +124,11 @@
  (anaconda-mode-show-doc . 1)
  (ranger-mark . 1)
  (indent-region . 1)
- (profiler-start . 2)
- (profiler-report . 1)
+ (profiler-start . 3)
+ (profiler-report . 2)
  (yapf-mode . 4)
  (previous-line . 2)
- (replace-string . 16)
+ (replace-string . 20)
  (quit-window . 5)
  (flymake-mode . 8)
  (flycheck-info . 1)
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 6)
+ (package-install . 10)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -199,7 +199,17 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 3)
+ (package-reinstall . 5)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 1)
+ (org-timer-set-timer . 1)
+ (org-agenda . 2)
+ (evil-window-move-very-bottom . 1)
+ (org-html-export-to-html . 1)
+ (org-html-htmlize-generate-css . 3)
+ (recentf-cleanup . 1)
+ (dcl-mode . 2)
+ (list-packages . 1)
+ (package-menu-mark-upgrades . 1)
+ (package-menu-execute . 1)
 )
