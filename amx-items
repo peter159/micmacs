@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ auto-insert
+ ivy-mode
  menu-bar-mode
  all-the-icons-install-fonts
  replace-string
  package-reinstall
  fci-mode
- format-find-file
- java-mode
 )
 
 ;; ----- amx-data -----
@@ -18,8 +18,8 @@
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 9)
- (auto-insert . 10)
+ (ivy-mode . 10)
+ (auto-insert . 11)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 5)
