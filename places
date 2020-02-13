@@ -1,13 +1,30 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-org.el" . 2231)
- ("f:/test.org" . 92)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 974)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-company.el" . 1680)
- ("d:/msys64/mingw64/share/emacs/26.1/lisp/org/org.el" . 106089)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-font.el" . 1004)
+(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/treemacs-20200211.1606/treemacs-macros.el" . 14604)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/treemacs-20200211.1606/treemacs.el" . 620)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-elisp.el" . 831)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/lsp-mode-20190725.553/lsp-mode.el" . 109287)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-lsp.el" . 3823)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/treemacs-20200211.1606/treemacs-fringe-indicator.el" . 2428)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-treemacs.el" . 846)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/treemacs-magit-20200114.1715/treemacs-magit.el" . 1660)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 2975)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 2290)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/treemacs-magit-20200114.1715/treemacs-magit-autoloads.el" . 455)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/"
-  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-font.el"))
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 3061)
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-lsp.el"))
+ ("f:/pytorch/nlp-tutorial/5-2.BERT/BERT-Torch.py" . 1353)
+ ("d:/msys64/mingw64/share/emacs/26.3/lisp/emacs-lisp/package.el" . 13519)
+ ("d:/Emacs/x86_64/share/emacs/28.0.50/lisp/emacs-lisp/package.el" . 8439)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/evil-20190222.1212/evil-autoloads.el" . 3697)
+ ("f:/pytorch/nlp-tutorial/5-2.BERT/"
+  (dired-filename . "f:/pytorch/nlp-tutorial/5-2.BERT/BERT-Torch.py"))
+ ("f:/pytorch/nlp-tutorial/"
+  (dired-filename . "f:/pytorch/nlp-tutorial/5-2.BERT"))
+ ("f:/pytorch/"
+  (dired-filename . "f:/pytorch/nlp-tutorial"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-org.el" . 2231)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-company.el" . 1680)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-font.el" . 1004)
  ("f:/pytest/fetchive/HiveConnect.py" . 989)
  ("f:/"
   (dired-filename . "f:/testsublime"))
@@ -16,11 +33,9 @@
  ("f:/pytest/fetchive/" . 70)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/anaconda-mode-20190616.1019/anaconda-mode.el" . 23133)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week2_exercise.py" . 3987)
- ("d:/Anaconda3/envs/deep-gpu/Lib/site-packages/tensorflow/python/keras/callbacks.py" . 1688)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week2_exercise_clone.py" . 3192)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week3_exercise.py" . 1807)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week3_exercise_mimic.py" . 1919)
- ("d:/Anaconda3/envs/deep-gpu/Lib/site-packages/tensorflow/python/keras/utils/np_utils.py" . 958)
  ("f:/pytest/tensorflow_test/tensorflow_practice/bilibili/captcha/captcha_break_gpu.py" . 443)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week4_clone.py" . 761)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/test.py" . 119)
@@ -31,7 +46,6 @@
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/second_course"))
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/second_course/Horse-or-Human-WithAugmentation.py"))
- ("d:/Anaconda3/envs/deep-gpu/Lib/site-packages/tensorflow/python/keras/engine/sequential.py" . 1670)
  ("f:/pytest/tensorflow_test/tensorflow_practice/bilibili/captcha/captcha_break_ctc_loss.py" . 5105)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week1_exercise.py" . 177)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week2_exercise_copy.py" . 2575)
@@ -51,9 +65,7 @@
  ("f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/official_version/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/official_version/model1.csv"))
  ("f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/official_version/download_ticks.py" . 1264)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.15.1-py3.7.egg/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi" . 4571)
  ("f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/nday_predict/model_nday.py" . 788)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/callbacks.py" . 26392)
  ("f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/nday_predict/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/nday_predict/model1day-000333.h5"))
  ("f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/nday_predict/data_gen_nday.py" . 2892)
@@ -67,17 +79,10 @@
  ("f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/transfer_to_nday_pic_model/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/transfer_to_nday_pic_model/prepare_train.py"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 102)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/layers/core.py" . 12593)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/layers/__init__.py" . 3760)
  ("f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/prepare_data.py" . 3325)
  ("f:/pytest/tensorflow_test/tensorflow_practice/pytdx_test/prepare_xs_ys.py" . 704)
  ("f:/pytest/tensorflow_test/tensorflow_practice/coursera_cnn/horse_human_validation_gpu.py" . 4428)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/api/_v2/keras/metrics/__init__.py" . 721)
  ("f:/pytest/tensorflow_test/tensorflow_practice/RNN_stock/meidi_jituan.py" . 3019)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/training/tracking/base.py" . 17949)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/engine/base_layer.py" . 8624)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/ops/init_ops_v2.py" . 9275)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/pytdx/hq.py" . 2531)
  ("g:/Projects/Pypkg/stocketl/tdx_web/tdx_realtime_api.py" . 844)
  ("g:/Projects/Pypkg/stocketl/utils.py" . 577)
  ("g:/Projects/Pypkg/stocketl/tdx_web/tdx_static_api.py" . 278)
@@ -86,37 +91,8 @@
   (dired-filename . "f:/pytest/xgboost/.ipynb_checkpoints"))
  ("f:/tobedelete/"
   (dired-filename . "f:/tobedelete/test.html"))
- ("f:/Windows10Upgrade/"
-  (dired-filename . "f:/Windows10Upgrade/18362.175.190612-0046.19h1_release_svc_refresh_CLIENTCONSUMER_RET_x64FRE_zh-cn.esd_"))
- ("f:/Temp/"
-  (dired-filename . "f:/Temp/productSeg"))
  ("f:/pytest/tensorflow_test/tensorflow_practice/github_course/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/github_course/build_customized_layer.py"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/__init__.py" . 690)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/_api/v2/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/_api/v2/tpu"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/_api/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/_api/v2"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/tf2.py" . 992)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/absl_py-0.7.1.dist-info"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/tf2.py"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/tools/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/tools/__init__.py"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/include/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/include/external"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/include/external/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/include/external/keras_applications_archive"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/include/external/keras_applications_archive/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/include/external/keras_applications_archive/LICENSE"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/examples/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/examples/saved_model"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/examples/saved_model/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/examples/saved_model/integration_tests"))
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/examples/saved_model/integration_tests/" . 337)
  ("f:/pytest/tensorflow_test/tensorflow_practice/RNN_stock/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/RNN_stock/meidi_jituan.py"))
  ("f:/pytest/tensorflow_test/tensorflow_practice/coursera_cnn/"
@@ -126,9 +102,6 @@
  ("f:/pytest/tensorflow_test/tensorflow_practice/bilibili/captcha/captcha_break.py" . 50)
  ("f:/deeplearning/captcha_break/captcha_tf2.py" . 277)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/exercise7.py" . 3925)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/utils/data_utils.py" . 12698)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/utils/__init__.py" . 1079)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/engine/input_layer.py" . 6124)
  ("f:/pytest/tensorflow_test/tensorflow_practice/test_work/category_model.py" . 1125)
  ("f:/pytest/tensorflow_test/tensorflow_practice/test_work/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/test_work/category_model.py"))
@@ -140,73 +113,44 @@
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/exercise6.py" . 7683)
  ("f:/pytest/tensorflow_test/tensorflow_practice/third_course/" . 111)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-python.el" . 83)
- ("d:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/python.el" . 142490)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/data/tmp2/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/second_course/data/tmp2/cats-and-dogs.zip"))
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/course2-part4-lesson2.py" . 4631)
  ("f:/pytest/sklearn_api_test/plot_ridge_coef_by_alpha.py" . 554)
- ("d:/Anaconda3/envs/ml/Lib/optparse.py" . 58884)
  ("f:/pytest/sklearn_api_test/test_optionParser.py" . 251)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/sklearn/datasets/twenty_newsgroups.py" . 5368)
  ("f:/pytest/sklearn_api_test/cls_textdoc_using_sparse_feature.py" . 8519)
  ("f:/pytest/sklearn_api_test/cls_textdoc_using_sparse_feature_self.py" . 9102)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/engine/sequential.py" . 1670)
  ("f:/pytest/tensorflow_test/hello_world_cnn.py" . 172)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/engine/training.py" . 7360)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/company-anaconda-20181025.1305/company-anaconda-autoloads.el" . 660)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/anaconda-mode-20190616.1019/anaconda-mode-autoloads.el" . 744)
  ("f:/pytest/sklearn_api_test/"
   (dired-filename . "f:/pytest/sklearn_api_test/cls_textdoc_using_sparse_feature_self.py"))
- ("d:/Anaconda3/envs/ml/Lib/site-packages/parso/python/tree.py" . 1581)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/0.1.13/jedi-0.15.1-py3.7.egg/jedi/api/environment.py" . 12721)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/parso/python/"
-  (dired-filename . "d:/Anaconda3/envs/ml/Lib/site-packages/parso/python/tree.py"))
- ("d:/msys64/mingw64/share/emacs/26.1/etc/NEWS" . 74963)
- ("d:/msys64/mingw64/share/emacs/26.1/lisp/newcomment.el" . 52217)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/" . 109)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/sklearn/model_selection/_split.py" . 75203)
  ("f:/pytest/sklearn_api_test/cls_glm_ols.py" . 595)
  ("f:/pytest/sklearn_api_test/utils.py" . 209)
  ("f:/pytest/sklearn_api_test/diabetes_eda.py" . 135)
  ("f:/pytest/sklearn_api_test/cls_glm_ols_se.py" . 708)
  ("f:/pytest/distributed_intelligeo/scripts/intelligeo_functions.py" . 416)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/sklearn/preprocessing/_encoders.py" . 8890)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/sklearn/pipeline.py" . 12627)
  ("f:/pytest/pyspark/count.py" . 291)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/pyspark/sql/types.py" . 1449)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/pyspark/sql/readwriter.py" . 4810)
  ("f:/pytest/pyspark/readfile.py" . 91)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/pyspark/sql/functions.py" . 3411)
  ("f:/pytest/sanfranciscoCrime/spark_model.py" . 2798)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/sklearn/decomposition/pca.py" . 13397)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/sklearn/base.py" . 20043)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-ui.el" . 5156)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-default.el" . 5847)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-evil.el" . 4224)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/README.md" . 11)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/sklearn/svm/classes.py" . 26024)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/sklearn/svm/base.py" . 5539)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/numpy/core/_exceptions.py" . 3633)
  ("f:/pytest/tensorflow_test/examp1.py" . 181)
  ("d:/msys64/mingw64/bin/"
   (dired-filename . "d:/msys64/mingw64/bin/gspawn-win64-helper-console.exe"))
- ("f:/JavaTest/day01/HelloWorld.java" . 42)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-java.el" . 920)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/lsp-java-20190726.817/lsp-java.el" . 1018)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-lsp.el" . 1215)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/lsp-java-20190726.817/lsp-java-autoloads.el" . 1087)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/request-20190727.1416/request-autoloads.el" . 404)
- ("f:/JavaTest/day01/"
-  (dired-filename . "f:/JavaTest/day01/HelloWorld.java"))
- ("f:/JavaTest/"
-  (dired-filename . "f:/JavaTest/day01"))
  ("e:/PersonalProjects/NikeSegmentation(201906)/segmentation/0726/cluser.r" . 53)
  ("f:/deeplearning/test/autoencoder.py" . 67)
- ("f:/JavaTest/day01/helloworld.java" . 171)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-c-c++.el" . 2203)
  ("f:/deeplearning/"
   (dired-filename . "f:/deeplearning/test"))
@@ -216,7 +160,6 @@
   (dired-filename . "e:/PersonalProjects/NikeSegmentation(201906)/segmentation/0726/Segmentation Model 0724.xlsx"))
  ("e:/PersonalProjects/NikeSegmentation(201906)/segmentation/"
   (dired-filename . "e:/PersonalProjects/NikeSegmentation(201906)/segmentation/0726"))
- ("d:/Anaconda3/Lib/site-packages/tensorflow/__init__.py" . 199)
  ("f:/deeplearning/captcha_break/cnn_cpu.py" . 1642)
  ("f:/deeplearning/test/keras_api.py" . 1502)
  ("f:/deeplearning/test/auto_encoder_tf2a.py" . 1927)
@@ -228,25 +171,15 @@
  ("f:/deeplearning/learn_keras/vgg16.py" . 391)
  ("f:/deeplearning/learn_keras/vgg.png" . 7)
  ("f:/deeplearning/test/linear_dl.py" . 1074)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/layers/convolutional.py" . 17463)
  ("f:/deeplearning/learn_keras/test_binary.py" . 459)
  ("f:/deeplearning/learn_keras/test_multi.py" . 515)
  ("f:/deeplearning/learn_keras/mlp_softmax.py" . 799)
  ("f:/deeplearning/learn_keras/mlp_binary.py" . 891)
  ("f:/deeplearning/learn_keras/mlp_binary.png" . 23775)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/optimizers.py" . 8627)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/tensorflow/python/keras/losses.py" . 4208)
  ("f:/deeplearning/learn_keras/api_model.py" . 222)
  ("f:/deeplearning/learn_keras/news_models.py" . 267)
  ("f:/deeplearning/learn_keras/simple_sequential.py" . 48)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/keras/layers/core.py" . 28567)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/keras/layers/"
-  (dired-filename . "d:/Anaconda3/envs/deep/Lib/site-packages/keras/layers/cudnn_recurrent.py"))
  ("f:/deeplearning/test/rnn.py" . 237)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/numpy/__init__.py" . 3423)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/pandas/__init__.py" . 47)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/pandas/core/dtypes/missing.py" . 1560)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/pandas/io/parsers.py" . 21925)
  ("g:/Projects/Pypkg/data_preparation/featexp/__init__.py" . 539)
  ("f:/Kaggle/HomeCredit/test_featexp/test_featexp.py" . 3956)
  ("f:/Kaggle/HomeCredit/test_featexp.py" . 2151)
@@ -255,18 +188,12 @@
  ("g:/Projects/Pypkg/data_preparation/release_inputs/base.py" . 71)
  ("g:/Projects/Pypkg/data_preparation/sns/vars_eda.py" . 661)
  ("g:/Projects/Pypkg/data_preparation/featexp/base.py" . 2261)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/featexp/base.py" . 78)
  ("g:/Projects/Pypkg/data_preparation/sns/__init__.py" . 73)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/featexp/"
-  (dired-filename . "d:/Anaconda3/envs/ml/Lib/site-packages/featexp/__init__.py"))
  ("g:/Projects/Pypkg/data_preparation/release_inputs/__init__.py" . 70)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/"
-  (dired-filename . "d:/Anaconda3/envs/ml/Lib/site-packages/featexp"))
  ("f:/Kaggle/HomeCredit/"
   (dired-filename . "f:/Kaggle/HomeCredit/sol1"))
  ("f:/cpp_proj/udacity/first_week/enum.cpp" . 370)
  ("f:/cpp_proj/udacity/first_week/board.csv" . 66)
- ("d:/msys64/mingw64/share/emacs/26.1/lisp/dired-x.el" . 17993)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/leader-key-binding.el" . 3094)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/use-package-20181119.2350/use-package-core.el" . 57370)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-shell.el" . 6459)
@@ -275,7 +202,6 @@
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/projectile-20190126.1117"))
  ("f:/deeplearning/catsdogs/exercise5_self.py" . 3127)
- ("d:/Anaconda3/envs/deep/Lib/site-packages/keras/utils/vis_utils.py" . 796)
  ("f:/deeplearning/dl_intro/perceptron.py" . 792)
  ("f:/cpp_proj/udacity/CppND-Route-Planning-Project/src/main.cpp" . 1608)
  ("f:/cpp_proj/udacity/CppND-Route-Planning-Project/src/model.h" . 482)
@@ -320,18 +246,13 @@
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/projectile-20190126.1117/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/projectile-20190126.1117/projectile-pkg.el"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/eglot-20190430.935/eglot.el" . 33424)
- ("d:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/cc-mode.el" . 76964)
  ("f:/cpp_proj/udacity/first_week/string_with_mixed_type.cpp" . 363)
  ("f:/cpp_proj/udacity/first_week/vector_push_back.cpp" . 78)
- ("d:/msys64/mingw64/share/emacs/26.1/lisp/progmodes/xref.el" . 31967)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-eglot.el" . 831)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-elisp.el" . 831)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/eglot-20190430.935/eglot-autoloads.el" . 1789)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/jsonrpc-1.0.7/jsonrpc-autoloads.el" . 435)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/flymake-1.0.5/flymake-autoloads.el" . 3403)
  ("g:/Projects/Pypkg/stockintel2/manage.py" . 1239)
- ("d:/msys64/mingw64/share/emacs/26.1/lisp/subr.el" . 209299)
- ("d:/msys64/mingw64/share/emacs/26.1/lisp/files.el" . 50888)
  ("g:/Projects/Pypkg/stockintel2/templates/index.html" . 16)
  ("g:/Projects/Pypkg/stockintel2/templates/layout.html" . 972)
  ("g:/Projects/Pypkg/stockintel2/templates/rglrtn.html" . 852)
@@ -356,7 +277,6 @@
  ("g:/Projects/Pypkg/stocketl/agent/agent.py" . 5106)
  ("g:/Projects/Pypkg/data_preparation/sns/" . 158)
  ("f:/dataAnalysis/EnronAnalyssis/enronAnalysis.py" . 2444)
- ("d:/Anaconda3/envs/ml/Lib/site-packages/seaborn/regression.py" . 20032)
  ("f:/dataAnalysis/Wine/"
   (dired-filename . "f:/dataAnalysis/Wine/EDA_on_wine_dataset.r"))
  ("f:/dataAnalysis/Wine/wineQualityReds.csv" . 179)
@@ -372,7 +292,6 @@
  ("g:/Projects/Pypkg/stocketl/database/"
   (dired-filename . "g:/Projects/Pypkg/stocketl/database/create_db.py"))
  ("g:/Projects/Pypkg/stockintel2/templates/hist_candle.html" . 1626)
- ("d:/Anaconda3/Lib/site-packages/pyod/models/abod.py" . 2329)
  ("g:/Projects/Pypkg/stocketl/database/mysql_obj.py" . 276)
  ("g:/Projects/Pypkg/stocketl/crawl/aList.py" . 1088)
  ("g:/Projects/Pypkg/stocketl/database/sync_update_dividends_shares.py" . 477)
@@ -396,8 +315,6 @@
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/emmet-mode-20180613.341/emmet-mode-autoloads.el" . 1691)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/web-mode-20190415.1950/web-mode-autoloads.el" . 498)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/multi-web-mode-20130824.354/multi-web-mode-autoloads.el" . 1440)
- ("d:/Anaconda3/envs/stkcrawl/Lib/site-packages/pytdx/hq.py" . 5363)
- ("d:/Anaconda3/envs/stkcrawl/Lib/site-packages/pytdx/base_socket_client.py" . 2026)
  ("g:/Projects/Pypkg/stocketl/database/sync_update_roi_summary.py" . 579)
  ("g:/Projects/Pypkg/stocketl/summary/return_on_investment.py" . 1037)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/site-lisp/"
@@ -424,7 +341,6 @@
  ("f:/pytest/recommendationSystem/recommendation/preprocess.py" . 1435)
  ("g:/Projects/Pypkg/stocketl/database/sync_update_lastest_day_quotes.py" . 2581)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-general-functions.el" . 1694)
- ("d:/msys64/mingw64/share/emacs/26.1/src/lread.c" . 151166)
  ("f:/sparkTest/distributed_intelligeo/scripts/intelligeo_functions.py" . 5536)
  ("g:/Projects/Pypkg/stocketl/crawl/mean_holder_change.py" . 1826)
  ("g:/Projects/Pypkg/stocketl/crawl/holder_num_change_tobed.py" . 703)

@@ -67,6 +67,7 @@
 
   ;; Group ibuffer's list by project root
   (use-package ibuffer-projectile
+    :ensure t
     :functions all-the-icons-octicon
     :hook ((ibuffer . (lambda ()
                         (ibuffer-projectile-set-filter-groups)

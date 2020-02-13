@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- menu-bar-mode
- all-the-icons-install-fonts
- replace-string
- package-reinstall
- fci-mode
- format-find-file
- java-mode
+ restart-emacs
+ lsp-ui-peek-find-definitions
+ lsp-ui-mode
+ lsp-find-definition
+ ibuffer
+ kill-buffer
+ treemacs-fringe-indicator-mode
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 57)
+ (restart-emacs . 64)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -26,7 +26,7 @@
  (show-all . 2)
  (describe-key . 3)
  (electric-spacing-mode . 4)
- (evil-goto-definition . 5)
+ (evil-goto-definition . 6)
  (company-mode . 12)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
@@ -44,7 +44,7 @@
  (electric-operator-mode . 4)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 29)
- (kill-buffer . 4)
+ (kill-buffer . 6)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
  (petmacs/pop-eshell . 3)
@@ -61,7 +61,7 @@
  (evil-leader-mode . 2)
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
- (ibuffer-mode . 2)
+ (ibuffer-mode . 3)
  (doom-modeline-mode . 4)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
@@ -154,10 +154,10 @@
  (smart-semicolon-mode . 2)
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 2)
- (lsp-ui-mode . 4)
+ (lsp-ui-mode . 5)
  (lsp-ui-doc-show . 5)
  (evil-move . 1)
- (lsp-find-definition . 20)
+ (lsp-find-definition . 21)
  (lsp-mode . 7)
  (lsp-lens-mode . 1)
  (lsp . 45)
@@ -169,7 +169,7 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 3)
+ (lsp-ui-peek-find-definitions . 5)
  (lsp-restart-workspace . 1)
  (lsp-ui-peek-mode . 1)
  (eglot . 12)
@@ -199,7 +199,12 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 3)
+ (package-reinstall . 4)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 1)
+ (ibuffer . 5)
+ (treemacs . 3)
+ (treemacs-resize-icons . 1)
+ (treemacs-mode . 1)
+ (treemacs-fringe-indicator-mode . 1)
 )
