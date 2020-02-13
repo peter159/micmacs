@@ -72,6 +72,7 @@ decrease this. If you experience stuttering, increase this.")
 (add-subdirs-to-load-path)
 
 ;; use mirror
+(setq package-check-signature nil)
 (setq package-archives '(("gnu"          . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
 			 ("melpa"        . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
 			 ("org"          . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")

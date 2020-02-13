@@ -195,19 +195,19 @@ Lisp function does not specify a special indentation."
   :ensure nil
   :diminish)
 
-;; Interactive macro expander
-(use-package macrostep
-  :custom-face
-  (macrostep-expansion-highlight-face ((t (:background ,(face-background 'tooltip)))))
-  :bind (:map emacs-lisp-mode-map
-	      ("C-c e" . macrostep-expand)
-	      :map lisp-interaction-mode-map
-	      ("C-c e" . macrostep-expand))
-  :config
-  (add-hook 'after-load-theme-hook
-            (lambda ()
-              (set-face-background 'macrostep-expansion-highlight-face
-                                   (face-background 'tooltip)))))
+; ;; Interactive macro expander
+; (use-package macrostep
+;   :custom-face
+;   (macrostep-expansion-highlight-face ((t (:background ,(face-background 'tooltip)))))
+;   :bind (:map emacs-lisp-mode-map
+; 	      ("C-c e" . macrostep-expand)
+; 	      :map lisp-interaction-mode-map
+; 	      ("C-c e" . macrostep-expand))
+;   :config
+;   (add-hook 'after-load-theme-hook
+;             (lambda ()
+;               (set-face-background 'macrostep-expansion-highlight-face
+;                                    (face-background 'tooltip)))))
 
 ;; Semantic code search for emacs lisp
 (use-package elisp-refs)

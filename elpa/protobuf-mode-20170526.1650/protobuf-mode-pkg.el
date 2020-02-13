@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/protobuf-mode-20170526.1650/protobuf-mode.el  -*- no-byte-compile: t -*-
+(define-package "protobuf-mode" "20170526.1650" "major mode for editing protocol buffers." 'nil :commit "32caf511c87da93e7bc9981c2d647f6ce1865f39" :keywords '("google" "protobuf" "languages") :authors '(("Alexandre Vassalotti" . "alexandre@peadrop.com")) :maintainer '("Alexandre Vassalotti" . "alexandre@peadrop.com"))
