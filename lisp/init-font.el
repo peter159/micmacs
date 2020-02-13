@@ -1,44 +1,25 @@
-;;; init-font.el ---                                 -*- lexical-binding: t; -*-
-
-;; Copyright (C) 2019  
-
-;; Author:  <peter.linyi@DESKTOP-PMTGUNT>
-;; Keywords: 
-
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
-
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+;; init-font.el --- Setup fonts.  -*- lexical-binding: t -*-
 
 ;;; Commentary:
 
-;; 
-
 ;;; Code:
 
-(mark-time-here)
+(eval-when-compile
+  (require 'init-const)
+  (require 'init-custom))
 
-;; setup english word font and size
-(set-face-attribute 'default nil :font (format "Fira Code Retina-%S" 12)) ; Fira Code Retina-%S
+(set-face-attribute 'default nil :font (format "JetBrains Mono-%S" petmacs-font-size))
+(setq-default line-spacing 0.2) ; add 0.2 height between lines
 
 ;; fix the delay when showing text in chinese
-(dolist (charset '(kana han cjk-misc bopomofo))
-  (if (display-graphic-p)		;to avoid error 'fontset tty' in linux shell environment
-      (set-fontset-font (frame-parameter nil 'font) charset
-			;; (font-spec :family "Microsoft Yahei" :size 12))
-			(font-spec :family "等距更纱黑体 SC" :size 14)))
-  )
+(if window-system
+ (dolist (charset '(kana han cjk-misc bopomofo))
+   (set-fontset-font (frame-parameter nil 'font) charset
+		     ;; (font-spec :family "Microsoft Yahei" :size 18.5))
+		     (font-spec :family "等距更纱黑体 SC" :size petmacs-font-size))))
 
-(use-package fontify-face :ensure t)
+(use-package fontify-face)
 
 (provide 'init-font)
-(message "init-font loaded in '%.2f' seconds ..." (get-time-diff time-marked))
+
 ;;; init-font.el ends here

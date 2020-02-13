@@ -1,89 +1,29 @@
-;;; init-markdown.el ---                             -*- lexical-binding: t; -*-
-
-;; Copyright (C) 2019  
-
-;; Author:  <lipe6002@SHA-LPC-03254>
-;; Keywords: 
-
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
-
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+;; init-markdown.el --- Setup markdown.  -*- lexical-binding: t -*-
 
 ;;; Commentary:
 
-;; 
-
 ;;; Code:
 
-(mark-time-here)
+(eval-when-compile
+  (require 'init-const)
+  (require 'init-custom))
 
 (use-package markdown-mode
-  :ensure t
-  :defines flycheck-markdown-markdownlint-cli-config
-  :preface
-  ;; Install: pip install grip
-  (defun markdown-preview-grip ()
-    "Render and preview with `grip'."
-    (interactive)
-    (let ((program "grip")
-          (port "6419")
-          (buffer "*gfm-to-html*"))
-
-      ;; If process exists, kill it.
-      (markdown-preview-kill-grip buffer)
-
-      ;; Start a new `grip' process.
-      (start-process program buffer program (buffer-file-name) port)
-      (sleep-for 1) ; wait for process start
-      (browse-url (format "http://localhost:%s/%s.%s"
-                          port
-                          (file-name-base)
-                          (file-name-extension
-                           (buffer-file-name))))))
-
-  (defun markdown-preview-kill-grip (&optional buffer)
-    "Kill `grip' process."
-    (interactive)
-    (let ((process (get-buffer-process (or buffer "*gfm-to-html*"))))
-      (when process
-        (kill-process process)
-        (message "Process %s killed" process))))
-
-  ;; Install: npm i -g markdownlint-cli
-  (defun set-flycheck-markdownlint ()
-    "Set the `mardkownlint' config file for the current buffer."
-    (let* ((md-lint ".markdownlint.json")
-           (md-file buffer-file-name)
-           (md-lint-dir (and md-file
-                             (locate-dominating-file md-file md-lint))))
-      (setq-local flycheck-markdown-markdownlint-cli-config
-                  (concat md-lint-dir md-lint))))
-  :bind (:map markdown-mode-command-map
-              ("g" .  markdown-preview-grip)
-              ("k" .  markdown-preview-kill-grip))
-  :hook ((markdown-mode . flyspell-mode)
-         (markdown-mode . auto-fill-mode)
-         (markdown-mode . set-flycheck-markdownlint))
+  :hook ((markdown-mode . auto-fill-mode))
   :mode (("README\\.md\\'" . gfm-mode))
-  :config
-  (when sys/macp
-    (let ((typora "/Applications/Typora.app/Contents/MacOS/Typora"))
-      (if (file-exists-p typora)
-          (setq markdown-open-command typora))))
+  :init
+  (setq markdown-enable-wiki-links t
+        markdown-italic-underscore t
+        markdown-asymmetric-header t
+        markdown-make-gfm-checkboxes-buttons t
+        markdown-gfm-uppercase-checkbox t
+        markdown-fontify-code-blocks-natively t
+        markdown-enable-math t
 
-  (setq markdown-content-type "application/xhtml+xml")
-  (setq markdown-css-paths '("https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css"
-                             "http://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css"))
-  (setq markdown-xhtml-header-content "
+        markdown-content-type "application/xhtml+xml"
+        markdown-css-paths '("https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css"
+                             "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css")
+        markdown-xhtml-header-content "
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 <style>
 body {
@@ -94,7 +34,7 @@ body {
   padding: 0 10px;
 }
 </style>
-<script src='http://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js'></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('markdown-body');
@@ -105,10 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 ")
+  :config
+  ;; Preview via `grip'
+  ;; Install: pip install grip
+  (use-package grip-mode
+    :bind (:map markdown-mode-command-map
+           ("g" . grip-mode)))
 
   ;; Table of contents
-  (use-package markdown-toc :ensure t))
+  (use-package markdown-toc
+    :bind (:map markdown-mode-command-map
+           ("r" . markdown-toc-generate-or-refresh-toc))))
 
 (provide 'init-markdown)
-(message "init-markdown loaded in '%.2f' seconds ..." (get-time-diff time-marked))
+
 ;;; init-markdown.el ends here
