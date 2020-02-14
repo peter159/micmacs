@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- restart-emacs
- lsp-ui-peek-find-definitions
+ lsp-restart-workspace
+ company-lsp
  lsp-ui-mode
- lsp-find-definition
- ibuffer
- kill-buffer
- treemacs-fringe-indicator-mode
+ lsp-mode
+ restart-emacs
+ xref-quit-and-goto-xref
+ xref--xref-buffer-mode
 )
 
 ;; ----- amx-data -----
@@ -26,7 +26,7 @@
  (show-all . 2)
  (describe-key . 3)
  (electric-spacing-mode . 4)
- (evil-goto-definition . 6)
+ (evil-goto-definition . 5)
  (company-mode . 12)
  (company-quickhelp-mode . 4)
  (company-box-doc-manually . 2)
@@ -44,7 +44,7 @@
  (electric-operator-mode . 4)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 29)
- (kill-buffer . 6)
+ (kill-buffer . 4)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
  (petmacs/pop-eshell . 3)
@@ -61,7 +61,7 @@
  (evil-leader-mode . 2)
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
- (ibuffer-mode . 3)
+ (ibuffer-mode . 2)
  (doom-modeline-mode . 4)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
@@ -75,7 +75,7 @@
  (undo-tree-redo . 1)
  (rg . 1)
  (ess-mode . 6)
- (package-refresh-contents . 7)
+ (package-refresh-contents . 8)
  (dired-tree-up . 2)
  (dired-upcase . 1)
  (dired-do-copy . 1)
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 6)
+ (package-install . 9)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -157,11 +157,11 @@
  (lsp-ui-mode . 5)
  (lsp-ui-doc-show . 5)
  (evil-move . 1)
- (lsp-find-definition . 21)
- (lsp-mode . 7)
+ (lsp-find-definition . 20)
+ (lsp-mode . 8)
  (lsp-lens-mode . 1)
  (lsp . 45)
- (company-lsp . 1)
+ (company-lsp . 3)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
  (ccls-tree-quit . 1)
@@ -169,8 +169,8 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 5)
- (lsp-restart-workspace . 1)
+ (lsp-ui-peek-find-definitions . 3)
+ (lsp-restart-workspace . 3)
  (lsp-ui-peek-mode . 1)
  (eglot . 12)
  (eglot-reconnect . 4)
@@ -199,12 +199,11 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 4)
+ (package-reinstall . 5)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 1)
- (ibuffer . 5)
- (treemacs . 3)
- (treemacs-resize-icons . 1)
- (treemacs-mode . 1)
- (treemacs-fringe-indicator-mode . 1)
+ (toggle-debug-on-error . 2)
+ (kill-emacs . 1)
+ (xref--xref-buffer-mode . 1)
+ (xref-quit-and-goto-xref . 1)
 )

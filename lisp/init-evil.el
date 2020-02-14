@@ -39,15 +39,14 @@
   :ensure nil
   :quelpa
   (evil-major-leader 
-    :repo "Peter-Chou/evil-major-leader" 
-    :fetcher github)
+   :repo "Peter-Chou/evil-major-leader" 
+   :fetcher github)
   :init
   (global-evil-major-leader-mode))
 
 ;; (message "    ---- 1/6 of init-evil loaded using '%.2f' seconds ..." (get-time-diff time-marked))
 ;; (mark-time-here)
 
-;; (use-package evil-leader :ensure t :defer nil)
 (use-package evil-anzu :ensure t)
 (use-package evil
   :ensure t
@@ -92,7 +91,9 @@
     (define-key evil-insert-state-map (kbd "C-p") 'previous-line)
     (define-key evil-insert-state-map (kbd "C-n") 'next-line)
     (define-key evil-insert-state-map (kbd "C-y") 'yank)
-    (define-key evil-insert-state-map (kbd "C-d") 'delete-char)))
+    (define-key evil-insert-state-map (kbd "C-d") 'delete-char)
+    (define-key evil-normal-state-map (kbd "TAB") 'xref-quit-and-goto-xref) ;use tab to follow reference
+    )) 
 
 ;; use 'fd' to escape nearly everything from evil-mode
 (use-package evil-escape

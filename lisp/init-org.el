@@ -33,6 +33,7 @@
 
 (use-package org
   :ensure t
+  :defer t
   :commands (orgtbl-mode)
   :init
   (require 'org)
@@ -79,6 +80,7 @@
 
   (use-package ob-ipython
     :ensure t
+    :defer t
     :if (executable-find "jupyter")     ; DO NOT remove
     :init (cl-pushnew '(ipython . t) load-language-list))
 
@@ -87,6 +89,7 @@
 
 (use-package org-agenda
   :ensure nil
+  :defer t
   :init
   (setq org-agenda-restore-windows-after-quit t)
   (setq org-agenda-current-time-string "← now")
@@ -99,6 +102,7 @@
 ;; Pomodoro
 (use-package org-pomodoro
   :ensure t
+  :defer t
   :after org-agenda
   :bind (:map org-agenda-mode-map
               ("P" . org-pomodoro)))
@@ -110,11 +114,13 @@
 
 (use-package toc-org
   :ensure t
+  :defer t
   :hook (org-mode . toc-org-enable)
   :init
   (setq toc-org-max-depth 10))
 
 (use-package org-projectile
+  :ensure t
   :defer t
   :commands (org-projectile-location-for-project)
   :preface
@@ -144,6 +150,7 @@
 ;; Preview
 (use-package org-preview-html
   :ensure t
+  :defer t
   :diminish org-preview-html-mode)
 
 ;; Visually summarize progress

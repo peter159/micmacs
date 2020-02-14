@@ -1,6 +1,6 @@
 ;;; init-lsp.el ---                                  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2019  
+;; Copyright (C) 2020  
 
 ;; Author:  <peter.linyi@DESKTOP-PMTGUNT>
 ;; Keywords: 
@@ -25,52 +25,6 @@
 ;;; Code:
 
 (mark-time-here)
-
-;; (use-package lsp-mode
-;;   :ensure t
-;;   ;; :pin melpa-stable
-;;   :commands lsp
-;;   :init
-;;   (setq lsp-auto-guess-root t)
-;;   (setq lsp-prefer-flymake nil)
-;;   :config
-;;   (progn
-;;     (require 'lsp-clients)))
-
-;; (use-package lsp-ui
-;;   :ensure t
-;;   ;; :pin melpa-stable
-;;   :bind (:map lsp-ui-mode-map
-;;               ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
-;;               ([remap xref-find-references] . lsp-ui-peek-find-references)
-;;               ("C-c u" . lsp-ui-imenu))
-;;   :hook (lsp-ui-imenu-mode . (lambda ()
-;; 			       (display-line-numbers-mode -1)
-;; 			       (hl-line-mode -1)
-;; 			       (vim-empty-lines-mode -1)))
-;;   :init
-;;   (setq lsp-ui-peek-enable t)
-;;   (setq lsp-ui-doc-enable nil)
-;;   (setq lsp-ui-imenu-enable t)
-;;   (setq lsp-ui-flycheck-enable t)
-;;   (setq lsp-ui-sideline-enable nil)
-;;   (setq lsp-ui-sideline-ignore-duplicate t)
-;;   (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "q") 'lsp-ui-imenu--kill)
-;;   (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "J") 'lsp-ui-imenu--next-kind)
-;;   (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "K") 'lsp-ui-imenu--prev-kind)
-;;   (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "<return>") 'lsp-ui-imenu--visit)
-;;   (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "d") 'lsp-ui-imenu--view))
-
-
-;; (use-package company-lsp
-;;   :ensure t
-;;   ;; :pin melpa-stable
-;;   )
-
-;; use peter's config
-;; (eval-when-compile
-;;   (require 'init-const)
-;;   (require 'init-custom))
 
 (use-package lsp-mode
   :ensure t
@@ -113,8 +67,8 @@
 		 (push `((,point0 . ,point1) . ,w) candidates)))
       ;; (require 'avy)
       (avy-with avy-document-symbol
-	(avy--process candidates
-		      (avy--style-fn avy-style)))))
+		(avy--process candidates
+			      (avy--style-fn avy-style)))))
 
   (defun petmacs/lsp-avy-goto-word ()
     (interactive)
@@ -194,9 +148,11 @@
   ;; :pin melpa-stable
   :functions my-lsp-ui-imenu-hide-mode-line
   :commands lsp-ui-doc-hide
-  :custom-face
+
+  ;; :custom-face
   ;; (lsp-ui-doc-background ((t (:background ,(face-background 'tooltip)))))
-  (lsp-ui-sideline-code-action ((t (:inherit warning))))
+  ;; (lsp-ui-sideline-code-action ((t (:inherit warning))))
+
   :hook (after-load-theme . (lambda ()
 			      (set-face-attribute 'lsp-ui-doc-background nil
 						  :background (face-background 'tooltip))))
@@ -268,8 +224,8 @@
   (with-no-warnings
     (defun my-company-lsp--on-completion (response prefix)
       "Handle completion RESPONSE.
-PREFIX is a string of the prefix when the completion is requested.
-Return a list of strings as the completion candidates."
+       PREFIX is a string of the prefix when the completion is requested.
+       Return a list of strings as the completion candidates."
       (let* ((incomplete (and (hash-table-p response) (gethash "isIncomplete" response)))
 	     (items (cond ((hash-table-p response) (gethash "items" response))
 			  ((sequencep response) response)))
@@ -309,248 +265,249 @@ Return a list of strings as the completion candidates."
 ;; Debug
 ;; python: pip install "ptvsd>=4.2" 
 ;; C++: build lldb from https://github.com/llvm-mirror/lldb/tree/master/tools/lldb-vscode
-(use-package dap-mode
-  :ensure t
-  :diminish
-  :bind (:map lsp-mode-map
-              ("<f5>" . dap-debug)
-              ("M-<f5>" . dap-hydra))
-  :hook ((after-init . dap-mode)
-         (dap-mode . dap-ui-mode)
-         (dap-session-created . (lambda (_args) (dap-hydra)))
-         (dap-stopped . (lambda (_args) (dap-hydra)))
+;; (use-package dap-mode
+;;   :ensure t
+;;   :diminish
+;;   :bind (:map lsp-mode-map
+;;               ("<f5>" . dap-debug)
+;;               ("M-<f5>" . dap-hydra))
+;;   :hook ((after-init . dap-mode)
+;;          (dap-mode . dap-ui-mode)
+;;          (dap-session-created . (lambda (_args) (dap-hydra)))
+;;          (dap-stopped . (lambda (_args) (dap-hydra)))
 
-         (python-mode . (lambda () (require 'dap-python)))
-         ;; (ruby-mode . (lambda () (require 'dap-ruby)))
-         (go-mode . (lambda () (require 'dap-go)))
-         (java-mode . (lambda () (require 'dap-java)))
-         ((c-mode c++-mode objc-mode swift-mode) . (lambda () (require 'dap-lldb)))
-         ;; (php-mode . (lambda () (require 'dap-php)))
-         ;; (elixir-mode . (lambda () (require 'dap-elixir)))
-         ;; ((js-mode js2-mode) . (lambda () (require 'dap-chrome)))
-         (powershell-mode . (lambda () (require 'dap-pwsh)))))
+;;          (python-mode . (lambda () (require 'dap-python)))
+;;          ;; (ruby-mode . (lambda () (require 'dap-ruby)))
+;;          (go-mode . (lambda () (require 'dap-go)))
+;;          (java-mode . (lambda () (require 'dap-java)))
+;;          ((c-mode c++-mode objc-mode swift-mode) . (lambda () (require 'dap-lldb)))
+;;          ;; (php-mode . (lambda () (require 'dap-php)))
+;;          ;; (elixir-mode . (lambda () (require 'dap-elixir)))
+;;          ;; ((js-mode js2-mode) . (lambda () (require 'dap-chrome)))
+;;          ;; (powershell-mode . (lambda () (require 'dap-pwsh)))
+;; 	 ))
 
-;; ;; `lsp-mode' and `treemacs' integration
-;; (when (version<= "25.2" emacs-version)
-;;   (use-package lsp-treemacs
-;;     :ensure t
-;;     :after lsp-mode
-;;     :bind (:map lsp-mode-map
-;; 		("C-<f8>" . lsp-treemacs-errors-list)
-;; 		("M-<f8>" . lsp-treemacs-symbols)
-;; 		("s-<f8>" . lsp-treemacs-java-deps-list))
-;;     :config
-;;     (with-eval-after-load 'ace-window
-;;       (when (boundp 'aw-ignored-buffers)
-;;         (push 'lsp-treemacs-symbols-mode aw-ignored-buffers)
-;;         (push 'lsp-treemacs-java-deps-mode aw-ignored-buffers)))
+;; `lsp-mode' and `treemacs' integration
+(when (> emacs-major-version 25)
+  (use-package lsp-treemacs
+    :ensure t
+    :after lsp-mode
+    :bind (:map lsp-mode-map
+		("C-<f8>" . lsp-treemacs-errors-list)
+		("M-<f8>" . lsp-treemacs-symbols)
+		("s-<f8>" . lsp-treemacs-java-deps-list))
+    :config
+    (with-eval-after-load 'ace-window
+      (when (boundp 'aw-ignored-buffers)
+        (push 'lsp-treemacs-symbols-mode aw-ignored-buffers)
+        (push 'lsp-treemacs-java-deps-mode aw-ignored-buffers)))
 
-;;     (with-no-warnings
-;;       (when (require 'all-the-icons nil t)
-;;         (treemacs-create-theme "petmacs-colors"
-;; 			       :extends "doom-colors"
-;; 			       :config
-;; 			       (progn
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "repo" :height 1.0 :v-adjust -0.1 :face 'all-the-icons-blue))
-;; 				  :extensions (root))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "tag" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-lblue))
-;; 				  :extensions (boolean-data))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "settings_input_component" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-orange))
-;; 				  :extensions (class))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "palette" :height 0.95 :v-adjust -0.15))
-;; 				  :extensions (color-palette))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "square-o" :height 0.95 :v-adjust -0.05))
-;; 				  :extensions (constant))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "file-text-o" :height 0.95 :v-adjust -0.05))
-;; 				  :extensions (document))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "storage" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-orange))
-;; 				  :extensions (enumerator))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "format_align_right" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-lblue))
-;; 				  :extensions (enumitem))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "bolt" :height 0.95 :v-adjust -0.05 :face 'all-the-icons-orange))
-;; 				  :extensions (event))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "tag" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-lblue))
-;; 				  :extensions (field))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "search" :height 0.95 :v-adjust -0.05))
-;; 				  :extensions (indexer))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "filter_center_focus" :height 0.95 :v-adjust -0.15))
-;; 				  :extensions (intellisense-keyword))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "share" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-lblue))
-;; 				  :extensions (interface))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "tag" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-lblue))
-;; 				  :extensions (localvariable))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "cube" :height 0.95 :v-adjust -0.05 :face 'all-the-icons-purple))
-;; 				  :extensions (method))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "view_module" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-lblue))
-;; 				  :extensions (namespace))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "format_list_numbered" :height 0.95 :v-adjust -0.15))
-;; 				  :extensions (numeric))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "control_point" :height 0.95 :v-adjust -0.2))
-;; 				  :extensions (operator))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "wrench" :height 0.8 :v-adjust -0.05))
-;; 				  :extensions (property))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "format_align_center" :height 0.95 :v-adjust -0.15))
-;; 				  :extensions (snippet))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "text-width" :height 0.9 :v-adjust -0.05))
-;; 				  :extensions (string))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "settings_input_component" :height 0.9 :v-adjust -0.15 :face 'all-the-icons-orange))
-;; 				  :extensions (structure))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "format_align_center" :height 0.95 :v-adjust -0.15))
-;; 				  :extensions (template))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face 'font-lock-doc-face))
-;; 				  :extensions (collapsed) :fallback "+")
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face 'font-lock-doc-face))
-;; 				  :extensions (expanded) :fallback "-")
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-binary" :height 0.9  :v-adjust 0.0 :face 'font-lock-doc-face))
-;; 				  :extensions (classfile))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-blue))
-;; 				  :extensions (default-folder-opened))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-blue))
-;; 				  :extensions (default-folder))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-green))
-;; 				  :extensions (default-root-folder-opened))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-green))
-;; 				  :extensions (default-root-folder))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-binary" :height 0.9 :v-adjust 0.0 :face 'font-lock-doc-face))
-;; 				  :extensions ("class"))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-zip" :height 0.9 :v-adjust 0.0 :face 'font-lock-doc-face))
-;; 				  :extensions (file-type-jar))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
-;; 				  :extensions (folder-open))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'font-lock-doc-face))
-;; 				  :extensions (folder))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-orange))
-;; 				  :extensions (folder-type-component-opened))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-orange))
-;; 				  :extensions (folder-type-component))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-green))
-;; 				  :extensions (folder-type-library-opened))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-green))
-;; 				  :extensions (folder-type-library))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-pink))
-;; 				  :extensions (folder-type-maven-opened))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-pink))
-;; 				  :extensions (folder-type-maven))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'font-lock-type-face))
-;; 				  :extensions (folder-type-package-opened))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'font-lock-type-face))
-;; 				  :extensions (folder-type-package))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "plus" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
-;; 				  :extensions (icon-create))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "list" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
-;; 				  :extensions (icon-flat))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-material "share" :height 0.95 :v-adjust -0.2 :face 'all-the-icons-lblue))
-;; 				  :extensions (icon-hierarchical))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "link" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
-;; 				  :extensions (icon-link))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "refresh" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
-;; 				  :extensions (icon-refresh))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "chain-broken" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
-;; 				  :extensions (icon-unlink))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-alltheicon "java" :height 1.0 :v-adjust 0.0 :face 'all-the-icons-orange))
-;; 				  :extensions (jar))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "book" :height 0.95 :v-adjust -0.05 :face 'all-the-icons-green))
-;; 				  :extensions (library))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "folder-open" :face 'all-the-icons-lblue))
-;; 				  :extensions (packagefolder-open))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-lblue))
-;; 				  :extensions (packagefolder))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-faicon "archive" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
-;; 				  :extensions (package))
-;; 				 (treemacs-create-icon
-;; 				  :icon (format "%s " (all-the-icons-octicon "repo" :height 1.0 :v-adjust -0.1 :face 'all-the-icons-blue))
-;; 				  :extensions (java-project))))
+    (with-no-warnings
+      (when (require 'all-the-icons nil t)
+        (treemacs-create-theme "petmacs-colors"
+	  :extends "doom-colors"
+	  :config
+	  (progn
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "repo" :height 1.0 :v-adjust -0.1 :face 'all-the-icons-blue))
+	     :extensions (root))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "tag" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-lblue))
+	     :extensions (boolean-data))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "settings_input_component" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-orange))
+	     :extensions (class))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "palette" :height 0.95 :v-adjust -0.15))
+	     :extensions (color-palette))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "square-o" :height 0.95 :v-adjust -0.05))
+	     :extensions (constant))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "file-text-o" :height 0.95 :v-adjust -0.05))
+	     :extensions (document))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "storage" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-orange))
+	     :extensions (enumerator))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "format_align_right" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-lblue))
+	     :extensions (enumitem))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "bolt" :height 0.95 :v-adjust -0.05 :face 'all-the-icons-orange))
+	     :extensions (event))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "tag" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-lblue))
+	     :extensions (field))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "search" :height 0.95 :v-adjust -0.05))
+	     :extensions (indexer))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "filter_center_focus" :height 0.95 :v-adjust -0.15))
+	     :extensions (intellisense-keyword))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "share" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-lblue))
+	     :extensions (interface))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "tag" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-lblue))
+	     :extensions (localvariable))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "cube" :height 0.95 :v-adjust -0.05 :face 'all-the-icons-purple))
+	     :extensions (method))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "view_module" :height 0.95 :v-adjust -0.15 :face 'all-the-icons-lblue))
+	     :extensions (namespace))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "format_list_numbered" :height 0.95 :v-adjust -0.15))
+	     :extensions (numeric))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "control_point" :height 0.95 :v-adjust -0.2))
+	     :extensions (operator))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "wrench" :height 0.8 :v-adjust -0.05))
+	     :extensions (property))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "format_align_center" :height 0.95 :v-adjust -0.15))
+	     :extensions (snippet))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "text-width" :height 0.9 :v-adjust -0.05))
+	     :extensions (string))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "settings_input_component" :height 0.9 :v-adjust -0.15 :face 'all-the-icons-orange))
+	     :extensions (structure))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "format_align_center" :height 0.95 :v-adjust -0.15))
+	     :extensions (template))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face 'font-lock-doc-face))
+	     :extensions (collapsed) :fallback "+")
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face 'font-lock-doc-face))
+	     :extensions (expanded) :fallback "-")
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-binary" :height 0.9  :v-adjust 0.0 :face 'font-lock-doc-face))
+	     :extensions (classfile))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-blue))
+	     :extensions (default-folder-opened))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-blue))
+	     :extensions (default-folder))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-green))
+	     :extensions (default-root-folder-opened))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-green))
+	     :extensions (default-root-folder))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-binary" :height 0.9 :v-adjust 0.0 :face 'font-lock-doc-face))
+	     :extensions ("class"))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-zip" :height 0.9 :v-adjust 0.0 :face 'font-lock-doc-face))
+	     :extensions (file-type-jar))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
+	     :extensions (folder-open))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'font-lock-doc-face))
+	     :extensions (folder))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-orange))
+	     :extensions (folder-type-component-opened))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-orange))
+	     :extensions (folder-type-component))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-green))
+	     :extensions (folder-type-library-opened))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-green))
+	     :extensions (folder-type-library))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'all-the-icons-pink))
+	     :extensions (folder-type-maven-opened))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-pink))
+	     :extensions (folder-type-maven))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "folder-open" :height 0.9 :v-adjust -0.05 :face 'font-lock-type-face))
+	     :extensions (folder-type-package-opened))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'font-lock-type-face))
+	     :extensions (folder-type-package))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "plus" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
+	     :extensions (icon-create))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "list" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
+	     :extensions (icon-flat))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-material "share" :height 0.95 :v-adjust -0.2 :face 'all-the-icons-lblue))
+	     :extensions (icon-hierarchical))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "link" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
+	     :extensions (icon-link))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "refresh" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
+	     :extensions (icon-refresh))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "chain-broken" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
+	     :extensions (icon-unlink))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-alltheicon "java" :height 1.0 :v-adjust 0.0 :face 'all-the-icons-orange))
+	     :extensions (jar))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "book" :height 0.95 :v-adjust -0.05 :face 'all-the-icons-green))
+	     :extensions (library))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "folder-open" :face 'all-the-icons-lblue))
+	     :extensions (packagefolder-open))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "file-directory" :height 0.9 :v-adjust 0.0 :face 'all-the-icons-lblue))
+	     :extensions (packagefolder))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-faicon "archive" :height 0.9 :v-adjust -0.05 :face 'font-lock-doc-face))
+	     :extensions (package))
+	    (treemacs-create-icon
+	     :icon (format "%s " (all-the-icons-octicon "repo" :height 1.0 :v-adjust -0.1 :face 'all-the-icons-blue))
+	     :extensions (java-project))))
 
-;;         (setq lsp-treemacs-theme "petmacs-colors")))))
+        (setq lsp-treemacs-theme "petmacs-colors")))))
 
-;; Enable LSP in org babel
-;; https://github.com/emacs-lsp/lsp-mode/issues/377
-(cl-defmacro lsp-org-babel-enable (lang)
-  "Support LANG in org source code block."
-  (cl-check-type lang stringp)
-  (let* ((edit-pre (intern (format "org-babel-edit-prep:%s" lang)))
-         (intern-pre (intern (format "lsp--%s" (symbol-name edit-pre)))))
-    `(progn
-       (defun ,intern-pre (info)
-         (let ((filename (or (->> info caddr (alist-get :file))
-                             buffer-file-name)))
-           (unless filename
-             (user-error "LSP:: specify `:file' property to enable."))
+;; ;; Enable LSP in org babel
+;; ;; https://github.com/emacs-lsp/lsp-mode/issues/377
+;; (cl-defmacro lsp-org-babel-enable (lang)
+;;   "Support LANG in org source code block."
+;;   (cl-check-type lang stringp)
+;;   (let* ((edit-pre (intern (format "org-babel-edit-prep:%s" lang)))
+;;          (intern-pre (intern (format "lsp--%s" (symbol-name edit-pre)))))
+;;     `(progn
+;;        (defun ,intern-pre (info)
+;;          (let ((filename (or (->> info caddr (alist-get :file))
+;;                              buffer-file-name)))
+;;            (unless filename
+;;              (user-error "LSP:: specify `:file' property to enable."))
 
-           (setq buffer-file-name filename)
-	   ;; `lsp-auto-guess-root' MUST be non-nil.
-	   (setq lsp-buffer-uri (lsp--path-to-uri filename))
-	   (lsp-deferred)))
-       (put ',intern-pre 'function-documentation
-            (format "Enable lsp in the buffer of org source block (%s)." (upcase ,lang)))
+;;            (setq buffer-file-name filename)
+;; 	   ;; `lsp-auto-guess-root' MUST be non-nil.
+;; 	   (setq lsp-buffer-uri (lsp--path-to-uri filename))
+;; 	   (lsp-deferred)))
+;;        (put ',intern-pre 'function-documentation
+;;             (format "Enable lsp in the buffer of org source block (%s)." (upcase ,lang)))
 
-       (if (fboundp ',edit-pre)
-           (advice-add ',edit-pre :after ',intern-pre)
-         (progn
-           (defun ,edit-pre (info)
-             (,intern-pre info))
-           (put ',edit-pre 'function-documentation
-                (format "Prepare local buffer environment for org source block (%s)."
-                        (upcase ,lang))))))))
+;;        (if (fboundp ',edit-pre)
+;;            (advice-add ',edit-pre :after ',intern-pre)
+;;          (progn
+;;            (defun ,edit-pre (info)
+;;              (,intern-pre info))
+;;            (put ',edit-pre 'function-documentation
+;;                 (format "Prepare local buffer environment for org source block (%s)."
+;;                         (upcase ,lang))))))))
 
-(defvar org-babel-lang-list
-  '("go" "python" "ipython" "ruby" "js" "css" "sass" "C" "rust" "java"))
-(add-to-list 'org-babel-lang-list (if (version<= "26" emacs-version) "shell" "sh"))
-(dolist (lang org-babel-lang-list)
-  (eval `(lsp-org-babel-enable ,lang)))
+;; (defvar org-babel-lang-list
+;;   '("go" "python" "ipython" "ruby" "js" "css" "sass" "C" "rust" "java"))
+;; (add-to-list 'org-babel-lang-list (if (>= emacs-major-version 26) "shell" "sh"))
+;; (dolist (lang org-babel-lang-list)
+;;   (eval `(lsp-org-babel-enable ,lang)))
 
 (provide 'init-lsp)
 (message "init-lsp loaded in '%.2f' seconds ..." (get-time-diff time-marked))
