@@ -1,8 +1,8 @@
 ;;; -*- coding: utf-8 -*-
-(("f:/pytorch/nlp-tutorial/5-2.BERT/BERT-Torch.py" . 4364)
- ("f:/pytorch/nlp-tutorial/5-2.BERT/test_lsp.py" . 68)
+(("f:/pytorch/nlp-tutorial/5-2.BERT/test_lsp.py" . 131)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 721)
+ ("f:/pytorch/nlp-tutorial/5-2.BERT/BERT-Torch.py" . 4364)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 88)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 999)
  ("f:/pytorch/nlp-tutorial/5-2.BERT/"
   (dired-filename . "f:/pytorch/nlp-tutorial/5-2.BERT/test_lsp.py"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 3127)
@@ -47,7 +47,6 @@
  ("f:/pytest/"
   (dired-filename . "f:/pytest/fetchive"))
  ("f:/pytest/fetchive/" . 70)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/anaconda-mode-20190616.1019/anaconda-mode.el" . 23133)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week2_exercise.py" . 3987)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week2_exercise_clone.py" . 3192)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/week3_exercise.py" . 1807)
@@ -127,7 +126,6 @@
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/Horse-or-Human-WithAugmentation.py" . 3910)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/exercise6.py" . 7683)
  ("f:/pytest/tensorflow_test/tensorflow_practice/third_course/" . 111)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-python.el" . 83)
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/data/tmp2/"
   (dired-filename . "f:/pytest/tensorflow_test/tensorflow_practice/second_course/data/tmp2/cats-and-dogs.zip"))
  ("f:/pytest/tensorflow_test/tensorflow_practice/second_course/course2-part4-lesson2.py" . 4631)
@@ -137,7 +135,6 @@
  ("f:/pytest/sklearn_api_test/cls_textdoc_using_sparse_feature_self.py" . 9102)
  ("f:/pytest/tensorflow_test/hello_world_cnn.py" . 172)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/company-anaconda-20181025.1305/company-anaconda-autoloads.el" . 660)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/anaconda-mode-20190616.1019/anaconda-mode-autoloads.el" . 744)
  ("f:/pytest/sklearn_api_test/"
   (dired-filename . "f:/pytest/sklearn_api_test/cls_textdoc_using_sparse_feature_self.py"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/"
