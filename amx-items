@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- lsp-restart-workspace
+ server-force-delete
  company-lsp
  lsp-ui-mode
- lsp-mode
  restart-emacs
  xref-quit-and-goto-xref
  xref--xref-buffer-mode
+ lsp
 )
 
 ;; ----- amx-data -----
@@ -206,4 +206,5 @@
  (kill-emacs . 1)
  (xref--xref-buffer-mode . 1)
  (xref-quit-and-goto-xref . 1)
+ (server-force-delete . 1)
 )

@@ -1,11 +1,11 @@
 ;;; -*- coding: utf-8 -*-
-(("f:/pytorch/nlp-tutorial/5-2.BERT/test_lsp.py" . 131)
+(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 3217)
+ ("f:/pytorch/nlp-tutorial/5-2.BERT/test_lsp.py" . 131)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 721)
  ("f:/pytorch/nlp-tutorial/5-2.BERT/BERT-Torch.py" . 4364)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 88)
  ("f:/pytorch/nlp-tutorial/5-2.BERT/"
   (dired-filename . "f:/pytorch/nlp-tutorial/5-2.BERT/test_lsp.py"))
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 3127)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-python-lsp.el" . 3387)
  ("d:/Emacs/x86_64/share/emacs/28.0.50/lisp/progmodes/xref.el" . 27379)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-default.el" . 5428)
