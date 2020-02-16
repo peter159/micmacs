@@ -1,0 +1,5 @@
+* Default Workspace
+** pytorch
+ - path :: f:/pytorch
+** .emacs.d
+ - path :: ~/.emacs.d
