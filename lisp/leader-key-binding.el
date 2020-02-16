@@ -269,6 +269,52 @@
 (petmacs//set-key-prefix-name "h" "help")
 (petmacs//set-key-prefix-name "v" "virtualenv")
 
+;;; lsp major mode settings
+(dolist (mode petmacs-lsp-active-modes)
+  (evil-leader/set-key-for-mode mode
+    ;; format
+    "m=b" #'lsp-format-buffer
+    "m=r" #'lsp-format-region
+    ;; goto
+    "mgr" #'lsp-find-references
+    "mgt" #'lsp-find-type-definition
+    "mgd" #'xref-find-definitions
+    "mgD" #'lsp-find-declaration
+    "mgi" #'lsp-find-implementation
+    "mgk" #'petmacs/lsp-avy-goto-word
+    "mgK" #'petmacs/lsp-avy-goto-symbol
+    "mgM" #'lsp-ui-imenu
+    ;; goto other window
+    "mGr" #'petmacs/lsp-find-references-other-window
+    "mGt" #'petmacs/lsp-find-type-definition-other-window
+    "mGd" #'petmacs/lsp-find-definition-other-window
+    "mGD" #'petmacs/lsp-find-declaration-other-window
+    "mGi" #'petmacs/lsp-find-implementation-other-window
+    ;; peek
+    "mpd" #'lsp-ui-peek-find-definitions
+    "mpi" #'lsp-ui-peek-find-implementation
+    "mpr" #'lsp-ui-peek-find-references
+    "mpRn" #'lsp-ui-find-next-reference
+    "mpRp" #'lsp-ui-find-prev-reference
+    ;; backend
+    "mba" #'lsp-execute-code-action
+    "mbd" #'lsp-describe-session
+    "mbr" #'lsp-restart-workspace
+    "mbs" #'lsp-shutdown-workspace
+    ;; refactor
+    "mrr" #'lsp-rename
+    ;; toggles
+    "mTd" #'lsp-ui-doc-mode
+    "mTs" #'lsp-ui-sideline-mode
+    "mTF" #'petmacs/lsp-ui-doc-func
+    "mTS" #'petmacs/lsp-ui-sideline-symb
+    "mTI" #'petmacs/lsp-ui-sideline-ignore-duplicate
+    "mTl" #'lsp-lens-mode
+    ;; folders
+    "mFs" #'lsp-workspace-folders-switch
+    "mFr" #'lsp-workspace-folders-remove
+    "mFa" #'lsp-workspace-folders-add)
+  )
 
 ;;; json
 (evil-leader/set-key-for-mode 'json-mode "m=" 'prettier-js)

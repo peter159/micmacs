@@ -119,7 +119,7 @@
     (doom-themes-org-config)))
 
 ;; loading default theme
-(load-theme 'spacemacs-light t)
+(load-theme 'spacemacs-dark t)
 
 (use-package display-line-numbers-mode
   :ensure nil

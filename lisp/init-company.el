@@ -60,6 +60,7 @@
 	;; completion-styles 'partial-completion
 	company-dabbrev-ignore-case nil
 	company-dabbrev-downcase nil)
+  (global-company-mode t)
   (define-key emacs-lisp-mode-map (kbd "C-M-i") 'company-complete))
 
 (when (>= emacs-major-version 25) 

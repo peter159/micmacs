@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- server-force-delete
- company-lsp
- lsp-ui-mode
- restart-emacs
- xref-quit-and-goto-xref
- xref--xref-buffer-mode
  lsp
+ company-lsp
+ lsp-ui-peek-find-definitions
+ lsp-ui-peek-find-references
+ lsp-find-definition
+ lsp-describe-session
+ restart-emacs
 )
 
 ;; ----- amx-data -----
@@ -90,7 +90,7 @@
  (petmacs/python-quit-repl . 1)
  (petmacs/python-start-or-switch-repl . 1)
  (petmacs/pyvenv-activate . 3)
- (petmacs/pyvenv-workon . 3)
+ (petmacs/pyvenv-workon . 4)
  (scroll-up . 2)
  (move-beginning-of-line . 1)
  (move-end-of-line . 1)
@@ -108,7 +108,7 @@
  (menu-bar-mode . 5)
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
- (anaconda-mode . 4)
+ (anaconda-mode . 6)
  (ess-display-help-in-browser . 1)
  (ess-display-package-index . 2)
  (aggressive-indent-mode . 2)
@@ -154,14 +154,14 @@
  (smart-semicolon-mode . 2)
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 2)
- (lsp-ui-mode . 5)
- (lsp-ui-doc-show . 5)
+ (lsp-ui-mode . 7)
+ (lsp-ui-doc-show . 12)
  (evil-move . 1)
- (lsp-find-definition . 20)
- (lsp-mode . 8)
+ (lsp-find-definition . 22)
+ (lsp-mode . 13)
  (lsp-lens-mode . 1)
- (lsp . 45)
- (company-lsp . 3)
+ (lsp . 64)
+ (company-lsp . 15)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
  (ccls-tree-quit . 1)
@@ -169,8 +169,8 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 3)
- (lsp-restart-workspace . 3)
+ (lsp-ui-peek-find-definitions . 4)
+ (lsp-restart-workspace . 4)
  (lsp-ui-peek-mode . 1)
  (eglot . 12)
  (eglot-reconnect . 4)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 5)
+ (package-reinstall . 6)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 1)
  (toggle-debug-on-error . 2)
@@ -207,4 +207,17 @@
  (xref--xref-buffer-mode . 1)
  (xref-quit-and-goto-xref . 1)
  (server-force-delete . 1)
+ (python-mode . 2)
+ (lsp-signature-activate . 1)
+ (lsp-describe-session . 6)
+ (lsp-document-highlight . 2)
+ (petmacs/next-error . 1)
+ (petmacs/goto-dashboard . 1)
+ (petmacs/lsp-ui-doc-func . 2)
+ (petmacs/treemacs-project-toggle . 1)
+ (lsp-python-ms-update-server . 1)
+ (toggle-ui-doc-show/hide . 3)
+ (lsp-ui-doc-hide . 1)
+ (lsp-disconnect . 1)
+ (lsp-ui-peek-find-references . 1)
 )
