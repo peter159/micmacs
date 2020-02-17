@@ -3,6 +3,9 @@
 ---
 
 ## Prerequisites
+
+download emacs for [windows](https://github.com/m-parashar/emax64) specially, for linux make a normal download and compile
+
 MicMacs requires fonts for better display
 
 - Fonts
@@ -47,3 +50,10 @@ Fonts, is sometimes critical for UI thing, here recommend to use `Fira Code Reti
 
 ## SNAPSHOT
 ![snapshot](./img/snapshot.png)
+
+## IMPORTANT
+
+* master 版本是专门为emax26打造，经测试在emacs27+上面会有一些bug (e.g. `anaconda-go-to-definition` not working / `restart-emacs` report bug)，应该是emacs升级后内部架构发生了实质性变化
+
+
+

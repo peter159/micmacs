@@ -1,6 +1,11 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 54)
+(("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 134)
+ ("g:/Projects/Pypkg/dapre/test.py" . 92)
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/init.el" . 2557)
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/treemacs-projectile-20190313.626"))
+ ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
+  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-ui.el" . 4241)
  ("d:/Anaconda3/envs/pytorch/Lib/random.py" . 6033)
  ("f:/pytorch/nlp-tutorial/5-2.BERT/BERT-Torch.py" . 4364)
@@ -115,8 +120,6 @@
   (dired-filename . "f:/pytest/sklearn_api_test/cls_textdoc_using_sparse_feature_self.py"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/"
   (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/.cache/treemacs-persist"))
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/"
-  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode"))
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/anaconda-mode/" . 109)
  ("f:/pytest/sklearn_api_test/cls_glm_ols.py" . 595)
  ("f:/pytest/sklearn_api_test/utils.py" . 209)
@@ -187,8 +190,6 @@
  ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/lisp/init-shell.el" . 6459)
  ("f:/cpp_proj/udacity/CppND-Route-Planning-Project/src/route_model.h" . 631)
  ("f:/cpp_proj/udacity/CppND-Route-Planning-Project/src/route_model.cpp" . 120)
- ("c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/"
-  (dired-filename . "c:/Users/peter.linyi/AppData/Roaming/.emacs.d/elpa/projectile-20190126.1117"))
  ("f:/deeplearning/catsdogs/exercise5_self.py" . 3127)
  ("f:/deeplearning/dl_intro/perceptron.py" . 792)
  ("f:/cpp_proj/udacity/CppND-Route-Planning-Project/src/main.cpp" . 1608)
