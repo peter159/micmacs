@@ -18,8 +18,10 @@ pip install pylint yapf isort
 ```
 
 - lsp-mode 在python环境下使用
-- download and [automatic] build mspyls, first start virtual env and then start `lsp`
+
+  download and [automatic] build mspyls, first start virtual env and then start `lsp`
 - C/C++ packages
+  
   - build [ccls](https://github.com/MaskRay/ccls) language server at $HOME path
 - nodejs packages
 ```sh
