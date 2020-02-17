@@ -131,7 +131,7 @@
 	 :map lsp-mode-map
 	 ("C-c C-d" . lsp-describe-thing-at-point))
   :init
-  (setq lsp-auto-guess-root nil		;; Detect project root
+  (setq lsp-auto-guess-root t		;; Detect project root
         lsp-keep-workspace-alive nil    ;; Auto-kill LSP server
 	lsp-prefer-flymake nil		;; Use lsp-ui and flycheck
 	read-process-output-max (* 1024 1024)
@@ -171,7 +171,7 @@
 				(hl-line-mode -1))))
   :init
   (setq lsp-ui-doc-enable nil
-	lsp-ui-doc-use-webkit t
+	lsp-ui-doc-use-webkit nil
 	lsp-ui-doc-delay 0.2
 	lsp-ui-doc-include-signature t
 	lsp-ui-doc-position 'at-point  ;; top or at-point

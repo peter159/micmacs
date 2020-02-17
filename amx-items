@@ -2,24 +2,24 @@
 ;; ----- amx-history -----
 (
  lsp
- company-lsp
- lsp-ui-peek-find-definitions
- lsp-ui-peek-find-references
- lsp-find-definition
  lsp-describe-session
- restart-emacs
+ projectile-find-file
+ projectile-commander
+ lsp-describe-thing-at-point
+ company-lsp
+ yapfify-buffer
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 64)
+ (restart-emacs . 66)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 9)
- (auto-insert . 10)
+ (ivy-mode . 10)
+ (auto-insert . 11)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 5)
@@ -68,7 +68,7 @@
  (other-window . 1)
  (python-shell-send-buffer . 1)
  (anaconda-mode-find-references . 2)
- (petmacs/python-execute-file . 3)
+ (petmacs/python-execute-file . 6)
  (forward-list . 1)
  (xref-find-references . 13)
  (dired-find-file . 3)
@@ -128,7 +128,7 @@
  (profiler-report . 1)
  (yapf-mode . 4)
  (previous-line . 2)
- (replace-string . 16)
+ (replace-string . 20)
  (quit-window . 5)
  (flymake-mode . 8)
  (flycheck-info . 1)
@@ -142,7 +142,7 @@
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
- (yapfify-buffer . 1)
+ (yapfify-buffer . 2)
  (yapfify-region . 2)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
@@ -160,8 +160,8 @@
  (lsp-find-definition . 22)
  (lsp-mode . 13)
  (lsp-lens-mode . 1)
- (lsp . 64)
- (company-lsp . 15)
+ (lsp . 76)
+ (company-lsp . 17)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
  (ccls-tree-quit . 1)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 6)
+ (package-reinstall . 8)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 1)
  (toggle-debug-on-error . 2)
@@ -209,7 +209,7 @@
  (server-force-delete . 1)
  (python-mode . 2)
  (lsp-signature-activate . 1)
- (lsp-describe-session . 6)
+ (lsp-describe-session . 8)
  (lsp-document-highlight . 2)
  (petmacs/next-error . 1)
  (petmacs/goto-dashboard . 1)
@@ -219,5 +219,19 @@
  (toggle-ui-doc-show/hide . 3)
  (lsp-ui-doc-hide . 1)
  (lsp-disconnect . 1)
- (lsp-ui-peek-find-references . 1)
+ (lsp-ui-peek-find-references . 2)
+ (elpy-doc . 4)
+ (elpy-enable . 2)
+ (elpy-company-backend . 1)
+ (elpy-goto-definition . 4)
+ (elpy-shell-send-file . 1)
+ (elpy-refactor . 6)
+ (elpy-config . 3)
+ (elpy-shell-kill . 1)
+ (elpy-rpc-restart . 3)
+ (list-processes . 1)
+ (pyvenv-activate . 2)
+ (lsp-describe-thing-at-point . 1)
+ (projectile-commander . 1)
+ (projectile-find-file . 1)
 )

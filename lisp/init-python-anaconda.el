@@ -260,12 +260,12 @@ If the error list is visible, hide it.  Otherwise, show it."
 
 (use-package pyvenv :ensure t)
 
-;; ;; Format using YAPF
-;; ;; Install: pip install yapf
-;; (use-package yapfify
-;;   :ensure t
-;;   :diminish yapf-mode
-;;   :hook (python-mode . yapf-mode))
+;; Format using YAPF
+;; Install: pip install yapf
+(use-package yapfify
+  :ensure t
+  :diminish yapf-mode
+  :hook (python-mode . yapf-mode))
 
 (use-package anaconda-mode
   :ensure t
@@ -290,41 +290,41 @@ If the error list is visible, hide it.  Otherwise, show it."
 
 (use-package virtualenvwrapper :ensure t)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;docstring
-(defun chomp (str)
-  "Chomp leading and tailing whitespace from STR."
-  (let ((s (if (symbolp str) (symbol-name str) str)))
-    (replace-regexp-in-string
-     "\\(^[[:space:]\n]*\\|[[:space:]\n]*$\\)" "" s)))
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;docstring
+;; (defun chomp (str)
+;;   "Chomp leading and tailing whitespace from STR."
+;;   (let ((s (if (symbolp str) (symbol-name str) str)))
+;;     (replace-regexp-in-string
+;;      "\\(^[[:space:]\n]*\\|[[:space:]\n]*$\\)" "" s)))
 
-(defun get-function-definition(sentence)
-  (if (string-match "def.*(.*):" sentence)
-      (match-string 0 sentence)))
+;; (defun get-function-definition(sentence)
+;;   (if (string-match "def.*(.*):" sentence)
+;;       (match-string 0 sentence)))
 
-(defun get-parameters(sentence)
-  (setq y (get-function-definition sentence))
-  (if y
-      (if (string-match "(.*)" y)
-          (match-string 0 y))))
+;; (defun get-parameters(sentence)
+;;   (setq y (get-function-definition sentence))
+;;   (if y
+;;       (if (string-match "(.*)" y)
+;;           (match-string 0 y))))
 
-(autoload 'thing-at-point "thingatpt" nil t) ;; build-in librairie
+;; (autoload 'thing-at-point "thingatpt" nil t) ;; build-in librairie
 
-(defun python-insert-docstring()
-  (interactive)
-  (setq p (get-parameters (thing-at-point 'sentence)))
-  (forward-line 1)
-  (insert "    \"\"\"\n")
-  (insert "\tArgs:\n")
-  (setq params (split-string p "[?\,?\(?\)?\ ]"))
-  (while params
-    (if (/= (length (chomp (car params))) 0)
-        (progn
-          (insert "        ")
-          (insert (chomp (car params)))
-          (insert ": \n")))
-    (setq params (cdr params)))
-  (insert "    Returns:\n    \"\"\"\n"))
-(global-set-key (kbd "<f9>") 'python-insert-docstring)
+;; (defun python-insert-docstring()
+;;   (interactive)
+;;   (setq p (get-parameters (thing-at-point 'sentence)))
+;;   (forward-line 1)
+;;   (insert "    \"\"\"\n")
+;;   (insert "\tArgs:\n")
+;;   (setq params (split-string p "[?\,?\(?\)?\ ]"))
+;;   (while params
+;;     (if (/= (length (chomp (car params))) 0)
+;;         (progn
+;;           (insert "        ")
+;;           (insert (chomp (car params)))
+;;           (insert ": \n")))
+;;     (setq params (cdr params)))
+;;   (insert "    Returns:\n    \"\"\"\n"))
+;; (global-set-key (kbd "<f9>") 'python-insert-docstring)
 
 ;; TODO need docstring
 

@@ -144,6 +144,7 @@ decrease this. If you experience stuttering, increase this.")
 (require 'init-java)
 ;; (require 'init-python-anaconda) ;; not use lsp but anaconda to work
 (require 'init-python-lsp) ;; uncomment with `init-lsp' to get python work
+;; (require 'init-python-elpy) ;; working with elpy, not really ready
 (require 'init-ess)
 (require 'init-org)
 (require 'init-html)

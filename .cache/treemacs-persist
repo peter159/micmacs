@@ -3,3 +3,5 @@
  - path :: f:/pytorch
 ** .emacs.d
  - path :: ~/.emacs.d
+** dapre
+ - path :: g:/Projects/Pypkg/dapre

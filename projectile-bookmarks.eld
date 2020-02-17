@@ -1,1 +1,1 @@
-("~/.emacs.d/" "f:/" "d:/Anaconda3/envs/pytorch/Lib/site-packages/sklearn/" "d:/Emacs/x86_64/bin/" "d:/Anaconda3/envs/pytorch/Lib/site-packages/numpy/" "d:/Anaconda3/Lib/site-packages/numpy/linalg/")
+("~/.emacs.d/" "g:/Projects/Pypkg/dapre/" "f:/" "d:/Anaconda3/Lib/site-packages/sklearn/cluster/" "d:/Anaconda3/envs/pytorch/Lib/site-packages/numpy/random/" "d:/Anaconda3/envs/pytorch/Lib/site-packages/sklearn/" "d:/Emacs/x86_64/bin/" "d:/Anaconda3/envs/pytorch/Lib/site-packages/numpy/" "d:/Anaconda3/Lib/site-packages/numpy/linalg/")
