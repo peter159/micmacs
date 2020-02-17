@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- lsp
- lsp-describe-session
- projectile-find-file
- projectile-commander
- lsp-describe-thing-at-point
  company-lsp
- yapfify-buffer
+ lsp
+ package-reinstall
+ lsp-shutdown-workspace
+ lsp-ui-peek-find-definitions
+ python-mode
+ lsp-disconnect
 )
 
 ;; ----- amx-data -----
@@ -57,12 +57,12 @@
  (ess-display-help-on-object . 1)
  (load-theme . 3)
  (evil-motion-state . 19)
- (evil-mode . 7)
- (evil-leader-mode . 2)
+ (evil-mode . 9)
+ (evil-leader-mode . 4)
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
  (ibuffer-mode . 2)
- (doom-modeline-mode . 4)
+ (doom-modeline-mode . 6)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
  (other-window . 1)
@@ -104,7 +104,7 @@
  (recenter-top-bottom . 1)
  (grep . 1)
  (linum-mode . 3)
- (scroll-bar-mode . 2)
+ (scroll-bar-mode . 3)
  (menu-bar-mode . 5)
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 9)
+ (package-install . 10)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -155,13 +155,13 @@
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 2)
  (lsp-ui-mode . 7)
- (lsp-ui-doc-show . 12)
+ (lsp-ui-doc-show . 13)
  (evil-move . 1)
  (lsp-find-definition . 22)
  (lsp-mode . 13)
  (lsp-lens-mode . 1)
- (lsp . 76)
- (company-lsp . 17)
+ (lsp . 104)
+ (company-lsp . 24)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
  (ccls-tree-quit . 1)
@@ -169,7 +169,7 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 4)
+ (lsp-ui-peek-find-definitions . 7)
  (lsp-restart-workspace . 4)
  (lsp-ui-peek-mode . 1)
  (eglot . 12)
@@ -183,7 +183,7 @@
  (eglot-code-actions . 1)
  (eglot-format-buffer . 24)
  (eglot-signal-didChangeConfiguration . 1)
- (xref-goto-xref . 2)
+ (xref-goto-xref . 3)
  (lsp-mode-menu . 1)
  (xref-show-location-at-point . 1)
  (flycheck-mode . 1)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 8)
+ (package-reinstall . 11)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 1)
  (toggle-debug-on-error . 2)
@@ -207,9 +207,9 @@
  (xref--xref-buffer-mode . 1)
  (xref-quit-and-goto-xref . 1)
  (server-force-delete . 1)
- (python-mode . 2)
+ (python-mode . 4)
  (lsp-signature-activate . 1)
- (lsp-describe-session . 8)
+ (lsp-describe-session . 11)
  (lsp-document-highlight . 2)
  (petmacs/next-error . 1)
  (petmacs/goto-dashboard . 1)
@@ -218,7 +218,7 @@
  (lsp-python-ms-update-server . 1)
  (toggle-ui-doc-show/hide . 3)
  (lsp-ui-doc-hide . 1)
- (lsp-disconnect . 1)
+ (lsp-disconnect . 2)
  (lsp-ui-peek-find-references . 2)
  (elpy-doc . 4)
  (elpy-enable . 2)
@@ -234,4 +234,10 @@
  (lsp-describe-thing-at-point . 1)
  (projectile-commander . 1)
  (projectile-find-file . 1)
+ (column-number-mode . 2)
+ (xref-find-definitions-at-mouse . 1)
+ (hydra-ivy/body . 1)
+ (undo-tree-mode . 1)
+ (ibuffer . 1)
+ (lsp-shutdown-workspace . 1)
 )

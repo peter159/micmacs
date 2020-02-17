@@ -137,13 +137,13 @@ decrease this. If you experience stuttering, increase this.")
 (require 'init-program-basis)
 (require 'init-flycheck)
 ;; (require 'init-lsp-python) ;; this one only let python work
-(require 'init-lsp)
+;; (require 'init-lsp)
 (require 'init-eglot)
 (require 'init-elisp)
 (require 'init-c-c++)
 (require 'init-java)
-;; (require 'init-python-anaconda) ;; not use lsp but anaconda to work
-(require 'init-python-lsp) ;; uncomment with `init-lsp' to get python work
+(require 'init-python-anaconda) ;; not use lsp but anaconda to work
+;; (require 'init-python-lsp) ;; uncomment with `init-lsp' to get python work
 ;; (require 'init-python-elpy) ;; working with elpy, not really ready
 (require 'init-ess)
 (require 'init-org)

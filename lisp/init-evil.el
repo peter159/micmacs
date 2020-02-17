@@ -30,7 +30,8 @@
   :ensure t
   :defer nil
   :init
-  (global-evil-leader-mode))
+  (global-evil-leader-mode) ;TODO global-evil-leader-mode had to start before evil-mode to avoid *message* has no leader
+  )
 
 ;; (message "    ---- 1/12 of init-evil loaded using '%.2f' seconds ..." (get-time-diff time-marked))
 ;; (mark-time-here)
@@ -48,11 +49,12 @@
 ;; (mark-time-here)
 
 (use-package evil-anzu :ensure t)
+
 (use-package evil
   :ensure t
-  :init
+  ;; :init
   ;; (require 'evil-leader)
-  ;; (global-evil-leader-mode t)
+  ;; (global-evil-leader-mode)
 
   ;; (setq evil-want-C-u-scroll t)
   ;; (when evil-want-C-u-scroll
@@ -63,7 +65,8 @@
 
   :config
   (require 'evil-anzu)
-  (evil-mode)
+  (evil-mode 1)
+
   (progn
     (defun petmacs//evil-visual-shift-left ()
       "evil left shift without losing selection"

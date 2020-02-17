@@ -43,15 +43,13 @@
 (setq create-lockfiles nil)                ; Disable lock files .#filename
 (setq truncate-lines t)			   ; do not truncate long lines, to avoid wrong display
 
-(setq-default major-mode 'text-mode)
+(setq-default major-mode 'text-mode)	;make text-mode as default
 
 (if (fboundp 'scroll-bar-mode)
     (scroll-bar-mode -1))
 
 ;; Line and Column
-(setq-default fill-column 80)
-;; (tool-bar-mode -1)			; move to ui
-;; (menu-bar-mode -1)			; move to ui
+(setq-default fill-column 100)
 (setq column-number-mode t)
 ;; (setq line-number-mode t)
 
@@ -111,7 +109,7 @@
   :ensure nil
   :hook (after-init . recentf-mode)
   :init
-  (setq recentf-max-saved-items 200)
+  (setq recentf-max-saved-items 20)
   (setq recentf-exclude '((expand-file-name package-user-dir)
                           ".cache"
                           ".cask"
@@ -138,6 +136,7 @@
 
 ;; Show number of matches in mode-line while searching
 (use-package anzu
+  :ensure t
   :diminish
   :bind (([remap query-replace] . anzu-query-replace)
          ([remap query-replace-regexp] . anzu-query-replace-regexp)

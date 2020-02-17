@@ -68,8 +68,8 @@
 		 (push `((,point0 . ,point1) . ,w) candidates)))
       ;; (require 'avy)
       (avy-with avy-document-symbol
-		(avy--process candidates
-			      (avy--style-fn avy-style)))))
+	(avy--process candidates
+		      (avy--style-fn avy-style)))))
 
   (defun petmacs/lsp-avy-goto-word ()
     (interactive)
@@ -137,14 +137,14 @@
 	read-process-output-max (* 1024 1024)
 	flymake-fringe-indicator-position 'right-fringe)
 
-  ;; :config
-  ;; ;; Configure LSP clients
-  ;; (use-package lsp-clients
-  ;;   :ensure nil
-  ;;   :hook (go-mode . (lambda ()
-  ;;                      "Format and add/delete imports."
-  ;;                      (add-hook 'before-save-hook #'lsp-format-buffer t t)
-  ;;                      (add-hook 'before-save-hook #'lsp-organize-imports t t))))
+  :config
+  ;; Configure LSP clients
+  (use-package lsp-clients
+    :ensure nil
+    :hook (go-mode . (lambda ()
+                       "Format and add/delete imports."
+                       (add-hook 'before-save-hook #'lsp-format-buffer t t)
+                       (add-hook 'before-save-hook #'lsp-organize-imports t t))))
   )
 
 (use-package lsp-ui
