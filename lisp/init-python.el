@@ -261,12 +261,12 @@ If the error list is visible, hide it.  Otherwise, show it."
 
 (use-package pyvenv :ensure t)
 
-;; ;; Format using YAPF
-;; ;; Install: pip install yapf
-;; (use-package yapfify
-;;   :ensure t
-;;   :diminish yapf-mode
-;;   :hook (python-mode . yapf-mode))
+;; Format using YAPF
+;; Install: pip install yapf
+(use-package yapfify
+  :ensure t
+  :diminish yapf-mode
+  :hook (python-mode . yapf-mode))
 
 (use-package anaconda-mode
   :ensure t

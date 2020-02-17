@@ -50,7 +50,7 @@
 
 ;; display time
 (display-time-mode t) 
-(setq display-time-24hr-format t) 
+;; (setq display-time-24hr-format t) ;; void variable?
 (setq display-time-day-and-date t)
 
 ;; switch some words to icons, like folder etc.
@@ -118,7 +118,10 @@
     ;; Corrects (and improves) org-mode's native fontification.
     (doom-themes-org-config)))
 
-(load-theme 'doom-nord-light t)
+(use-package spacemacs-theme
+  :ensure t)
+
+(load-theme 'spacemacs-dark t)
 
 (use-package display-line-numbers-mode
   :ensure nil
