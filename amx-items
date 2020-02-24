@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ my-shell-here
  menu-bar-mode
  all-the-icons-install-fonts
  replace-string
  package-reinstall
  fci-mode
  format-find-file
- java-mode
 )
 
 ;; ----- amx-data -----
@@ -43,7 +43,7 @@
  (eval-expression . 4)
  (electric-operator-mode . 4)
  (move-to-window-line-top-bottom . 2)
- (my-shell-here . 29)
+ (my-shell-here . 30)
  (kill-buffer . 4)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
