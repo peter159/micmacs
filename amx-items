@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ yapfify-region
+ yapf-mode
+ yapfify-buffer
+ customize
  my-shell-here
  menu-bar-mode
  all-the-icons-install-fonts
- replace-string
- package-reinstall
- fci-mode
- format-find-file
 )
 
 ;; ----- amx-data -----
@@ -126,7 +126,7 @@
  (indent-region . 1)
  (profiler-start . 2)
  (profiler-report . 1)
- (yapf-mode . 4)
+ (yapf-mode . 8)
  (previous-line . 2)
  (replace-string . 16)
  (quit-window . 5)
@@ -142,8 +142,8 @@
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
- (yapfify-buffer . 1)
- (yapfify-region . 2)
+ (yapfify-buffer . 2)
+ (yapfify-region . 4)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
@@ -202,4 +202,5 @@
  (package-reinstall . 3)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 1)
+ (customize . 1)
 )

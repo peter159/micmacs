@@ -1,1 +1,1 @@
-("~/.emacs.d/" "/mnt/f/")
+("~/.emacs.d/" "g:/Projects/Pypkg/stockintel2/" "g:/Projects/Pypkg/stocketl/" "g:/Projects/Pypkg/account_book/" "d:/Anaconda3/envs/pytorch/Lib/site-packages/sklearn/utils/" "f:/" "d:/Anaconda3/envs/pytorch/Lib/site-packages/sklearn/")

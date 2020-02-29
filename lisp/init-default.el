@@ -49,7 +49,7 @@
     (scroll-bar-mode -1))
 
 ;; Line and Column
-(setq-default fill-column 80)
+(setq-default fill-column 100)
 ;; (tool-bar-mode -1)			; move to ui
 ;; (menu-bar-mode -1)			; move to ui
 (setq column-number-mode t)

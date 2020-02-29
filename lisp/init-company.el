@@ -55,7 +55,7 @@
 	company-tooltip-limit 12	      ; bigger popup window
 	company-idle-delay .1		      ; decrease delay before autocompletion popup shows
 	company-echo-delay 0		      ; remove annoying blinking
-	company-minimum-prefix-length 1
+	company-minimum-prefix-length 2
 	company-require-match nil
 	;; completion-styles 'partial-completion
 	company-dabbrev-ignore-case nil
