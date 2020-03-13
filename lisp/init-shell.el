@@ -148,7 +148,8 @@
 	    (w32-shell-execute "runas" "c:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 /bin/bash --login -i")
 	  (error (w32-shell-execute "runas" "d:\\msys64\\usr\\bin\\mintty.exe" "/bin/env MSYSTEM=64 CHERE_INVOKING=1 /bin/bash --login -i"))) ;eval either is ture
 	)
-    (start-process "" nil "/usr/bin/xfce4-terminal"))) ;windows = w32; linux = x; call shell command, but dont wait for it to finish before continuing
+    ;; (start-process "" nil "/usr/bin/xfce4-terminal"))) ;windows = w32; linux = x; call shell command, but dont wait for it to finish before continuing
+    (start-process "" nil "/usr/bin/gnome-terminal"))) ;windows = w32; linux = x; call shell command, but dont wait for it to finish before continuing
 
 ;; (define-key emacs-lisp-mode-map (kbd "C-S-c") 'open-mintty-terminal)
 (define-key global-map (kbd "C-S-c") 'open-mintty-terminal)

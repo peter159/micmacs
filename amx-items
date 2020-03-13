@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- yapfify-region
- yapf-mode
- yapfify-buffer
- customize
- my-shell-here
- menu-bar-mode
  all-the-icons-install-fonts
+ describe-fontset
+ all-the-icons-insert-wicon
+ package-reinstall
+ restart-emacs
+ yapfify-region
+ evil-escape-mode
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 57)
+ (restart-emacs . 60)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -128,7 +128,7 @@
  (profiler-report . 1)
  (yapf-mode . 8)
  (previous-line . 2)
- (replace-string . 16)
+ (replace-string . 17)
  (quit-window . 5)
  (flymake-mode . 8)
  (flycheck-info . 1)
@@ -142,8 +142,8 @@
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
- (yapfify-buffer . 2)
- (yapfify-region . 4)
+ (yapfify-buffer . 3)
+ (yapfify-region . 24)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
@@ -199,8 +199,12 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 3)
+ (package-reinstall . 4)
  (format-find-file . 1)
- (all-the-icons-install-fonts . 1)
+ (all-the-icons-install-fonts . 14)
  (customize . 1)
+ (company-anaconda . 1)
+ (evil-escape-mode . 2)
+ (all-the-icons-insert-wicon . 2)
+ (describe-fontset . 1)
 )
