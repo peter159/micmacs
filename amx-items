@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ server-start
+ server-force-delete
  all-the-icons-install-fonts
  describe-fontset
  all-the-icons-insert-wicon
  package-reinstall
  restart-emacs
- yapfify-region
- evil-escape-mode
 )
 
 ;; ----- amx-data -----
@@ -201,10 +201,12 @@
  (lsp-java-update-server . 2)
  (package-reinstall . 4)
  (format-find-file . 1)
- (all-the-icons-install-fonts . 14)
+ (all-the-icons-install-fonts . 20)
  (customize . 1)
  (company-anaconda . 1)
  (evil-escape-mode . 2)
  (all-the-icons-insert-wicon . 2)
  (describe-fontset . 1)
+ (server-force-delete . 1)
+ (server-start . 1)
 )

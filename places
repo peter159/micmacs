@@ -1,10 +1,27 @@
 ;;; -*- coding: utf-8 -*-
 (("/home/linyi/.emacs.d/.cache/treemacs-persist" . 65)
+ ("/mnt/f/Kaggle/predict_future_sales/scripts/process_data_simplified.py" . 330)
+ ("/home/linyi/.emacs.d/init.el" . 3055)
+ ("/home/linyi/.emacs.d/lisp/init-python.el" . 7360)
+ ("/snap/emacs/296/usr/share/emacs/26.3/lisp/env.el.gz" . 8346)
+ ("/home/linyi/.emacs.d/elpa/pyvenv-20181228.1722/pyvenv.el" . 20182)
  ("/home/linyi/"
-  (dired-filename . "/home/linyi/snap"))
- ("/home/linyi/.emacs.d/init.el" . 3227)
- ("/home/linyi/.emacs.d/lisp/init-shell.el" . 5808)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 982)
+  (dired-filename . "/home/linyi/test"))
+ ("/mnt/hgfs/F/Kaggle/predict_future_sales/scripts/model_xgb.py" . 673)
+ ("/mnt/hgfs/F/Kaggle/predict_future_sales/scripts/test.r" . 18)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 921)
+ ("/home/linyi/.emacs.d/lisp/leader-core-functions.el" . 4058)
+ ("/snap/emacs/296/usr/share/emacs/26.3/lisp/window.el.gz" . 318965)
+ ("/home/linyi/.emacs.d/lisp/init-dired.el" . 3423)
+ ("/home/linyi/.emacs.d/"
+  (dired-filename . "/home/linyi/.emacs.d/company-statistics-cache.el"))
+ ("/home/linyi/.emacs.d/lisp/init-font.el" . 1077)
+ ("/mnt/hgfs/F/Kaggle/predict_future_sales/scripts/"
+  (dired-filename . "/mnt/hgfs/F/Kaggle/predict_future_sales/scripts/xgb_test.pickle"))
+ ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 962)
+ ("/home/linyi/.emacs.d/recentf" . 782)
+ ("/home/linyi/.emacs.d/lisp/init-shell.el" . 1539)
+ ("/home/linyi/.emacs.d/lisp/"
+  (dired-filename . "/home/linyi/.emacs.d/lisp/init-python.el"))
  ("/home/linyi/.emacs.d/elpa/all-the-icons-20190320.1809/all-the-icons.el" . 58006)
- ("/home/linyi/.emacs.d/elpa/all-the-icons-20190320.1809/all-the-icons-autoloads.el" . 2151)
- ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 969))
+ ("/home/linyi/.emacs.d/elpa/all-the-icons-20190320.1809/all-the-icons-autoloads.el" . 2151))

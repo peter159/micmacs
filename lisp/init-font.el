@@ -27,7 +27,8 @@
 (mark-time-here)
 
 ;; setup english word font and size
-(set-face-attribute 'default nil :font (format "Fira Code Retina-%S" 12)) ; Fira Code Retina-%S
+;; (set-face-attribute 'default nil :font (format "JetBrains Mono-%S" 12)) ; Fira Code Retina-%S; Fira Code Retina-%S
+(set-face-attribute 'default nil :font (format "Fira Code Retina-%S" 12)) ; Fira Code Retina-%S; Fira Code Retina-%S
 
 ;; fix the delay when showing text in chinese
 (dolist (charset '(kana han cjk-misc bopomofo))

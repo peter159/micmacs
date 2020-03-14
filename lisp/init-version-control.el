@@ -27,8 +27,9 @@
 (mark-time-here)
 
 ;; set socks proxy
-(setq url-gateway-method 'socks)
-(setq socks-server '("Default server" "127.0.0.1" 1080 5))
+(setq url-proxy-services `(("http" . ,"127.0.0.1:12333")
+			   ("https" . ,"127.0.0.1:12333")
+			   ("no_proxy" . "^\\(localhost\\|192.168.*\\|10.*\\)")))
 
 (use-package magit
   :ensure t
