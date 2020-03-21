@@ -12,7 +12,7 @@ tramp
 .cache
 
 # anaconda-mode
-.anaconda-mode
+# .anaconda-mode
 
 # Org-mode
 .org-id-locations
