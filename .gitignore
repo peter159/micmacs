@@ -60,7 +60,7 @@ flycheck_*.el
 /transient/*
 
 # anaconda folder
-/anaconda-mode/
+# /anaconda-mode/
 
 # persp folder
 # /persp-confs/
