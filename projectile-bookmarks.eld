@@ -1,1 +1,1 @@
-("~/.emacs.d/" "/mnt/f/Kaggle/predict_future_sales/")
+("~/.emacs.d/")

@@ -30,7 +30,8 @@
   :ensure t
   :init
   ;; (setq inferior-ess-r-program "D:/R-3.5.1/bin/x64/Rterm.exe") ;inferior-R-program-name
-  (setq inferior-ess-r-program "c:/Users/peter.lin/R-3.6.2/bin/x64/Rterm.exe") ;inferior-R-program-name
+  ;; (setq inferior-ess-r-program "c:/Users/peter.lin/R-3.6.2/bin/x64/Rterm.exe") ;inferior-R-program-name
+  (setq inferior-ess-r-program "/usr/bin/R") ;inferior-R-program-name
   (setq ess-enable-smart-equal nil
 	ess-first-continued-statement-offset 2
 	ess-continued-statement-offset 0
