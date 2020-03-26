@@ -1,1 +1,1 @@
-("~/.emacs.d/")
+("~/.emacs.d/" "/mnt/hgfs/f/Kaggle/covid-19/")

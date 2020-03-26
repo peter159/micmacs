@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ fci-mode
+ yapfify-region
  all-the-icons-install-fonts
  server-start
  server-force-delete
  describe-fontset
  all-the-icons-insert-wicon
- package-reinstall
- restart-emacs
 )
 
 ;; ----- amx-data -----
@@ -52,7 +52,7 @@
  (eshell . 3)
  (open-mintty-terminal . 6)
  (eval-buffer . 2)
- (fci-mode . 38)
+ (fci-mode . 40)
  (recenter . 7)
  (ess-display-help-on-object . 1)
  (load-theme . 3)
@@ -143,7 +143,7 @@
  (emmet-mode . 1)
  (deer . 1)
  (yapfify-buffer . 3)
- (yapfify-region . 24)
+ (yapfify-region . 27)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
