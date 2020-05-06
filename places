@@ -1,5 +1,9 @@
 ;;; -*- coding: utf-8 -*-
-(("/mnt/hgfs/f/Kaggle/covid-19/script/dup_seir_modeling.py" . 736)
+(("/home/linyi/.emacs.d/init.el" . 2782)
+ ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1746)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 721)
+ ("/home/linyi/.emacs.d/recentf" . 1170)
+ ("/mnt/hgfs/f/Kaggle/covid-19/script/dup_seir_modeling.py" . 736)
  ("/mnt/hgfs/f/Kaggle/covid-19/script/china_seir_modeling.py" . 1760)
  ("/home/linyi/.emacs.d/lisp/init-ui.el" . 1941)
  ("/home/linyi/.emacs.d/lisp/init-default.el" . 917)
@@ -12,22 +16,17 @@
  ("/home/linyi/.emacs.d/lisp/init-highlight.el" . 905)
  ("/home/linyi/.emacs.d/lisp/init-project.el" . 976)
  ("/home/linyi/.emacs.d/lisp/init-yasnippet.el" . 831)
- ("/home/linyi/.emacs.d/init.el" . 2694)
  ("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 1031)
- ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 61)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 2380)
  ("/mnt/hgfs/f/Kaggle/covid-19/script/"
   (dired-filename . "/mnt/hgfs/f/Kaggle/covid-19/script/china_seir_modeling.py"))
  ("/home/linyi/.emacs.d/elpa/ess-20190727.1955/ess-custom.el" . 57182)
  ("/home/linyi/.emacs.d/lisp/init-ess.el" . 1025)
- ("/home/linyi/.emacs.d/recentf" . 1072)
  ("/home/linyi/Downloads/"
   (dired-filename . "/home/linyi/Downloads/test"))
  ("/home/linyi/"
   (dired-filename . "/home/linyi/Downloads"))
  ("/home/linyi/.emacs.d/"
   (dired-filename . "/home/linyi/.emacs.d/anaconda-mode"))
- ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 879)
  ("/mnt/f/Kaggle/predict_future_sales/scripts/process_data_simplified.py" . 330)
  ("/home/linyi/.emacs.d/lisp/init-python.el" . 7360)
  ("/snap/emacs/296/usr/share/emacs/26.3/lisp/env.el.gz" . 8346)

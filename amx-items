@@ -1,9 +1,9 @@
 
 ;; ----- amx-history -----
 (
+ all-the-icons-install-fonts
  fci-mode
  yapfify-region
- all-the-icons-install-fonts
  server-start
  server-force-delete
  describe-fontset
@@ -201,7 +201,7 @@
  (lsp-java-update-server . 2)
  (package-reinstall . 4)
  (format-find-file . 1)
- (all-the-icons-install-fonts . 21)
+ (all-the-icons-install-fonts . 25)
  (customize . 1)
  (company-anaconda . 1)
  (evil-escape-mode . 2)

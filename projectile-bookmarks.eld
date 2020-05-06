@@ -1,1 +1,1 @@
-("~/.emacs.d/" "/mnt/hgfs/f/Kaggle/covid-19/")
+("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/" "~/.emacs.d/")
