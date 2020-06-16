@@ -1,5 +1,45 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/linyi/.emacs.d/init.el" . 2782)
+(("/home/linyi/.emacs.d/.cache/treemacs-persist" . 149)
+ ("/media/linyi/DataScience/tobedelete/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/data_clean/make_json.py" . 5353)
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/tag_on/output_result.py" . 938)
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/textrcnn.py" . 3784)
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 5154)
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/test.py" . 1026)
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/test.py"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/runs/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/runs/May11_21-31-23_ubu-born-0"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/runs/May11_21-31-23_ubu-born-0/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/runs/May11_21-31-23_ubu-born-0/events.out.tfevents.1589203883.ubu-born-0"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/runs/May11_21-28-58_ubu-born-0/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/runs/May11_21-28-58_ubu-born-0/events.out.tfevents.1589203738.ubu-born-0"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/outputs/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/outputs/tokenizer_config.json"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/data/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/data/jlr_check.json"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/cache_dir/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer/cache_dir/cached_dev_bert_128_1525_35446"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/simpletransformer"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/train_jlr_AttentiveConvNet.json"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/tag_on/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/tag_on/output_result.py"))
+ ("/media/linyi/DataScience/pytorch/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification"))
+ ("/media/linyi/DataScience/"
+  (dired-filename . "/media/linyi/DataScience/pytorch"))
+ ("/media/linyi/DataScience/tobedelete/"
+  (dired-filename . "/media/linyi/DataScience/tobedelete/JLR_NLP"))
+ ("/media/linyi/DataScience/tobedelete/JLR_NLP/"
+  (dired-filename . "/media/linyi/DataScience/tobedelete/JLR_NLP/JLR_CEIP_Service_OE_202001_202003"))
+ ("/media/linyi/DataScience/tobedelete/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/"
+  (dired-filename . "/media/linyi/DataScience/tobedelete/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/data_clean"))
+ ("/media/linyi/DataScience/tobedelete/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/data_clean/"
+  (dired-filename . "/media/linyi/DataScience/tobedelete/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/data_clean/make_json.py"))
+ ("/home/linyi/.emacs.d/init.el" . 2782)
  ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1746)
  ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 721)
  ("/home/linyi/.emacs.d/recentf" . 1170)

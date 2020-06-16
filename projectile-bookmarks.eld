@@ -1,1 +1,1 @@
-("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/" "~/.emacs.d/")
+("~/.emacs.d/" "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/" "/media/linyi/DataScience/pytorch/multi-label-classification/Bert-Chinese-Text-Classification-Pytorch/" "/media/linyi/DataScience/pytorch/multi-label-classification/Bert-Multi-Label-Text-Classification/")

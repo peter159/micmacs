@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ replace-string
  all-the-icons-install-fonts
  fci-mode
  yapfify-region
  server-start
  server-force-delete
  describe-fontset
- all-the-icons-insert-wicon
 )
 
 ;; ----- amx-data -----
@@ -128,7 +128,7 @@
  (profiler-report . 1)
  (yapf-mode . 8)
  (previous-line . 2)
- (replace-string . 17)
+ (replace-string . 18)
  (quit-window . 5)
  (flymake-mode . 8)
  (flycheck-info . 1)
