@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ ccls-tree-collapse-or-select-parent
+ ccls-member-hierarchy
+ yapfify-region
  replace-string
  all-the-icons-install-fonts
  fci-mode
- yapfify-region
  server-start
- server-force-delete
- describe-fontset
 )
 
 ;; ----- amx-data -----
@@ -143,7 +143,7 @@
  (emmet-mode . 1)
  (deer . 1)
  (yapfify-buffer . 3)
- (yapfify-region . 27)
+ (yapfify-region . 28)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
@@ -153,7 +153,7 @@
  (lsp-find-type-definition . 5)
  (smart-semicolon-mode . 2)
  (ccls-tree-next-line . 4)
- (ccls-member-hierarchy . 2)
+ (ccls-member-hierarchy . 3)
  (lsp-ui-mode . 4)
  (lsp-ui-doc-show . 5)
  (evil-move . 1)
@@ -209,4 +209,5 @@
  (describe-fontset . 1)
  (server-force-delete . 1)
  (server-start . 1)
+ (ccls-tree-collapse-or-select-parent . 2)
 )

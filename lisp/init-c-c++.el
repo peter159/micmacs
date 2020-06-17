@@ -35,7 +35,8 @@
 						   (eglot-ensure) ;lsp not working, use eglot temporary
 						   )) 
   :init
-  (setq ccls-executable (file-truename "d:/ccls/Release/ccls"))
+  ;; (setq ccls-executable (file-truename "d:/ccls/Release/ccls"))
+  (setq ccls-executable (file-truename "/snap/bin/ccls"))
   (setq ccls-initialization-options
   	(if (boundp 'ccls-initialization-options)
   	    (append ccls-initialization-options `(:cache (:directory ,(expand-file-name "~/.ccls-cache"))))
