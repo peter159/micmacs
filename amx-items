@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- ccls-tree-collapse-or-select-parent
- ccls-member-hierarchy
+ all-the-icons-install-fonts
  yapfify-region
  replace-string
- all-the-icons-install-fonts
+ restart-emacs
+ lsp
  fci-mode
- server-start
+ recentf-open-files
 )
 
 ;; ----- amx-data -----
@@ -175,13 +175,13 @@
  (eglot . 12)
  (eglot-reconnect . 4)
  (eglot-rename . 6)
- (eglot-help-at-point . 2)
+ (eglot-help-at-point . 3)
  (xref-find-definitions . 34)
  (insert-buffer . 1)
  (eglot-format . 1)
  (eglot-clear-status . 1)
  (eglot-code-actions . 1)
- (eglot-format-buffer . 24)
+ (eglot-format-buffer . 25)
  (eglot-signal-didChangeConfiguration . 1)
  (xref-goto-xref . 2)
  (lsp-mode-menu . 1)
@@ -201,7 +201,7 @@
  (lsp-java-update-server . 2)
  (package-reinstall . 4)
  (format-find-file . 1)
- (all-the-icons-install-fonts . 25)
+ (all-the-icons-install-fonts . 28)
  (customize . 1)
  (company-anaconda . 1)
  (evil-escape-mode . 2)
