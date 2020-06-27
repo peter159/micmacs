@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- all-the-icons-install-fonts
- yapfify-region
- replace-string
- restart-emacs
- lsp
- fci-mode
- recentf-open-files
+ eglot-format
+ eglot-code-actions
+ dd/cpp-eglot-enable
+ eglot-help-at-point
+ eglot
+ toggle-debug-on-error
+ package-reinstall
 )
 
 ;; ----- amx-data -----
@@ -154,10 +154,10 @@
  (smart-semicolon-mode . 2)
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 3)
- (lsp-ui-mode . 4)
+ (lsp-ui-mode . 5)
  (lsp-ui-doc-show . 5)
  (evil-move . 1)
- (lsp-find-definition . 20)
+ (lsp-find-definition . 23)
  (lsp-mode . 7)
  (lsp-lens-mode . 1)
  (lsp . 45)
@@ -169,18 +169,18 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 3)
+ (lsp-ui-peek-find-definitions . 5)
  (lsp-restart-workspace . 1)
  (lsp-ui-peek-mode . 1)
- (eglot . 12)
+ (eglot . 13)
  (eglot-reconnect . 4)
  (eglot-rename . 6)
- (eglot-help-at-point . 3)
+ (eglot-help-at-point . 5)
  (xref-find-definitions . 34)
  (insert-buffer . 1)
- (eglot-format . 1)
+ (eglot-format . 2)
  (eglot-clear-status . 1)
- (eglot-code-actions . 1)
+ (eglot-code-actions . 2)
  (eglot-format-buffer . 25)
  (eglot-signal-didChangeConfiguration . 1)
  (xref-goto-xref . 2)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 4)
+ (package-reinstall . 5)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 28)
  (customize . 1)
@@ -210,4 +210,9 @@
  (server-force-delete . 1)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
+ (lsp-describe-session . 6)
+ (petmacs/lsp-find-definition-other-window . 2)
+ (lsp-describe-thing-at-point . 2)
+ (toggle-debug-on-error . 1)
+ (dd/cpp-eglot-enable . 1)
 )
