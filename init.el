@@ -29,9 +29,7 @@
 
 ;; use mirror
 (setq package-check-signature nil)
-(setq-default package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-				 ;; ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-				 ;; ("melpa-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa-stable/")
+(setq-default package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
 				 ("melpa" . "http://elpa.emacs-china.org/melpa/")
 				 ("melpa-stable" . "http://elpa.emacs-china.org/melpa-stable/")))
 
@@ -91,10 +89,10 @@
 
 (require 'init-program-basis)
 (require 'init-flycheck)
-;; (require 'init-lsp)
+(require 'init-lsp)
 ;; (require 'init-eglot)
 (require 'init-elisp)
-;; (require 'init-c-c++)
+(require 'init-c-c++)
 (require 'init-java)
 (require 'init-python)
 (require 'init-ess)

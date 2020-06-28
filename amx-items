@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- eglot-rename
- eglot-code-actions
- eglot-help-at-point
- yapfify-region
- restart-emacs
+ lsp-diagnose
+ package-reinstall
+ lsp-describe-session
  lsp
- fci-mode
+ package-install
+ package-refresh-contents
+ eglot
 )
 
 ;; ----- amx-data -----
@@ -75,7 +75,7 @@
  (undo-tree-redo . 1)
  (rg . 1)
  (ess-mode . 6)
- (package-refresh-contents . 7)
+ (package-refresh-contents . 8)
  (dired-tree-up . 2)
  (dired-upcase . 1)
  (dired-do-copy . 1)
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 6)
+ (package-install . 8)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -155,12 +155,12 @@
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 3)
  (lsp-ui-mode . 5)
- (lsp-ui-doc-show . 5)
+ (lsp-ui-doc-show . 7)
  (evil-move . 1)
- (lsp-find-definition . 36)
+ (lsp-find-definition . 37)
  (lsp-mode . 9)
  (lsp-lens-mode . 1)
- (lsp . 45)
+ (lsp . 52)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -172,17 +172,17 @@
  (lsp-ui-peek-find-definitions . 7)
  (lsp-restart-workspace . 1)
  (lsp-ui-peek-mode . 1)
- (eglot . 13)
+ (eglot . 14)
  (eglot-reconnect . 4)
  (eglot-rename . 7)
- (eglot-help-at-point . 6)
+ (eglot-help-at-point . 7)
  (xref-find-definitions . 34)
  (insert-buffer . 1)
  (eglot-format . 2)
- (eglot-clear-status . 1)
- (eglot-code-actions . 3)
- (eglot-format-buffer . 25)
- (eglot-signal-didChangeConfiguration . 1)
+ (eglot-clear-status . 2)
+ (eglot-code-actions . 4)
+ (eglot-format-buffer . 27)
+ (eglot-signal-didChangeConfiguration . 2)
  (xref-goto-xref . 2)
  (lsp-mode-menu . 1)
  (xref-show-location-at-point . 1)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 5)
+ (package-reinstall . 9)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 28)
  (customize . 1)
@@ -210,11 +210,15 @@
  (server-force-delete . 1)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 9)
+ (lsp-describe-session . 14)
  (petmacs/lsp-find-definition-other-window . 2)
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 1)
  (dd/cpp-eglot-enable . 1)
  (lsp-rename . 1)
  (lsp-format-buffer . 1)
+ (completion-at-point . 1)
+ (eglot-forget-pending-continuations . 1)
+ (lsp-disconnect . 1)
+ (lsp-diagnose . 7)
 )
