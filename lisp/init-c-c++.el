@@ -56,23 +56,23 @@
   :config
   (require 'compile))
 
-(use-package smart-semicolon
-  :defer t
-  :hook ((c-mode-common . smart-semicolon-mode)))
+;; (use-package smart-semicolon
+;;   :defer t
+;;   :hook ((c-mode-common . smart-semicolon-mode)))
 
-(use-package modern-cpp-font-lock
-  :hook (c++-mode . modern-c++-font-lock-mode))
+;; (use-package modern-cpp-font-lock
+;;   :hook (c++-mode . modern-c++-font-lock-mode))
 
-(use-package cmake-mode
-  :mode (("CMakeLists\\.txt\\'" . cmake-mode) ("\\.cmake\\'" . cmake-mode))
-  :config
-  (add-hook 'cmake-mode-hook (lambda()
-                               (add-to-list (make-local-variable 'company-backends)
-                                            'company-cmake))))
-(use-package google-c-style
-  :init
-  (add-hook 'c-mode-common-hook 'google-set-c-style)
-  (add-hook 'c-mode-common-hook 'google-make-newline-indent))
+;; (use-package cmake-mode
+;;   :mode (("CMakeLists\\.txt\\'" . cmake-mode) ("\\.cmake\\'" . cmake-mode))
+;;   :config
+;;   (add-hook 'cmake-mode-hook (lambda()
+;;                                (add-to-list (make-local-variable 'company-backends)
+;;                                             'company-cmake))))
+;; (use-package google-c-style
+;;   :init
+;;   (add-hook 'c-mode-common-hook 'google-set-c-style)
+;;   (add-hook 'c-mode-common-hook 'google-make-newline-indent))
 
 (provide 'init-c-c++)
 (message "init-c-c++ loaded in '%.2f' seconds ..." (get-time-diff time-marked))

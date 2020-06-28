@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ xref-find-definitions
  lsp
- package-install
+ toggle-debug-on-error
+ lsp-find-definition
  package-reinstall
  restart-emacs
  fci-mode
- recentf-open-files
- xref-find-definitions
 )
 
 ;; ----- amx-data -----
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 11)
+ (package-install . 12)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -155,12 +155,12 @@
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 3)
  (lsp-ui-mode . 5)
- (lsp-ui-doc-show . 7)
+ (lsp-ui-doc-show . 8)
  (evil-move . 1)
- (lsp-find-definition . 37)
- (lsp-mode . 9)
+ (lsp-find-definition . 56)
+ (lsp-mode . 10)
  (lsp-lens-mode . 1)
- (lsp . 95)
+ (lsp . 124)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -169,14 +169,14 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 7)
+ (lsp-ui-peek-find-definitions . 8)
  (lsp-restart-workspace . 3)
  (lsp-ui-peek-mode . 1)
- (eglot . 14)
+ (eglot . 15)
  (eglot-reconnect . 4)
  (eglot-rename . 7)
- (eglot-help-at-point . 7)
- (xref-find-definitions . 34)
+ (eglot-help-at-point . 9)
+ (xref-find-definitions . 38)
  (insert-buffer . 1)
  (eglot-format . 2)
  (eglot-clear-status . 2)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 15)
+ (package-reinstall . 23)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 28)
  (customize . 1)
@@ -210,18 +210,23 @@
  (server-force-delete . 1)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 19)
- (petmacs/lsp-find-definition-other-window . 6)
+ (lsp-describe-session . 25)
+ (petmacs/lsp-find-definition-other-window . 11)
  (lsp-describe-thing-at-point . 2)
- (toggle-debug-on-error . 1)
+ (toggle-debug-on-error . 5)
  (dd/cpp-eglot-enable . 1)
  (lsp-rename . 1)
  (lsp-format-buffer . 1)
- (completion-at-point . 1)
+ (completion-at-point . 3)
  (eglot-forget-pending-continuations . 1)
  (lsp-disconnect . 2)
- (lsp-diagnose . 9)
- (debug . 1)
+ (lsp-diagnose . 10)
+ (debug . 2)
  (petmacs/lsp-ui-doc-func . 1)
- (lsp-workspace-blacklist-remove . 1)
+ (lsp-workspace-blacklist-remove . 3)
+ (lsp-ui-doc-hide . 2)
+ (debug-watch . 1)
+ (kill-emacs . 1)
+ (lsp-workspace-folders-add . 1)
+ (lsp-workspace-restart . 1)
 )

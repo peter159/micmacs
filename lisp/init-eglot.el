@@ -26,10 +26,19 @@
 
 (mark-time-here)
 
-(require 'eglot)
-(add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
-(add-hook 'c-mode-hook 'eglot-ensure)
-(add-hook 'c++-mode-hook 'eglot-ensure)
+;; (require 'eglot)
+;; (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
+;; (add-hook 'c-mode-hook 'eglot-ensure)
+;; (add-hook 'c++-mode-hook 'eglot-ensure)
+
+(use-package eglot
+  :ensure t
+  :hook
+  (c-mode . eglot-ensure)
+  (c++-mode . eglot-ensure)
+  :config
+  (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
+  (setq eglot-ignored-server-capabilites (quote (:documentHighlightProvider))))
 
 (provide 'init-eglot)
 (message "init-eglot loaded in '%.2f' seconds ..." (get-time-diff time-marked))

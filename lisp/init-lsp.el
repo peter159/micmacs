@@ -30,6 +30,8 @@
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 
 ;; (use-package lsp-mode
+;;   :init
+;;   (setq lsp-auto-guess-root nil)
 ;;   :hook ((c++-mode . lsp)
 ;; 	 (lsp-mode . lsp-enable-which-key-integration))
 ;;   :commands (lsp lsp-deferred))
