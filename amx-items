@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- eglot-format
+ eglot-rename
  eglot-code-actions
- dd/cpp-eglot-enable
  eglot-help-at-point
- eglot
- toggle-debug-on-error
- package-reinstall
+ yapfify-region
+ restart-emacs
+ lsp
+ fci-mode
 )
 
 ;; ----- amx-data -----
@@ -143,7 +143,7 @@
  (emmet-mode . 1)
  (deer . 1)
  (yapfify-buffer . 3)
- (yapfify-region . 28)
+ (yapfify-region . 31)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
@@ -157,8 +157,8 @@
  (lsp-ui-mode . 5)
  (lsp-ui-doc-show . 5)
  (evil-move . 1)
- (lsp-find-definition . 23)
- (lsp-mode . 7)
+ (lsp-find-definition . 36)
+ (lsp-mode . 9)
  (lsp-lens-mode . 1)
  (lsp . 45)
  (company-lsp . 1)
@@ -169,18 +169,18 @@
  (ccls-tree-yank-path . 1)
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
- (lsp-ui-peek-find-definitions . 5)
+ (lsp-ui-peek-find-definitions . 7)
  (lsp-restart-workspace . 1)
  (lsp-ui-peek-mode . 1)
  (eglot . 13)
  (eglot-reconnect . 4)
- (eglot-rename . 6)
- (eglot-help-at-point . 5)
+ (eglot-rename . 7)
+ (eglot-help-at-point . 6)
  (xref-find-definitions . 34)
  (insert-buffer . 1)
  (eglot-format . 2)
  (eglot-clear-status . 1)
- (eglot-code-actions . 2)
+ (eglot-code-actions . 3)
  (eglot-format-buffer . 25)
  (eglot-signal-didChangeConfiguration . 1)
  (xref-goto-xref . 2)
@@ -210,9 +210,11 @@
  (server-force-delete . 1)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 6)
+ (lsp-describe-session . 9)
  (petmacs/lsp-find-definition-other-window . 2)
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 1)
  (dd/cpp-eglot-enable . 1)
+ (lsp-rename . 1)
+ (lsp-format-buffer . 1)
 )

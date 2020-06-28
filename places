@@ -1,20 +1,42 @@
 ;;; -*- coding: utf-8 -*-
-(("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/helloworld.cpp" . 78)
- ("/home/linyi/.emacs.d/init.el" . 2924)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1009)
- ("/home/linyi/.emacs.d/lisp/init-lsp.el" . 988)
+(("/media/linyi/DataScience/cpp_proj/restudy_udacity/hello2/helloworld.cpp" . 90)
+ ("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/src/helloworld.cpp" . 42)
+ ("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/src/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/src/helloworld.cpp"))
+ ("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/src"))
+ ("/media/linyi/DataScience/cpp_proj/restudy_udacity/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld"))
+ ("/media/linyi/DataScience/cpp_proj/restudy_udacity/hello2/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/hello2/helloworld.cpp"))
+ ("/home/linyi/.emacs.d/init.el" . 2969)
+ ("/home/linyi/.emacs.d/lisp/init-elisp.el" . 3108)
+ ("/home/linyi/.emacs.d/lisp/init-eglot.el" . 944)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1528)
  ("/home/linyi/.emacs.d/lisp/"
-  (dired-filename . "/home/linyi/.emacs.d/lisp/init-lsp-bark.el"))
- ("/home/linyi/.emacs.d/recentf" . 1694)
- ("/home/linyi/.emacs.d/lisp/init-c-c++.el" . 1518)
+  (dired-filename . "/home/linyi/.emacs.d/lisp/init-elisp.el"))
+ ("/home/linyi/.emacs.d/lisp/init-lsp.el" . 936)
+ ("/home/linyi/.emacs.d/recentf" . 1519)
+ ("/home/linyi/.emacs.d/lisp/init-c-c++.el" . 1463)
+ ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 381)
+ ("/media/linyi/DataScience/cpp_proj/udacity/second_week/car.cpp" . 34)
+ ("/media/linyi/DataScience/cpp_proj/udacity/second_week/car.h" . 92)
+ ("/media/linyi/DataScience/cpp_proj/udacity/second_week/car_main.cpp" . 124)
+ ("/home/linyi/.emacs.d/elpa/lsp-mode-20190725.553/lsp-mode.el" . 12013)
+ ("/media/linyi/DataScience/cpp_proj/udacity/second_week/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity/second_week/car_main.cpp"))
+ ("/media/linyi/DataScience/cpp_proj/udacity/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity/second_week"))
+ ("/media/linyi/DataScience/cpp_proj/udacity/lesson5/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity/lesson5/Extending+the+OpenStreetMap+Data+Model+Subtitles.zip"))
+ ("/media/linyi/DataScience/cpp_proj/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity"))
+ ("/home/linyi/.emacs.d/lisp/init-treemacs.el" . 1902)
+ ("/home/linyi/.emacs.d/lisp/init-python.el" . 4686)
  ("/snap/emacs/296/usr/share/emacs/26.3/lisp/files.el.gz" . 108652)
  ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 1868)
  ("/home/linyi/.emacs.d/lisp/init-lsp-bark.el" . 1864)
- ("/home/linyi/.emacs.d/lisp/init-eglot.el" . 1759)
  ("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/CMakeLists.txt" . 93)
- ("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/"
-  (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/helloworld.cpp"))
- ("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/src/" . 118)
  ("/home/linyi/.emacs.d/elpa/use-package-20181119.2350/use-package.el" . 1667)
  ("/home/linyi/.emacs.d/elpa/use-package-20181119.2350/use-package-core.el" . 56863)
  ("/home/linyi/.emacs.d/elpa/"
@@ -24,12 +46,6 @@
  ("/media/linyi/DataScience/cpp_proj/udacity/CppND-Capstone-Snake-Game-master_modify/src/main.cpp" . 388)
  ("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/build/"
   (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/build/Makefile"))
- ("/media/linyi/DataScience/cpp_proj/restudy_udacity/"
-  (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld"))
- ("/media/linyi/DataScience/cpp_proj/"
-  (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity"))
- ("/media/linyi/DataScience/cpp_proj/udacity/"
-  (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity/CppND-Capstone-Snake-Game-master_modify"))
  ("/media/linyi/DataScience/cpp_proj/udacity/CppND-Capstone-Snake-Game-master_modify/"
   (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity/CppND-Capstone-Snake-Game-master_modify/src"))
  ("/media/linyi/DataScience/cpp_proj/udacity/CppND-Capstone-Snake-Game-master_modify/src/"
@@ -38,7 +54,6 @@
   (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity/CppND-Route-Planning-Project/src"))
  ("/media/linyi/DataScience/cpp_proj/udacity/CppND-Route-Planning-Project/src/"
   (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity/CppND-Route-Planning-Project/src/render.cpp"))
- ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 381)
  ("/media/linyi/DataScience/cpp_proj/restudy_udacity/helloworld/compile_commands.json" . 5)
  ("/snap/emacs/296/usr/share/emacs/26.3/lisp/progmodes/cc-mode.el.gz" . 10016)
  ("/media/linyi/DataScience/cpp_proj/udacity/CppND-Route-Planning-Project/src/CMakeLists.txt" . 609)
@@ -47,8 +62,6 @@
  ("/media/linyi/DataScience/cpp_proj/udacity/second_week/Asearch.cpp" . 1314)
  ("/media/linyi/DataScience/"
   (dired-filename . "/media/linyi/DataScience/cpp_proj"))
- ("/media/linyi/DataScience/cpp_proj/udacity/second_week/"
-  (dired-filename . "/media/linyi/DataScience/cpp_proj/udacity/second_week/Asearch.cpp"))
  ("/home/linyi/.emacs.d/lisp/init-ui.el" . 4245)
  ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 988)
  ("/home/linyi/.emacs.d/lisp/init-sql.el" . 831)
@@ -100,7 +113,6 @@
  ("/home/linyi/"
   (dired-filename . "/home/linyi/Downloads"))
  ("/mnt/f/Kaggle/predict_future_sales/scripts/process_data_simplified.py" . 330)
- ("/home/linyi/.emacs.d/lisp/init-python.el" . 7360)
  ("/snap/emacs/296/usr/share/emacs/26.3/lisp/env.el.gz" . 8346)
  ("/home/linyi/.emacs.d/elpa/pyvenv-20181228.1722/pyvenv.el" . 20182)
  ("/mnt/hgfs/F/Kaggle/predict_future_sales/scripts/model_xgb.py" . 673)

@@ -26,46 +26,44 @@
 
 (mark-time-here)
 
+;; https://github.com/andreyorst/dotfiles/tree/master/.config/emacs
 (use-package lsp-mode
-  :ensure t
-  ;; :pin melpa-stable
-  :commands lsp
-  :init
-  (setq lsp-auto-guess-root nil)
-  (setq lsp-prefer-flymake nil)
-  :config
-  (progn
-    (require 'lsp-clients)))
+  :hook ((rust-mode c-mode c++-mode) . lsp)
+  :custom
+  (lsp-enable-links nil)
+  (lsp-keymap-prefix "C-c l")
+  (lsp-rust-clippy-preference "on")
+  (lsp-prefer-capf t)
+  (lsp-enable-symbol-highlighting nil)
+  (lsp-rust-server 'rust-analyzer)
+  (lsp-session-file (expand-file-name "lsp-session" user-emacs-directory)))(use-package lsp-mode
+  :hook ((rust-mode c-mode c++-mode) . lsp)
+  :custom
+  (lsp-enable-links nil)
+  (lsp-keymap-prefix "C-c l")
+  (lsp-rust-clippy-preference "on")
+  (lsp-prefer-capf t)
+  (lsp-enable-symbol-highlighting nil)
+  (lsp-rust-server 'rust-analyzer)
+  (lsp-session-file (expand-file-name "lsp-session" user-emacs-directory)))
 
 (use-package lsp-ui
-  :ensure t
-  ;; :pin melpa-stable
+  :after lsp-mode
+  :commands lsp-ui-mode
   :bind (:map lsp-ui-mode-map
-              ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
-              ([remap xref-find-references] . lsp-ui-peek-find-references)
-              ("C-c u" . lsp-ui-imenu))
-  :hook (lsp-ui-imenu-mode . (lambda ()
-			       (display-line-numbers-mode -1)
-			       (hl-line-mode -1)
-			       (vim-empty-lines-mode -1)))
-  :init
-  (setq lsp-ui-peek-enable t)
-  (setq lsp-ui-doc-enable nil)
-  (setq lsp-ui-imenu-enable t)
-  (setq lsp-ui-flycheck-enable t)
-  (setq lsp-ui-sideline-enable nil)
-  (setq lsp-ui-sideline-ignore-duplicate t)
-  (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "q") 'lsp-ui-imenu--kill)
-  (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "J") 'lsp-ui-imenu--next-kind)
-  (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "K") 'lsp-ui-imenu--prev-kind)
-  (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "<return>") 'lsp-ui-imenu--visit)
-  (evil-define-key 'normal lsp-ui-imenu-mode-map (kbd "d") 'lsp-ui-imenu--view))
-
-
-(use-package company-lsp
-  :ensure t
-  ;; :pin melpa-stable
-  )
+	      ("M-." . lsp-ui-peek-find-definitions)
+	      ("M-/" . lsp-ui-peek-find-references))
+  :custom
+  (lsp-ui-doc-border (face-attribute 'mode-line-inactive :background))
+  (lsp-ui-sideline-enable nil)
+  (lsp-ui-imenu-enable nil)
+  (lsp-ui-doc-delay 1 "higher than eldoc delay")
+  :config
+  (when (fboundp 'aorst/escape)
+    (define-advice lsp-ui-doc--make-request (:around (foo))
+      (unless (eq this-command 'aorst/escape)
+        (funcall foo))))
+  (lsp-ui-mode))
 
 (provide 'init-lsp)
 (message "init-lsp loaded in '%.2f' seconds ..." (get-time-diff time-marked))

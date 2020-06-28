@@ -37,74 +37,74 @@
 
 (use-package cc-mode
   :defer t
-  ;; :init
-  ;; (add-to-list 'auto-mode-alist
-  ;; 	       `("\\.h\\'" . petmacs-default-mode-for-headers))
-  ;; (setq lsp-clients-clangd-args
-  ;; 	'("-j=4" "-log=verbose" "-background-index"
-  ;; 	  ;; -cross-file-rename is vaild since clangd-10
-  ;; 	  "-cross-file-rename"
-  ;; 	  ;; "--compile-commands-dir=/work/DomainDrivenConsulting/masd/dogen/integration/build/output/clang7/Release"
-  ;; 	  ))
+  :init
+  (add-to-list 'auto-mode-alist
+	       `("\\.h\\'" . ,petmacs-default-mode-for-headers))
+  (setq lsp-clients-clangd-args
+	'("-j=4" "-log=verbose" "-background-index"
+	  ;; -cross-file-rename is vaild since clangd-10
+	  "-cross-file-rename"
+	  ;; "--compile-commands-dir=/work/DomainDrivenConsulting/masd/dogen/integration/build/output/clang7/Release"
+	  ))
+
   :hook ((c-mode c++-mode) . (lambda ()
 			       "Format and add/delete imports."
 			       (add-hook 'before-save-hook #'lsp-format-buffer t t)
 			       (add-hook 'before-save-hook #'lsp-organize-imports t t)
 			       ;; enable lsp
-			       ;; (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
-			       ;; ('eglot-ensure)
-			       (lsp-deferred)
-			       ))
+			       (lsp-deferred)))
   :config
   (require 'compile))
 
-(use-package smart-semicolon
-  :defer t
-  :hook ((c-mode-common . smart-semicolon-mode)))
-
-;; (use-package modern-cpp-font-lock
-;;   :hook (c++-mode . modern-c++-font-lock-mode))
-
-;; (use-package cmake-mode
-;;   :mode (("CMakeLists\\.txt\\'" . cmake-mode) ("\\.cmake\\'" . cmake-mode))
-;;   :config
-;;   (add-hook 'cmake-mode-hook (lambda()
-;;                                (add-to-list (make-local-variable 'company-backends)
-;;                                             'company-cmake))))
-;; (use-package google-c-style
-;;   :init
-;;   (add-hook 'c-mode-common-hook 'google-set-c-style)
-;;   (add-hook 'c-mode-common-hook 'google-make-newline-indent))
-
+;; C/C++/Objective-C support
 ;; (use-package ccls
-;;   :ensure t
+;;   :preface
+;; (defun petmacs/c-c++-lsp-ccls-call-hierarchy-inv ()
+;;   (interactive)
+;;   (ccls-call-hierarchy t))
+
+;; (defun petmacs/c-c++-lsp-ccls-inheritance-hierarchy-inv ()
+;;   (interactive)
+;;   (ccls-inheritance-hierarchy t))
+
 ;;   :defines projectile-project-root-files-top-down-recurring
 ;;   :hook ((c-mode c++-mode objc-mode cuda-mode) . (lambda ()
-;;                                                    (require 'ccls)
-;;                                                    (lsp)
-;; 						   (eglot-ensure) ;lsp not working, use eglot temporary
-;; 						   )) 
+;; 						   (require 'ccls)
+;; 						   (lsp-deferred)))
 ;;   :init
-;;   ;; (setq ccls-executable (file-truename "d:/ccls/Release/ccls"))
-;;   (setq ccls-executable (file-truename "/snap/bin/ccls"))
-;;   (setq ccls-initialization-options
-;;   	(if (boundp 'ccls-initialization-options)
-;;   	    (append ccls-initialization-options `(:cache (:directory ,(expand-file-name "~/.ccls-cache"))))
-;;   	  `(:cache (:directory ,(expand-file-name "~/.ccls-cache")))))
+;;   (setq ccls-executable (file-truename "~/ccls/Release/ccls"))
+;;   ;; (setq ccls-initialization-options
+;;   ;;       `(
+;; 	  ;; :cache (:directory ,(expand-file-name "~/.ccls-cache"))
+;;                  ;; :compilationDatabaseDirectory "build"))
 
 ;;   ;; (setq ccls-sem-highlight-method 'overlay)  ; overlay is slow
 ;;   (setq ccls-sem-highlight-method 'font-lock)
 
 ;;   :config
-;;   (add-hook 'eglot--managed-mode-hook (lambda() (flymake-mode -1)))
 ;;   (with-eval-after-load 'projectile
 ;;     (setq projectile-project-root-files-top-down-recurring
 ;;   	  (append '("compile_commands.json"
 ;;   		    ".ccls")
-;;   		  projectile-project-root-files-top-down-recurring)))
-;;   (define-key c++-mode-map [remap evil-goto-definition] 'xref-find-definitions)
-;;   (define-key c++-mode-map (kbd "C-h") 'eglot-help-at-point)
-;;   )
+;;   		  projectile-project-root-files-top-down-recurring))))
+
+(use-package smart-semicolon
+  :defer t
+  :hook ((c-mode-common . smart-semicolon-mode)))
+
+(use-package modern-cpp-font-lock
+  :hook (c++-mode . modern-c++-font-lock-mode))
+
+(use-package cmake-mode
+  :mode (("CMakeLists\\.txt\\'" . cmake-mode) ("\\.cmake\\'" . cmake-mode))
+  :config
+  (add-hook 'cmake-mode-hook (lambda()
+                               (add-to-list (make-local-variable 'company-backends)
+                                            'company-cmake))))
+(use-package google-c-style
+  :init
+  (add-hook 'c-mode-common-hook 'google-set-c-style)
+  (add-hook 'c-mode-common-hook 'google-make-newline-indent))
 
 (provide 'init-c-c++)
 (message "init-c-c++ loaded in '%.2f' seconds ..." (get-time-diff time-marked))
