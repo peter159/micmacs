@@ -29,6 +29,11 @@
 (setq gc-cons-threshold 100000000)
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 
+;; (use-package lsp-mode
+;;   :hook ((c++-mode . lsp)
+;; 	 (lsp-mode . lsp-enable-which-key-integration))
+;;   :commands (lsp lsp-deferred))
+
 (use-package lsp-mode
   :diminish
   ;; :pin melpa-stable
