@@ -30,7 +30,7 @@
   :ensure t
   :hook (python-mode . (lambda ()
                          (require 'lsp-python-ms)
-                         (lsp)))
+                         (lsp-deferred)))
   :init
   (setq lsp-python-ms-auto-install-server t
 	lsp-python-ms-nupkg-channel "stable")

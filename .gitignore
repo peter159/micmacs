@@ -9,7 +9,7 @@ tramp
 .\#*
 
 # cache
-.cache
+# .cache
 
 # anaconda-mode
 # .anaconda-mode
@@ -64,9 +64,6 @@ flycheck_*.el
 
 # persp folder
 # /persp-confs/
-
-# cache
-.cache*
 
 recentf
 history

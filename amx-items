@@ -1,9 +1,9 @@
 
 ;; ----- amx-history -----
 (
+ package-reinstall
  lsp
  lsp-python-ms-update-server
- package-reinstall
  restart-emacs
  auto-insert
  ivy-mode
@@ -160,7 +160,7 @@
  (lsp-find-definition . 57)
  (lsp-mode . 10)
  (lsp-lens-mode . 1)
- (lsp . 125)
+ (lsp . 127)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 26)
+ (package-reinstall . 28)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 28)
  (customize . 1)
