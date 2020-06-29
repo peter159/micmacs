@@ -1,25 +1,25 @@
 
 ;; ----- amx-history -----
 (
- xref-find-definitions
  lsp
- toggle-debug-on-error
- lsp-find-definition
+ lsp-python-ms-update-server
  package-reinstall
  restart-emacs
- fci-mode
+ auto-insert
+ ivy-mode
+ lsp-find-definition
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 61)
+ (restart-emacs . 62)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 9)
- (auto-insert . 10)
+ (ivy-mode . 10)
+ (auto-insert . 12)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 5)
@@ -157,10 +157,10 @@
  (lsp-ui-mode . 5)
  (lsp-ui-doc-show . 8)
  (evil-move . 1)
- (lsp-find-definition . 56)
+ (lsp-find-definition . 57)
  (lsp-mode . 10)
  (lsp-lens-mode . 1)
- (lsp . 124)
+ (lsp . 125)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 23)
+ (package-reinstall . 26)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 28)
  (customize . 1)
@@ -226,7 +226,8 @@
  (lsp-workspace-blacklist-remove . 3)
  (lsp-ui-doc-hide . 2)
  (debug-watch . 1)
- (kill-emacs . 1)
+ (kill-emacs . 2)
  (lsp-workspace-folders-add . 1)
  (lsp-workspace-restart . 1)
+ (lsp-python-ms-update-server . 1)
 )

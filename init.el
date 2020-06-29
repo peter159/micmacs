@@ -67,6 +67,7 @@
 ;; requre features from lisp
 
 (require 'init-general-functions)
+(require 'init-custom-vars)
 (require 'init-package-management)
 (require 'init-default)
 (require 'init-font)
@@ -94,7 +95,8 @@
 (require 'init-elisp)
 (require 'init-c-c++)
 (require 'init-java)
-(require 'init-python)
+(require 'init-lsp-python)
+;; (require 'init-python)
 (require 'init-ess)
 (require 'init-org)
 (require 'init-html)

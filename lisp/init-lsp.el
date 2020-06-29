@@ -37,6 +37,7 @@
 ;;   :commands (lsp lsp-deferred))
 
 (use-package lsp-mode
+  :ensure t
   :diminish
   ;; :pin melpa-stable
   :preface
@@ -108,7 +109,7 @@
     (interactive)
     (let ((pop-up-windows t))
       (pop-to-buffer (current-buffer) t))
-    (xref-find-definitions))
+    (lsp-find-definition))
 
   (defun petmacs/lsp-find-declaration-other-window ()
     (interactive)
@@ -165,6 +166,7 @@
 		       (add-hook 'before-save-hook #'lsp-organize-imports t t)))))
 
 (use-package pretty-hydra
+  :ensure t
   :bind ("<f6>" . toggles-hydra/body)
   :init
   (with-no-warnings
@@ -268,6 +270,7 @@
          "tuna" :toggle (eq centaur-package-archives 'tuna)))))))
 
 (use-package lsp-ui
+  :ensure t
   :custom-face
   (lsp-ui-sideline-code-action ((t (:inherit warning))))
   :pretty-hydra
@@ -320,7 +323,7 @@
          ("M-<f6>" . lsp-ui-hydra/body)
          ("M-RET" . lsp-ui-sideline-apply-code-actions))
   :hook (lsp-mode . lsp-ui-mode)
-  :init (setq lsp-ui-doc-enable t
+  :init (setq lsp-ui-doc-enable nil
               lsp-ui-doc-use-webkit nil
               lsp-ui-doc-delay 0.2
               lsp-ui-doc-include-signature t
@@ -359,6 +362,7 @@
 
 ;; Ivy integration
 (use-package lsp-ivy
+  :ensure t
   :after lsp-mode
   :bind (:map lsp-mode-map
 	      ([remap xref-find-apropos] . lsp-ivy-workspace-symbol)
@@ -366,12 +370,14 @@
 
 ;; Origami integration
 (use-package lsp-origami
+  :ensure t
   :after lsp-mode
   :hook (origami-mode . lsp-origami-mode))
 
 ;; `lsp-mode' and `treemacs' integration
 (when (>= emacs-major-version 25)
   (use-package lsp-treemacs
+    :ensure t
     :after lsp-mode
     :bind (:map lsp-mode-map
 		("C-<f8>" . lsp-treemacs-errors-list)
