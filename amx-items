@@ -1,10 +1,10 @@
 
 ;; ----- amx-history -----
 (
+ restart-emacs
  package-reinstall
  lsp
  lsp-python-ms-update-server
- restart-emacs
  auto-insert
  ivy-mode
  lsp-find-definition
@@ -12,7 +12,7 @@
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 62)
+ (restart-emacs . 63)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)

@@ -46,7 +46,8 @@
   "make full screen"
   (modify-frame-parameters nil `((fullscreen . fullboth) (maximized . fullscreen))))
 (add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
-(add-hook 'focus-in-hook 'make-full-screen) ;make full screen even when server killed frame
+;; (add-hook 'focus-in-hook 'make-full-screen) ;make full screen even when server killed frame
+(add-hook 'after-focus-change-function 'make-full-screen) ;make full screen even when server killed frame
 
 ;; display time
 (display-time-mode t) 
@@ -84,21 +85,21 @@
      doom-modeline-env-enable-python t)
 
     (doom-modeline-def-segment my-python-venv
-			       "The current python virtual environment state."
-			       (when (eq major-mode 'python-mode)
-				 (if (eq python-shell-virtualenv-root nil)
-				     ""
-				   (propertize
-				    ;; (let ((base-dir-name (file-name-nondirectory (substring python-shell-virtualenv-root 0 -1))))
-				    (let ((base-dir-name (file-name-nondirectory python-shell-virtualenv-root)))
-				      (if (< 10 (length base-dir-name))
-					  (format " (%s..)" (substring base-dir-name 0 8))
-					(format " (%s)" base-dir-name)))
-				    'face (if (doom-modeline--active) 'doom-modeline-buffer-major-mode)))))
+      "The current python virtual environment state."
+      (when (eq major-mode 'python-mode)
+	(if (eq python-shell-virtualenv-root nil)
+	    ""
+	  (propertize
+	   ;; (let ((base-dir-name (file-name-nondirectory (substring python-shell-virtualenv-root 0 -1))))
+	   (let ((base-dir-name (file-name-nondirectory python-shell-virtualenv-root)))
+	     (if (< 10 (length base-dir-name))
+		 (format " (%s..)" (substring base-dir-name 0 8))
+	       (format " (%s)" base-dir-name)))
+	   'face (if (doom-modeline--active) 'doom-modeline-buffer-major-mode)))))
 
     (doom-modeline-def-modeline 'my-modeline-layout
-				'(bar workspace-number window-number evil-state god-state ryo-modal xah-fly-keys matches buffer-info remote-host buffer-position parrot selection-info)
-				'(misc-info persp-name lsp irc mu4e github debug minor-modes input-method buffer-encoding my-python-venv process vcs checker))
+      '(bar workspace-number window-number evil-state god-state ryo-modal xah-fly-keys matches buffer-info remote-host buffer-position parrot selection-info)
+      '(misc-info persp-name lsp irc mu4e github debug minor-modes input-method buffer-encoding my-python-venv process vcs checker))
 
     (defun setup-custom-doom-modeline ()
       (doom-modeline-set-modeline 'my-modeline-layout 'default))))

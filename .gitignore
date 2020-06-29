@@ -9,7 +9,7 @@ tramp
 .\#*
 
 # cache
-# .cache
+.cache
 
 # anaconda-mode
 # .anaconda-mode
