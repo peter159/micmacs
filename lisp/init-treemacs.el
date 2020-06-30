@@ -82,6 +82,7 @@
 
 (use-package treemacs-projectile
   ;; :pin melpa-stable
+  :ensure t
   :after treemacs projectile
   :bind (([M-f8] . treemacs-projectile)
 	 :map projectile-command-map

@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ doom-modeline-mode
+ toggle-debug-on-error
  treemacs
  package-reinstall
  restart-emacs
  lsp
  evil-mode
- pyvenv-workon
- doom-modeline-mode
 )
 
 ;; ----- amx-data -----
@@ -62,7 +62,7 @@
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
  (ibuffer-mode . 2)
- (doom-modeline-mode . 6)
+ (doom-modeline-mode . 24)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
  (other-window . 1)
@@ -213,7 +213,7 @@
  (lsp-describe-session . 25)
  (petmacs/lsp-find-definition-other-window . 11)
  (lsp-describe-thing-at-point . 2)
- (toggle-debug-on-error . 5)
+ (toggle-debug-on-error . 6)
  (dd/cpp-eglot-enable . 1)
  (lsp-rename . 1)
  (lsp-format-buffer . 1)

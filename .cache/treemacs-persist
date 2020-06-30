@@ -1,7 +1,3 @@
 * Default
 ** .emacs.d
  - path :: ~/.emacs.d
-** NeuralNLP-NeuralClassifier
- - path :: /media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier
-** stocketl
- - path :: /media/linyi/StockData/Projects/Pypkg/stocketl
