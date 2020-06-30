@@ -33,10 +33,6 @@
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 
-;; (fset 'yes-or-no-p 'y-or-n-p)
-;; (setq inhibit-startup-screen t)
-;; (setq visible-bell t)
-
 (setq delete-by-moving-to-trash t)         ; Deleting files go to OS's trash folder
 (setq make-backup-files nil)               ; Forbide to make backup files
 (setq auto-save-default nil)               ; Disable auto save
@@ -62,14 +58,6 @@
 ;; Don't use GTK+ tooltip
 (when (boundp 'x-gtk-use-system-tooltips)
   (setq x-gtk-use-system-tooltips nil))
-
-;; Mouse & Smooth Scroll
-;; Scroll one line at a time (less "jumpy" than defaults)
-;; (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
-;; (setq mouse-wheel-progressive-speed nil)
-;; (setq scroll-step 1
-;;       scroll-margin 0
-;;       scroll-conservatively 100000)
 
 ;; Basic modes
 
