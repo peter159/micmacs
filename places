@@ -1,18 +1,34 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/linyi/.emacs.d/.cache/treemacs-persist" . 29)
+(("/media/linyi/DataScience/pytest/test_ubuntu.py" . 745)
+ ("/home/linyi/.emacs.d/init.el" . 2418)
+ ("/home/linyi/.emacs.d/lisp/init-ui.el" . 5698)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1185)
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 4639)
+ ("/home/linyi/.emacs.d/elpa/imenu-list-20190115.2130/imenu-list.el" . 25645)
+ ("/home/linyi/anaconda3/envs/pytorch/lib/python3.7/fnmatch.py" . 2167)
+ ("/media/linyi/DataScience/pytest/"
+  (dired-filename . "/media/linyi/DataScience/pytest/test_ubuntu.py"))
+ ("/media/linyi/DataScience/"
+  (dired-filename . "/media/linyi/DataScience/pytest"))
+ ("/media/linyi/DataScience/pytorch/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier"))
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/"
+  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py"))
+ ("/home/linyi/.emacs.d/lisp/init-treemacs.el" . 1502)
+ ("/media/linyi/DataScience/cpp_proj/restudy_udacity/HelloWorld/main.cpp" . 165)
+ ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 45)
+ ("/media/linyi/DataScience/cpp_proj/restudy_udacity/HelloWorld/"
+  (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/HelloWorld/main.cpp"))
  ("/home/linyi/.emacs.d/elpa/winum-20181119.1705/winum.el" . 6414)
  ("/home/linyi/.emacs.d/lisp/init-window.el" . 1684)
  ("/home/linyi/.emacs.d/lisp/init-yasnippet.el" . 831)
- ("/home/linyi/.emacs.d/init.el" . 2725)
- ("/home/linyi/.emacs.d/lisp/init-treemacs.el" . 2927)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1959)
- ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 4639)
  ("/home/linyi/.emacs.d/lisp/init-general-functions.el" . 841)
  ("/home/linyi/.emacs.d/lisp/init-custom-vars.el" . 840)
  ("/home/linyi/.emacs.d/lisp/init-package-management.el" . 2594)
  ("/home/linyi/.emacs.d/lisp/init-default.el" . 4981)
  ("/home/linyi/.emacs.d/lisp/init-font.el" . 1510)
- ("/home/linyi/.emacs.d/elpa/imenu-list-20190115.2130/imenu-list.el" . 25216)
  ("/home/linyi/.emacs.d/elpa/vim-empty-lines-mode-20150111.426/vim-empty-lines-mode.el" . 6275)
  ("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 1244)
  ("/home/linyi/.emacs.d/lisp/init-evil.el" . 3470)
@@ -21,7 +37,6 @@
  ("/home/linyi/.emacs.d/lisp/init-tool.el" . 3010)
  ("/home/linyi/.emacs.d/lisp/init-ivy.el" . 3069)
  ("/home/linyi/.emacs.d/lisp/init-ibuffer.el" . 2535)
- ("/home/linyi/.emacs.d/lisp/init-ui.el" . 1377)
  ("/media/linyi/StockData/Projects/Pypkg/stocketl/tdx_online/tdx_static_api.py" . 2778)
  ("/media/linyi/StockData/Projects/Pypkg/stocketl/tdx_online/"
   (dired-filename . "/media/linyi/StockData/Projects/Pypkg/stocketl/tdx_online/tdx_static_api.py"))
@@ -32,8 +47,6 @@
  ("/home/linyi/.emacs.d/elpa/treemacs-20200625.2056/treemacs-autoloads.el" . 12860)
  ("/home/linyi/.emacs.d/elpa/use-package-20200618.1804/use-package-core.el" . 59560)
  ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/transformer.py" . 811)
- ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/"
-  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py"))
  ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/"
   (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification"))
  ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/"
@@ -66,8 +79,6 @@
  ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/textrcnn.py" . 38)
  ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/textrnn.py" . 52)
  ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/textvdcnn.py" . 38)
- ("/media/linyi/DataScience/pytorch/multi-label-classification/"
-  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier"))
  ("/media/linyi/DataScience/pytorch/multi-label-classification/Bert-Chinese-Text-Classification-Pytorch/"
   (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/Bert-Chinese-Text-Classification-Pytorch/LICENSE"))
  ("/home/linyi/.emacs.d/lisp/init-lsp-python.el" . 2409)
@@ -139,8 +150,6 @@
  ("/media/linyi/DataScience/cpp_proj/restudy_udacity/test/compile_commands.json" . 290)
  ("/media/linyi/DataScience/cpp_proj/restudy_udacity/test/"
   (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/test/compile_commands.json"))
- ("/media/linyi/DataScience/"
-  (dired-filename . "/media/linyi/DataScience/cpp_proj"))
  ("/home/linyi/.emacs.d/elpa/lsp-ui-20200625.1912/lsp-ui-autoloads.el" . 2026)
  ("/home/linyi/.emacs.d/elpa/company-lsp-20190612.1553/company-lsp-autoloads.el" . 619)
  ("/usr/include/c++/9/bits/istream.tcc" . 6766)
@@ -196,8 +205,6 @@
   (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/train_jlr_AttentiveConvNet.json"))
  ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/tag_on/"
   (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/tag_on/output_result.py"))
- ("/media/linyi/DataScience/pytorch/"
-  (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification"))
  ("/media/linyi/DataScience/tobedelete/"
   (dired-filename . "/media/linyi/DataScience/tobedelete/JLR_NLP"))
  ("/mnt/hgfs/f/Kaggle/covid-19/script/dup_seir_modeling.py" . 736)

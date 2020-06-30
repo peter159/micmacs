@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ hide-mode-line-mode
  doom-modeline-mode
+ yapfify-region
  toggle-debug-on-error
  treemacs
  package-reinstall
  restart-emacs
- lsp
- evil-mode
 )
 
 ;; ----- amx-data -----
@@ -62,7 +62,7 @@
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
  (ibuffer-mode . 2)
- (doom-modeline-mode . 24)
+ (doom-modeline-mode . 27)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
  (other-window . 1)
@@ -143,7 +143,7 @@
  (emmet-mode . 1)
  (deer . 1)
  (yapfify-buffer . 3)
- (yapfify-region . 32)
+ (yapfify-region . 35)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
@@ -232,4 +232,5 @@
  (lsp-python-ms-update-server . 1)
  (pyvenv-workon . 1)
  (treemacs . 1)
+ (hide-mode-line-mode . 1)
 )

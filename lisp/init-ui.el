@@ -149,15 +149,21 @@
    `(linum-highlight-face
      ((t (:inherit 'default :background ,(face-background 'default) :foreground ,(face-foreground 'default)))))))
 
-(use-package hide-mode-line		;hide modeline in specified mode when not needed
+;; (use-package hide-mode-line		;hide modeline in specified mode when not needed
+;;   :ensure t
+;;   :hook (((completion-list-mode
+;;            completion-in-region-mode
+;;            lsp-ui-imenu-mode
+;; 	   imenu-list-minor-mode
+;;            neotree-mode
+;;            treemacs-mode)
+;;           . hide-mode-line-mode)))
+
+(use-package hide-mode-line
   :ensure t
   :hook (((completion-list-mode
            completion-in-region-mode
-           lsp-ui-imenu-mode
-	   imenu-list-minor-mode
-           neotree-mode
-           treemacs-mode)
-          . hide-mode-line-mode)))
+           flycheck-error-list-mode) . hide-mode-line-mode)))
 
 (defun open-init-file()
   (interactive)
