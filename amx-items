@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- lsp
- lsp-disconnect
+ treemacs
+ package-reinstall
  restart-emacs
+ lsp
  evil-mode
  pyvenv-workon
  doom-modeline-mode
- yapfify-region
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 65)
+ (restart-emacs . 68)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 28)
+ (package-reinstall . 32)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 28)
  (customize . 1)
@@ -231,4 +231,5 @@
  (lsp-workspace-restart . 1)
  (lsp-python-ms-update-server . 1)
  (pyvenv-workon . 1)
+ (treemacs . 1)
 )

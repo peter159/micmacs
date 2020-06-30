@@ -106,6 +106,12 @@
     (defun setup-custom-doom-modeline ()
       (doom-modeline-set-modeline 'my-modeline-layout 'default))))
 
+;; A minor-mode menu for mode-line
+(when (>= emacs-major-version 25)
+  (use-package minions
+    :ensure t
+    :hook (doom-modeline-mode . minions-mode)))
+
 (use-package doom-themes
   :ensure t
   :defer nil

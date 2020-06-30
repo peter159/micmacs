@@ -348,7 +348,8 @@ and ignore any prefix argument.
 
 ;;;***
 
-;;;### (autoloads ...)
+;;;### (autoloads nil nil ("treemacs-faces.el" "treemacs-pkg.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
