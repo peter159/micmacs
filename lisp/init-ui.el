@@ -98,8 +98,10 @@
 	   'face (if (doom-modeline--active) 'doom-modeline-buffer-major-mode)))))
 
     (doom-modeline-def-modeline 'my-modeline-layout
-      '(bar workspace-number window-number evil-state god-state ryo-modal xah-fly-keys matches buffer-info remote-host buffer-position parrot selection-info)
-      '(misc-info persp-name lsp irc mu4e github debug minor-modes input-method buffer-encoding my-python-venv process vcs checker))
+      ;; '(bar workspace-name window-number evil-state god-state ryo-modal xah-fly-keys matches buffer-info remote-host buffer-position parrot selection-info)
+      '(bar workspace-name window-number modals matches buffer-info remote-host buffer-position word-count parrot selection-info)
+      ;; '(misc-info persp-name lsp irc mu4e github debug minor-modes input-method buffer-encoding my-python-venv process vcs checker)
+      '(objed-state misc-info persp-name battery grip irc mu4e gnus github debug repl input-method indent-info buffer-encoding my-python-venv process vcs checker))
 
     (defun setup-custom-doom-modeline ()
       (doom-modeline-set-modeline 'my-modeline-layout 'default))))
@@ -122,7 +124,7 @@
 (use-package spacemacs-theme
   :ensure t)
 
-(load-theme 'spacemacs-light t)
+(load-theme 'spacemacs-dark t)
 
 (use-package display-line-numbers-mode
   :ensure nil
