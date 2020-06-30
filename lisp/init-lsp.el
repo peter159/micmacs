@@ -323,11 +323,11 @@
          ("M-<f6>" . lsp-ui-hydra/body)
          ("M-RET" . lsp-ui-sideline-apply-code-actions))
   :hook (lsp-mode . lsp-ui-mode)
-  :init (setq lsp-ui-doc-enable nil
+  :init (setq lsp-ui-doc-enable t
               lsp-ui-doc-use-webkit nil
               lsp-ui-doc-delay 0.2
               lsp-ui-doc-include-signature t
-              lsp-ui-doc-position 'at-point
+              lsp-ui-doc-position 'top
               lsp-ui-doc-border (face-foreground 'default)
               lsp-eldoc-enable-hover nil ; Disable eldoc displays in minibuffer
 

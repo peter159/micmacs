@@ -167,20 +167,6 @@
 ;; Make bindings that stick around
 (use-package hydra :ensure t)
 
-;; Treat undo history as a tree
-;; (use-package undo-tree
-;;   :ensure nil
-;;   :diminish
-;;   :quelpa
-;;   (undo-tree
-;;    :repo "apchamberlain/undo-tree"
-;;    :fetcher github)
-;;   :hook (after-init . global-undo-tree-mode))
-
-;; (use-package undo-tree
-;;   :ensure t
-;;   :diminish
-;;   :hook (after-init . global-undo-tree-mode))
 (global-undo-tree-mode -1)
 
 ;; Handling capitalized subwords in a nomenclature

@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- restart-emacs
- package-reinstall
  lsp
- lsp-python-ms-update-server
- auto-insert
- ivy-mode
- lsp-find-definition
+ lsp-disconnect
+ restart-emacs
+ evil-mode
+ pyvenv-workon
+ doom-modeline-mode
+ yapfify-region
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 63)
+ (restart-emacs . 65)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -57,12 +57,12 @@
  (ess-display-help-on-object . 1)
  (load-theme . 3)
  (evil-motion-state . 19)
- (evil-mode . 7)
+ (evil-mode . 9)
  (evil-leader-mode . 2)
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
  (ibuffer-mode . 2)
- (doom-modeline-mode . 4)
+ (doom-modeline-mode . 6)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
  (other-window . 1)
@@ -143,7 +143,7 @@
  (emmet-mode . 1)
  (deer . 1)
  (yapfify-buffer . 3)
- (yapfify-region . 31)
+ (yapfify-region . 32)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
@@ -155,12 +155,12 @@
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 3)
  (lsp-ui-mode . 5)
- (lsp-ui-doc-show . 8)
+ (lsp-ui-doc-show . 10)
  (evil-move . 1)
  (lsp-find-definition . 57)
  (lsp-mode . 10)
  (lsp-lens-mode . 1)
- (lsp . 127)
+ (lsp . 132)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -219,7 +219,7 @@
  (lsp-format-buffer . 1)
  (completion-at-point . 3)
  (eglot-forget-pending-continuations . 1)
- (lsp-disconnect . 2)
+ (lsp-disconnect . 5)
  (lsp-diagnose . 10)
  (debug . 2)
  (petmacs/lsp-ui-doc-func . 1)
@@ -230,4 +230,5 @@
  (lsp-workspace-folders-add . 1)
  (lsp-workspace-restart . 1)
  (lsp-python-ms-update-server . 1)
+ (pyvenv-workon . 1)
 )
