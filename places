@@ -1,11 +1,14 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/media/linyi/DataScience/pytest/test_ubuntu.py" . 745)
- ("/home/linyi/.emacs.d/init.el" . 2418)
+(("/home/linyi/.emacs.d/lisp/init-python.el" . 10044)
+ ("/home/linyi/.emacs.d/init.el" . 2946)
+ ("/media/linyi/DataScience/pytest/test_ubuntu.py" . 122)
+ ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 45)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 2183)
+ ("/home/linyi/.emacs.d/lisp/leader-key-binding.el" . 10608)
+ ("/home/linyi/anaconda3/envs/pytorch/lib/python3.7/fnmatch.py" . 1080)
+ ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 7849)
  ("/home/linyi/.emacs.d/lisp/init-ui.el" . 5698)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1185)
- ("/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 4639)
  ("/home/linyi/.emacs.d/elpa/imenu-list-20190115.2130/imenu-list.el" . 25645)
- ("/home/linyi/anaconda3/envs/pytorch/lib/python3.7/fnmatch.py" . 2167)
  ("/media/linyi/DataScience/pytest/"
   (dired-filename . "/media/linyi/DataScience/pytest/test_ubuntu.py"))
  ("/media/linyi/DataScience/"
@@ -18,7 +21,6 @@
   (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py"))
  ("/home/linyi/.emacs.d/lisp/init-treemacs.el" . 1502)
  ("/media/linyi/DataScience/cpp_proj/restudy_udacity/HelloWorld/main.cpp" . 165)
- ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 45)
  ("/media/linyi/DataScience/cpp_proj/restudy_udacity/HelloWorld/"
   (dired-filename . "/media/linyi/DataScience/cpp_proj/restudy_udacity/HelloWorld/main.cpp"))
  ("/home/linyi/.emacs.d/elpa/winum-20181119.1705/winum.el" . 6414)
@@ -99,7 +101,6 @@
   (dired-filename . "/home/linyi/Downloads"))
  ("/usr/include/c++/9/bits/basic_string.h" . 100734)
  ("/media/linyi/DataScience/pytorch/multi-label-classification/test/test_loss.py" . 91)
- ("/home/linyi/.emacs.d/lisp/init-python.el" . 7450)
  ("/media/linyi/DataScience/pytorch/multi-label-classification/test/"
   (dired-filename . "/media/linyi/DataScience/pytorch/multi-label-classification/test/test_loss.py"))
  ("/home/linyi/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/"
@@ -114,7 +115,6 @@
   (dired-filename . "/home/linyi/anaconda3/envs/stocketl/lib/python3.7/asyncio"))
  ("/home/linyi/anaconda3/envs/pytorch/lib/python3.7/site-packages/ipdb/__main__.py" . 2358)
  ("/home/linyi/.emacs.d/elpa/lsp-ui-20200625.1912/lsp-ui-doc.el" . 2555)
- ("/home/linyi/.emacs.d/lisp/leader-key-binding.el" . 841)
  ("/home/linyi/.emacs.d/elpa/lsp-python-ms-20200520.1609/lsp-python-ms.el" . 3389)
  ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1129)
  ("/home/linyi/.emacs.d/elpa/anaconda-mode-20200129.1718/anaconda-mode-autoloads.el" . 1227)

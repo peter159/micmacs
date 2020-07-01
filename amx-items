@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- hide-mode-line-mode
+ anaconda-mode
+ evil-mode
  doom-modeline-mode
+ delete-window
+ kill-buffer
+ hide-mode-line-mode
  yapfify-region
- toggle-debug-on-error
- treemacs
- package-reinstall
- restart-emacs
 )
 
 ;; ----- amx-data -----
@@ -44,7 +44,7 @@
  (electric-operator-mode . 4)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 30)
- (kill-buffer . 4)
+ (kill-buffer . 5)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
  (petmacs/pop-eshell . 3)
@@ -57,12 +57,12 @@
  (ess-display-help-on-object . 1)
  (load-theme . 3)
  (evil-motion-state . 19)
- (evil-mode . 9)
+ (evil-mode . 10)
  (evil-leader-mode . 2)
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
  (ibuffer-mode . 2)
- (doom-modeline-mode . 27)
+ (doom-modeline-mode . 31)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
  (other-window . 1)
@@ -108,7 +108,7 @@
  (menu-bar-mode . 5)
  (tool-bar-mode . 6)
  (inferior-ess-r-mode . 1)
- (anaconda-mode . 4)
+ (anaconda-mode . 6)
  (ess-display-help-in-browser . 1)
  (ess-display-package-index . 2)
  (aggressive-indent-mode . 2)
@@ -233,4 +233,5 @@
  (pyvenv-workon . 1)
  (treemacs . 1)
  (hide-mode-line-mode . 1)
+ (delete-window . 1)
 )
