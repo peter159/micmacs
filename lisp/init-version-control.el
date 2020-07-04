@@ -31,10 +31,10 @@
 ;; 			   ("https" . ,"10.137.133.20:1080")
 ;; 			   ("no_proxy" . "^\\(localhost\\|192.168.*\\|10.*\\)")))
 
-;; ;; set socks proxy
-;; (setq url-proxy-services `(("http" . ,"127.0.0.1:12333")
-;; 			   ("https" . ,"127.0.0.1:12333")
-;; 			   ("no_proxy" . "^\\(localhost\\|192.168.*\\|10.*\\)")))
+;; set socks proxy
+(setq url-proxy-services `(("http" . ,"127.0.0.1:12333")
+			   ("https" . ,"127.0.0.1:12333")
+			   ("no_proxy" . "^\\(localhost\\|192.168.*\\|10.*\\)")))
 
 
 (use-package magit

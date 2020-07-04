@@ -130,7 +130,7 @@
 (use-package spacemacs-theme
   :ensure t)
 
-(load-theme 'spacemacs-dark t)
+(load-theme 'spacemacs-light t)
 
 (use-package display-line-numbers-mode
   :ensure nil

@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ all-the-icons-install-fonts
  anaconda-mode
  evil-mode
  doom-modeline-mode
  delete-window
  kill-buffer
  hide-mode-line-mode
- yapfify-region
 )
 
 ;; ----- amx-data -----
@@ -201,7 +201,7 @@
  (lsp-java-update-server . 2)
  (package-reinstall . 32)
  (format-find-file . 1)
- (all-the-icons-install-fonts . 28)
+ (all-the-icons-install-fonts . 30)
  (customize . 1)
  (company-anaconda . 1)
  (evil-escape-mode . 2)
