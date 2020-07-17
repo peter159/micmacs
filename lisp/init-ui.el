@@ -93,7 +93,7 @@
 	   ;; (let ((base-dir-name (file-name-nondirectory (substring python-shell-virtualenv-root 0 -1))))
 	   (let ((base-dir-name (file-name-nondirectory python-shell-virtualenv-root)))
 	     (if (< 10 (length base-dir-name))
-		 (format " (%s..)" (substring base-dir-name 0 8))
+		 (format " (%s..)" (substring base-dir-name 0 12))
 	       (format " (%s)" base-dir-name)))
 	   'face (if (doom-modeline--active) 'doom-modeline-buffer-major-mode)))))
 

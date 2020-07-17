@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ kill-emacs
+ petmacs/alternate-buffer
+ kill-buffer
+ yapfify-buffer
+ yapfify-region
  all-the-icons-install-fonts
  anaconda-mode
- evil-mode
- doom-modeline-mode
- delete-window
- kill-buffer
- hide-mode-line-mode
 )
 
 ;; ----- amx-data -----
@@ -44,7 +44,7 @@
  (electric-operator-mode . 4)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 30)
- (kill-buffer . 5)
+ (kill-buffer . 6)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
  (petmacs/pop-eshell . 3)
@@ -142,8 +142,8 @@
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
- (yapfify-buffer . 3)
- (yapfify-region . 35)
+ (yapfify-buffer . 7)
+ (yapfify-region . 37)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
@@ -226,7 +226,7 @@
  (lsp-workspace-blacklist-remove . 3)
  (lsp-ui-doc-hide . 2)
  (debug-watch . 1)
- (kill-emacs . 2)
+ (kill-emacs . 3)
  (lsp-workspace-folders-add . 1)
  (lsp-workspace-restart . 1)
  (lsp-python-ms-update-server . 1)
@@ -234,4 +234,5 @@
  (treemacs . 1)
  (hide-mode-line-mode . 1)
  (delete-window . 1)
+ (petmacs/alternate-buffer . 1)
 )
