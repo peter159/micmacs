@@ -1,29 +1,95 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 761)
+(("/media/linyi/nDataScience/GO/src/test.com/hello.go" . 29)
+ ("/media/linyi/nDataScience/GO/src/test.com/"
+  (dired-filename . "/media/linyi/nDataScience/GO/src/test.com/hello.go"))
+ ("/home/linyi/.emacs.d/init.el" . 2971)
+ ("/home/linyi/.emacs.d/lisp/init-golang.el" . 1761)
+ ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1072)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1432)
+ ("/home/linyi/.emacs.d/elpa/go-gen-test-20171023.358/go-gen-test-autoloads.el" . 1072)
+ ("/home/linyi/.emacs.d/elpa/go-tag-20180227.411/go-tag-autoloads.el" . 755)
+ ("/home/linyi/.emacs.d/elpa/flycheck-golangci-lint-20190330.1412/flycheck-golangci-lint-autoloads.el" . 522)
+ ("/home/linyi/.emacs.d/elpa/go-impl-20170125.1552/go-impl-autoloads.el" . 472)
+ ("/home/linyi/.emacs.d/elpa/go-fill-struct-20171225.331/go-fill-struct-autoloads.el" . 538)
+ ("/home/linyi/.emacs.d/elpa/go-dlv-20191005.829/go-dlv-autoloads.el" . 749)
+ ("/media/linyi/nDataScience/GO/"
+  (dired-filename . "/media/linyi/nDataScience/GO/src"))
+ ("/media/linyi/nDataScience/GO/src/"
+  (dired-filename . "/media/linyi/nDataScience/GO/src/test.com"))
+ ("/home/linyi/.emacs.d/lisp/init-python.el" . 9978)
+ ("/media/linyi/nDataScience/pytorch/AINLP/train.py" . 8675)
+ ("/media/linyi/nDataScience/GO/src/github.com/"
+  (dired-filename . "/media/linyi/nDataScience/GO/src/github.com/josharian"))
+ ("/media/linyi/nDataScience/"
+  (dired-filename . "/media/linyi/nDataScience/GO"))
+ ("/media/linyi/nDataScience/pytorch/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/train.py"))
+ ("/home/linyi/.emacs.d/lisp/"
+  (dired-filename . "/home/linyi/.emacs.d/lisp/init-python.el"))
+ ("/home/linyi/.emacs.d/elpa/counsel-projectile-20190310.2205/counsel-projectile.el" . 36563)
+ ("/home/linyi/.emacs.d/lisp/init-project.el" . 1685)
+ ("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 1744)
+ ("/media/linyi/nDataScience/pytorch/AINLP/models/bert_chinese.py" . 257)
+ ("/media/linyi/nDataScience/pytorch/AINLP/conf/train_gm_official.json" . 202)
+ ("/media/linyi/nDataScience/pytorch/AINLP/conf/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/conf/train_gm_official.json"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/checkpoint_dir/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/checkpoint_dir/bert-base-chinese_best"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/predict.py" . 1014)
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/dataset/classification_dataset.py" . 1356)
+ ("/media/linyi/nDataScience/pytorch/AINLP/predict.py" . 3917)
+ ("/media/linyi/nDataScience/pytorch/AINLP/tag_on/output_result.py" . 1021)
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/dataset/dataset.py" . 9066)
+ ("/media/linyi/nDataScience/pytorch/AINLP/dataset/bert_dataset.py" . 1975)
+ ("/media/linyi/nDataScience/pytorch/AINLP/dataset/dataset.py" . 1202)
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/data_clean/make_json.py" . 5466)
+ ("/media/linyi/nDataScience/pytorch/AINLP/prepare_data/GM_NLP/make_json_gm.py" . 4351)
+ ("/media/linyi/nDataScience/pytorch/AINLP/models/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/models/bert_chinese.py"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/data_clean/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/data_clean/make_json.py"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/JLR_NLP/JLR_CEIP_Service_OE_202001_202003/data_clean"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/JLR_NLP/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/JLR_NLP/JLR_CEIP_Service_OE_202001_202003"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data/JLR_NLP"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/prepare_data"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/prepare_data/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/prepare_data/GM_NLP"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/prepare_data/GM_NLP/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/prepare_data/GM_NLP/make_json_gm.py"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/dataset/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/dataset/dataset.py"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/train_jlr_RCNN_BCEWithLogitLoss.json"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/dataset/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/dataset/data_preprocessor.py"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/tag_on/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/tag_on/output_result.py"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/checkpoint_dir_jlr/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/checkpoint_dir_jlr/TextRCNN_8"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/eval_dir/" . 104)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/util.py" . 1670)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/config.py" . 509)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/train_jlr_test.json" . 1466)
- ("/media/linyi/nDataScience/pytorch/AINLP/train.py" . 163)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 10159)
- ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py"))
- ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/train_jlr_TextRNN.json"))
- ("/media/linyi/nDataScience/pytorch/AINLP/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/train.py"))
  ("/home/linyi/anaconda3/envs/transformers/lib/python3.7/site-packages/transformers/modeling_auto.py" . 56127)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/simpletransformer/multi-label-classification.py" . 1061)
  ("/home/linyi/anaconda3/envs/transformers/lib/python3.7/site-packages/transformers/__init__.py" . 982)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test/study_transformers/trans_api.py" . 860)
  ("/home/linyi/anaconda3/envs/transformers/lib/python3.7/site-packages/sklearn/utils/validation.py" . 5127)
- ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/dataset/classification_dataset.py" . 1303)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/loss.py" . 3704)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/textrcnn.py" . 783)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/evaluate/classification_evaluate.py" . 3744)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/linbert.py"))
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test/study_transformers/multi_label_classification_chinese.py" . 4154)
- ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/predict.py" . 4)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test/study_transformers/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test/study_transformers/multi_label_classification_chinese.py"))
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test/data/sample_transformer_train.zip" . 245)
@@ -40,14 +106,9 @@
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test/data/toxic_comment/train.csv.zip" . 285)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test/data/toxic_comment/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test/data/toxic_comment/train.csv.zip"))
- ("/media/linyi/nDataScience/pytorch/multi-label-classification/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/transformers_test"))
- ("/media/linyi/nDataScience/pytorch/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification"))
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/simpletransformer/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/simpletransformer/multi-label-classification.py"))
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/model/classification/linbert.py" . 961)
- ("/home/linyi/.emacs.d/init.el" . 2418)
  ("/home/linyi/.emacs.d/lisp/init-ui.el" . 3278)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/train_gm_RCNN_BCEWithLogitLoss.json" . 2379)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/utils_glue.py" . 1304)
@@ -57,8 +118,6 @@
   (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/run_glue.py"))
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/data/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/data/labels.txt"))
- ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1053)
- ("/home/linyi/.emacs.d/lisp/init-python.el" . 10044)
  ("/home/linyi/.emacs.d/lisp/leader-key-binding.el" . 10608)
  ("/home/linyi/.emacs.d/elpa/imenu-list-20190115.2130/imenu-list.el" . 25645)
  ("/home/linyi/.emacs.d/lisp/init-treemacs.el" . 1502)
@@ -71,7 +130,6 @@
  ("/home/linyi/.emacs.d/lisp/init-default.el" . 4981)
  ("/home/linyi/.emacs.d/lisp/init-font.el" . 1510)
  ("/home/linyi/.emacs.d/elpa/vim-empty-lines-mode-20150111.426/vim-empty-lines-mode.el" . 6275)
- ("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 1244)
  ("/home/linyi/.emacs.d/lisp/init-evil.el" . 3470)
  ("/home/linyi/.emacs.d/lisp/init-company.el" . 2346)
  ("/home/linyi/.emacs.d/lisp/init-dired.el" . 1014)
@@ -110,8 +168,6 @@
  ("/home/linyi/.emacs.d/elpa/lsp-mode-20200627.1217/lsp-mode.el" . 320862)
  ("/usr/include/c++/9/ostream" . 18963)
  ("/home/linyi/.emacs.d/lisp/leader-core-functions.el" . 11873)
- ("/home/linyi/.emacs.d/lisp/"
-  (dired-filename . "/home/linyi/.emacs.d/lisp/init-font.el"))
  ("/home/linyi/.emacs.d/elpa/projectile-20200616.1659/projectile-autoloads.el" . 20518)
  ("/home/linyi/.emacs.d/elpa/diminish-20170419.1736/diminish.el" . 4952)
  ("/home/linyi/.emacs.d/elpa/lsp-mode-20200627.1217/"
@@ -145,7 +201,6 @@
  ("/mnt/hgfs/f/Kaggle/covid-19/script/china_seir_modeling.py" . 1760)
  ("/home/linyi/.emacs.d/lisp/init-layout.el" . 913)
  ("/home/linyi/.emacs.d/lisp/init-highlight.el" . 905)
- ("/home/linyi/.emacs.d/lisp/init-project.el" . 976)
  ("/mnt/hgfs/f/Kaggle/covid-19/script/"
   (dired-filename . "/mnt/hgfs/f/Kaggle/covid-19/script/china_seir_modeling.py"))
  ("/home/linyi/.emacs.d/elpa/ess-20190727.1955/ess-custom.el" . 57182)

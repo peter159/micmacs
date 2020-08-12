@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ lsp-workspace-show-log
+ xref-goto-xref
+ xref-find-references
+ xref-find-definitions
+ auto-insert
+ ivy-mode
  kill-emacs
- petmacs/alternate-buffer
- kill-buffer
- yapfify-buffer
- yapfify-region
- all-the-icons-install-fonts
- anaconda-mode
 )
 
 ;; ----- amx-data -----
@@ -18,8 +18,8 @@
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
- (ivy-mode . 10)
- (auto-insert . 12)
+ (ivy-mode . 11)
+ (auto-insert . 14)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
  (package-list-packages . 5)
@@ -70,7 +70,7 @@
  (anaconda-mode-find-references . 2)
  (petmacs/python-execute-file . 3)
  (forward-list . 1)
- (xref-find-references . 13)
+ (xref-find-references . 15)
  (dired-find-file . 3)
  (undo-tree-redo . 1)
  (rg . 1)
@@ -176,14 +176,14 @@
  (eglot-reconnect . 4)
  (eglot-rename . 7)
  (eglot-help-at-point . 9)
- (xref-find-definitions . 38)
+ (xref-find-definitions . 39)
  (insert-buffer . 1)
  (eglot-format . 2)
  (eglot-clear-status . 2)
  (eglot-code-actions . 4)
  (eglot-format-buffer . 27)
  (eglot-signal-didChangeConfiguration . 2)
- (xref-goto-xref . 2)
+ (xref-goto-xref . 3)
  (lsp-mode-menu . 1)
  (xref-show-location-at-point . 1)
  (flycheck-mode . 1)
@@ -235,4 +235,5 @@
  (hide-mode-line-mode . 1)
  (delete-window . 1)
  (petmacs/alternate-buffer . 1)
+ (lsp-workspace-show-log . 1)
 )

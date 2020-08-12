@@ -97,6 +97,7 @@
 (require 'init-java)
 ;; (require 'init-lsp-python)
 (require 'init-python)
+(require 'init-golang)
 (require 'init-ess)
 (require 'init-org)
 (require 'init-html)
