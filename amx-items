@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ godef-jump
+ gofmt
+ electric-operator-mode
  lsp-describe-session
  restart-emacs
  lsp-find-definition
  package-reinstall
- package-install
- xref-goto-xref
- xref-find-references
 )
 
 ;; ----- amx-data -----
@@ -41,7 +41,7 @@
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
- (electric-operator-mode . 4)
+ (electric-operator-mode . 5)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 30)
  (kill-buffer . 6)
@@ -210,7 +210,7 @@
  (server-force-delete . 1)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 26)
+ (lsp-describe-session . 27)
  (petmacs/lsp-find-definition-other-window . 11)
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 6)
@@ -236,4 +236,6 @@
  (delete-window . 1)
  (petmacs/alternate-buffer . 1)
  (lsp-workspace-show-log . 1)
+ (gofmt . 3)
+ (godef-jump . 2)
 )

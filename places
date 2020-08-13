@@ -1,22 +1,30 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/media/linyi/nDataScience/GO/src/test.com/hello.go" . 75)
- ("/media/linyi/nDataScience/GO/src/test.com/"
-  (dired-filename . "/media/linyi/nDataScience/GO/src/test.com/hello.go"))
- ("/home/linyi/go/bin/"
-  (dired-filename . "/home/linyi/go/bin/gopls"))
- ("/home/linyi/go/src/main/hello.go" . 29)
- ("/home/linyi/.emacs.d/lisp/init-golang.el" . 1944)
- ("/home/linyi/.emacs.d/init.el" . 2969)
- ("/home/linyi/.emacs.d/"
-  (dired-filename . "/home/linyi/.emacs.d/projectile-bookmarks.eld"))
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1578)
+(("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 3198)
+ ("/home/linyi/.emacs.d/init.el" . 2971)
+ ("/home/linyi/.emacs.d/elpa/go-mode-20190711.1528/go-mode.el" . 59277)
+ ("/home/linyi/.emacs.d/lisp/init-golang.el" . 1030)
+ ("/home/linyi/go/src/main/hello.go" . 199)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1451)
+ ("/home/linyi/.emacs.d/elpa/use-package-20200618.1804/use-package.el" . 1696)
+ ("/usr/local/go/src/fmt/print.go" . 7931)
+ ("/usr/local/go/src/fmt/format.go" . 448)
+ ("/usr/local/go/src/fmt/"
+  (dired-filename . "/usr/local/go/src/fmt/format.go"))
  ("/home/linyi/go/src/main/"
   (dired-filename . "/home/linyi/go/src/main/hello.go"))
  ("/home/linyi/go/src/"
   (dired-filename . "/home/linyi/go/src/main"))
+ ("/home/linyi/go/bin/"
+  (dired-filename . "/home/linyi/go/bin/gotests"))
  ("/home/linyi/go/"
-  (dired-filename . "/home/linyi/go/src"))
- ("/usr/local/go/src/fmt/print.go" . 183)
+  (dired-filename . "/home/linyi/go/bin"))
+ ("/home/linyi/go/pkg/"
+  (dired-filename . "/home/linyi/go/pkg/mod"))
+ ("/media/linyi/nDataScience/GO/src/test.com/hello.go" . 75)
+ ("/media/linyi/nDataScience/GO/src/test.com/"
+  (dired-filename . "/media/linyi/nDataScience/GO/src/test.com/hello.go"))
+ ("/home/linyi/.emacs.d/"
+  (dired-filename . "/home/linyi/.emacs.d/projectile-bookmarks.eld"))
  ("/usr/local/go/src/fmt/doc.go" . 14805)
  ("/home/linyi/.emacs.d/lisp/init-evil.el" . 2125)
  ("/home/linyi/.emacs.d/lisp/init-company.el" . 2690)
@@ -54,7 +62,6 @@
   (dired-filename . "/home/linyi/.emacs.d/lisp/init-python.el"))
  ("/home/linyi/.emacs.d/elpa/counsel-projectile-20190310.2205/counsel-projectile.el" . 36563)
  ("/home/linyi/.emacs.d/lisp/init-project.el" . 1685)
- ("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 1744)
  ("/media/linyi/nDataScience/pytorch/AINLP/models/bert_chinese.py" . 257)
  ("/media/linyi/nDataScience/pytorch/AINLP/conf/train_gm_official.json" . 202)
  ("/media/linyi/nDataScience/pytorch/AINLP/conf/"
