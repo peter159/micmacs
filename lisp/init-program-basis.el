@@ -111,7 +111,10 @@
                                                                            (cons "*" nil)
                                                                            (cons "&" nil))
                                      (electric-operator-add-rules-for-mode 'c-mode
-                                                                           (cons "*" nil))))))
+                                                                           (cons "*" nil))
+				     (electric-operator-add-rules-for-mode 'go-mode
+									   (cons ":=" " := "))
+				     ))))
 
 
 (provide 'init-program-basis)

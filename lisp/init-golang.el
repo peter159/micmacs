@@ -19,7 +19,7 @@
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-
+;; ref :https://dreamerjonson.com/2019/11/24/emacs-package-for-golang/index.html
 ;; 
 
 ;;; Code:
@@ -29,6 +29,9 @@
 ;; Golang
 (use-package go-mode
   :ensure t
+  :init
+  (setq gofmt-command "goimports"
+	indent-tabs-mode t)
   :functions (go-packages-gopkgs go-update-tools)
   :bind (:map go-mode-map
               ([remap xref-find-definitions] . godef-jump)
@@ -37,6 +40,7 @@
   :hook (go-mode . (lambda ()
 		     (lsp-deferred)))
   :config
+  (add-hook 'before-save-hook 'gofmt-before-save)
   ;; Env vars
   (with-eval-after-load 'exec-path-from-shell
     (exec-path-from-shell-copy-envs '("GOPATH" "GO111MODULE" "GOPROXY")))

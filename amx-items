@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- godef-jump
- gofmt
- electric-operator-mode
- lsp-describe-session
- restart-emacs
- lsp-find-definition
  package-reinstall
+ godef-jump
+ evil-surround-mode
+ xref-find-references
+ xref-find-definitions
+ gofmt
+ godoc
 )
 
 ;; ----- amx-data -----
@@ -70,7 +70,7 @@
  (anaconda-mode-find-references . 2)
  (petmacs/python-execute-file . 3)
  (forward-list . 1)
- (xref-find-references . 15)
+ (xref-find-references . 16)
  (dired-find-file . 3)
  (undo-tree-redo . 1)
  (rg . 1)
@@ -176,7 +176,7 @@
  (eglot-reconnect . 4)
  (eglot-rename . 7)
  (eglot-help-at-point . 9)
- (xref-find-definitions . 39)
+ (xref-find-definitions . 41)
  (insert-buffer . 1)
  (eglot-format . 2)
  (eglot-clear-status . 2)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 34)
+ (package-reinstall . 35)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 30)
  (customize . 1)
@@ -236,6 +236,8 @@
  (delete-window . 1)
  (petmacs/alternate-buffer . 1)
  (lsp-workspace-show-log . 1)
- (gofmt . 3)
- (godef-jump . 2)
+ (gofmt . 5)
+ (godef-jump . 6)
+ (godoc . 1)
+ (evil-surround-mode . 2)
 )

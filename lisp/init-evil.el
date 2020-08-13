@@ -48,7 +48,8 @@
 ;; (mark-time-here)
 
 ;; (use-package evil-leader :ensure t :defer nil)
-(use-package evil-anzu :ensure t)
+(use-package evil-anzu
+  :ensure t)
 (use-package evil
   :ensure t
   :init
