@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- lsp-workspace-show-log
+ lsp-describe-session
+ restart-emacs
+ lsp-find-definition
+ package-reinstall
+ package-install
  xref-goto-xref
  xref-find-references
- xref-find-definitions
- auto-insert
- ivy-mode
- kill-emacs
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 68)
+ (restart-emacs . 69)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 12)
+ (package-install . 13)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -157,7 +157,7 @@
  (lsp-ui-mode . 5)
  (lsp-ui-doc-show . 10)
  (evil-move . 1)
- (lsp-find-definition . 57)
+ (lsp-find-definition . 59)
  (lsp-mode . 10)
  (lsp-lens-mode . 1)
  (lsp . 132)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 32)
+ (package-reinstall . 34)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 30)
  (customize . 1)
@@ -210,7 +210,7 @@
  (server-force-delete . 1)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 25)
+ (lsp-describe-session . 26)
  (petmacs/lsp-find-definition-other-window . 11)
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 6)
