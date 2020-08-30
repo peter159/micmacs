@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ xref-find-definitions
+ electric-spacing-mode
+ electric-operator-mode
+ lsp-describe-session
  package-reinstall
  godef-jump
  evil-surround-mode
- xref-find-references
- xref-find-definitions
- gofmt
- godoc
 )
 
 ;; ----- amx-data -----
@@ -25,7 +25,7 @@
  (package-list-packages . 5)
  (show-all . 2)
  (describe-key . 3)
- (electric-spacing-mode . 4)
+ (electric-spacing-mode . 5)
  (evil-goto-definition . 5)
  (company-mode . 12)
  (company-quickhelp-mode . 4)
@@ -41,7 +41,7 @@
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
- (electric-operator-mode . 5)
+ (electric-operator-mode . 7)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 30)
  (kill-buffer . 6)
@@ -176,7 +176,7 @@
  (eglot-reconnect . 4)
  (eglot-rename . 7)
  (eglot-help-at-point . 9)
- (xref-find-definitions . 41)
+ (xref-find-definitions . 42)
  (insert-buffer . 1)
  (eglot-format . 2)
  (eglot-clear-status . 2)
@@ -210,7 +210,7 @@
  (server-force-delete . 1)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 27)
+ (lsp-describe-session . 28)
  (petmacs/lsp-find-definition-other-window . 11)
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 6)

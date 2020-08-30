@@ -33,11 +33,16 @@
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 
+(setq source-directory
+      (file-name-directory
+       (shell-command-to-string
+	(concat "locate --limit 1 emacs-" emacs-version "/src")))) ;locate emacs source code if exists
+
 (setq delete-by-moving-to-trash t)         ; Deleting files go to OS's trash folder
 (setq make-backup-files nil)               ; Forbide to make backup files
 (setq auto-save-default nil)               ; Disable auto save
 (setq create-lockfiles nil)                ; Disable lock files .#filename
-(setq truncate-lines t)			   ; do not truncate long lines, to avoid wrong display
+(setq truncate-lines nil)		   ; do not truncate long lines, to avoid wrong display
 
 (setq-default major-mode 'text-mode)
 
@@ -46,9 +51,7 @@
 
 ;; Line and Column
 (setq-default fill-column 100)
-;; (tool-bar-mode -1)			; move to ui
-;; (menu-bar-mode -1)			; move to ui
-(setq column-number-mode t)
+(setq column-number-mode t)		; show in mode-line
 ;; (setq line-number-mode t)
 
 ;; Don't open a file in a new frame

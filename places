@@ -1,17 +1,30 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/linyi/go/src/main/hello.go" . 91)
- ("/home/linyi/.emacs.d/init.el" . 2602)
+(("/home/linyi/.emacs.d/init.el" . 2369)
+ ("/media/linyi/nDataScience/pytorch/AINLP/models/model_utils.py" . 1427)
+ ("/media/linyi/nDataScience/pytorch/AINLP/train.py" . 2963)
+ ("/home/linyi/.emacs.d/lisp/init-default.el" . 1093)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1446)
+ ("/media/linyi/nDataScience/pytorch/AINLP/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/train.py"))
+ ("/home/linyi/.emacs.d/lisp/init-general-functions.el" . 1313)
+ ("/home/linyi/.emacs.d/lisp/init-custom-vars.el" . 830)
+ ("/home/linyi/.emacs.d/elpa/use-package-20200618.1804/use-package-core.el" . 56468)
+ ("/home/linyi/.emacs.d/lisp/init-package-management.el" . 2358)
+ ("/home/linyi/.emacs.d/lisp/init-const.el" . 1484)
+ ("/home/linyi/.emacs.d/lisp/init-ess.el" . 1543)
+ ("/home/linyi/.emacs.d/lisp/init-golang.el" . 1040)
+ ("/home/linyi/go/src/"
+  (dired-filename . "/home/linyi/go/src/dedup_file"))
+ ("/home/linyi/.emacs.d/elpa/evil-20200530.659/evil-integration.el" . 1984)
+ ("/home/linyi/.emacs.d/lisp/init-evil.el" . 1440)
+ ("/home/linyi/.emacs.d/elpa/evil-20200530.659/"
+  (dired-filename . "/home/linyi/.emacs.d/elpa/evil-20200530.659/evil-integration.el"))
  ("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 3792)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1198)
  ("/home/linyi/.emacs.d/elpa/electric-operator-20200410.928/electric-operator-autoloads.el" . 1350)
- ("/home/linyi/.emacs.d/lisp/init-evil.el" . 862)
  ("/home/linyi/.emacs.d/elpa/use-package-20200618.1804/use-package.el" . 1657)
  ("/usr/local/go/src/fmt/format.go" . 1953)
  ("/home/linyi/.emacs.d/elpa/evil-20200530.659/evil-commands.el" . 102760)
- ("/home/linyi/.emacs.d/lisp/init-golang.el" . 953)
  ("/usr/local/go/src/fmt/print.go" . 7931)
- ("/home/linyi/.emacs.d/elpa/evil-20200530.659/"
-  (dired-filename . "/home/linyi/.emacs.d/elpa/evil-20200530.659/evil-commands.el"))
  ("/usr/local/go/src/os/dir.go" . 173)
  ("/usr/local/go/src/os/path_unix.go" . 449)
  ("/home/linyi/.emacs.d/elpa/go-mode-20190711.1528/go-mode.el" . 59277)
@@ -21,10 +34,6 @@
  ("/home/linyi/.emacs.d/lisp/init-dired.el" . 3432)
  ("/usr/local/go/src/fmt/"
   (dired-filename . "/usr/local/go/src/fmt/format.go"))
- ("/home/linyi/go/src/main/"
-  (dired-filename . "/home/linyi/go/src/main/hello.go"))
- ("/home/linyi/go/src/"
-  (dired-filename . "/home/linyi/go/src/main"))
  ("/home/linyi/go/bin/"
   (dired-filename . "/home/linyi/go/bin/gotests"))
  ("/home/linyi/go/"
@@ -38,10 +47,6 @@
   (dired-filename . "/home/linyi/.emacs.d/projectile-bookmarks.eld"))
  ("/usr/local/go/src/fmt/doc.go" . 14805)
  ("/home/linyi/.emacs.d/lisp/init-company.el" . 2690)
- ("/home/linyi/.emacs.d/lisp/init-general-functions.el" . 1179)
- ("/home/linyi/.emacs.d/lisp/init-custom-vars.el" . 858)
- ("/home/linyi/.emacs.d/lisp/init-package-management.el" . 2594)
- ("/home/linyi/.emacs.d/lisp/init-default.el" . 5022)
  ("/home/linyi/.emacs.d/lisp/init-font.el" . 1014)
  ("/home/linyi/.emacs.d/elpa/evil-20200530.659/evil-autoloads.el" . 3775)
  ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1072)
@@ -55,15 +60,12 @@
  ("/media/linyi/nDataScience/GO/src/"
   (dired-filename . "/media/linyi/nDataScience/GO/src/test.com"))
  ("/home/linyi/.emacs.d/lisp/init-python.el" . 9978)
- ("/media/linyi/nDataScience/pytorch/AINLP/train.py" . 8675)
  ("/media/linyi/nDataScience/GO/src/github.com/"
   (dired-filename . "/media/linyi/nDataScience/GO/src/github.com/josharian"))
  ("/media/linyi/nDataScience/"
   (dired-filename . "/media/linyi/nDataScience/GO"))
  ("/media/linyi/nDataScience/pytorch/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP"))
- ("/media/linyi/nDataScience/pytorch/AINLP/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/train.py"))
  ("/home/linyi/.emacs.d/lisp/"
   (dired-filename . "/home/linyi/.emacs.d/lisp/init-python.el"))
  ("/home/linyi/.emacs.d/elpa/counsel-projectile-20190310.2205/counsel-projectile.el" . 36563)
@@ -171,7 +173,6 @@
  ("/home/linyi/.emacs.d/recentf" . 2382)
  ("/home/linyi/.emacs.d/elpa/treemacs-projectile-20200530.2129/treemacs-projectile-autoloads.el" . 734)
  ("/home/linyi/.emacs.d/elpa/treemacs-20200625.2056/treemacs-autoloads.el" . 12860)
- ("/home/linyi/.emacs.d/elpa/use-package-20200618.1804/use-package-core.el" . 59560)
  ("/home/linyi/.emacs.d/lisp/init-lsp-python.el" . 2409)
  ("/home/linyi/.emacs.d/elpa/pyvenv-20181228.1722/pyvenv.el" . 10858)
  ("/usr/include/c++/9/iostream" . 2060)
@@ -228,7 +229,6 @@
  ("/mnt/hgfs/f/Kaggle/covid-19/script/"
   (dired-filename . "/mnt/hgfs/f/Kaggle/covid-19/script/china_seir_modeling.py"))
  ("/home/linyi/.emacs.d/elpa/ess-20190727.1955/ess-custom.el" . 57182)
- ("/home/linyi/.emacs.d/lisp/init-ess.el" . 1025)
  ("/home/linyi/Downloads/"
   (dired-filename . "/home/linyi/Downloads/test"))
  ("/mnt/f/Kaggle/predict_future_sales/scripts/process_data_simplified.py" . 330)
