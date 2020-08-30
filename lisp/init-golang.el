@@ -40,7 +40,7 @@
   :hook (go-mode . (lambda ()
 		     (lsp-deferred)))
   :config
-  ;; (define-key go-mode-map (kbd ".") '(lambda()(interactive)(insert ".")))
+  (define-key go-mode-map (kbd ".") '(lambda()(interactive)(insert ".")))
   (add-hook 'go-mode-hook
             (lambda ()
               (add-hook 'before-save-hook 'gofmt-before-save)
