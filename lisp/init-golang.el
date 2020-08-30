@@ -42,14 +42,16 @@
   :hook (go-mode . (lambda ()
 		     (lsp-deferred)))
   :config
-  ;; (add-hook 'before-save-hook 'gofmt-before-save)
+  (add-hook 'go-mode-hook
+            (lambda ()
+              (add-hook 'before-save-hook 'gofmt-before-save)
+              (setq tab-width 4)))
   ;; Env vars
   (with-eval-after-load 'exec-path-from-shell
     (exec-path-from-shell-copy-envs '("GOPATH" "GO111MODULE" "GOPROXY")))
 
   ;; Install or update tools
   (defvar go--tools '("golang.org/x/tools/cmd/goimports"
-
                       "github.com/go-delve/delve/cmd/dlv"
                       "github.com/josharian/impl"
                       "github.com/cweill/gotests/..."

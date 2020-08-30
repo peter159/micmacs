@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- xref-find-definitions
- electric-spacing-mode
+ gofmt
  electric-operator-mode
  lsp-describe-session
+ column-number-mode
+ xref-find-definitions
+ electric-spacing-mode
  package-reinstall
- godef-jump
- evil-surround-mode
 )
 
 ;; ----- amx-data -----
@@ -41,7 +41,7 @@
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
- (electric-operator-mode . 7)
+ (electric-operator-mode . 9)
  (move-to-window-line-top-bottom . 2)
  (my-shell-here . 30)
  (kill-buffer . 6)
@@ -210,7 +210,7 @@
  (server-force-delete . 1)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 28)
+ (lsp-describe-session . 29)
  (petmacs/lsp-find-definition-other-window . 11)
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 6)
@@ -236,8 +236,9 @@
  (delete-window . 1)
  (petmacs/alternate-buffer . 1)
  (lsp-workspace-show-log . 1)
- (gofmt . 5)
+ (gofmt . 6)
  (godef-jump . 6)
  (godoc . 1)
  (evil-surround-mode . 2)
+ (column-number-mode . 4)
 )
