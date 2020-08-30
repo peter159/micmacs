@@ -1,11 +1,14 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const/main.go" . 72)
- ("/usr/share/emacs/28.0.50/etc/HELLO" . 118)
- ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/datatype/main.go" . 65)
+(("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/datatype/main.go" . 138)
  ("/home/linyi/.emacs.d/init.el" . 2969)
- ("/home/linyi/.emacs.d/lisp/init-golang.el" . 981)
+ ("/home/linyi/.emacs.d/lisp/init-golang.el" . 1335)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1206)
+ ("/home/linyi/.emacs.d/lisp/init-c-c++.el" . 2618)
+ ("/home/linyi/.emacs.d/lisp/init-python.el" . 4636)
+ ("/home/linyi/.emacs.d/lisp/init-ess.el" . 1810)
  ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 196)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1380)
+ ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const/main.go" . 72)
+ ("/usr/share/emacs/28.0.50/etc/HELLO" . 118)
  ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/var/main.go" . 210)
  ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const/"
   (dired-filename . "/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const/main.go"))
@@ -34,7 +37,6 @@
  ("/home/linyi/.emacs.d/lisp/init-custom-vars.el" . 830)
  ("/home/linyi/.emacs.d/lisp/init-package-management.el" . 2358)
  ("/home/linyi/.emacs.d/lisp/init-const.el" . 1484)
- ("/home/linyi/.emacs.d/lisp/init-ess.el" . 1543)
  ("/home/linyi/go/src/"
   (dired-filename . "/home/linyi/go/src/dedup_file"))
  ("/home/linyi/.emacs.d/elpa/evil-20200530.659/evil-integration.el" . 1984)
@@ -78,7 +80,6 @@
   (dired-filename . "/media/linyi/nDataScience/GO/src"))
  ("/media/linyi/nDataScience/GO/src/"
   (dired-filename . "/media/linyi/nDataScience/GO/src/test.com"))
- ("/home/linyi/.emacs.d/lisp/init-python.el" . 9978)
  ("/media/linyi/nDataScience/GO/src/github.com/"
   (dired-filename . "/media/linyi/nDataScience/GO/src/github.com/josharian"))
  ("/media/linyi/nDataScience/"
@@ -218,7 +219,6 @@
  ("/usr/include/c++/9/bits/stringfwd.h" . 2157)
  ("/home/linyi/.emacs.d/elpa/lsp-mode-20200627.1217/lsp-mode-autoloads.el" . 8122)
  ("/home/linyi/.emacs.d/elpa/lsp-java-20190726.817/lsp-java-treemacs.el" . 11071)
- ("/home/linyi/.emacs.d/lisp/init-c-c++.el" . 2001)
  ("/home/linyi/.emacs.d/lisp/init-java.el" . 831)
  ("/home/linyi/.emacs.d/elpa/smart-semicolon-20171008.133/smart-semicolon.el" . 4895)
  ("/home/linyi/.emacs.d/elpa/lsp-ui-20200625.1912/lsp-ui-autoloads.el" . 2026)

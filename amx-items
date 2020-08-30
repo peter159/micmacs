@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ complete-symbol
  electric-spacing-mode
  electric-operator-mode
  my-shell-here
  lsp-rename
  gofmt
  lsp-describe-session
- column-number-mode
 )
 
 ;; ----- amx-data -----
@@ -85,7 +85,7 @@
  (dired-create-directory . 1)
  (ranger-mode . 5)
  (ranger-to-dired . 1)
- (complete-symbol . 1)
+ (complete-symbol . 2)
  (delete-directory . 2)
  (petmacs/python-quit-repl . 1)
  (petmacs/python-start-or-switch-repl . 1)

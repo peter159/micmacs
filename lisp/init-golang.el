@@ -40,10 +40,11 @@
   :hook (go-mode . (lambda ()
 		     (lsp-deferred)))
   :config
+  ;; (define-key go-mode-map (kbd ".") '(lambda()(interactive)(insert ".")))
   (add-hook 'go-mode-hook
             (lambda ()
               (add-hook 'before-save-hook 'gofmt-before-save)
-	      (electric-spacing-mode t)
+	      ;; (electric-spacing-mode t)
               (setq tab-width 4)))
   ;; Env vars
   (with-eval-after-load 'exec-path-from-shell
