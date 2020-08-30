@@ -1,8 +1,9 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/datatype/main.go" . 108)
- ("/home/linyi/.emacs.d/lisp/init-golang.el" . 1378)
+(("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/datatype/main.go" . 321)
  ("/home/linyi/.emacs.d/init.el" . 2969)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1200)
+ ("/home/linyi/.emacs.d/lisp/init-golang.el" . 1025)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1226)
+ ("/home/linyi/.emacs.d/elpa/go-imenu-20181029.1029/go-imenu-autoloads.el" . 437)
  ("/home/linyi/.emacs.d/lisp/init-c-c++.el" . 2618)
  ("/home/linyi/.emacs.d/lisp/init-python.el" . 4636)
  ("/home/linyi/.emacs.d/lisp/init-ess.el" . 1810)

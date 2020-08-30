@@ -30,6 +30,8 @@
 (use-package go-mode
   :ensure t
   :init
+  (use-package go-imenu
+    :ensure t)
   (setq gofmt-command "goimports"
 	indent-tabs-mode t)
   :functions (go-packages-gopkgs go-update-tools)
@@ -46,6 +48,7 @@
               (add-hook 'before-save-hook 'gofmt-before-save)
 	      ;; (electric-spacing-mode t)
               (setq tab-width 4)))
+  (add-hook 'go-mode-hook 'go-imenu-setup)
   ;; Env vars
   (with-eval-after-load 'exec-path-from-shell
     (exec-path-from-shell-copy-envs '("GOPATH" "GO111MODULE" "GOPROXY")))
