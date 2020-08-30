@@ -3,3 +3,5 @@
  - path :: ~/.emacs.d
 ** NeuralNLP-NeuralClassifier
  - path :: /media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier
+** go
+ - path :: ~/go

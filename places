@@ -1,17 +1,23 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/linyi/go/src/code.oldboy.com/studygolang/helloworld/main.go" . 41)
- ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/main.go" . 129)
+(("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const/main.go" . 72)
+ ("/usr/share/emacs/28.0.50/etc/HELLO" . 118)
+ ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/datatype/main.go" . 65)
  ("/home/linyi/.emacs.d/init.el" . 2969)
- ("/home/linyi/.emacs.d/lisp/init-golang.el" . 1443)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1355)
+ ("/home/linyi/.emacs.d/lisp/init-golang.el" . 981)
+ ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 196)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1380)
+ ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/var/main.go" . 210)
+ ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const/"
+  (dired-filename . "/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const/main.go"))
+ ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/"
+  (dired-filename . "/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const"))
+ ("/usr/local/go/src/fmt/print.go" . 7843)
+ ("/home/linyi/go/src/code.oldboy.com/studygolang/helloworld/main.go" . 41)
  ("/home/linyi/.emacs.d/company-statistics-cache.el" . 102718)
- ("/usr/local/go/src/fmt/print.go" . 7931)
  ("/home/linyi/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/nn/functional.py" . 59127)
  ("/home/linyi/.emacs.d/lisp/init-default.el" . 2829)
  ("/home/linyi/.emacs.d/anaconda-mode/0.1.13/jedi-0.16.0-py3.7.egg/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi" . 4855)
  ("/media/linyi/nDataScience/pytorch/AINLP/train.py" . 5396)
- ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/"
-  (dired-filename . "/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/main.go"))
  ("/home/linyi/go/src/code.oldboy.com/studygolang/"
   (dired-filename . "/home/linyi/go/src/code.oldboy.com/studygolang/lesson1"))
  ("/home/linyi/go/src/code.oldboy.com/studygolang/helloworld/"
@@ -164,7 +170,6 @@
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/conf/train_gm_RCNN_BCEWithLogitLoss.json" . 2379)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/utils_glue.py" . 1304)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/run_glue.py" . 2054)
- ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 174)
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/run_glue.py"))
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/Multilabel-Transformers/data/"

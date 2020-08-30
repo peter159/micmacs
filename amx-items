@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- gofmt
+ electric-spacing-mode
  electric-operator-mode
+ my-shell-here
+ lsp-rename
+ gofmt
  lsp-describe-session
  column-number-mode
- xref-find-definitions
- electric-spacing-mode
- package-reinstall
 )
 
 ;; ----- amx-data -----
@@ -25,7 +25,7 @@
  (package-list-packages . 5)
  (show-all . 2)
  (describe-key . 3)
- (electric-spacing-mode . 5)
+ (electric-spacing-mode . 6)
  (evil-goto-definition . 5)
  (company-mode . 12)
  (company-quickhelp-mode . 4)
@@ -41,9 +41,9 @@
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
- (electric-operator-mode . 9)
+ (electric-operator-mode . 11)
  (move-to-window-line-top-bottom . 2)
- (my-shell-here . 30)
+ (my-shell-here . 31)
  (kill-buffer . 6)
  (spacemacs/default-pop-shell . 1)
  (mark-time-here . 1)
@@ -215,7 +215,7 @@
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 6)
  (dd/cpp-eglot-enable . 1)
- (lsp-rename . 1)
+ (lsp-rename . 2)
  (lsp-format-buffer . 1)
  (completion-at-point . 3)
  (eglot-forget-pending-continuations . 1)
