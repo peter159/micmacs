@@ -26,6 +26,13 @@
 
 (mark-time-here)
 
+(defun golang-mode-show-doc ()
+  "Show documentation for context at point."
+  (interactive)
+  (let ((pop-up-windows t))
+    (pop-to-buffer (current-buffer) t))
+  (godoc-at-point))
+
 ;; Golang
 (use-package go-mode
   :ensure t

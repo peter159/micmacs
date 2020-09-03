@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- go-imenu-setup
- package-install
- complete-symbol
- electric-spacing-mode
- electric-operator-mode
- my-shell-here
- lsp-rename
+ package-reinstall
+ godoc
+ godoc-at-point
+ golang-mode-show-doc
+ anaconda-mode-show-doc
+ lsp-ui-doc-glance
+ lsp-ui-doc-show
 )
 
 ;; ----- amx-data -----
@@ -121,7 +121,7 @@
  (magit-push . 1)
  (tags-reset-tags-tables . 1)
  (anaconda-mode-find-definitions . 3)
- (anaconda-mode-show-doc . 1)
+ (anaconda-mode-show-doc . 2)
  (ranger-mark . 1)
  (indent-region . 1)
  (profiler-start . 2)
@@ -155,7 +155,7 @@
  (ccls-tree-next-line . 4)
  (ccls-member-hierarchy . 3)
  (lsp-ui-mode . 5)
- (lsp-ui-doc-show . 10)
+ (lsp-ui-doc-show . 12)
  (evil-move . 1)
  (lsp-find-definition . 59)
  (lsp-mode . 10)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 35)
+ (package-reinstall . 37)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 30)
  (customize . 1)
@@ -238,8 +238,12 @@
  (lsp-workspace-show-log . 1)
  (gofmt . 6)
  (godef-jump . 6)
- (godoc . 1)
+ (godoc . 4)
  (evil-surround-mode . 2)
  (column-number-mode . 4)
  (go-imenu-setup . 1)
+ (lsp-document-highlight . 1)
+ (lsp-ui-doc-glance . 1)
+ (godoc-at-point . 5)
+ (golang-mode-show-doc . 5)
 )

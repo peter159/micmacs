@@ -64,7 +64,7 @@ installed), then by project.el.
 If the project is already registered with treemacs just move point to its root.
 An error message is displayed if the current buffer is not part of any project." t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs" '("treemacs-version")))
+(register-definition-prefixes "treemacs" '("treemacs-version"))
 
 ;;;***
 
@@ -72,7 +72,7 @@ An error message is displayed if the current buffer is not part of any project."
 ;;;;;;  0))
 ;;; Generated autoloads from treemacs-async.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-async" '("treemacs-")))
+(register-definition-prefixes "treemacs-async" '("treemacs-"))
 
 ;;;***
 
@@ -101,7 +101,7 @@ For file and directory nodes their absolute path is saved.  Tag nodes
 additionally also save the tag's position.  A tag can only be bookmarked if the
 treemacs node is pointing to a valid buffer position." t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-bookmarks" '("treemacs--")))
+(register-definition-prefixes "treemacs-bookmarks" '("treemacs--"))
 
 ;;;***
 
@@ -109,7 +109,7 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-compatibility.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-compatibility" '("persp-after-load" "treemacs--split-window-advice")))
+(register-definition-prefixes "treemacs-compatibility" '("persp-after-load" "treemacs--split-window-advice"))
 
 ;;;***
 
@@ -117,7 +117,7 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-core-utils.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-core-utils" '("treemacs-")))
+(register-definition-prefixes "treemacs-core-utils" '("treemacs-"))
 
 ;;;***
 
@@ -125,7 +125,7 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-customization.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-customization" '("treemacs-")))
+(register-definition-prefixes "treemacs-customization" '("treemacs-"))
 
 ;;;***
 
@@ -133,14 +133,14 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-diagnostics.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-diagnostics" '("treemacs-")))
+(register-definition-prefixes "treemacs-diagnostics" '("treemacs-"))
 
 ;;;***
 
 ;;;### (autoloads nil "treemacs-dom" "treemacs-dom.el" (0 0 0 0))
 ;;; Generated autoloads from treemacs-dom.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-dom" '("treemacs-")))
+(register-definition-prefixes "treemacs-dom" '("treemacs-"))
 
 ;;;***
 
@@ -148,7 +148,7 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-extensions.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-extensions" '("treemacs-")))
+(register-definition-prefixes "treemacs-extensions" '("treemacs-"))
 
 ;;;***
 
@@ -156,7 +156,7 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-filewatch-mode.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-filewatch-mode" '("treemacs-")))
+(register-definition-prefixes "treemacs-filewatch-mode" '("treemacs-"))
 
 ;;;***
 
@@ -164,7 +164,7 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-follow-mode.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-follow-mode" '("treemacs-")))
+(register-definition-prefixes "treemacs-follow-mode" '("treemacs-"))
 
 ;;;***
 
@@ -172,7 +172,7 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-fringe-indicator.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-fringe-indicator" '("treemacs-")))
+(register-definition-prefixes "treemacs-fringe-indicator" '("treemacs-"))
 
 ;;;***
 
@@ -180,7 +180,7 @@ treemacs node is pointing to a valid buffer position." t nil)
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-header-line.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-header-line" '("treemacs-header-buttons-format")))
+(register-definition-prefixes "treemacs-header-line" '("treemacs-header-buttons-format"))
 
 ;;;***
 
@@ -230,7 +230,7 @@ be assigned which treemacs icon, for exmaple
 
 \(fn EXTENSIONS MODE-ICON-ALIST)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-icons" '("treemacs-")))
+(register-definition-prefixes "treemacs-icons" '("treemacs-"))
 
 ;;;***
 
@@ -238,7 +238,7 @@ be assigned which treemacs icon, for exmaple
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-interface.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-interface" '("treemacs-")))
+(register-definition-prefixes "treemacs-interface" '("treemacs-"))
 
 ;;;***
 
@@ -246,7 +246,7 @@ be assigned which treemacs icon, for exmaple
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from treemacs-logging.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-logging" '("treemacs-")))
+(register-definition-prefixes "treemacs-logging" '("treemacs-"))
 
 ;;;***
 
@@ -254,7 +254,7 @@ be assigned which treemacs icon, for exmaple
 ;;;;;;  0 0))
 ;;; Generated autoloads from treemacs-macros.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-macros" '("treemacs-")))
+(register-definition-prefixes "treemacs-macros" '("treemacs-"))
 
 ;;;***
 
@@ -266,7 +266,7 @@ A major mode for displaying the file system in a tree layout.
 
 \(fn)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-mode" '("treemacs-")))
+(register-definition-prefixes "treemacs-mode" '("treemacs-"))
 
 ;;;***
 
@@ -281,7 +281,7 @@ and ignore any prefix argument.
 
 \(fn &optional _)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-mouse-interface" '("treemacs-")))
+(register-definition-prefixes "treemacs-mouse-interface" '("treemacs-"))
 
 ;;;***
 
@@ -289,7 +289,7 @@ and ignore any prefix argument.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-persistence.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-persistence" '("treemacs-")))
+(register-definition-prefixes "treemacs-persistence" '("treemacs-"))
 
 ;;;***
 
@@ -297,7 +297,7 @@ and ignore any prefix argument.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-rendering.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-rendering" '("treemacs-")))
+(register-definition-prefixes "treemacs-rendering" '("treemacs-"))
 
 ;;;***
 
@@ -305,7 +305,7 @@ and ignore any prefix argument.
 ;;;;;;  0))
 ;;; Generated autoloads from treemacs-scope.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-scope" '("treemacs-")))
+(register-definition-prefixes "treemacs-scope" '("treemacs-"))
 
 ;;;***
 
@@ -313,14 +313,14 @@ and ignore any prefix argument.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-tag-follow-mode.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-tag-follow-mode" '("treemacs-")))
+(register-definition-prefixes "treemacs-tag-follow-mode" '("treemacs-"))
 
 ;;;***
 
 ;;;### (autoloads nil "treemacs-tags" "treemacs-tags.el" (0 0 0 0))
 ;;; Generated autoloads from treemacs-tags.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-tags" '("treemacs--")))
+(register-definition-prefixes "treemacs-tags" '("treemacs--"))
 
 ;;;***
 
@@ -328,7 +328,7 @@ and ignore any prefix argument.
 ;;;;;;  0 0))
 ;;; Generated autoloads from treemacs-themes.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-themes" '("treemacs-")))
+(register-definition-prefixes "treemacs-themes" '("treemacs-"))
 
 ;;;***
 
@@ -336,7 +336,7 @@ and ignore any prefix argument.
 ;;;;;;  0 0 0))
 ;;; Generated autoloads from treemacs-visuals.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-visuals" '("treemacs-")))
+(register-definition-prefixes "treemacs-visuals" '("treemacs-"))
 
 ;;;***
 
@@ -344,7 +344,7 @@ and ignore any prefix argument.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from treemacs-workspaces.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-workspaces" '("treemacs-")))
+(register-definition-prefixes "treemacs-workspaces" '("treemacs-"))
 
 ;;;***
 

@@ -17,7 +17,7 @@ the project's root directory.
 
 \(fn &optional ARG)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-projectile" '("treemacs-")))
+(register-definition-prefixes "treemacs-projectile" '("treemacs-"))
 
 ;;;***
 
