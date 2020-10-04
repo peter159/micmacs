@@ -33,6 +33,8 @@
 
 (use-package multi-term :ensure t)
 (use-package eshell :ensure nil)
+(use-package shell-here
+  :ensure t)
 
 (defun spacemacs//init-eshell ()
   "Stuff to do when enabling eshell."
@@ -154,17 +156,17 @@
 ;; (define-key emacs-lisp-mode-map (kbd "C-S-c") 'open-mintty-terminal)
 (define-key global-map (kbd "C-S-c") 'open-mintty-terminal)
 
-(defun my-shell-here()
-  "open shell here and automatically close window when quiting the shell"
-  (interactive)
-  (let ((file-name-directory (buffer-file-name)))
-    ;; (recenter 11)
-    ;; (message "end of line: %s" (window-body-height))
-    ))
+;; (defun my-shell-here()
+;;   "open shell here and automatically close window when quiting the shell"
+;;   (interactive)
+;;   (let ((file-name-directory (buffer-file-name)))
+;;     ;; (recenter 11)
+;;     ;; (message "end of line: %s" (window-body-height))
+;;     ))
 
 (defvar shell-default-shell (if (eq window-system 'w32)
                                 'shell
-			      'ansi-term)
+			      'multi-term)
   "Default shell to use in Spacemacs. Possible values are `eshell', `shell',
 `term', `ansi-term' and `multi-term'.")
 

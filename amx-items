@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
+ restart-emacs
+ shell-here
+ package-install
+ inferior-shell
+ shell-pop
+ server-force-delete
  package-reinstall
- godoc
- godoc-at-point
- golang-mode-show-doc
- anaconda-mode-show-doc
- lsp-ui-doc-glance
- lsp-ui-doc-show
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 69)
+ (restart-emacs . 72)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -96,7 +96,7 @@
  (move-end-of-line . 1)
  (move-past-close-and-reindent . 1)
  (eshell-z . 1)
- (inferior-shell . 1)
+ (inferior-shell . 2)
  (vim-empty-lines-mode . 1)
  (clear-rectangle . 3)
  (scroll-down . 2)
@@ -138,7 +138,7 @@
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 14)
+ (package-install . 15)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -207,7 +207,7 @@
  (evil-escape-mode . 2)
  (all-the-icons-insert-wicon . 2)
  (describe-fontset . 1)
- (server-force-delete . 1)
+ (server-force-delete . 2)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
  (lsp-describe-session . 29)
@@ -246,4 +246,6 @@
  (lsp-ui-doc-glance . 1)
  (godoc-at-point . 5)
  (golang-mode-show-doc . 5)
+ (shell-pop . 1)
+ (shell-here . 1)
 )
