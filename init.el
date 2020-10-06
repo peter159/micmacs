@@ -28,7 +28,7 @@
 (require 'package)
 
 ;; use mirror
-(setq package-check-signature nil)
+(setq package-check-signature nil)	; to avoid signature fail for package
 (setq-default package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
 				 ("melpa" . "http://elpa.emacs-china.org/melpa/")
 				 ("melpa-stable" . "http://elpa.emacs-china.org/melpa-stable/")))
@@ -53,8 +53,9 @@
 (update-load-path)
 (add-subdirs-to-load-path)
 
-;; Initialize packages
-(package-initialize)
+;; Initialize packages unless it's done
+(unless (bound-and-true-p package--initialized)
+  (package-initialize))
 
 ;; ;; Display the total loading time in the minibuffer
 (defun display-startup-echo-area-message ()
@@ -65,6 +66,7 @@
 ;; (profiler-memory-start)
 
 ;; requre features from lisp
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 (require 'init-general-functions)
 (require 'init-custom-vars)
@@ -111,3 +113,6 @@
 
 (require 'leader-core-functions)
 (require 'leader-key-binding)
+
+(when (file-exists-p custom-file)
+  (load-file custom-file))
