@@ -42,7 +42,8 @@
 
 (use-package shell-here
   :ensure t
-  :bind ("C-l" . 'comint-clear-buffer))
+  :bind (:map shell-mode-map
+	      ("C-l" . comint-clear-buffer)))
 
 (provide 'init-shell)
 ;;; init-shell.el ends here

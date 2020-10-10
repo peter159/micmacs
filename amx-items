@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- kill-buffer-and-window
- delete-window
- kill-buffer
- exit-minibuffer
- comint-clear-buffer
+ package-reinstall
  restart-emacs
+ server-force-delete
+ flycheck-mode
+ flymake-mode
+ list-colors-display
  package-autoremove
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 73)
+ (restart-emacs . 75)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -130,7 +130,7 @@
  (previous-line . 2)
  (replace-string . 18)
  (quit-window . 5)
- (flymake-mode . 8)
+ (flymake-mode . 10)
  (flycheck-info . 1)
  (flycheck-buffer . 1)
  (flycheck-next-error . 21)
@@ -186,7 +186,7 @@
  (xref-goto-xref . 3)
  (lsp-mode-menu . 1)
  (xref-show-location-at-point . 1)
- (flycheck-mode . 1)
+ (flycheck-mode . 3)
  (flymake-goto-diagnostic . 1)
  (switch-to-buffer . 1)
  (find-alternate-file . 1)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 37)
+ (package-reinstall . 38)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 30)
  (customize . 1)
@@ -207,7 +207,7 @@
  (evil-escape-mode . 2)
  (all-the-icons-insert-wicon . 2)
  (describe-fontset . 1)
- (server-force-delete . 2)
+ (server-force-delete . 3)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
  (lsp-describe-session . 29)
@@ -248,9 +248,11 @@
  (golang-mode-show-doc . 5)
  (shell-pop . 7)
  (shell-here . 1)
- (package-autoremove . 1)
+ (package-autoremove . 2)
  (eshell-kill-process . 1)
  (comint-clear-buffer . 2)
  (exit-minibuffer . 2)
  (kill-buffer-and-window . 1)
+ (package-delete . 1)
+ (list-colors-display . 1)
 )

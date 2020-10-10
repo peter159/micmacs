@@ -1,9 +1,64 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/linyi/.emacs.d/init.el" . 2600)
- ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 961)
+(("/home/linyi/.emacs.d/init.el" . 3315)
+ ("/home/linyi/.emacs.d/lisp/init-shell.el" . 1791)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1562)
+ ("/home/linyi/.emacs.d/elpa/shell-here-20191011.1959/shell-here-autoloads.el" . 1088)
+ ("/home/linyi/.emacs.d/lisp/init-shell-bak.el" . 3376)
+ ("/home/linyi/.emacs.d/lisp/leader-key-binding.el" . 11011)
+ ("/home/linyi/.emacs.d/lisp/init-golang.el" . 4672)
+ ("/home/linyi/.emacs.d/lisp/init-project.el" . 940)
+ ("/media/linyi/nDataScience/pytorch/AINLP/prepare_data/GM_NLP/make_json_gm.py" . 3374)
+ ("/media/linyi/UbuData/projects/account_book/misc/database/config_parameters.py" . 146)
+ ("/media/linyi/UbuData/projects/stockintel2/Dockerfile" . 153)
+ ("/media/linyi/UbuData/projects/stockintel2/gunicorn.conf.py" . 146)
+ ("/media/linyi/UbuData/projects/stockintel2/stocketl/crawl/pre_announce.py" . 1656)
+ ("/media/linyi/UbuData/projects/stockintel2/stocketl/database/mysql_obj.py" . 111)
+ ("/media/linyi/UbuData/projects/stockintel2/stocketl/crawl/temporary.py" . 21274)
+ ("/media/linyi/UbuData/projects/account_book/misc/database/mysql_obj.py" . 57)
+ ("/media/linyi/UbuData/projects/account_book/manage_accountbook.py" . 240)
+ ("/media/linyi/UbuData/projects/stockintel2/manage.py" . 12162)
+ ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 265)
+ ("/media/linyi/UbuData/projects/stockintel2/"
+  (dired-filename . "/media/linyi/UbuData/projects/stockintel2/manage.py"))
+ ("/media/linyi/UbuData/projects/stockintel2/stocketl/" . 979)
+ ("/media/linyi/UbuData/projects/stockintel2/stocketl/database/"
+  (dired-filename . "/media/linyi/UbuData/projects/stockintel2/stocketl/database/mysql_obj.py"))
+ ("/media/linyi/UbuData/projects/stockintel2/stocketl/database/config.py" . 181)
+ ("/media/linyi/UbuData/projects/account_book/"
+  (dired-filename . "/media/linyi/UbuData/projects/account_book/gunicorn.conf.py"))
+ ("/media/linyi/UbuData/projects/account_book/misc/"
+  (dired-filename . "/media/linyi/UbuData/projects/account_book/misc/__pycache__"))
+ ("/media/linyi/UbuData/projects/account_book/misc/database/"
+  (dired-filename . "/media/linyi/UbuData/projects/account_book/misc/database/create_tables.py"))
+ ("/media/linyi/UbuData/projects/account_book/README.md" . 14)
+ ("/media/linyi/nDataScience/pytorch/AINLP/train.py" . 9171)
+ ("/media/linyi/nDataScience/pytorch/AINLP/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/predict.py"))
+ ("/home/linyi/anaconda3/lib/python3.7/site-packages/sklearn/cluster/__init__.py" . 79)
+ ("/home/linyi/anaconda3/lib/python3.7/site-packages/sklearn/cluster/"
+  (dired-filename . "/home/linyi/anaconda3/lib/python3.7/site-packages/sklearn/cluster/__init__.py"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/conf/train_gm_official.json" . 411)
+ ("/media/linyi/nDataScience/pytorch/AINLP/conf/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/conf/train_gm_official.json"))
+ ("/media/linyi/nDataScience/"
+  (dired-filename . "/media/linyi/nDataScience/deeplearning"))
+ ("/media/linyi/nDataScience/pytorch/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/logs"))
+ ("/media/linyi/nDataScience/pytorch/AINLP/checkpoint_dir/" . 178)
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 3600)
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/log_test_jlr_hierar"))
+ ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/test.py" . 73)
+ ("/media/linyi/nDataScience/pytorch/AINLP/evaluate/classification_evaluate.py" . 114)
+ ("/media/linyi/nDataScience/pytorch/AINLP/evaluate/"
+  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/evaluate/classification_evaluate.py"))
+ ("/home/linyi/.emacs.d/company-statistics-cache.el" . 10)
  ("/home/linyi/.emacs.d/"
-  (dired-filename . "/home/linyi/.emacs.d/.lsp-session-v1"))
- ("/home/linyi/.emacs.d/lisp/init-shell.el" . 955)
+  (dired-filename . "/home/linyi/.emacs.d/company-statistics-cache.el"))
+ ("/home/linyi/.emacs.d/lisp/init-evil.el" . 831)
+ ("/home/linyi/.emacs.d/lisp/init-company.el" . 2086)
+ ("/home/linyi/.emacs.d/elpa/"
+  (dired-filename . "/home/linyi/.emacs.d/elpa/diredfl-20180211.214"))
  ("/home/linyi/.emacs.d/lisp/init-ui.el" . 4750)
  ("/home/linyi/.emacs.d/lisp/"
   (dired-filename . "/home/linyi/.emacs.d/lisp/init-shell.el"))
@@ -12,23 +67,11 @@
  ("/home/linyi/.emacs.d/lisp/init-custom-vars.el" . 830)
  ("/home/linyi/.emacs.d/lisp/init-default.el" . 1356)
  ("/home/linyi/go/src/awesomeProject/test03/main.go" . 116)
- ("/media/linyi/nDataScience/pytorch/AINLP/train.py" . 9533)
- ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 127)
- ("/media/linyi/nDataScience/pytorch/AINLP/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP/train.py"))
  ("/home/linyi/go/src/code.oldboy.com/studygolang/chapter2/sample/main.go" . 152)
- ("/home/linyi/go/src/awesomeProject/test04/main.go" . 42)
- ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/train.py" . 389)
- ("/media/linyi/nDataScience/pytorch/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP"))
  ("/media/linyi/nDataScience/pytorch/multi-label-classification/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier"))
- ("/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/"
-  (dired-filename . "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/checkpoint_dir_gm_afterSales"))
- ("/home/linyi/.emacs.d/lisp/leader-key-binding.el" . 989)
  ("/home/linyi/go/src/code.oldboy.com/studygolang/pkgtest/main.go" . 111)
  ("/home/linyi/go/src/code.oldboy.com/studygolang/ftoc/main.go" . 253)
- ("/home/linyi/.emacs.d/lisp/init-golang.el" . 4412)
  ("/home/linyi/go/src/code.oldboy.com/studygolang/chapter2/sample/data/data.json" . 3364)
  ("/home/linyi/go/src/code.oldboy.com/studygolang/chapter2/sample/search/default.go" . 92)
  ("/home/linyi/go/src/code.oldboy.com/studygolang/chapter2/sample/search/feed.go" . 321)
@@ -68,7 +111,6 @@
  ("/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/"
   (dired-filename . "/home/linyi/go/src/code.oldboy.com/studygolang/lesson1/const"))
  ("/home/linyi/go/src/code.oldboy.com/studygolang/helloworld/main.go" . 41)
- ("/home/linyi/.emacs.d/company-statistics-cache.el" . 102718)
  ("/home/linyi/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/nn/functional.py" . 59127)
  ("/home/linyi/.emacs.d/anaconda-mode/0.1.13/jedi-0.16.0-py3.7.egg/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi" . 4855)
  ("/home/linyi/go/src/code.oldboy.com/studygolang/"
@@ -78,7 +120,6 @@
  ("/home/linyi/.emacs.d/lisp/init-const.el" . 1484)
  ("/home/linyi/go/src/"
   (dired-filename . "/home/linyi/go/src/dedup_file"))
- ("/home/linyi/.emacs.d/lisp/init-evil.el" . 1440)
  ("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 3792)
  ("/usr/local/go/src/fmt/format.go" . 1953)
  ("/usr/local/go/src/os/dir.go" . 173)
@@ -94,10 +135,8 @@
  ("/home/linyi/go/pkg/"
   (dired-filename . "/home/linyi/go/pkg/mod"))
  ("/usr/local/go/src/fmt/doc.go" . 14805)
- ("/home/linyi/.emacs.d/lisp/init-company.el" . 2690)
  ("/home/linyi/.emacs.d/lisp/init-font.el" . 1014)
  ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1072)
- ("/home/linyi/.emacs.d/lisp/init-project.el" . 1685)
  ("/home/linyi/anaconda3/envs/transformers/lib/python3.7/site-packages/transformers/modeling_auto.py" . 56127)
  ("/home/linyi/anaconda3/envs/transformers/lib/python3.7/site-packages/transformers/__init__.py" . 982)
  ("/home/linyi/anaconda3/envs/transformers/lib/python3.7/site-packages/sklearn/utils/validation.py" . 5127)

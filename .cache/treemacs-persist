@@ -5,3 +5,7 @@
  - path :: ~/go
 ** AINLP
  - path :: /media/linyi/nDataScience/pytorch/AINLP
+** account_book
+ - path :: /media/linyi/UbuData/projects/account_book
+** stockintel2
+ - path :: /media/linyi/UbuData/projects/stockintel2
