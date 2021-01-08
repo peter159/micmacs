@@ -178,8 +178,8 @@
   "jw" 'evil-avy-goto-word-or-subword-1
   "jD" 'deer-jump-other-window
   "jd" 'deer
-  "jJ" 'avy-goto-char-timer
-  "jj" 'avy-goto-char-2)
+  "jj" 'avy-goto-char-timer
+  "jJ" 'avy-goto-char-2)
 
 ;; leader-e family
 (which-key-add-key-based-replacements

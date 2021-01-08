@@ -68,8 +68,8 @@
 ;; requre features from lisp
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
-(require 'init-general-functions)
 (require 'init-custom-vars)
+(require 'init-general-functions)
 (require 'init-package-management)
 (require 'init-default)
 (require 'init-font)

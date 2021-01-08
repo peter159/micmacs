@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- package-reinstall
  restart-emacs
- server-force-delete
- flycheck-mode
- flymake-mode
- list-colors-display
- package-autoremove
+ magit-commit
+ evil-set-marker
+ global-evil-fringe-mark-mode
+ hlinum-activate
+ hlinum-deactivate
+ rst-mode
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 75)
+ (restart-emacs . 102)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -22,7 +22,7 @@
  (auto-insert . 14)
  (expand-region-abbrevs . 1)
  (expand-jump-to-next-slot . 1)
- (package-list-packages . 5)
+ (package-list-packages . 6)
  (show-all . 2)
  (describe-key . 3)
  (electric-spacing-mode . 6)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 38)
+ (package-reinstall . 39)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 30)
  (customize . 1)
@@ -255,4 +255,10 @@
  (kill-buffer-and-window . 1)
  (package-delete . 1)
  (list-colors-display . 1)
+ (rst-mode . 1)
+ (hlinum-deactivate . 2)
+ (hlinum-activate . 1)
+ (global-evil-fringe-mark-mode . 2)
+ (evil-set-marker . 2)
+ (magit-commit . 1)
 )

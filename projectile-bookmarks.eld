@@ -1,1 +1,1 @@
-("~/.emacs.d/" "/media/linyi/nDataScience/pytorch/AINLP/" "/media/linyi/UbuData/projects/stockintel2/" "/media/linyi/UbuData/projects/stockintel2/stocketl/" "/media/linyi/UbuData/projects/account_book/" "~/anaconda3/lib/python3.7/site-packages/sklearn/cluster/" "/media/linyi/nDataScience/pytorch/multi-label-classification/NeuralNLP-NeuralClassifier/" "~/anaconda3/envs/transformers/lib/python3.7/site-packages/sklearn/utils/")
+("~/.emacs.d/")

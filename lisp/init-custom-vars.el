@@ -24,8 +24,6 @@
 
 ;;; Code:
 
-(mark-time-here)
-
 (defvar petmacs-evil-major-leader-insert-default-key "M-m"
   "Evil leader key in evil insert mode.")
 
@@ -41,5 +39,4 @@
   "Primary major modes of the lsp activated layer.")
 
 (provide 'init-custom-vars)
-(message "init-custom-vars loaded in '%.2f' seconds ..." (get-time-diff time-marked))
 ;;; init-custom-vars.el ends here

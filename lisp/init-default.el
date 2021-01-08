@@ -127,15 +127,15 @@
                                               extended-command-history)
               savehist-autosave-interval 300))
 
-;; Show number of matches in mode-line while searching
-(use-package anzu
-  :diminish
-  :bind (([remap query-replace] . anzu-query-replace)
-         ([remap query-replace-regexp] . anzu-query-replace-regexp)
-         :map isearch-mode-map
-         ([remap isearch-query-replace] . anzu-isearch-query-replace)
-         ([remap isearch-query-replace-regexp] . anzu-isearch-query-replace-regexp))
-  :hook (after-init . global-anzu-mode))
+;; ;; Show number of matches in mode-line while searching
+;; (use-package anzu
+;;   :diminish
+;;   :bind (([remap query-replace] . anzu-query-replace)
+;;          ([remap query-replace-regexp] . anzu-query-replace-regexp)
+;;          :map isearch-mode-map
+;;          ([remap isearch-query-replace] . anzu-isearch-query-replace)
+;;          ([remap isearch-query-replace-regexp] . anzu-isearch-query-replace-regexp))
+;;   :hook (after-init . global-anzu-mode))
 
 ;; A comprehensive visual interface to diff & patch
 (use-package ediff

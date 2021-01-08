@@ -39,17 +39,14 @@
   :ensure nil
   :quelpa
   (evil-major-leader 
-    :repo "Peter-Chou/evil-major-leader" 
-    :fetcher github)
+   :repo "Peter-Chou/evil-major-leader" 
+   :fetcher github)
   :init
   (global-evil-major-leader-mode))
 
 ;; (message "    ---- 1/6 of init-evil loaded using '%.2f' seconds ..." (get-time-diff time-marked))
 ;; (mark-time-here)
 
-;; (use-package evil-leader :ensure t :defer nil)
-(use-package evil-anzu
-  :ensure t)
 (use-package evil
   :ensure t
   :init
@@ -64,6 +61,8 @@
   ;;   (define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up))
 
   :config
+  ;; (use-package evil-leader :ensure t :defer nil)
+  (use-package evil-anzu :ensure t)
   (require 'evil-anzu)
   (evil-mode)
   (progn
@@ -80,6 +79,7 @@
       (call-interactively 'evil-shift-right)
       (evil-normal-state)
       (evil-visual-restore))
+
     ;; Overload shifts so that they don't lose the selection
     (define-key evil-visual-state-map (kbd "<") 'petmacs//evil-visual-shift-left)
     (define-key evil-visual-state-map (kbd ">") 'petmacs//evil-visual-shift-right)
@@ -92,7 +92,6 @@
     (define-key evil-insert-state-map (kbd "C-k") 'kill-line)
     (define-key evil-insert-state-map (kbd "C-p") 'previous-line)
     (define-key evil-insert-state-map (kbd "C-n") 'next-line)
-    (define-key evil-insert-state-map (kbd "C-y") 'yank)
     (define-key evil-insert-state-map (kbd "C-d") 'delete-char)))
 
 ;; use 'fd' to escape nearly everything from evil-mode
@@ -125,12 +124,12 @@
     (define-key evil-visual-state-map (kbd "#")
       'evil-visualstar/begin-search-backward)))
 
-(use-package evil-fringe-mark
-  :ensure t
-  :config
-  (setq-default right-fringe-width 25)
-  (setq-default evil-fringe-mark-side 'right-fringe)
-  (global-evil-fringe-mark-mode))
+;; (use-package evil-fringe-mark
+;;   :ensure t
+;;   :config
+;;   (setq-default right-fringe-width 25)
+;;   (setq-default evil-fringe-mark-side 'left-fringe)
+;;   (global-evil-fringe-mark-mode))
 
 (use-package evil-magit
   :ensure t
@@ -147,7 +146,7 @@
   (define-key evil-normal-state-map (kbd "zb") 'outline-show-all)  ; Hide current body
   (define-key evil-normal-state-map (kbd "ze") 'outline-show-entry) ; Show current body only, not subtree, reverse of outline-hide-entry
   (define-key evil-normal-state-map (kbd "zl") 'outline-hide-leaves) ; Like `outline-hide-body' but for current subtree only
-  (define-key evil-normal-state-map (kbd "zp") 'outline-hide-other)    ; Hide all nodes and bodies except current body.
+  (define-key evil-normal-state-map (kbd "zo") 'outline-hide-other)    ; Hide all nodes and bodies except current body.
   (define-key evil-normal-state-map (kbd "zj") 'outline-forward-same-level)
   (define-key evil-normal-state-map (kbd "zk") 'outline-backward-same-level)
   (define-key evil-normal-state-map (kbd "M-j") 'outline-move-subtree-down)

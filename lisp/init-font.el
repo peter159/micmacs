@@ -38,7 +38,7 @@
 			(font-spec :family "等距更纱黑体 SC" :size 14)))
   )
 
-(use-package fontify-face :ensure t)
+;; (use-package fontify-face :ensure t)
 
 (provide 'init-font)
 (message "init-font loaded in '%.2f' seconds ..." (get-time-diff time-marked))

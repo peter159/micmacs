@@ -56,7 +56,7 @@
 
 ;; switch some words to icons, like folder etc.
 (use-package font-lock+
-  :ensure nil
+  :ensure t
   :quelpa
   (font-lock+
    :repo "emacsmirror/font-lock-plus"
@@ -73,11 +73,11 @@
     (setq
      find-file-visit-truename t  ; display the real names for symlink files
      doom-modeline-height 10
-     doom-modeline-lsp nil
-     doom-modeline-persp-name nil
+     doom-modeline-lsp t
+     doom-modeline-persp-name t
      doom-modeline-github nil
      ;; doom-modeline-buffer-file-name-style 'truncate-with-project ;cause stuck
-     doom-modeline-buffer-file-name-style 'file-name
+     doom-modeline-buffer-file-name-style 'auto ;file-name
      doom-modeline-major-mode-color-icon t
      doom-modeline-enable-word-count t
      doom-modeline-minor-modes nil
@@ -98,45 +98,43 @@
 	   'face (if (doom-modeline--active) 'doom-modeline-buffer-major-mode)))))
 
     (doom-modeline-def-modeline 'my-modeline-layout
-      ;; '(bar workspace-name window-number evil-state god-state ryo-modal xah-fly-keys matches buffer-info remote-host buffer-position parrot selection-info)
       '(bar workspace-name window-number modals matches buffer-info remote-host buffer-position word-count parrot selection-info)
-      ;; '(misc-info persp-name lsp irc mu4e github debug minor-modes input-method buffer-encoding my-python-venv process vcs checker)
       '(objed-state misc-info persp-name battery grip irc mu4e gnus github debug repl input-method indent-info buffer-encoding my-python-venv process vcs checker))
 
     (defun setup-custom-doom-modeline ()
       (doom-modeline-set-modeline 'my-modeline-layout 'default))))
 
-;; A minor-mode menu for mode-line
-(when (>= emacs-major-version 25)
-  (use-package minions
-    :ensure t
-    :hook (doom-modeline-mode . minions-mode)))
+;; ;; A minor-mode menu for mode-line
+;; (when (>= emacs-major-version 25)
+;;   (use-package minions
+;;     :ensure t
+;;     :hook (doom-modeline-mode . minions-mode)))
 
-(use-package doom-themes
-  :ensure t
-  :defer nil
-  :custom
-  (doom-themes-enable-italic t)
-  (doom-themes-enable-bold t)
-  :config
-  (progn
-    ;; enable custom treemacs themes
-    ;; (doom-themes-treemacs-config)
-    ;; Enable flashing mode-line on errors
-    (doom-themes-visual-bell-config)
-    ;; Corrects (and improves) org-mode's native fontification.
-    (doom-themes-org-config)))
+;; (use-package doom-themes
+;;   :ensure t
+;;   :defer nil
+;;   :custom
+;;   (doom-themes-enable-italic t)
+;;   (doom-themes-enable-bold t)
+;;   :config
+;;   (progn
+;;     ;; enable custom treemacs themes
+;;     ;; (doom-themes-treemacs-config)
+;;     ;; Enable flashing mode-line on errors
+;;     (doom-themes-visual-bell-config)
+;;     ;; Corrects (and improves) org-mode's native fontification.
+;;     (doom-themes-org-config)))
 
 (use-package spacemacs-theme
   :ensure t)
 
-(load-theme 'spacemacs-light t)
+(load-theme 'spacemacs-dark t)
 
 (use-package display-line-numbers-mode
   :ensure nil
   :init
   (setq-default display-line-numbers-type 'relative)
-  (global-display-line-numbers-mode 1))
+  (global-display-line-numbers-mode t))
 
 ;; Highlight current line number
 (use-package hlinum

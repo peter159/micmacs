@@ -32,7 +32,6 @@
 
 (mark-time-here)
 
-;; serve to get time difference between `current' and `time-marked'
 (defun get-time-diff(time-marked)
   "return seconds passed from current to `time-start'"
   (interactive)
