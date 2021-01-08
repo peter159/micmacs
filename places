@@ -1,15 +1,22 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/media/linyi/nDataScience/pytorch/AINLP_plus/predict.py" . 715)
- ("/home/linyi/.emacs.d/lisp/init-project.el" . 1010)
- ("/media/linyi/nDataScience/pytorch/AINLP_plus/train.py" . 705)
- ("/home/linyi/.emacs.d/init.el" . 2595)
- ("/home/linyi/.emacs.d/lisp/init-ui.el" . 3211)
+(("/media/linyi/nDataScience/pytorch/AINLP_plus/train.py" . 1075)
+ ("/home/linyi/.emacs.d/lisp/init-program-basis.el" . 2502)
+ ("/home/linyi/.emacs.d/lisp/"
+  (dired-filename . "/home/linyi/.emacs.d/lisp/init-program-basis.el"))
+ ("/home/linyi/.emacs.d/init.el" . 1956)
+ ("/home/linyi/.emacs.d/lisp/init-ui.el" . 107)
+ ("/home/linyi/.emacs.d/lisp/init-yasnippet.el" . 859)
+ ("/home/linyi/.emacs.d/lisp/init-treemacs.el" . 2822)
+ ("/home/linyi/.emacs.d/README.md" . 778)
+ ("/home/linyi/.emacs.d/.gitignore" . 301)
  ("/home/linyi/.emacs.d/.cache/treemacs-persist" . 137)
+ ("/home/linyi/.emacs.d/"
+  (dired-filename . "/home/linyi/.emacs.d/.gitignore"))
+ ("/media/linyi/nDataScience/pytorch/AINLP_plus/predict.py" . 715)
+ ("/home/linyi/.emacs.d/lisp/init-project.el" . 1010)
  ("/home/linyi/.emacs.d/lisp/init-dired.el" . 4429)
  ("/media/linyi/nDataScience/pytorch/AINLP_plus/"
   (dired-filename . "/media/linyi/nDataScience/pytorch/AINLP_plus/predict.py"))
- ("/home/linyi/.emacs.d/"
-  (dired-filename . "/home/linyi/.emacs.d/company-statistics-cache.el"))
  ("/home/linyi/.emacs.d/site-lisp/"
   (dired-filename . "/home/linyi/.emacs.d/site-lisp/pretty-code"))
  ("/home/linyi/.emacs.d/elpa/"
@@ -23,8 +30,6 @@
   (dired-filename . "/home/linyi/.zcompdump"))
  ("/home/linyi/.emacs.d/lisp/init-evil.el" . 1682)
  ("/home/linyi/.emacs.d/lisp/init-company.el" . 831)
- ("/home/linyi/.emacs.d/lisp/"
-  (dired-filename . "/home/linyi/.emacs.d/lisp/init-elisp.el"))
  ("/home/linyi/.emacs.d/lisp/init-highlight.el" . 3035)
  ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 5618)
  ("/home/linyi/.emacs.d/elpa/highlight-indent-guides-20200820.2328/"
