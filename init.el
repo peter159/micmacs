@@ -82,7 +82,7 @@
 (require 'init-ivy)
 (require 'init-ibuffer)
 (require 'init-window)
-(require 'init-layout)
+;; (require 'init-layout)
 
 (require 'init-highlight)
 (require 'init-version-control)

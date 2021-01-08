@@ -74,6 +74,7 @@
     (push '("*ert*"                  :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
     (push '("*grep*"                 :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
     (push '("*nosetests*"            :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '("*Backtrace*"            :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
     (push '("^\*WoMan.+\*$" :regexp t             :position bottom                                   ) popwin:special-display-config)
     (push '("*Google Translate*"     :dedicated t :position bottom :stick t :noselect t   :height 0.4) popwin:special-display-config)
     (push '("^\\*Flycheck.+\\*$" :regexp t :dedicated t :position bottom :stick t :noselect t) popwin:special-display-config)
@@ -86,7 +87,9 @@
   :diminish
   :bind ("<f7>" . olivetti-mode)
   :init (setq olivetti-body-width 0.56))
+
 ;; (use-package writeroom-mode
+;;   :ensure t
 ;;   :init
 ;;   (setq writeroom-maximize-window nil
 ;; 	writeroom-fullscreen-effect 'maximized

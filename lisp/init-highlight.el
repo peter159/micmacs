@@ -61,15 +61,14 @@
                                            (set-face-foreground 'highlight-indent-guides-top-character-face "#fe5e10"))))
   :config
   (progn
-    (setq highlight-indent-guides-method 'character
-          
+    (setq highlight-indent-guides-method 'bitmap
           highlight-indent-guides-character ?\┆ ;; candidates: , ⋮, ┆, ┊, ┋, ┇
           highlight-indent-guides-responsive 'top
           highlight-indent-guides-auto-enabled nil
           highlight-indent-guides-auto-character-face-perc 10
           highlight-indent-guides-auto-top-character-face-perc 20)))
 
-;; Highlight matching paren
+;; Highlight matching paren,e.g. ()
 (use-package paren
   :ensure nil
   :hook (after-init . show-paren-mode)
@@ -92,6 +91,35 @@
     (cl-pushnew `(,keyword . ,(face-foreground 'error)) hl-todo-keyword-faces))
   (dolist (keyword '("WORKAROUND" "HACK" "TRICK"))
     (cl-pushnew `(,keyword . ,(face-foreground 'warning)) hl-todo-keyword-faces)))
+
+;; Colorize color names in buffers
+(use-package rainbow-mode
+  :ensure t
+  :diminish
+  :bind (:map special-mode-map
+              ("w" . rainbow-mode))
+  :hook ((html-mode php-mode lisp-interaction-mode) . rainbow-mode)
+  :config
+  ;; HACK: Use overlay instead of text properties to override `hl-line' faces.
+  ;; @see https://emacs.stackexchange.com/questions/36420
+  (with-no-warnings
+    (defun my-rainbow-colorize-match (color &optional match)
+      (let* ((match (or match 0))
+             (ov (make-overlay (match-beginning match) (match-end match))))
+        (overlay-put ov 'ovrainbow t)
+        (overlay-put ov 'face `((:foreground ,(if (> 0.5 (rainbow-x-color-luminance color))
+                                                  "white" "black"))
+                                (:background ,color)))))
+    (advice-add #'rainbow-colorize-match :override #'my-rainbow-colorize-match)
+
+    (defun my-rainbow-clear-overlays ()
+      "Clear all rainbow overlays."
+      (remove-overlays (point-min) (point-max) 'ovrainbow t))
+    (advice-add #'rainbow-turn-off :after #'my-rainbow-clear-overlays)))
+
+;; Highlight brackets according to their depth
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))
 
 (provide 'init-highlight)
 (message "init-highlight loaded in '%.2f' seconds ..." (get-time-diff time-marked))

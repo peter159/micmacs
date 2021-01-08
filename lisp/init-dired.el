@@ -29,20 +29,20 @@
 (eval-when-compile
   (require 'init-const))
 
-(defun vinegar/up-directory (&optional other-window)
-  "Run Dired on parent directory of current directory."
-  (interactive "P")
-  (let* ((dir (dired-current-directory))
-         (orig (current-buffer))
-         (up (file-name-directory (directory-file-name dir))))
-    (or (dired-goto-file (directory-file-name dir))
-        ;; Only try dired-goto-subdir if buffer has more than one dir.
-        (and (cdr dired-subdir-alist)
-             (dired-goto-subdir up))
-        (progn
-          (kill-buffer orig)
-          (dired up)
-          (dired-goto-file dir)))))
+;; (defun vinegar/up-directory (&optional other-window)
+;;   "Run Dired on parent directory of current directory."
+;;   (interactive "P")
+;;   (let* ((dir (dired-current-directory))
+;;          (orig (current-buffer))
+;;          (up (file-name-directory (directory-file-name dir))))
+;;     (or (dired-goto-file (directory-file-name dir))
+;;         ;; Only try dired-goto-subdir if buffer has more than one dir.
+;;         (and (cdr dired-subdir-alist)
+;;              (dired-goto-subdir up))
+;;         (progn
+;;           (kill-buffer orig)
+;;           (dired up)
+;;           (dired-goto-file dir)))))
 
 ;; Directory operations
 (use-package dired
@@ -78,11 +78,9 @@
 
   (evil-define-key 'normal dired-mode-map (kbd "RET") 'dired-find-alternate-file) 
   ;; was dired-advertised-find-file
-  (evil-define-key 'normal dired-mode-map (kbd "f") 'dired-find-alternate-file) 
   (evil-define-key 'normal dired-mode-map (kbd "F") 'ranger-travel) 
   ;; was dired-up-director
-  ;; (evil-define-key 'normal dired-mode-map (kbd "^") 'petmacs/dired-goto-parent-directory)  
-  (evil-define-key 'normal dired-mode-map (kbd "C-u") 'vinegar/up-directory)
+  (evil-define-key 'normal dired-mode-map (kbd "C-u") 'petmacs/dired-goto-parent-directory)
   ;; kill current buffer when leaving dired mode
   (evil-define-key 'normal dired-mode-map (kbd "q") 'kill-this-buffer)
   :init
@@ -100,7 +98,7 @@
   :init
   (require 'font-lock+))
 
-(use-package diredfl
+(use-package diredfl			; add colorful to dired mode list
   :ensure t
   :init
   (diredfl-global-mode 1))

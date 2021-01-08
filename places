@@ -1,35 +1,34 @@
-;;; -*- coding: utf-8 -*-
-(("c:/Users/peter.lin/AppData/Roaming/.emacs.d/elpa/evil-fringe-mark-20180728.647/evil-fringe-mark.el" . 18850)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/init-evil.el" . 4979)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/persp-confs/persp-auto-save" . 1092)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/elpa/evil-commentary-20170413.1451/evil-commentary.el" . 3563)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/init-ui.el" . 3917)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/init.el" . 2615)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/.cache/treemacs-persist" . 67)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/elpa/doom-modeline-20200621.1350/doom-modeline-env.el" . 155)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/elpa/doom-modeline-20200621.1350/"
-  (dired-filename . "c:/Users/peter.lin/AppData/Roaming/.emacs.d/elpa/doom-modeline-20200621.1350/doom-modeline-env.el"))
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/elpa/doom-modeline-20200621.1350/doom-modeline-core.el" . 8516)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/"
-  (dired-filename . "c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/init-ui.el"))
- ("c:/msys64/mingw64/share/emacs/26.3/lisp/progmodes/prog-mode.el" . 10484)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/init-default.el" . 5394)
- ("c:/msys64/mingw64/share/emacs/26.3/lisp/faces.el" . 25564)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/init-font.el" . 1474)
- ("c:/msys64/mingw64/share/emacs/26.3/lisp/emacs-lisp/byte-run.el" . 9541)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/init-package-management.el" . 2594)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/init-custom-vars.el" . 830)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/init-general-functions.el" . 1198)
- ("c:/msys64/mingw64/share/emacs/26.3/lisp/emacs-lisp/package.el" . 56949)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/elpa/use-package-20200618.1804/use-package-core.el" . 57170)
- ("c:/msys64/mingw64/share/emacs/26.3/lisp/bindings.el" . 20568)
- ("c:/msys64/mingw64/share/emacs/26.3/lisp/subr.el" . 113456)
- ("c:/msys64/mingw64/share/emacs/26.3/lisp/"
-  (dired-filename . "c:/msys64/mingw64/share/emacs/26.3/lisp/."))
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/"
-  (dired-filename . "c:/Users/peter.lin/AppData/Roaming/.emacs.d/init.el"))
- ("c:/msys64/mingw64/share/emacs/26.3/lisp/cus-edit.el" . 153648)
- ("c:/Users/peter.lin/AppData/Roaming/.emacs.d/lisp/leader-key-binding.el" . 5150)
+;;; -*- coding: utf-8; mode: lisp-data -*-
+(("/home/linyi/.emacs.d/lisp/init-highlight.el" . 3716)
+ ("/media/linyi/nDataScience/pytorch/AINLP_plus/train.py" . 1167)
+ ("/home/linyi/.emacs.d/elpa/rainbow-mode-1.0.5/rainbow-mode-autoloads.el" . 999)
+ ("/home/linyi/.emacs.d/custom.el" . 1874)
+ ("/home/linyi/.emacs.d/init.el" . 2804)
+ ("/home/linyi/.emacs.d/lisp/init-ibuffer.el" . 1015)
+ ("/home/linyi/.emacs.d/lisp/init-ivy.el" . 4437)
+ ("/home/linyi/.emacs.d/lisp/init-layout.el" . 82)
+ ("/home/linyi/.emacs.d/lisp/init-window.el" . 1757)
+ ("/home/linyi/.emacs.d/persp-confs/persp-auto-save" . 1238)
+ ("/home/linyi/.emacs.d/elpa/visual-fill-column-20201229.2303/visual-fill-column-autoloads.el" . 2573)
+ ("/home/linyi/.emacs.d/elpa/use-package-20200618.1804/use-package-core.el" . 56523)
+ ("/home/linyi/.emacs.d/lisp/"
+  (dired-filename . "/home/linyi/.emacs.d/lisp/init-tool.el"))
+ ("/home/linyi/.emacs.d/lisp/init-dired.el" . 4796)
+ ("/home/linyi/.emacs.d/lisp/init-tool.el" . 3143)
+ ("/home/linyi/.emacs.d/elpa/esup-20200814.1400/esup-autoloads.el" . 894)
+ ("/usr/share/emacs/28.0.50/etc/COPYING" . 426)
+ ("/home/"
+  (dired-filename . "/home/linyi"))
+ ("/home/linyi/"
+  (dired-filename . "/home/linyi/.zcompdump"))
+ ("/home/linyi/.emacs.d/"
+  (dired-filename . "/home/linyi/.emacs.d/lisp"))
+ ("/home/linyi/.emacs.d/lisp/init-const.el" . 831)
+ ("/home/linyi/.emacs.d/lisp/init-company.el" . 2664)
+ ("/"
+  (dired-filename . "/home"))
+ ("/home/linyi/.emacs.d/lisp/init-evil.el" . 82)
+ ("/home/linyi/.emacs.d/elpa/company-20190316.101/company-dabbrev.el" . 2064)
  ("/mnt/hgfs/f/Kaggle/covid-19/script/dup_seir_modeling.py" . 736)
  ("/mnt/hgfs/f/Kaggle/covid-19/script/china_seir_modeling.py" . 1760)
  ("/mnt/hgfs/f/Kaggle/covid-19/script/"

@@ -97,14 +97,13 @@
   :init
   (setq avy-timeout-seconds 0.0))
 
-(use-package centered-cursor-mode :ensure t)
+;; (use-package centered-cursor-mode :ensure t)
+;; (use-package carbon-now-sh :ensure t)
+;; (use-package diffview :ensure t)                  ; side-by-side diff view
+;; (use-package esup :ensure t)                      ; Emacs startup profiler
 
 (use-package restart-emacs :ensure t)
-
-(use-package carbon-now-sh :ensure t)
 (use-package daemons :ensure t)                   ; system services/daemons
-(use-package diffview :ensure t)                  ; side-by-side diff view
-(use-package esup :ensure t)                      ; Emacs startup profiler
 
 (provide 'init-tool)
 (message "init-tool loaded in '%.2f' seconds" (get-time-diff time-marked))

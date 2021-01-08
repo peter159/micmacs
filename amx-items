@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- restart-emacs
- magit-commit
- evil-set-marker
- global-evil-fringe-mark-mode
- hlinum-activate
- hlinum-deactivate
- rst-mode
+ rainbow-mode
+ package-reinstall
+ evil-backward-char
+ hl-line-mode
+ persp-mode
+ find-file
+ lsp
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 102)
+ (restart-emacs . 105)
  (markdown-mode . 1)
  (markdown-preview . 12)
  (ranger-copy . 1)
@@ -65,7 +65,7 @@
  (doom-modeline-mode . 31)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
- (other-window . 1)
+ (other-window . 3)
  (python-shell-send-buffer . 1)
  (anaconda-mode-find-references . 2)
  (petmacs/python-execute-file . 3)
@@ -83,7 +83,7 @@
  (ranger-travel . 5)
  (hydra-dired-quick-sort/body . 1)
  (dired-create-directory . 1)
- (ranger-mode . 5)
+ (ranger-mode . 6)
  (ranger-to-dired . 1)
  (complete-symbol . 2)
  (delete-directory . 2)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 39)
+ (package-reinstall . 42)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 30)
  (customize . 1)
@@ -261,4 +261,33 @@
  (global-evil-fringe-mark-mode . 2)
  (evil-set-marker . 2)
  (magit-commit . 1)
+ (petmacs/dired-goto-parent-directory . 1)
+ (ranger . 1)
+ (er/expand-region . 1)
+ (avy-goto-char-timer . 1)
+ (avy-goto-line . 1)
+ (carbon-now-sh . 2)
+ (diff-buffers . 1)
+ (diffview-region . 1)
+ (esup . 4)
+ (counsel-ag . 1)
+ (amx-where-is . 1)
+ (amx-describe-function . 2)
+ (amx-update . 1)
+ (amx-mode . 1)
+ (make-directory . 1)
+ (ace-delete-window . 1)
+ (ace-swap-window . 9)
+ (ace-window . 1)
+ (ace-select-window . 3)
+ (find-file . 3)
+ (writeroom-mode . 2)
+ (writeroom-adjust-width . 1)
+ (writeroom-decrease-width . 1)
+ (persp-next . 1)
+ (persp-mode . 2)
+ (persp-switch . 1)
+ (hl-line-mode . 3)
+ (evil-backward-char . 1)
+ (rainbow-mode . 1)
 )

@@ -86,7 +86,6 @@
          (ivy-mode . counsel-mode))
   :config
   (setq enable-recursive-minibuffers t) ; Allow commands in minibuffers
-
   (setq ivy-use-selectable-prompt t)
   (setq ivy-use-virtual-buffers t)    ; Enable bookmarks and recentf
   (setq ivy-height 15)
@@ -103,8 +102,8 @@
        (concat "  " str))
      cands
      "\n"))
-  (setq ivy-format-function 'petmacs//ivy-format-function-arrow)
 
+  (setq ivy-format-function 'petmacs//ivy-format-function-arrow)
   (setq swiper-action-recenter t)
   (setq counsel-find-file-at-point t)
   (setq counsel-yank-pop-separator "\n-------\n")
@@ -128,11 +127,11 @@
   (with-eval-after-load 'magit
     (setq magit-completing-read-function 'ivy-completing-read)))
 
-;; Enhance fuzzy matching
-(use-package flx :ensure t)
+;; ;; Enhance fuzzy matching
+;; (use-package flx :ensure t)
 
-;; Enhance M-x
-(use-package amx :ensure t)
+;; ;; Enhance M-x
+;; (use-package amx :ensure t)
 
 ;; Integrate yasnippet
 (use-package ivy-yasnippet

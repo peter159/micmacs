@@ -1,1 +1,1 @@
-("~/.emacs.d/")
+("~/.emacs.d/" "/media/linyi/nDataScience/pytorch/AINLP_plus/")
