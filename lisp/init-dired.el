@@ -77,8 +77,6 @@
     (setq dired-listing-switches "-alh --group-directories-first"))
 
   (evil-define-key 'normal dired-mode-map (kbd "RET") 'dired-find-alternate-file) 
-  ;; was dired-advertised-find-file
-  (evil-define-key 'normal dired-mode-map (kbd "F") 'ranger-travel) 
   ;; was dired-up-director
   (evil-define-key 'normal dired-mode-map (kbd "C-u") 'petmacs/dired-goto-parent-directory)
   ;; kill current buffer when leaving dired mode

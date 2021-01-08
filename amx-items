@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ project-dired
+ project-find-file
+ ranger-mode
+ magit-status
+ magit-file-popup
  rainbow-mode
  package-reinstall
- evil-backward-char
- hl-line-mode
- persp-mode
- find-file
- lsp
 )
 
 ;; ----- amx-data -----
@@ -83,7 +83,7 @@
  (ranger-travel . 5)
  (hydra-dired-quick-sort/body . 1)
  (dired-create-directory . 1)
- (ranger-mode . 6)
+ (ranger-mode . 7)
  (ranger-to-dired . 1)
  (complete-symbol . 2)
  (delete-directory . 2)
@@ -290,4 +290,9 @@
  (hl-line-mode . 3)
  (evil-backward-char . 1)
  (rainbow-mode . 1)
+ (magit-file-popup . 1)
+ (magit-status . 4)
+ (smerge-next . 1)
+ (project-dired . 4)
+ (project-find-file . 1)
 )

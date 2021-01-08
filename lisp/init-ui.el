@@ -92,7 +92,7 @@
 	  (propertize
 	   ;; (let ((base-dir-name (file-name-nondirectory (substring python-shell-virtualenv-root 0 -1))))
 	   (let ((base-dir-name (file-name-nondirectory python-shell-virtualenv-root)))
-	     (if (< 10 (length base-dir-name))
+	     (if (< 12 (length base-dir-name))
 		 (format " (%s..)" (substring base-dir-name 0 12))
 	       (format " (%s)" base-dir-name)))
 	   'face (if (doom-modeline--active) 'doom-modeline-buffer-major-mode)))))
@@ -103,27 +103,6 @@
 
     (defun setup-custom-doom-modeline ()
       (doom-modeline-set-modeline 'my-modeline-layout 'default))))
-
-;; ;; A minor-mode menu for mode-line
-;; (when (>= emacs-major-version 25)
-;;   (use-package minions
-;;     :ensure t
-;;     :hook (doom-modeline-mode . minions-mode)))
-
-;; (use-package doom-themes
-;;   :ensure t
-;;   :defer nil
-;;   :custom
-;;   (doom-themes-enable-italic t)
-;;   (doom-themes-enable-bold t)
-;;   :config
-;;   (progn
-;;     ;; enable custom treemacs themes
-;;     ;; (doom-themes-treemacs-config)
-;;     ;; Enable flashing mode-line on errors
-;;     (doom-themes-visual-bell-config)
-;;     ;; Corrects (and improves) org-mode's native fontification.
-;;     (doom-themes-org-config)))
 
 (use-package spacemacs-theme
   :ensure t)
@@ -146,16 +125,6 @@
   (custom-set-faces
    `(linum-highlight-face
      ((t (:inherit 'default :background ,(face-background 'default) :foreground ,(face-foreground 'default)))))))
-
-;; (use-package hide-mode-line		;hide modeline in specified mode when not needed
-;;   :ensure t
-;;   :hook (((completion-list-mode
-;;            completion-in-region-mode
-;;            lsp-ui-imenu-mode
-;; 	   imenu-list-minor-mode
-;;            neotree-mode
-;;            treemacs-mode)
-;;           . hide-mode-line-mode)))
 
 (use-package hide-mode-line
   :ensure t

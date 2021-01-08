@@ -9,7 +9,7 @@ tramp
 .\#*
 
 # cache
-.cache
+/.cache
 
 # anaconda-mode
 # .anaconda-mode
@@ -45,7 +45,7 @@ flycheck_*.el
 # /server/*
 
 # projectiles files
-.projectile
+# .projectile
 
 # directory configuration
 .dir-locals.el
