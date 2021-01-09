@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ anaconda-mode-find-definitions-other-frame
  open-mintty-terminal
  kill-buffer
  delete-window
  restart-emacs
  vterm
  vterm-other-window
- shell-command
 )
 
 ;; ----- amx-data -----
@@ -304,4 +304,5 @@
  (term . 2)
  (vterm-other-window . 2)
  (vera-mode . 1)
+ (anaconda-mode-find-definitions-other-frame . 3)
 )

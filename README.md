@@ -1,4 +1,4 @@
-# MICMACS
+# UNICORN
 
 ---
 
@@ -6,7 +6,7 @@
 
 download emacs for [windows](https://github.com/m-parashar/emax64) specially, for linux make a normal download and compile
 
-MicMacs requires fonts for better display
+Unicorn requires fonts for better display
 
 - Fonts
   - [Fira Code](https://github.com/tonsky/FiraCode)
@@ -28,12 +28,20 @@ pip install pylint yapf isort
 npm install -g eslint_d prettier markdownlint-cli vmd
 ```
 
+- vterm shell
+  - only for *nix system, refer [here](https://github.com/akermu/emacs-libvterm)
+``` shell
+sudo apt install cmake
+sudo apt install libtool
+sudo apt install libtool-bin
+```
+
 use mirror if you have timeout error.
 
 ## Install
-MicMacs is trying to mimic and simplify spacemacs, and simpler for management, you can copy from the following hub using git the following way, enjoy it!!
+Unicorn is trying to mimic and simplify spacemacs, and simpler for management, you can copy from the following hub using git the following way, enjoy it!!
 ```bash
-git clone git@github.com:peter159/mimacs.git ~/.emacs.d
+git clone git@github.com:peter159/unicorn.git ~/.emacs.d
 ```
 
 For server user, since emacs is running a deamon for server, make a short cut applying something like the below to use it(change the path to your path). Look at [wiki](https://www.emacswiki.org/emacs/EmacsMsWindowsIntegration) to see the explanation of how emacsclient works
@@ -51,9 +59,9 @@ Fonts, is sometimes critical for UI thing, here recommend to use `Fira Code Reti
 ## SNAPSHOT
 ![snapshot](./img/snapshot.png)
 
-## IMPORTANT
+## Notes
 
-* master 版本是专门为emax26打造，经测试在emacs27+上面会有一些bug (e.g. `anaconda-go-to-definition` not working / `restart-emacs` report bug)，应该是emacs升级后内部架构发生了实质性变化
+* tested in emacs 28.05
 
 
 
