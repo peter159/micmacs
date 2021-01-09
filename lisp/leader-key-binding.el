@@ -1,9 +1,9 @@
 ;;; leader-key-binding.el ---                        -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2019  
+;; Copyright (C) 2019
 
 ;; Author:  <peter.linyi@DESKTOP-PMTGUNT>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 ;;; Commentary:
 
-;; 
+;;
 
 ;;; Code:
 
@@ -34,7 +34,7 @@
 
 (evil-leader/set-key
   ;; "'"   'petmacs/pop-eshell
-  "'"   'shell-here
+  "'"   'vterm-other-window
   "?"   'counsel-descbinds
   "/"   'counsel-projectile-rg
   "v"   'er/expand-region
@@ -53,11 +53,11 @@
 (which-key-add-key-based-replacements
   (format "%s aC" petmacs-evil-leader-key) "clock")
 (evil-leader/set-key
-  "ad" 'deer
+  "ad"  'deer
   "ap"  'list-processes
   "aP"  'proced
-  "ar" 'ranger
-  "ak"  'package-list-packages	     ;'paradox-list-packages		
+  "ar"  'ranger
+  "ak"  'package-list-packages	     ;'paradox-list-packages
   "ao#" 'org-agenda-list-stuck-projects
   "ao/" 'org-occur-in-agenda-files
   "aoa" 'org-agenda-list
@@ -372,8 +372,7 @@
 ;; python mode
 (evil-define-minor-mode-key 'normal 'anaconda-mode (kbd "gd") 'anaconda-mode-find-definitions)
 (evil-define-minor-mode-key 'normal 'anaconda-mode (kbd "gD") 'anaconda-mode-find-definitions-other-window)
-
-;; python mode
+;; python mode overwrite
 (evil-define-key 'normal emacs-lisp-mode-map (kbd "gD") 'petmacs/evil-goto-definition-other-window)
 
 (provide 'leader-key-binding)

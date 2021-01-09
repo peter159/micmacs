@@ -40,10 +40,27 @@
 ;; (define-key emacs-lisp-mode-map (kbd "C-S-c") 'open-mintty-terminal)
 (define-key global-map (kbd "C-S-c") 'open-mintty-terminal)
 
-(use-package shell-here
+;; (use-package shell-here
+;;   :ensure t
+;;   :bind (:map shell-mode-map
+;; 	      ("C-l" . comint-clear-buffer)))
+
+(defun vterm--kill-vterm-buffer-and-window (process event)
+  "Kill buffer and window on vterm process termination."
+  (when (not (process-live-p process))
+    (let ((buf (process-buffer process)))
+      (when (buffer-live-p buf)
+        (with-current-buffer buf
+          (kill-buffer)
+          (ignore-errors (delete-window))
+          (message "VTerm closed."))))))
+(use-package vterm
   :ensure t
-  :bind (:map shell-mode-map
-	      ("C-l" . comint-clear-buffer)))
+  :config
+  (add-hook 'vterm-mode-hook (lambda()
+			       (set-process-sentinel (get-buffer-process (buffer-name))
+						     #'vterm--kill-vterm-buffer-and-window)))
+  )
 
 (provide 'init-shell)
 ;;; init-shell.el ends here
