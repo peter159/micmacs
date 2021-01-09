@@ -52,21 +52,18 @@
   (evil-define-key 'normal imenu-list-major-mode-map (kbd "q") 'imenu-list-quit-window)
   (evil-define-key 'normal imenu-list-major-mode-map [down-mouse-1] 'imenu-list-display-entry))
 
-;; (use-package rainbow-delimiters
-;;   :hook (prog-mode . rainbow-delimiters-mode))
-
 (use-package prettify-utils
   :quelpa
   (prettify-utils :repo "Ilazki/prettify-utils.el" :fetcher github))
 
-(use-package pretty-code
-  :ensure nil
-  :init
-  (require 'pretty-code)
-  (pretty-code-add-hook 'python-mode-hook     '((:def "def")
-    					        (:lambda "lambda")))
-  (pretty-code-add-hook 'emacs-lisp-mode-hook '((:def "defun")
-						(:lambda "lambda"))))
+;; (use-package pretty-code
+;;   :ensure nil
+;;   :init
+;;   (require 'pretty-code)
+;;   (pretty-code-add-hook 'python-mode-hook     '((:def "def")
+;;     					        (:lambda "lambda")))
+;;   (pretty-code-add-hook 'emacs-lisp-mode-hook '((:def "defun")
+;; 						(:lambda "lambda"))))
 
 ;; (use-package pretty-fonts
 ;;   :ensure nil
@@ -114,5 +111,5 @@
 
 
 (provide 'init-program-basis)
-;; (message "init-program-basis loaded in '%.2f' seconds ..." (get-time-diff time-marked))
+(message "init-program-basis loaded in '%.2f' seconds ..." (get-time-diff time-marked))
 ;;; init-program-basis.el ends here

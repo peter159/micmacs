@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- project-dired
- project-find-file
- ranger-mode
- magit-status
- magit-file-popup
- rainbow-mode
  package-reinstall
+ anaconda-eldoc-mode
+ yapfify-buffer
+ yapf-mode
+ yapfify-region
+ lsp-python-ms-update-server
+ project-dired
 )
 
 ;; ----- amx-data -----
@@ -126,7 +126,7 @@
  (indent-region . 1)
  (profiler-start . 2)
  (profiler-report . 1)
- (yapf-mode . 8)
+ (yapf-mode . 11)
  (previous-line . 2)
  (replace-string . 18)
  (quit-window . 5)
@@ -142,8 +142,8 @@
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
- (yapfify-buffer . 7)
- (yapfify-region . 37)
+ (yapfify-buffer . 8)
+ (yapfify-region . 38)
  (ess-r-fix-T-F . 1)
  (evil-leader/set-key . 1)
  (shell-command . 1)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 42)
+ (package-reinstall . 45)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 30)
  (customize . 1)
@@ -229,7 +229,7 @@
  (kill-emacs . 3)
  (lsp-workspace-folders-add . 1)
  (lsp-workspace-restart . 1)
- (lsp-python-ms-update-server . 1)
+ (lsp-python-ms-update-server . 2)
  (pyvenv-workon . 1)
  (treemacs . 1)
  (hide-mode-line-mode . 1)
@@ -295,4 +295,5 @@
  (smerge-next . 1)
  (project-dired . 4)
  (project-find-file . 1)
+ (anaconda-eldoc-mode . 2)
 )

@@ -29,13 +29,6 @@
 (setq gc-cons-threshold 100000000)
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 
-;; (use-package lsp-mode
-;;   :init
-;;   (setq lsp-auto-guess-root nil)
-;;   :hook ((c++-mode . lsp)
-;; 	 (lsp-mode . lsp-enable-which-key-integration))
-;;   :commands (lsp lsp-deferred))
-
 (use-package lsp-mode
   :ensure t
   :diminish
@@ -77,8 +70,8 @@
 		 (push `((,point0 . ,point1) . ,w) candidates)))
       ;; (require 'avy)
       (avy-with avy-document-symbol
-		(avy--process candidates
-			      (avy--style-fn avy-style)))))
+	(avy--process candidates
+		      (avy--style-fn avy-style)))))
 
   (defun petmacs/lsp-avy-goto-word ()
     (interactive)

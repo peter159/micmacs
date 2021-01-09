@@ -1,4 +1,4 @@
-;;; fringe-helper-autoloads.el --- automatically extracted autoloads
+;;; fringe-helper-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -9,7 +9,7 @@
 ;;;### (autoloads nil "fringe-helper" "fringe-helper.el" (0 0 0 0))
 ;;; Generated autoloads from fringe-helper.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "fringe-helper" '("fringe-")))
+(register-definition-prefixes "fringe-helper" '("fringe-"))
 
 ;;;***
 

@@ -1,1 +1,1 @@
-("~/.emacs.d/" "/media/linyi/nDataScience/pytorch/AINLP_plus/")
+("~/.emacs.d/" "/media/linyi/nDataScience/pytorch/AINLP_plus/" "~/anaconda3/envs/transformers/lib/python3.7/site-packages/scipy/" "~/anaconda3/envs/transformers/lib/python3.7/site-packages/scipy/cluster/")

@@ -26,6 +26,9 @@
 
 (mark-time-here)
 
+(defvar petmacs-evil-leader-key "<SPC>"
+  "Evil leader key.")
+
 (evil-leader/set-leader "<SPC>")
 (evil-major-leader/set-leader "\,")
 
@@ -41,10 +44,6 @@
   "TM"  'maximize-window
   "TAB" 'petmacs/alternate-buffer
   "d"   'xref-pop-marker-stack)
-
-
-(defvar petmacs-evil-leader-key "<SPC>"
-  "Evil leader key.")
 
 ;; leader-a application family
 (which-key-add-key-based-replacements
@@ -78,7 +77,6 @@
   "aoo" 'org-agenda
   "aos" 'org-search-view
   "aot" 'org-todo-list)
-
 
 ;; leader-q family
 (which-key-add-key-based-replacements
@@ -146,7 +144,6 @@
   "gS"  'magit-stage-file
   "gU"  'magit-unstage-file
   "gho" 'browse-at-remote)
-
 
 ;; leader-i insert family
 (which-key-add-key-based-replacements
