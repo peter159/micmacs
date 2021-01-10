@@ -55,12 +55,13 @@
           (ignore-errors (delete-window))
           (message "VTerm closed."))))))
 (if (eq window-system 'w32)
-    (use-package vterm
-      :ensure t
-      :config
-      (add-hook 'vterm-mode-hook (lambda()
-				   (set-process-sentinel (get-buffer-process (buffer-name))
-							 #'vterm--kill-vterm-buffer-and-window))))
+    (message "not ready for windows")
+  (use-package vterm
+    :ensure t
+    :config
+    (add-hook 'vterm-mode-hook (lambda()
+				 (set-process-sentinel (get-buffer-process (buffer-name))
+						       #'vterm--kill-vterm-buffer-and-window))))
   )
 
 (provide 'init-shell)
