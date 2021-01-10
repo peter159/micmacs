@@ -1,4 +1,4 @@
-;;; virtualenvwrapper-autoloads.el --- automatically extracted autoloads
+;;; virtualenvwrapper-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -12,14 +12,10 @@
 
 (autoload 'venv-projectile-auto-workon "virtualenvwrapper" "\
 If a venv in the projetile root exists, activates it.
-Set your common venvs names in `venv-dirlookup-names'
-
-\(fn)" nil nil)
+Set your common venvs names in `venv-dirlookup-names'" nil nil)
 
 (autoload 'venv-deactivate "virtualenvwrapper" "\
-Deactivate the current venv.
-
-\(fn)" t nil)
+Deactivate the current venv." t nil)
 
 (autoload 'venv-set-location "virtualenvwrapper" "\
 Set where to look for virtual environments to LOCATION.
@@ -55,9 +51,7 @@ Delete virtualenvs NAMES.
 \(fn &rest NAMES)" t nil)
 
 (autoload 'venv-lsvirtualenv "virtualenvwrapper" "\
-List all available virtualenvs in a temp buffer.
-
-\(fn)" t nil)
+List all available virtualenvs in a temp buffer." t nil)
 
 (autoload 'venv-cdvirtualenv "virtualenvwrapper" "\
 Change to the directory of current virtualenv. If
@@ -86,16 +80,12 @@ Activate the current virtualenv in a newly opened shell.
 
 (autoload 'venv-initialize-interactive-shells "virtualenvwrapper" "\
 Configure interactive shells for use with
-virtualenvwrapper.el.
-
-\(fn)" nil nil)
+virtualenvwrapper.el." nil nil)
 
 (autoload 'venv-initialize-eshell "virtualenvwrapper" "\
-Configure eshell for use with virtualenvwrapper.el.
+Configure eshell for use with virtualenvwrapper.el." nil nil)
 
-\(fn)" nil nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "virtualenvwrapper" '("venv-")))
+(register-definition-prefixes "virtualenvwrapper" '("venv-"))
 
 ;;;***
 

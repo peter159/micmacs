@@ -1,20 +1,20 @@
 
 ;; ----- amx-history -----
 (
+ markdown-live-preview-mode
+ markdown-preview
+ replace-string
  anaconda-mode-find-definitions-other-frame
  open-mintty-terminal
  kill-buffer
  delete-window
- restart-emacs
- vterm
- vterm-other-window
 )
 
 ;; ----- amx-data -----
 (
  (restart-emacs . 106)
  (markdown-mode . 1)
- (markdown-preview . 12)
+ (markdown-preview . 13)
  (ranger-copy . 1)
  (ranger-paste . 1)
  (ivy-avy . 1)
@@ -112,7 +112,7 @@
  (ess-display-help-in-browser . 1)
  (ess-display-package-index . 2)
  (aggressive-indent-mode . 2)
- (markdown-live-preview-mode . 5)
+ (markdown-live-preview-mode . 6)
  (markdown-view-mode . 1)
  (markdown-preview-grip . 6)
  (markdown-live-preview-export . 1)
@@ -128,7 +128,7 @@
  (profiler-report . 1)
  (yapf-mode . 11)
  (previous-line . 2)
- (replace-string . 18)
+ (replace-string . 19)
  (quit-window . 5)
  (flymake-mode . 10)
  (flycheck-info . 1)

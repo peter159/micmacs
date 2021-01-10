@@ -1,4 +1,4 @@
-;;; sqlup-mode-autoloads.el --- automatically extracted autoloads
+;;; sqlup-mode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -12,6 +12,17 @@
 (autoload 'sqlup-mode "sqlup-mode" "\
 Capitalizes SQL keywords for you.
 
+If called interactively, toggle `Sqlup mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
 \(fn &optional ARG)" t nil)
 
 (autoload 'sqlup-capitalize-keywords-in-region "sqlup-mode" "\
@@ -19,7 +30,7 @@ Call this function on a region to capitalize the SQL keywords therein.
 
 \(fn START-POS END-POS)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sqlup-mode" '("sqlup-")))
+(register-definition-prefixes "sqlup-mode" '("sqlup-"))
 
 ;;;***
 

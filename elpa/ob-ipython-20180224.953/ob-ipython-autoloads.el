@@ -1,4 +1,4 @@
-;;; ob-ipython-autoloads.el --- automatically extracted autoloads
+;;; ob-ipython-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -9,7 +9,7 @@
 ;;;### (autoloads nil "ob-ipython" "ob-ipython.el" (0 0 0 0))
 ;;; Generated autoloads from ob-ipython.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ipython" '("ipython--async-" "ob-ipython-" "org-babel-" "company-ob-ipython")))
+(register-definition-prefixes "ob-ipython" '("company-ob-ipython" "ipython--async-" "ob-ipython-" "org-babel-"))
 
 ;;;***
 

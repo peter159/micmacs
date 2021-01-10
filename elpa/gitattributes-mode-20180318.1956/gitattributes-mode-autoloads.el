@@ -1,4 +1,4 @@
-;;; gitattributes-mode-autoloads.el --- automatically extracted autoloads
+;;; gitattributes-mode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -18,7 +18,7 @@ A major mode for editing .gitattributes files.
 
 (dolist (pattern '("/\\.gitattributes\\'" "/info/attributes\\'" "/git/attributes\\'")) (add-to-list 'auto-mode-alist (cons pattern #'gitattributes-mode)))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gitattributes-mode" '("gitattributes-mode-")))
+(register-definition-prefixes "gitattributes-mode" '("gitattributes-mode-"))
 
 ;;;***
 

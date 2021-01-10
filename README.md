@@ -16,7 +16,7 @@ Unicorn requires fonts for better display
 - global tools
   - [ripgrep](https://github.com/BurntSushi/ripgrep) in your $PATH
 - Python related Packages
-```sh
+```shell
 pip install pylint yapf isort
 ```
 
@@ -24,7 +24,7 @@ pip install pylint yapf isort
   - build [ccls](https://github.com/MaskRay/ccls) language server at $HOME path
 
 - nodejs packages
-```sh
+```shell
 npm install -g eslint_d prettier markdownlint-cli vmd
 ```
 
@@ -40,28 +40,26 @@ use mirror if you have timeout error.
 
 ## Install
 Unicorn is trying to mimic and simplify spacemacs, and simpler for management, you can copy from the following hub using git the following way, enjoy it!!
-```bash
+```shell
 git clone git@github.com:peter159/unicorn.git ~/.emacs.d
 ```
 
 For server user, since emacs is running a deamon for server, make a short cut applying something like the below to use it(change the path to your path). Look at [wiki](https://www.emacswiki.org/emacs/EmacsMsWindowsIntegration) to see the explanation of how emacsclient works
-```bash
+```shell
+# make a shortcut in windows using this path
 C:\msys64\mingw64\bin\emacsclientw.exe -cna C:\msys64\mingw64\bin\runemacs.exe
-<!-- make a shortcut in windows using this path -->
 ```
 Fonts, is sometimes critical for UI thing, here recommend to use `Fira Code Retina` for English and `µÈ¾à¸üÉ´ºÚÌå SC` for Chinese, can download them from here
-```bash
-[Fira Code Retina-%S](https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip)
-[Fira Code Symbols](https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip)
-[Sarasa-Gothic](https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.7.2/sarasa-gothic-ttf-0.7.2.7z) #install all that with -sc-
-```
+> [Fira Code Retina-%S](https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip)
+> [Fira Code Symbols](https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip)
+> [Sarasa-Gothic](https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.7.2/sarasa-gothic-ttf-0.7.2.7z) #install all that with -sc-
 
 ## SNAPSHOT
 ![snapshot](./img/snapshot.png)
 
 ## Notes
 
-* tested in emacs 28.05
+* tested in emacs 28.05, Ubuntu 20.04
 
 
 

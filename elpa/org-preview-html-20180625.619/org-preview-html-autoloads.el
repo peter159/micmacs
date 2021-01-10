@@ -1,4 +1,4 @@
-;;; org-preview-html-autoloads.el --- automatically extracted autoloads
+;;; org-preview-html-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -11,16 +11,25 @@
 ;;; Generated autoloads from org-preview-html.el
 
 (autoload 'org-preview-html/preview "org-preview-html" "\
-Export current org-mode buffer to a temp file and call `eww-open-file' to preview it.
-
-\(fn)" t nil)
+Export current org-mode buffer to a temp file and call `eww-open-file' to preview it." t nil)
 
 (autoload 'org-preview-html-mode "org-preview-html" "\
 Preview current org file in eww whenever you save it.
 
+If called interactively, toggle `Org-Preview-Html mode'.  If the
+prefix argument is positive, enable the mode, and if it is zero
+or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
 \(fn &optional ARG)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-preview-html" '("org-preview-html/")))
+(register-definition-prefixes "org-preview-html" '("org-preview-html/"))
 
 ;;;***
 

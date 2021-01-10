@@ -1,4 +1,4 @@
-;;; hlinum-autoloads.el --- automatically extracted autoloads
+;;; hlinum-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -10,16 +10,12 @@
 ;;; Generated autoloads from hlinum.el
 
 (autoload 'hlinum-activate "hlinum" "\
-Enable highlighting current line number.
-
-\(fn)" t nil)
+Enable highlighting current line number." t nil)
 
 (autoload 'hlinum-deactivate "hlinum" "\
-Disable highlighting current line number.
+Disable highlighting current line number." t nil)
 
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "hlinum" '("hlinum-" "linum-highlight-in-all-buffersp")))
+(register-definition-prefixes "hlinum" '("hlinum-" "linum-highlight-in-all-buffersp"))
 
 ;;;***
 

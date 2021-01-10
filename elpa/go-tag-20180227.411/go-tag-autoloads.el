@@ -1,4 +1,4 @@
-;;; go-tag-autoloads.el --- automatically extracted autoloads
+;;; go-tag-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -27,7 +27,7 @@ Remove field TAGS for struct fields.
 
 \(fn TAGS)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-tag" '("go-tag-")))
+(register-definition-prefixes "go-tag" '("go-tag-"))
 
 ;;;***
 

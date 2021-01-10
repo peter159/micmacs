@@ -1,4 +1,4 @@
-;;; go-imenu-autoloads.el --- automatically extracted autoloads
+;;; go-imenu-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 

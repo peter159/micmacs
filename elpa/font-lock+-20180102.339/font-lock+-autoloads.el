@@ -1,4 +1,4 @@
-;;; font-lock+-autoloads.el --- automatically extracted autoloads
+;;; font-lock+-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -9,7 +9,7 @@
 ;;;### (autoloads nil "font-lock+" "font-lock+.el" (0 0 0 0))
 ;;; Generated autoloads from font-lock+.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "font-lock+" '("font-lock-" "put-text-property-unless-ignore")))
+(register-definition-prefixes "font-lock+" '("font-lock-" "put-text-property-unless-ignore"))
 
 ;;;***
 

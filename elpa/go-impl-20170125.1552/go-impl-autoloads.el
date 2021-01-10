@@ -1,4 +1,4 @@
-;;; go-impl-autoloads.el --- automatically extracted autoloads
+;;; go-impl-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -14,7 +14,7 @@
 
 \(fn RECEIVER INTERFACE)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-impl" '("go-impl-")))
+(register-definition-prefixes "go-impl" '("go-impl-"))
 
 ;;;***
 

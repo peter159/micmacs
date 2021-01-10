@@ -1,4 +1,4 @@
-;;; beacon-autoloads.el --- automatically extracted autoloads
+;;; beacon-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -13,9 +13,7 @@
 Blink the beacon at the position of the cursor.
 Unlike `beacon-blink-automated', the beacon will blink
 unconditionally (even if `beacon-mode' is disabled), and this can
-be invoked as a user command or called from lisp code.
-
-\(fn)" t nil)
+be invoked as a user command or called from lisp code." t nil)
 
 (defvar beacon-mode nil "\
 Non-nil if Beacon mode is enabled.
@@ -29,14 +27,23 @@ or call the function `beacon-mode'.")
 
 (autoload 'beacon-mode "beacon" "\
 Toggle Beacon mode on or off.
-With a prefix argument ARG, enable Beacon mode if ARG is
-positive, and disable it otherwise.  If called from Lisp, enable
-the mode if ARG is omitted or nil, and toggle it if ARG is `toggle'.
+
+If called interactively, toggle `Beacon mode'.  If the prefix
+argument is positive, enable the mode, and if it is zero or
+negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
 \\{beacon-mode-map}
 
 \(fn &optional ARG)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "beacon" '("beacon-")))
+(register-definition-prefixes "beacon" '("beacon-"))
 
 ;;;***
 

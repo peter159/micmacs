@@ -1,4 +1,4 @@
-;;; go-gen-test-autoloads.el --- automatically extracted autoloads
+;;; go-gen-test-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -27,7 +27,7 @@ Generate tests for all functions." t nil)
 (go-gen-test-exported)
 Generate tests for all exported functions." t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-gen-test" '("go-gen-test-")))
+(register-definition-prefixes "go-gen-test" '("go-gen-test-"))
 
 ;;;***
 

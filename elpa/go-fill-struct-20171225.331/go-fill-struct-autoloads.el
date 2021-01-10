@@ -1,4 +1,4 @@
-;;; go-fill-struct-autoloads.el --- automatically extracted autoloads
+;;; go-fill-struct-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -13,7 +13,7 @@
 (autoload 'go-fill-struct "go-fill-struct" "\
 Fill go struct at point." t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "go-fill-struct" '("go-fill-struct--buf")))
+(register-definition-prefixes "go-fill-struct" '("go-fill-struct--buf"))
 
 ;;;***
 

@@ -1,4 +1,4 @@
-;;; gotest-autoloads.el --- automatically extracted autoloads
+;;; gotest-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -40,7 +40,7 @@ Launch go run on current buffer file.
 
 \(fn &optional ARGS)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gotest" '("go-")))
+(register-definition-prefixes "gotest" '("go-"))
 
 ;;;***
 

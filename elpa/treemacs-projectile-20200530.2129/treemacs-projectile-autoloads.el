@@ -1,4 +1,4 @@
-;;; treemacs-projectile-autoloads.el --- automatically extracted autoloads
+;;; treemacs-projectile-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 

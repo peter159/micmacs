@@ -1,4 +1,4 @@
-;;; evil-anzu-autoloads.el --- automatically extracted autoloads
+;;; evil-anzu-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -9,7 +9,7 @@
 ;;;### (autoloads nil "evil-anzu" "evil-anzu.el" (0 0 0 0))
 ;;; Generated autoloads from evil-anzu.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "evil-anzu" '("evil-anzu-")))
+(register-definition-prefixes "evil-anzu" '("evil-anzu-"))
 
 ;;;***
 

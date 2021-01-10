@@ -1,4 +1,4 @@
-;;; gitignore-mode-autoloads.el --- automatically extracted autoloads
+;;; gitignore-mode-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -17,7 +17,7 @@ A major mode for editing .gitignore files.
 
 (dolist (pattern (list "/\\.gitignore\\'" "/info/exclude\\'" "/git/ignore\\'")) (add-to-list 'auto-mode-alist (cons pattern 'gitignore-mode)))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gitignore-mode" '("gitignore-mode-font-lock-keywords")))
+(register-definition-prefixes "gitignore-mode" '("gitignore-mode-font-lock-keywords"))
 
 ;;;***
 

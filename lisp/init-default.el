@@ -158,7 +158,11 @@
 ;; Make bindings that stick around
 (use-package hydra :ensure t)
 
-(global-undo-tree-mode -1)
+;; (global-undo-tree-mode -1)
+(use-package undo-tree
+  :ensure nil
+  :config
+  (global-undo-tree-mode nil))
 
 ;; Handling capitalized subwords in a nomenclature
 (use-package subword

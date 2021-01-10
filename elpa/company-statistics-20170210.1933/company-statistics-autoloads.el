@@ -1,4 +1,4 @@
-;;; company-statistics-autoloads.el --- automatically extracted autoloads
+;;; company-statistics-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -25,6 +25,17 @@ Statistical sorting for company-mode.  Ranks completion candidates by
 the frequency with which they have been chosen in recent (as given by
 `company-statistics-size') history.
 
+If called interactively, toggle `Company-Statistics mode'.  If
+the prefix argument is positive, enable the mode, and if it is
+zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is `toggle'.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+The mode's hook is called both when the mode is enabled and when
+it is disabled.
+
 Turning this mode on and off preserves the statistics.  They are also
 preserved automatically between Emacs sessions in the default
 configuration.  You can customize this behavior with
@@ -33,7 +44,7 @@ configuration.  You can customize this behavior with
 
 \(fn &optional ARG)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-statistics" '("company-s")))
+(register-definition-prefixes "company-statistics" '("company-s"))
 
 ;;;***
 

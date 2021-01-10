@@ -1,4 +1,4 @@
-;;; json-reformat-autoloads.el --- automatically extracted autoloads
+;;; json-reformat-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -18,7 +18,7 @@ and `json-reformat:pretty-string?'.
 
 \(fn BEGIN END)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "json-reformat" '("json-reformat")))
+(register-definition-prefixes "json-reformat" '("json-reformat"))
 
 ;;;***
 
