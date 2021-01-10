@@ -1,2 +1,0 @@
-;;; Generated package description from browse-at-remote.el  -*- no-byte-compile: t -*-
-(define-package "browse-at-remote" "20200820.654" "Open github/gitlab/bitbucket/stash/gist/phab/sourcehut page from Emacs" '((f "0.17.2") (s "1.9.0") (cl-lib "0.5")) :commit "fadf99d6d8e891f3b112e36c772e0eea0b9bc7f2" :authors '(("Rustem Muslimov" . "r.muslimov@gmail.com")) :maintainer '("Rustem Muslimov" . "r.muslimov@gmail.com") :keywords '("github" "gitlab" "bitbucket" "gist" "stash" "phabricator" "sourcehut" "pagure"))

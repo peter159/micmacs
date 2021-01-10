@@ -26,7 +26,7 @@
 
 (mark-time-here)
 
-; install `use-package' if not installed
+;; install `use-package' if not installed
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))

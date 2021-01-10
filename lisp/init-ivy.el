@@ -1,9 +1,9 @@
 ;;; init-ivy.el ---                                  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2019  
+;; Copyright (C) 2019
 
 ;; Author:  <peter.linyi@DESKTOP-PMTGUNT>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 ;;; Commentary:
 
-;; 
+;;
 
 ;;; Code:
 
@@ -130,8 +130,8 @@
 ;; ;; Enhance fuzzy matching
 ;; (use-package flx :ensure t)
 
-;; ;; Enhance M-x
-;; (use-package amx :ensure t)
+;; Enhance M-x
+(use-package amx :ensure t)
 
 ;; Integrate yasnippet
 (use-package ivy-yasnippet
@@ -150,17 +150,32 @@
   :bind (:map counsel-mode-map
               ("C-c c v" . counsel-tramp)))
 
-;; Use ivy as the interface to select from xref candidates
+;; Use Ivy as the interface to select from xref candidates.
 (use-package ivy-xref
   :ensure t
   :init
-  (setq xref-show-xrefs-function #'ivy-xref-show-xrefs)
-  (setq xref-prompt-for-identifier '(not xref-find-definitions
-                                         xref-find-definitions-other-window
-                                         xref-find-definitions-other-frame
-                                         xref-find-references)))
+  ;; xref initialization is different in Emacs 27 - there are two different
+  ;; variables which can be set rather than just one
+  (when (>= emacs-major-version 27)
+    (setq xref-show-definitions-function #'ivy-xref-show-defs))
+  ;; Necessary in Emacs <27. In Emacs 27 it will affect all xref-based
+  ;; commands other than xref-find-definitions (e.g. project-find-regexp)
+  ;; as well
+  (setq xref-show-xrefs-function #'ivy-xref-show-xrefs))
 
 (use-package ivy-hydra :ensure t)
+
+;; More friendly display transformer for Ivy
+(use-package ivy-rich
+  :hook (;; Must load after `counsel-projectile'
+         (counsel-projectile-mode . ivy-rich-mode)
+         (ivy-rich-mode . (lambda ()
+                            "Use abbreviate in `ivy-rich-mode'."
+                            (setq ivy-virtual-abbreviate
+                                  (or (and ivy-rich-mode 'abbreviate) 'name)))))
+  :init
+  ;; For better performance
+  (setq ivy-rich-parse-remote-buffer nil))
 
 (provide 'init-ivy)
 (message "init-ivy loaded in %.2f seconds ..." (get-time-diff time-marked))

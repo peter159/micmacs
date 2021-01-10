@@ -1,3 +1,3 @@
 ;;; -*- lisp-data -*-
-(("/media/linyi/nDataScience/pytorch/AINLP_plus/")
- ("~/.emacs.d/"))
+(("~/.emacs.d/")
+ ("/media/linyi/nDataScience/pytorch/AINLP_plus/"))

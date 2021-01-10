@@ -36,7 +36,8 @@
   "return seconds passed from current to `time-start'"
   (interactive)
   (setq diff (time-subtract (float-time) time-marked))
-  (float-time diff))
+  (float-time diff)
+  )
 
 (provide 'init-general-functions)
 (message "init-general-functions loaded in '%.2f seconds ...'" (get-time-diff time-marked))

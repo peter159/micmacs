@@ -32,7 +32,6 @@
 ;;   pip install isort
 ;;   pip install autoflake
 (use-package python
-  :ensure t
   :ensure nil
   :hook
   ((python-mode . (lambda ()
@@ -44,6 +43,7 @@
   :init
   ;; Disable readline based native completion
   (setq python-shell-completion-native-enable nil)
+
   :config
   ;; Env vars
   (with-eval-after-load 'exec-path-from-shell
@@ -53,23 +53,32 @@
   (define-key inferior-python-mode-map (kbd "<up>") 'comint-next-input)
   (define-key inferior-python-mode-map (kbd "C-k") 'comint-previous-input)
   (define-key inferior-python-mode-map (kbd "<down>") 'comint-previous-input)
-  (define-key inferior-python-mode-map
-    (kbd "C-r") 'comint-history-isearch-backward))
+  (define-key inferior-python-mode-map (kbd "C-r") 'comint-history-isearch-backward))
 
-(use-package py-isort
-  :ensure t)
+(use-package py-isort :ensure t)
+
 (use-package pyvenv
-  :ensure t)
-(use-package pipenv
   :ensure t
-  :commands (pipenv-activate
-             pipenv-deactivate
-             pipenv-shell
-             pipenv-open
-             pipenv-install
-             pipenv-uninstall))
-(use-package virtualenvwrapper
-  :ensure t)
+  :preface
+  ;; autoload virtual environment if project_root/.venv file exists,
+  ;; .venv file only has the name of the virtual environment.
+  (defun pyvenv-autoload ()
+    (require 'projectile)
+    (let* ((pdir (projectile-project-root)) (pfile (concat pdir ".venv")))
+      (if (file-exists-p pfile)
+          (pyvenv-workon (with-temp-buffer
+                           (insert-file-contents pfile)
+                           (nth 0 (split-string (buffer-string))))))))
+  :hook (python-mode . pyvenv-autoload))
+
+;; (use-package pipenv
+;;   :commands (pipenv-activate
+;;              pipenv-deactivate
+;;              pipenv-shell
+;;              pipenv-open
+;;              pipenv-install
+;;              pipenv-uninstall))
+;; (use-package virtualenvwrapper)
 
 ;; Format using YAPF
 ;; Install: pip install yapf
@@ -82,12 +91,14 @@
     (progn
       (use-package lsp-python-ms
 	:ensure t
-	:hook (python-mode . (lambda ()
+	:hook (pyvenv-mode . (lambda ()
 			       (require 'lsp-python-ms)
-			       (lsp-deferred)))
+			       (lsp-deferred)
+			       ))
 	:init
 	(setq lsp-python-ms-auto-install-server t
-	      lsp-python-ms-nupkg-channel "stable")
+	      lsp-python-ms-nupkg-channel "stable"
+	      )
 	))
   (progn
     (use-package anaconda-mode
@@ -98,8 +109,6 @@
 	     (python-mode . anaconda-eldoc-mode))
       :config
       ;; WORKAROUND: https://github.com/proofit404/anaconda-mode#faq
-      ;; (when (eq system-type 'darwin)
-      ;;   (setq anaconda-mode-localhost-address "localhost"))
       (setq anaconda-mode-localhost-address "localhost"))
 
     (use-package company-anaconda

@@ -5,3 +5,5 @@
  - path :: ~/go
 ** AINLP_plus
  - path :: /media/linyi/nDataScience/pytorch/AINLP_plus
+** .emacs.d.petmacs
+ - path :: ~/.emacs.d.petmacs

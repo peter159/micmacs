@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- markdown-live-preview-mode
- markdown-preview
- replace-string
- anaconda-mode-find-definitions-other-frame
- open-mintty-terminal
- kill-buffer
- delete-window
+ lsp-describe-session
+ restart-emacs
+ lsp
+ package-install
+ package-reinstall
+ xref-find-definitions-other-frame
+ xref-goto-xref
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 106)
+ (restart-emacs . 117)
  (markdown-mode . 1)
  (markdown-preview . 13)
  (ranger-copy . 1)
@@ -51,7 +51,7 @@
  (petmacs/eshell-clear . 2)
  (eshell . 4)
  (open-mintty-terminal . 7)
- (eval-buffer . 2)
+ (eval-buffer . 3)
  (fci-mode . 40)
  (recenter . 7)
  (ess-display-help-on-object . 1)
@@ -62,7 +62,7 @@
  (evil-leader/set-key-for-mode . 2)
  (evil-major-leader-mode . 2)
  (ibuffer-mode . 2)
- (doom-modeline-mode . 31)
+ (doom-modeline-mode . 33)
  (dired-find-alternate-file . 2)
  (dired-goto-file . 1)
  (other-window . 3)
@@ -70,7 +70,7 @@
  (anaconda-mode-find-references . 2)
  (petmacs/python-execute-file . 3)
  (forward-list . 1)
- (xref-find-references . 16)
+ (xref-find-references . 19)
  (dired-find-file . 3)
  (undo-tree-redo . 1)
  (rg . 1)
@@ -132,13 +132,13 @@
  (quit-window . 5)
  (flymake-mode . 10)
  (flycheck-info . 1)
- (flycheck-buffer . 1)
- (flycheck-next-error . 21)
+ (flycheck-buffer . 3)
+ (flycheck-next-error . 22)
  (flycheck-previous-error . 1)
  (sh-mode . 1)
  (ruler-mode . 4)
  (anaconda-mode-complete . 3)
- (package-install . 17)
+ (package-install . 19)
  (web-mode . 1)
  (emmet-mode . 1)
  (deer . 1)
@@ -157,10 +157,10 @@
  (lsp-ui-mode . 5)
  (lsp-ui-doc-show . 12)
  (evil-move . 1)
- (lsp-find-definition . 59)
+ (lsp-find-definition . 60)
  (lsp-mode . 10)
  (lsp-lens-mode . 1)
- (lsp . 132)
+ (lsp . 146)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -170,20 +170,20 @@
  (ccls-clear-code-lens . 1)
  (ccls-tree-press-and-horizontal-split . 1)
  (lsp-ui-peek-find-definitions . 8)
- (lsp-restart-workspace . 3)
+ (lsp-restart-workspace . 4)
  (lsp-ui-peek-mode . 1)
  (eglot . 15)
  (eglot-reconnect . 4)
  (eglot-rename . 7)
  (eglot-help-at-point . 9)
- (xref-find-definitions . 42)
+ (xref-find-definitions . 46)
  (insert-buffer . 1)
  (eglot-format . 2)
  (eglot-clear-status . 2)
  (eglot-code-actions . 4)
  (eglot-format-buffer . 27)
  (eglot-signal-didChangeConfiguration . 2)
- (xref-goto-xref . 3)
+ (xref-goto-xref . 4)
  (lsp-mode-menu . 1)
  (xref-show-location-at-point . 1)
  (flycheck-mode . 3)
@@ -199,7 +199,7 @@
  (java-mode . 6)
  (lsp-java-build-project . 1)
  (lsp-java-update-server . 2)
- (package-reinstall . 48)
+ (package-reinstall . 50)
  (format-find-file . 1)
  (all-the-icons-install-fonts . 30)
  (customize . 1)
@@ -210,7 +210,7 @@
  (server-force-delete . 3)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 29)
+ (lsp-describe-session . 32)
  (petmacs/lsp-find-definition-other-window . 11)
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 6)
@@ -219,7 +219,7 @@
  (lsp-format-buffer . 1)
  (completion-at-point . 3)
  (eglot-forget-pending-continuations . 1)
- (lsp-disconnect . 5)
+ (lsp-disconnect . 9)
  (lsp-diagnose . 10)
  (debug . 2)
  (petmacs/lsp-ui-doc-func . 1)
@@ -229,8 +229,8 @@
  (kill-emacs . 3)
  (lsp-workspace-folders-add . 1)
  (lsp-workspace-restart . 1)
- (lsp-python-ms-update-server . 2)
- (pyvenv-workon . 1)
+ (lsp-python-ms-update-server . 16)
+ (pyvenv-workon . 2)
  (treemacs . 1)
  (hide-mode-line-mode . 1)
  (delete-window . 5)
@@ -305,4 +305,14 @@
  (vterm-other-window . 2)
  (vera-mode . 1)
  (anaconda-mode-find-definitions-other-frame . 3)
+ (lsp-install-server . 1)
+ (lsp-ivy-workspace-symbol . 1)
+ (lsp-completion-mode . 2)
+ (flycheck-list-errors . 1)
+ (lsp-shutdown-workspace . 9)
+ (conda-env-activate . 2)
+ (xref-find-apropos . 1)
+ (xref-find-definitions-at-mouse . 1)
+ (xref-find-definitions-other-window . 1)
+ (xref-find-definitions-other-frame . 1)
 )

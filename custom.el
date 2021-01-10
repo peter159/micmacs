@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(browse-at-remote git-timemachine magit-todos markdown-toc go-gen-test go-tag flycheck-golangci-lint go-impl go-fill-struct go-dlv company-statistics hydra diminish quelpa-use-package quelpa use-package)))
+   '(lsp-mode pinyinlib counsel-world-clock flyspell-correct-ivy ivy-prescient prescient all-the-icons-ivy-rich yasnippet-snippets yapfify yaml-mode winum which-key web-mode vterm virtualenvwrapper treemacs-projectile treemacs-evil toc-org symbol-overlay sqlup-mode sql-indent spacemacs-theme rg restart-emacs rainbow-mode rainbow-delimiters quelpa-use-package py-isort pretty-hydra prettify-utils prettier-js popwin pipenv persp-mode-projectile-bridge org-preview-html org-pomodoro org-bullets olivetti ob-ipython markdown-toc magit-todos lsp-ui lsp-treemacs lsp-python-ms lsp-origami lsp-jedi lsp-ivy json-mode ivy-yasnippet ivy-xref ivy-hydra imenu-list hungry-delete hlinum highlight-indent-guides hide-mode-line go-tag go-playground go-impl go-imenu go-gen-test go-fill-struct go-dlv gitignore-mode gitconfig-mode gitattributes-mode git-gutter font-lock+ flycheck-golangci-lint fill-column-indicator expand-region evil-visualstar evil-surround evil-major-leader evil-magit evil-escape evil-commentary evil-anzu ess emmet-mode elisp-refs electric-spacing electric-operator editorconfig doom-modeline diredfl diminish default-text-scale daemons counsel-tramp counsel-projectile conda company-statistics company-box company-anaconda browse-at-remote beacon amx all-the-icons-dired aggressive-indent)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -12,9 +12,6 @@
  ;; If there is more than one, they won't work right.
  '(aw-leading-char-face ((t (:height 4.0 :foreground "#f1fa8c"))))
  '(doom-modeline-buffer-file ((t (:inherit font-lock-string-face :weight bold))))
- '(git-gutter:added ((t (:background "#50fa7b"))))
- '(git-gutter:deleted ((t (:background "#ff79c6"))))
- '(git-gutter:modified ((t (:background "#f1fa8c"))))
  '(hl-todo ((t (:box t :inherit 'hl-todo))))
- '(linum-highlight-face ((t (:inherit 'default :background "#fbf8ef" :foreground "#655370"))))
- '(lsp-ui-sideline-code-action ((t (:inherit warning)))))
+ '(ivy-minibuffer-match-face-1 ((t (:inherit font-lock-doc-face :foreground nil))))
+ '(linum-highlight-face ((t (:inherit 'default :background "#fbf8ef" :foreground "#655370")))))

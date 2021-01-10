@@ -185,10 +185,9 @@
   "eb" 'flycheck-buffer
   "ec" 'flycheck-clear
   "eh" 'flycheck-describe-checker
-  "el" 'petmacs/toggle-flycheck-error-list
-  "en" 'petmacs/next-error
-  "eN" 'petmacs/previous-error
-  "ep" 'petmacs/previous-error
+  "el" 'flycheck-list-errors
+  "en" 'flycheck-next-error
+  "ep" 'flycheck-previous-error
   "es" 'flycheck-select-checker
   "eS" 'flycheck-set-checker-executable
   "ev" 'flycheck-verify-setup
