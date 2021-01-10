@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(markdown-toc go-gen-test go-tag flycheck-golangci-lint go-impl go-fill-struct go-dlv company-statistics hydra diminish quelpa-use-package quelpa use-package)))
+   '(browse-at-remote git-timemachine magit-todos markdown-toc go-gen-test go-tag flycheck-golangci-lint go-impl go-fill-struct go-dlv company-statistics hydra diminish quelpa-use-package quelpa use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -16,5 +16,5 @@
  '(git-gutter:deleted ((t (:background "#ff79c6"))))
  '(git-gutter:modified ((t (:background "#f1fa8c"))))
  '(hl-todo ((t (:box t :inherit 'hl-todo))))
- '(linum-highlight-face ((t (:inherit 'default :background "#292b2e" :foreground "#b2b2b2"))))
+ '(linum-highlight-face ((t (:inherit 'default :background "#fbf8ef" :foreground "#655370"))))
  '(lsp-ui-sideline-code-action ((t (:inherit warning)))))

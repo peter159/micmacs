@@ -1,8 +1,10 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
 (("/home/linyi/.emacs.d/init.el" . 2823)
+ ("/home/linyi/.emacs.d/lisp/init-version-control.el.bak" . 4602)
+ ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1372)
+ ("/home/linyi/.emacs.d/elpa/magit-todos-20201101.2240/magit-todos-autoloads.el" . 1644)
+ ("/home/linyi/.emacs.d/elpa/pcre2el-20161120.2103/pcre2el-autoloads.el" . 7431)
  ("/home/linyi/.emacs.d/elpa/magit-20210105.1030/magit-log.el" . 12289)
- ("/home/linyi/.emacs.d/lisp/init-version-control.el.bak" . 1383)
- ("/home/linyi/.emacs.d/lisp/init-version-control.el" . 1227)
  ("/home/linyi/.emacs.d/lisp/"
   (dired-filename . "/home/linyi/.emacs.d/lisp/init-version-control.el.bak"))
  ("/home/linyi/.emacs.d/lisp/init-ui.el" . 3934)

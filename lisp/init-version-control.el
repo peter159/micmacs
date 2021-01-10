@@ -38,7 +38,18 @@
 
 (use-package magit
   :ensure t
-  )
+  :config
+  ;; show tasks
+  (use-package magit-todos
+    :ensure t
+    :hook (after-init . magit-todos-mode))
+
+  ;; Open github/gitlab/bitbucket page
+  (use-package browse-at-remote
+    :ensure t
+    :bind (:map vc-prefix-map
+		("B" . browse-at-remote))))
+
 
 (provide 'init-version-control)
 (message "init-version-control loaded in '%.2f' seconds ..." (get-time-diff time-marked))
