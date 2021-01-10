@@ -34,7 +34,7 @@
 
 (evil-leader/set-key
   ;; "'"   'petmacs/pop-eshell
-  "'"   'vterm-other-window
+  "'"   'my-shell-here
   "?"   'counsel-descbinds
   "/"   'counsel-projectile-rg
   "v"   'er/expand-region
