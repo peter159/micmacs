@@ -31,8 +31,50 @@
 ;;   pip install yapf
 ;;   pip install isort
 ;;   pip install autoflake
+
+(defun petmacs/pyenv-executable-find (command)
+  "Find executable taking pyenv shims into account.
+If the executable is a system executable and not in the same path
+as the pyenv version then also return nil. This works around https://github.com/pyenv/pyenv-which-ext
+"
+  (if (executable-find "pyenv")
+      (progn
+        (let ((pyenv-string (shell-command-to-string (concat "pyenv which " command)))
+              (pyenv-version-names (split-string (string-trim (shell-command-to-string "pyenv version-name")) ":"))
+              (executable nil)
+              (i 0))
+          (if (not (string-match "not found" pyenv-string))
+              (while (and (not executable)
+                          (< i (length pyenv-version-names)))
+                (if (string-match (elt pyenv-version-names i) (string-trim pyenv-string))
+                    (setq executable (string-trim pyenv-string)))
+                (if (string-match (elt pyenv-version-names i) "system")
+                    (setq executable (string-trim (executable-find command))))
+                (setq i (1+ i))))
+          executable))
+    (executable-find command)))
+
+(defun petmacs/python-execute-file (arg)
+  "Execute a python script in a shell."
+  (interactive "P")
+  ;; set compile command to buffer-file-name
+  ;; universal argument put compile buffer in comint mode
+  (let ((universal-argument t)
+        (compile-command (format "%s %s"
+                                 (petmacs/pyenv-executable-find python-shell-interpreter)
+                                 (shell-quote-argument (file-name-nondirectory buffer-file-name)))))
+    (if arg
+        (call-interactively 'compile)
+      (compile compile-command t)
+      (with-current-buffer (get-buffer "*compilation*")
+        (inferior-python-mode)))))
+
 (use-package python
   :ensure nil
+  :init
+  ;; Disable readline based native completion
+  (setq python-shell-completion-native-enable nil)
+  (setq python-indent-guess-indent-offset-verbose nil)
   :hook
   ((python-mode . (lambda ()
 		    (setq-local flycheck-checkers '(python-pylint))
@@ -40,22 +82,25 @@
    (inferior-python-mode . (lambda ()
 			     (process-query-on-exit-flag
 			      (get-process "Python")))))
-  :init
-  ;; Disable readline based native completion
-  (setq python-shell-completion-native-enable nil)
-
   :config
   ;; Env vars
   (with-eval-after-load 'exec-path-from-shell
     (exec-path-from-shell-copy-env "PYTHONPATH"))
 
+  ;; Default to Python 3. Prefer the versioned Python binaries since some
+  ;; systems stupidly make the unversioned one point at Python 2.
+  (when (and (executable-find "python3")
+             (string= python-shell-interpreter "python"))
+    (setq python-shell-interpreter "python3"))
+
   (define-key inferior-python-mode-map (kbd "C-j") 'comint-next-input)
   (define-key inferior-python-mode-map (kbd "<up>") 'comint-next-input)
   (define-key inferior-python-mode-map (kbd "C-k") 'comint-previous-input)
   (define-key inferior-python-mode-map (kbd "<down>") 'comint-previous-input)
-  (define-key inferior-python-mode-map (kbd "C-r") 'comint-history-isearch-backward))
+  (define-key inferior-python-mode-map (kbd "C-r") 'comint-history-isearch-backward)
+  (define-key python-mode-map (kbd "C-c C-b") 'petmacs/python-execute-file))
 
-(use-package py-isort :ensure t)
+;; (use-package py-isort :ensure t)
 
 (use-package pyvenv
   :ensure t
@@ -72,13 +117,14 @@
   :hook (python-mode . pyvenv-autoload))
 
 ;; (use-package pipenv
+;;   :ensure t
 ;;   :commands (pipenv-activate
 ;;              pipenv-deactivate
 ;;              pipenv-shell
 ;;              pipenv-open
 ;;              pipenv-install
 ;;              pipenv-uninstall))
-;; (use-package virtualenvwrapper)
+;; (use-package virtualenvwrapper :ensure t)
 
 ;; Format using YAPF
 ;; Install: pip install yapf
@@ -119,6 +165,7 @@
       :config
       (evil-define-minor-mode-key 'normal 'anaconda-mode (kbd "C-M-i") 'company-anaconda)
       (evil-define-minor-mode-key 'insert 'anaconda-mode (kbd "C-M-i") 'company-anaconda))))
+;; (message "not ready for anaconda"))
 
 (provide 'init-lsp-python)
 (message "init-python loaded in '%.2f' seconds ..." (get-time-diff time-marked))

@@ -82,7 +82,7 @@
 (require 'init-ivy)
 (require 'init-ibuffer)
 (require 'init-window)
-;; (require 'init-layout)
+(require 'init-layout)
 
 (require 'init-highlight)
 (require 'init-version-control)
@@ -92,8 +92,6 @@
 
 (require 'init-program-basis)
 (require 'init-flycheck)
-;; (require 'init-lsp-pet)
-;; (require 'init-lsp-python-pet)
 (require 'init-lsp)
 (require 'init-lsp-python)
 ;; (require 'init-python)

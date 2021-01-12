@@ -1,18 +1,18 @@
 
 ;; ----- amx-history -----
 (
- lsp-describe-session
- restart-emacs
  lsp
- package-install
- package-reinstall
- xref-find-definitions-other-frame
- xref-goto-xref
+ lsp-describe-session
+ lsp-shutdown-workspace
+ petmacs/python-execute-file
+ lsp-python-ms-update-server
+ restart-emacs
+ recentf-open-files
 )
 
 ;; ----- amx-data -----
 (
- (restart-emacs . 117)
+ (restart-emacs . 121)
  (markdown-mode . 1)
  (markdown-preview . 13)
  (ranger-copy . 1)
@@ -37,7 +37,7 @@
  (top-level . 1)
  (swiper . 1)
  (swiper-recenter-top-bottom . 10)
- (recentf-open-files . 40)
+ (recentf-open-files . 44)
  (imenu-list . 1)
  (eval-defun . 1)
  (eval-expression . 4)
@@ -68,7 +68,7 @@
  (other-window . 3)
  (python-shell-send-buffer . 1)
  (anaconda-mode-find-references . 2)
- (petmacs/python-execute-file . 3)
+ (petmacs/python-execute-file . 4)
  (forward-list . 1)
  (xref-find-references . 19)
  (dired-find-file . 3)
@@ -160,7 +160,7 @@
  (lsp-find-definition . 60)
  (lsp-mode . 10)
  (lsp-lens-mode . 1)
- (lsp . 146)
+ (lsp . 148)
  (company-lsp . 1)
  (ccls-reload . 2)
  (ccls-tree-mode . 3)
@@ -176,7 +176,7 @@
  (eglot-reconnect . 4)
  (eglot-rename . 7)
  (eglot-help-at-point . 9)
- (xref-find-definitions . 46)
+ (xref-find-definitions . 47)
  (insert-buffer . 1)
  (eglot-format . 2)
  (eglot-clear-status . 2)
@@ -210,7 +210,7 @@
  (server-force-delete . 3)
  (server-start . 1)
  (ccls-tree-collapse-or-select-parent . 2)
- (lsp-describe-session . 32)
+ (lsp-describe-session . 33)
  (petmacs/lsp-find-definition-other-window . 11)
  (lsp-describe-thing-at-point . 2)
  (toggle-debug-on-error . 6)
@@ -229,7 +229,7 @@
  (kill-emacs . 3)
  (lsp-workspace-folders-add . 1)
  (lsp-workspace-restart . 1)
- (lsp-python-ms-update-server . 16)
+ (lsp-python-ms-update-server . 17)
  (pyvenv-workon . 2)
  (treemacs . 1)
  (hide-mode-line-mode . 1)
@@ -309,10 +309,12 @@
  (lsp-ivy-workspace-symbol . 1)
  (lsp-completion-mode . 2)
  (flycheck-list-errors . 1)
- (lsp-shutdown-workspace . 9)
+ (lsp-shutdown-workspace . 11)
  (conda-env-activate . 2)
  (xref-find-apropos . 1)
  (xref-find-definitions-at-mouse . 1)
  (xref-find-definitions-other-window . 1)
  (xref-find-definitions-other-frame . 1)
+ (magit-log . 1)
+ (recentf-mode . 1)
 )
