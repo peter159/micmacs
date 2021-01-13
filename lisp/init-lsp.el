@@ -40,7 +40,6 @@
              lsp-install-server)
   :init
   (setq read-process-output-max (* 1024 1024)) ; @see https://github.com/emacs-lsp/lsp-mode#performance
-
   (setq lsp-keymap-prefix "C-c l"
 	lsp-auto-guess-root nil
 	lsp-keep-workspace-alive nil
@@ -53,32 +52,63 @@
 	lsp-enable-indentation nil
 	lsp-enable-on-type-formatting nil
 	lsp-enable-symbol-highlighting nil)
-	
   :hook ((prog-mode . (lambda ()
 			(unless (derived-mode-p 'emacs-lisp-mode 'lisp-mode)
 			  (lsp-deferred))))
 	 (lsp-mode . (lambda ()
                        ;; Integrate `which-key'
                        (lsp-enable-which-key-integration))))
-
   :bind (:map lsp-mode-map
               ("C-c C-d" . lsp-describe-thing-at-point)
               ([remap xref-find-definitions] . lsp-find-definition)
               ([remap xref-find-references] . lsp-find-references))
+  :custom-face
+  (lsp-headerline-breadcrumb-path-error-face
+   ((t :underline (:style line :color ,(face-foreground 'error))
+       :inherit lsp-headerline-breadcrumb-path-face)))
+  (lsp-headerline-breadcrumb-path-warning-face
+   ((t :underline (:style line :color ,(face-foreground 'warning))
+       :inherit lsp-headerline-breadcrumb-path-face)))
+  (lsp-headerline-breadcrumb-path-info-face
+   ((t :underline (:style line :color ,(face-foreground 'success))
+       :inherit lsp-headerline-breadcrumb-path-face)))
+  (lsp-headerline-breadcrumb-path-hint-face
+   ((t :underline (:style line :color ,(face-foreground 'success))
+       :inherit lsp-headerline-breadcrumb-path-face)))
+  (lsp-headerline-breadcrumb-symbols-error-face
+   ((t :inherit lsp-headerline-breadcrumb-symbols-face
+       :underline (:style line :color ,(face-foreground 'error)))))
+  (lsp-headerline-breadcrumb-symbols-warning-face
+   ((t :inherit lsp-headerline-breadcrumb-symbols-face
+       :underline (:style line :color ,(face-foreground 'warning)))))
+  (lsp-headerline-breadcrumb-symbols-info-face
+   ((t :inherit lsp-headerline-breadcrumb-symbols-face
+       :underline (:style line :color ,(face-foreground 'success)))))
+  (lsp-headerline-breadcrumb-symbols-hint-face
+   ((t :inherit lsp-headerline-breadcrumb-symbols-face
+       :underline (:style line :color ,(face-foreground 'success)))))
   )
 
-;; (use-package lsp-ui :commands lsp-ui-doc-mode)
-;; ;; if you are ivy user
-;; (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
-;; (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
-;; ;; optionally if you want to use debugger
-;; (use-package dap-mode)
-;; ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-doc-mode)
+;; if you are ivy user
+(use-package lsp-ivy
+  :ensure t
+  :commands lsp-ivy-workspace-symbol)
+(use-package lsp-treemacs
+  :ensure t
+  :commands lsp-treemacs-errors-list)
+;; optionally if you want to use debugger
+(use-package dap-mode
+  :ensure t)
+;; (use-package dap-LANGUAGE) to load the dap adapter for your language
 
-;; ;; optional if you want which-key integration
-;; (use-package which-key
-;;   :config
-;;   (which-key-mode))
+;; optional if you want which-key integration
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode))
 
 (provide 'init-lsp)
 (message "init-lsp loaded in '%.2f' seconds ..." (get-time-diff time-marked))

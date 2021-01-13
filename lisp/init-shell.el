@@ -45,17 +45,18 @@
 ;;   :bind (:map shell-mode-map
 ;; 	      ("C-l" . comint-clear-buffer)))
 
-(defun vterm--kill-vterm-buffer-and-window (process event)
-  "Kill buffer and window on vterm process termination."
-  (when (not (process-live-p process))
-    (let ((buf (process-buffer process)))
-      (when (buffer-live-p buf)
-        (with-current-buffer buf
-          (kill-buffer)
-          (ignore-errors (delete-window))
-          (message "VTerm closed."))))))
 (use-package vterm
   :ensure t
+  :preface
+  (defun vterm--kill-vterm-buffer-and-window (process event)
+    "Kill buffer and window on vterm process termination."
+    (when (not (process-live-p process))
+      (let ((buf (process-buffer process)))
+	(when (buffer-live-p buf)
+          (with-current-buffer buf
+            (kill-buffer)
+            (ignore-errors (delete-window))
+            (message "VTerm closed."))))))
   :config
   (add-hook 'vterm-mode-hook (lambda()
 			       (set-process-sentinel (get-buffer-process (buffer-name))

@@ -156,7 +156,6 @@ as the pyenv version then also return nil. This works around https://github.com/
       :config
       ;; WORKAROUND: https://github.com/proofit404/anaconda-mode#faq
       (setq anaconda-mode-localhost-address "localhost"))
-
     (use-package company-anaconda
       :ensure t
       :after company

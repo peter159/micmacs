@@ -77,7 +77,7 @@
      doom-modeline-persp-name t
      doom-modeline-github nil
      ;; doom-modeline-buffer-file-name-style 'truncate-with-project ;cause stuck
-     doom-modeline-buffer-file-name-style 'auto ;file-name
+     doom-modeline-buffer-file-name-style 'file-name ;file-name
      doom-modeline-major-mode-color-icon t
      doom-modeline-enable-word-count t
      doom-modeline-minor-modes nil
