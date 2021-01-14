@@ -171,6 +171,18 @@
   :hook ((prog-mode . subword-mode)
          (minibuffer-setup . subword-mode)))
 
+;; use exec-path-from-shell in linux / mac
+(when (or (eq system-type 'gnu/linux) (eq system-type 'darwin))
+  (use-package exec-path-from-shell
+    :ensure t
+    :init
+    (setq exec-path-from-shell-check-startup-files nil)
+    (setq exec-path-from-shell-variables '("PATH" "MANPATH" "PYTHONPATH" "GOPATH"
+					   "WORKON_HOME" "JAVA_HOME"
+					   "LLVM_HOME" "LD_LIBRARY_PATH"))
+    (setq exec-path-from-shell-arguments '("-l"))
+    (exec-path-from-shell-initialize)))
+
 (provide 'init-default)
 (message "init-default loaded in '%.2f' seconds ..." (get-time-diff time-marked))
 ;;; init-default.el ends here

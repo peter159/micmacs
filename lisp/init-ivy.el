@@ -167,6 +167,7 @@
 
 ;; More friendly display transformer for Ivy
 (use-package ivy-rich
+  :ensure t
   :hook (;; Must load after `counsel-projectile'
          (counsel-projectile-mode . ivy-rich-mode)
          (ivy-rich-mode . (lambda ()

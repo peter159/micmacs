@@ -27,6 +27,10 @@
 ;;; require package manager, config archives source and initialize all
 (require 'package)
 
+(setq url-proxy-services `(("http" . ,"127.0.0.1:12333")
+			   ("https" . ,"127.0.0.1:12333")
+			   ("no_proxy" . "^\\(localhost\\|192.168.*\\|10.*\\)")))
+
 ;; use mirror
 (setq package-check-signature nil)	; to avoid signature fail for package
 (setq-default package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
@@ -82,7 +86,7 @@
 (require 'init-ivy)
 (require 'init-ibuffer)
 (require 'init-window)
-(require 'init-layout)
+;; (require 'init-layout)
 
 (require 'init-highlight)
 (require 'init-version-control)
@@ -93,8 +97,8 @@
 (require 'init-program-basis)
 (require 'init-flycheck)
 (require 'init-lsp)
-;; (require 'init-lsp-python)
-(require 'init-python)
+(require 'init-lsp-python)
+;; (require 'init-python)
 (require 'init-ess)
 (require 'init-lsp-golang)
 (require 'init-elisp)

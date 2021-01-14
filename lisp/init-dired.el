@@ -86,6 +86,7 @@
 
 ;; Quick sort dired buffers via hydra
 (use-package dired-quick-sort
+  :ensure t
   :bind (:map dired-mode-map
               ("S" . hydra-dired-quick-sort/body)))
 

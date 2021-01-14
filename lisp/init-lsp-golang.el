@@ -79,6 +79,7 @@
       (user-error "Unable to find `go' in `exec-path'!"))
 
     (message "Installing go tools...")
+    (shell-command "go env -w GO111MODULE=on") ; enable go get for go--tools
     (let ((proc-name "go-tools")
           (proc-buffer "*Go Tools*"))
       (dolist (pkg go--tools-no-update)
@@ -97,7 +98,8 @@
            (let ((status (process-exit-status proc)))
              (if (= 0 status)
                  (message "Installed %s" pkg)
-               (message "Failed to install %s: %d" pkg status))))))))
+               (message "Failed to install %s: %d" pkg status)))))))
+    (shell-command "go env -w GO111MODULE=auto"))
 
   ;; Try to install go tools if `gopls' is not found
   (unless (executable-find "gopls")

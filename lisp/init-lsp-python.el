@@ -86,13 +86,11 @@ as the pyenv version then also return nil. This works around https://github.com/
   ;; Env vars
   (with-eval-after-load 'exec-path-from-shell
     (exec-path-from-shell-copy-env "PYTHONPATH"))
-
   ;; Default to Python 3. Prefer the versioned Python binaries since some
   ;; systems stupidly make the unversioned one point at Python 2.
   (when (and (executable-find "python3")
-             (string= python-shell-interpreter "python"))
+             (string= python-shell-interpreter "python3"))
     (setq python-shell-interpreter "python3"))
-
   (define-key inferior-python-mode-map (kbd "C-j") 'comint-next-input)
   (define-key inferior-python-mode-map (kbd "<up>") 'comint-next-input)
   (define-key inferior-python-mode-map (kbd "C-k") 'comint-previous-input)
@@ -105,11 +103,11 @@ as the pyenv version then also return nil. This works around https://github.com/
 (use-package pyvenv
   :ensure t
   :preface
-  ;; autoload virtual environment if project_root/.venv file exists,
-  ;; .venv file only has the name of the virtual environment.
+  ;; autoload virtual environment if project_root/.env file exists, consistent to lsp-python-ms: lsp-python-ms--parse-dot-env
+  ;; .env file only has the name of the virtual environment.
   (defun pyvenv-autoload ()
     (require 'projectile)
-    (let* ((pdir (projectile-project-root)) (pfile (concat pdir ".venv")))
+    (let* ((pdir (projectile-project-root)) (pfile (concat pdir ".env")))
       (if (file-exists-p pfile)
           (pyvenv-workon (with-temp-buffer
                            (insert-file-contents pfile)
@@ -144,6 +142,9 @@ as the pyenv version then also return nil. This works around https://github.com/
 	:init
 	(setq lsp-python-ms-auto-install-server t
 	      lsp-python-ms-nupkg-channel "stable"
+	      lsp-python-ms-guess-env nil ; set to nil so that `'lsp-python-ms-locate-python`' can work right
+	      ;; lsp-python-ms-python-executable-cmd "python3"
+	      ;; lsp-python-ms-python-executable "/home/linyi/anaconda3/envs/transformers/bin"
 	      )
 	))
   (progn

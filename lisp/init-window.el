@@ -52,40 +52,38 @@
   (define-key winum-keymap (kbd "M-7") 'winum-select-window-7)
   (define-key winum-keymap (kbd "M-8") 'winum-select-window-8))
 
-;; (use-package popwin
-;;   :ensure t
-;;   :hook (after-init . popwin-mode)
-;;   :config
-;;   (progn
-;;     ;; (require 'popwin)
-;;     ;; (popwin-mode 1)
-
-;;     ;; don't use default value but manage it ourselves
-;;     (setq popwin:special-display-config nil)
-
-;;     ;; buffers that we manage
-;;     (push '("*Help*"                 :dedicated t :position bottom :stick t :noselect t   :height 0.4) popwin:special-display-config)
-;;     (push '("*Process List*"         :dedicated t :position bottom :stick t :noselect nil :height 0.4) popwin:special-display-config)
-;;     (push '("*Proced*"               :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
-;;     (push '("*compilation*"          :dedicated t :position bottom :stick t :noselect t   :height 0.5) popwin:special-display-config)
-;;     (push '("*Shell Command Output*" :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
-;;     (push '("*Async Shell Command*"  :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
-;;     (push '(" *undo-tree*"           :dedicated t :position right  :stick t :noselect nil :width   60) popwin:special-display-config)
-;;     (push '("*undo-tree Diff*"       :dedicated t :position bottom :stick t :noselect nil :height 0.3) popwin:special-display-config)
-;;     (push '("*ert*"                  :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
-;;     (push '("*grep*"                 :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
-;;     (push '("*nosetests*"            :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
-;;     (push '("*Backtrace*"            :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
-;;     (push '("*xref*"                 :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
-;;     (push '("*lsp session*"          :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
-;;     (push '("*Compile-Log*"          :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
-;;     (push '("*Messages*"             :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
-;;     (push '("*Warnings*"             :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
-;;     (push '("*Anaconda*"             :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
-;;     (push '("^\*WoMan.+\*$"          :regexp    t :position bottom                                   ) popwin:special-display-config)
-;;     (push '("*Google Translate*"     :dedicated t :position bottom :stick t :noselect t   :height 0.4) popwin:special-display-config)
-;;     (push '("^\\*Flycheck.+\\*$"     :regexp    t :dedicated t     :position bottom :stick t :noselect t) popwin:special-display-config)
-;;     ))
+(use-package popwin
+  :ensure t
+  ;; :hook (after-init . popwin-mode)
+  :config
+  (progn
+    ;; (require 'popwin)
+    ;; (popwin-mode 1)
+    ;; don't use default value but manage it ourselves
+    (setq popwin:special-display-config nil)
+    ;; buffers that we manage
+    (push '("*Help*"                 :dedicated t :position bottom :stick t :noselect t   :height 0.4) popwin:special-display-config)
+    (push '("*Process List*"         :dedicated t :position bottom :stick t :noselect nil :height 0.4) popwin:special-display-config)
+    (push '("*Proced*"               :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
+    (push '("*compilation*"          :dedicated t :position bottom :stick t :noselect t   :height 0.5) popwin:special-display-config)
+    (push '("*Shell Command Output*" :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '("*Async Shell Command*"  :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '(" *undo-tree*"           :dedicated t :position right  :stick t :noselect nil :width   60) popwin:special-display-config)
+    (push '("*undo-tree Diff*"       :dedicated t :position bottom :stick t :noselect nil :height 0.3) popwin:special-display-config)
+    (push '("*ert*"                  :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '("*grep*"                 :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '("*nosetests*"            :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '("*Backtrace*"            :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '("*xref*"                 :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
+    (push '("*lsp session*"          :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
+    (push '("*Compile-Log*"          :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
+    (push '("*Messages*"             :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '("*Warnings*"             :dedicated t :position bottom :stick t :noselect nil            ) popwin:special-display-config)
+    (push '("*Anaconda*"             :dedicated t :position right  :stick t :noselect nil :width 0.5 ) popwin:special-display-config)
+    (push '("^\*WoMan.+\*$"          :regexp    t :position bottom                                   ) popwin:special-display-config)
+    (push '("*Google Translate*"     :dedicated t :position bottom :stick t :noselect t   :height 0.4) popwin:special-display-config)
+    (push '("^\\*Flycheck.+\\*$"     :regexp    t :dedicated t     :position bottom :stick t :noselect t) popwin:special-display-config)
+    ))
 
 
 ;; Enforce rules for popups

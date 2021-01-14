@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/go/src/" "/media/linyi/nDataScience/pytorch/AINLP_plus/" "~/.emacs.d.petmacs/" "~/anaconda3/envs/transformers/lib/python3.7/site-packages/sklearn/cluster/" "~/anaconda3/envs/transformers/lib/python3.7/site-packages/scipy/" "~/anaconda3/envs/transformers/lib/python3.7/site-packages/scipy/cluster/")
+("~/.emacs.d/" "~/anaconda3/envs/transformers/lib/python3.7/site-packages/sklearn/ensemble/" "/media/linyi/nDataScience/pytorch/AINLP_plus/" "~/go/src/")
