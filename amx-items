@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- restart-emacs
- lsp-restart-workspace
- lsp
- package-reinstall
- golang-mode-show-doc
- package-install
- lsp-python-ms-update-server
+ vterm--other-window
+ vterm-other-window
+ vterm-reset-cursor-point
+ vterm-send-M-y
+ vterm-send-up
+ vterm
+ describe-function
 )
 
 ;; ----- amx-data -----
@@ -21,4 +21,17 @@
  (lsp-workspace-shutdown . 1)
  (lsp-restart-workspace . 1)
  (restart-emacs . 1)
+ (lsp-rename . 1)
+ (lsp-workspace-show-log . 1)
+ (lsp-workspace-folders-open . 2)
+ (completion-at-point . 1)
+ (vterm-clear-scrollback . 6)
+ (yank . 1)
+ (describe-function . 1)
+ (vterm . 1)
+ (vterm-other-window . 3)
+ (vterm--other-window . 8)
+ (vterm-send-up . 1)
+ (vterm-send-M-y . 1)
+ (vterm-reset-cursor-point . 1)
 )
