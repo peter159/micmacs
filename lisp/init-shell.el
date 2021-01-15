@@ -70,13 +70,15 @@
             (ignore-errors (delete-window))
             (message "VTerm closed."))))))
   (defun vterm--other-window()
-    "WORKAROUND for eliminate base environment in vterm when open up"
+    "WORKAROUND to make true environment work when fired up"
     (interactive)
     (vterm-other-window)
-    (vterm-send-string "conda deactivate")
-    (vterm-send-return)
-    (vterm-clear)
-    )
+    (if (boundp 'pyvenv-virtual-env-name)
+	(if pyvenv-virtual-env-name
+	    (progn
+	      (vterm-send-string "conda deactivate")
+	      (vterm-send-return)
+	      (vterm-clear)))))
   :config
   (add-hook 'vterm-mode-hook (lambda()
 			       (set-process-sentinel (get-buffer-process (buffer-name))
