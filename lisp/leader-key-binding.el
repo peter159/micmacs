@@ -238,7 +238,8 @@
   "wd"  'delete-window
   "wF"  'make-frame
   "wpm" 'popwin:messages
-  "wpp" 'popwin:close-popup-window)
+  "wpp" 'popwin:close-popup-window
+  "wb"  'wakatime-dashboard)
 
 ;; leader-o family
 (which-key-add-key-based-replacements

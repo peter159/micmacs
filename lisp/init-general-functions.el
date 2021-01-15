@@ -28,15 +28,15 @@
 (defun mark-time-here()
   "return current time in float, this used as a mark time star"
   (interactive)
-  (setq time-marked (float-time)))
+  (defvar time-marked (float-time)))
 
 (mark-time-here)
 
 (defun get-time-diff(time-marked)
   "return seconds passed from current to `time-start'"
   (interactive)
-  (setq diff (time-subtract (float-time) time-marked))
-  (float-time diff)
+  (defvar time-diff (time-subtract (float-time) time-marked))
+  (float-time time-diff)
   )
 
 (provide 'init-general-functions)

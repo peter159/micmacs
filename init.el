@@ -27,8 +27,10 @@
 ;;; require package manager, config archives source and initialize all
 (require 'package)
 
-(setq url-proxy-services `(("http" . ,"127.0.0.1:12333")
-			   ("https" . ,"127.0.0.1:12333")
+;; set http proxy
+(defvar global-httpproxy "127.0.0.1:12333")
+(setq url-proxy-services `(("http" . , global-httpproxy)
+			   ("https" . ,global-httpproxy)
 			   ("no_proxy" . "^\\(localhost\\|192.168.*\\|10.*\\)")))
 
 ;; use mirror
@@ -98,9 +100,10 @@
 (require 'init-flycheck)
 (require 'init-lsp)
 (require 'init-lsp-python)
-;; (require 'init-python)
-(require 'init-ess)
 (require 'init-lsp-golang)
+;; (require 'init-python)
+(require 'init-lsp-ess)
+(require 'init-ess)
 (require 'init-elisp)
 (require 'init-c-c++)
 (require 'init-java)

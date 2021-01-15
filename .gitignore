@@ -41,6 +41,9 @@ dist/
 # Flycheck
 flycheck_*.el
 
+# custom file
+custom.el
+
 # server auth directory
 # /server/*
 

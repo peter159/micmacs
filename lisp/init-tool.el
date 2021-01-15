@@ -78,6 +78,23 @@
   :diminish editorconfig-mode
   :hook (after-init . editorconfig-mode))
 
+;; https://wakatime.com/emacs
+(use-package wakatime-mode
+  :ensure t
+  :diminish 'wakatime-mode
+  :preface
+  (defun wakatime-dashboard ()
+    (interactive)
+    (browse-url "https://wakatime.com/dashboard"))
+  (defun wakatime-setup-key ()
+    (interactive)
+    (wakatime-prompt-api-key))
+  :hook
+  (after-init . global-wakatime-mode)
+  :config
+  ;; use `pip install wakatime' and `which wakatime' to get cli path
+  (setq wakatime-cli-path "/home/linyi/anaconda3/bin/wakatime"))
+
 (use-package rg
   :ensure t
   :hook (after-init . rg-enable-default-bindings)

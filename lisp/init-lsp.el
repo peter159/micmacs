@@ -98,7 +98,8 @@
   :commands lsp-ivy-workspace-symbol)
 (use-package lsp-treemacs
   :ensure t
-  :commands lsp-treemacs-errors-list)
+  :commands lsp-treemacs-errors-list
+  )
 ;; optionally if you want to use debugger
 (use-package dap-mode
   :ensure t)
