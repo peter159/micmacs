@@ -52,12 +52,10 @@
 	ess-help-reuse-window nil
 	ess-indent-level 2
 	ess-indent-offset 2
-	ess-offset-continued 'cascade)
-  :hook
-  (ess-r-package-mode . electric-operator-mode)
+	ess-offset-continued 'straight)
   :config
   (require 'ess-site)
-  (define-key ess-mode-map (kbd "=") '(lambda()(interactive)(insert " = ")))
+  ;; (define-key ess-mode-map (kbd "=") '(lambda()(interactive)(insert " = ")))
   (define-key ess-mode-map (kbd "S-.") '(lambda()(interactive)(insert " > ")))
   (define-key ess-mode-map (kbd "M->") '(lambda()(interactive)(insert " %>% ")))
   (define-key ess-mode-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
