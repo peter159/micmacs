@@ -32,21 +32,39 @@
 
 (use-package ess
   :ensure t
+  ;; :preface
+  ;; (defun ess--kill-rterm-buffer-and-window (process event)
+  ;;   "Kill buffer and window on ess rterm process termination."
+  ;;   (when (not (process-live-p process))
+  ;;     (let ((buf (process-buffer process)))
+  ;; 	(when (buffer-live-p buf)
+  ;;         (with-current-buffer buf
+  ;;           (kill-buffer)
+  ;;           (ignore-errors (delete-window))
+  ;;           (message "*R* term closed."))))))
   :init
   ;; (setq inferior-ess-r-program "/usr/bin/R") ;inferior-R-program-name
   (setq ess-nuke-trailing-whitespace-p t
 	ess-ask-for-ess-directory nil
 	ess-set-style 'RStudio	;'Rstudio-
+	ess-smart-operators t
 	ess-help-own-frame t
 	ess-help-reuse-window nil
-	ess-indent-offset 2)
+	ess-indent-level 2
+	ess-indent-offset 2
+	ess-offset-continued 'cascade)
+  :hook
+  (ess-r-package-mode . electric-operator-mode)
   :config
   (require 'ess-site)
-  (setq ess-offset-continued 'cascade)
-  (setq ess-smart-operators t)
-  (add-hook 'ess-r-package-mode-hook 'electric-pair-mode)
+  (define-key ess-mode-map (kbd "=") '(lambda()(interactive)(insert " = ")))
+  (define-key ess-mode-map (kbd "S-.") '(lambda()(interactive)(insert " > ")))
+  (define-key ess-mode-map (kbd "M->") '(lambda()(interactive)(insert " %>% ")))
   (define-key ess-mode-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
   (define-key ess-mode-map (kbd "C--") '(lambda()(interactive)(insert "-")))
+  ;; (add-hook 'ess-r-mode (lambda()
+  ;; 			  (set-process-sentinel (get-buffer-process (buffer-name))
+  ;; 						#'ess--kill-rterm-buffer-and-window)))
   )
 
 (provide 'init-lsp-ess)
