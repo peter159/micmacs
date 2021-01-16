@@ -133,6 +133,36 @@
            completion-in-region-mode
            flycheck-error-list-mode) . hide-mode-line-mode)))
 
+(use-package dashboard
+  :ensure t
+  :diminish (dashboard-mode page-break-lines-mode)
+  :init
+  (setq
+   dashboard-banner-logo-title "Unicorn --- The life of editing philosophy"
+   dashboard-startup-banner (expand-file-name "img/unicorn-logo.png" user-emacs-directory)
+   dashboard-center-content nil
+   dashboard-items '((recents . 7)
+		     (bookmarks . 5)
+		     (agenda . 5))
+   dashboard-set-file-icons t
+   dashboard-set-heading-icons t
+   dashboard-heading-icons '((recents . "file-text")
+			     (bookmarks . "bookmark")
+			     (agenda . "calendar")
+			     (projects . "file-directory")
+			     (registers . "database"))
+   dashboard-set-footer t
+   dashboard-footer-icon "\xf00d"
+   dashboard-footer-messages '(" A master is yet to born"))
+  :config
+  (evil-define-key 'normal dashboard-mode-map
+    (kbd "f") 'widget-button-press)
+  :hook
+  (after-init . dashboard-setup-startup-hook)
+  :custom-face
+  (dashboard-banner-logo-title ((t (:height 1.1 :inherit default))))
+  )
+
 (defun open-init-file()
   (interactive)
   (find-file "~/.emacs.d/init.el"))
