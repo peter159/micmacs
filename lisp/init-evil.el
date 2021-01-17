@@ -154,6 +154,37 @@
   (define-key evil-normal-state-map (kbd "M-j") 'outline-move-subtree-down)
   (define-key evil-normal-state-map (kbd "M-k") 'outline-move-subtree-up))
 
+(use-package dashboard
+  :ensure t
+  :diminish (dashboard-mode page-break-lines-mode)
+  :commands evil-normal-state-map
+  :init
+  (setq
+   dashboard-banner-logo-title "[U N I C O R N] "
+   dashboard-startup-banner (expand-file-name "img/unicorn-wofont.png" user-emacs-directory)
+   dashboard-center-content nil
+   dashboard-items '((recents . 7)
+		     (bookmarks . 5)
+		     (agenda . 5))
+   dashboard-set-file-icons t
+   dashboard-set-heading-icons t
+   dashboard-heading-icons '((recents . "file-text")
+			     (bookmarks . "bookmark")
+			     (agenda . "calendar")
+			     (projects . "file-directory")
+			     (registers . "database"))
+   dashboard-set-footer t
+   dashboard-footer-icon "\xf00d"
+   dashboard-footer-messages '(" The philosophy of immersive programming"))
+  :config
+  (define-key evil-normal-state-map 
+    (kbd "f") 'widget-button-press)
+  :hook
+  (after-init . dashboard-setup-startup-hook)
+  :custom-face
+  (dashboard-banner-logo-title ((t (:height 1.1 :inherit default))))
+  )
+
 (provide 'init-evil)
 (message "init-evil loaded in '%.2f' seconds ..." (get-time-diff time-marked))
 ;;; init-evil.el ends here

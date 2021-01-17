@@ -47,7 +47,6 @@
   (modify-frame-parameters nil `((fullscreen . fullboth) (maximized . fullscreen))))
 (add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
 (add-hook 'focus-in-hook 'make-full-screen) ;make full screen even when server killed frame
-;; (add-hook 'after-focus-change-function 'make-full-screen) ;make full screen even when server killed frame
 
 ;; display time
 (display-time-mode t) 
@@ -137,37 +136,6 @@
   :hook (((completion-list-mode
            completion-in-region-mode
            flycheck-error-list-mode) . hide-mode-line-mode)))
-
-(use-package dashboard
-  :ensure t
-  :diminish (dashboard-mode page-break-lines-mode)
-  :defines evil-normal-state-map
-  :init
-  (setq
-   dashboard-banner-logo-title "[U N I C O R N] "
-   dashboard-startup-banner (expand-file-name "img/unicorn-wofont.png" user-emacs-directory)
-   dashboard-center-content nil
-   dashboard-items '((recents . 7)
-		     (bookmarks . 5)
-		     (agenda . 5))
-   dashboard-set-file-icons t
-   dashboard-set-heading-icons t
-   dashboard-heading-icons '((recents . "file-text")
-			     (bookmarks . "bookmark")
-			     (agenda . "calendar")
-			     (projects . "file-directory")
-			     (registers . "database"))
-   dashboard-set-footer t
-   dashboard-footer-icon "\xf00d"
-   dashboard-footer-messages '(" The philosophy of immersive programming"))
-  :config
-  (define-key evil-normal-state-map 
-    (kbd "f") 'widget-button-press)
-  :hook
-  (after-init . dashboard-setup-startup-hook)
-  :custom-face
-  (dashboard-banner-logo-title ((t (:height 1.1 :inherit default))))
-  )
 
 (defun open-init-file()
   (interactive)
