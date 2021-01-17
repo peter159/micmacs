@@ -177,7 +177,7 @@
    dashboard-footer-icon "\xf00d"
    dashboard-footer-messages '(" The philosophy of immersive programming"))
   :config
-  (define-key evil-normal-state-map 
+  (evil-define-key 'normal dashboard-mode-map
     (kbd "f") 'widget-button-press)
   :hook
   (after-init . dashboard-setup-startup-hook)

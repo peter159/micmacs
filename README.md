@@ -14,9 +14,8 @@ Unicorn requires fonts for better display
   - [all the icons](https://github.com/domtronn/all-the-icons.el/tree/master/fonts)  
 
 - git config
-
 ``` shell
-# make sure git add proxy before installing
+# make sure git add proxy before installing, especially for quelpa mechanism
 git config --http.proxy http://127.0.0.1:1080
 git config --https.proxy https://127.0.0.1:1080
 
@@ -33,6 +32,14 @@ git config --global credential.helper store
 ```shell
 pip install pylint yapf isort
 ```
+- R language server
+
+``` shell
+# add Rterm to system path first for ess mode
+install.packages("devtools")
+devtools::install_github("REditorSupport/languageserver")")
+```
+
 
 - C/C++ packages
   - build [ccls](https://github.com/MaskRay/ccls) language server at $HOME path
@@ -73,7 +80,8 @@ Fonts, is sometimes critical for UI thing, here recommend to use `Fira Code Reti
 
 ## Notes
 
-* tested in emacs 28.05, Ubuntu 20.04
+* tested in emacs 28.05, Ubuntu 20.04, 20210116
+* tested in emacs 27.1, windows 10, 20210117
 
 
 
