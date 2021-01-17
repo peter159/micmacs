@@ -47,7 +47,7 @@
   :init
   (setq imenu-list-focus-after-activation t
         imenu-list-auto-resize nil)
-  :init
+  :config
   (evil-define-key 'normal imenu-list-major-mode-map (kbd "d") 'imenu-list-display-entry)
   (evil-define-key 'normal imenu-list-major-mode-map (kbd "r") 'imenu-list-refresh) 
   (evil-define-key 'normal imenu-list-major-mode-map (kbd "q") 'imenu-list-quit-window)

@@ -98,7 +98,17 @@
   :commands lsp-ivy-workspace-symbol)
 (use-package lsp-treemacs
   :ensure t
+  :preface
+  (defun toggle-lsp-treemacs-symbols ()
+    "Toggle the lsp-treemacs-symbols buffer."
+    (interactive)
+    (if (get-buffer "*LSP Symbols List*")
+	(kill-buffer "*LSP Symbols List*")
+      (progn (lsp-treemacs-symbols)
+             (other-window -1))))
   :commands lsp-treemacs-errors-list
+  :config
+  (define-key prog-mode-map (kbd "<f7>") 'toggle-lsp-treemacs-symbols)
   )
 ;; optionally if you want to use debugger
 (use-package dap-mode

@@ -127,6 +127,11 @@
    `(linum-highlight-face
      ((t (:inherit 'default :background ,(face-background 'default) :foreground ,(face-foreground 'default)))))))
 
+(use-package diff-hl
+  :ensure t
+  :hook
+  (after-init . global-diff-hl-mode))
+
 (use-package hide-mode-line
   :ensure t
   :hook (((completion-list-mode
@@ -136,10 +141,11 @@
 (use-package dashboard
   :ensure t
   :diminish (dashboard-mode page-break-lines-mode)
+  :defines evil-normal-state-map
   :init
   (setq
-   dashboard-banner-logo-title "Unicorn --- The life of editing philosophy"
-   dashboard-startup-banner (expand-file-name "img/unicorn-logo.png" user-emacs-directory)
+   dashboard-banner-logo-title "[U N I C O R N] "
+   dashboard-startup-banner (expand-file-name "img/unicorn-wofont.png" user-emacs-directory)
    dashboard-center-content nil
    dashboard-items '((recents . 7)
 		     (bookmarks . 5)
@@ -153,9 +159,9 @@
 			     (registers . "database"))
    dashboard-set-footer t
    dashboard-footer-icon "\xf00d"
-   dashboard-footer-messages '(" A master is yet to born"))
+   dashboard-footer-messages '(" The philosophy of immersive programming"))
   :config
-  (evil-define-key 'normal dashboard-mode-map
+  (define-key evil-normal-state-map 
     (kbd "f") 'widget-button-press)
   :hook
   (after-init . dashboard-setup-startup-hook)
