@@ -13,8 +13,22 @@ Unicorn requires fonts for better display
   - [Fira Code Symbol](https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip)
   - [all the icons](https://github.com/domtronn/all-the-icons.el/tree/master/fonts)  
 
+- git config
+
+``` shell
+# make sure git add proxy before installing
+git config --http.proxy http://127.0.0.1:1080
+git config --https.proxy https://127.0.0.1:1080
+
+# if need to store user.name and password
+git config --global user.name xxx
+git config --global user.email xxx
+git config --global credential.helper store
+```
+
 - global tools
   - [ripgrep](https://github.com/BurntSushi/ripgrep) in your $PATH
+
 - Python related Packages
 ```shell
 pip install pylint yapf isort
