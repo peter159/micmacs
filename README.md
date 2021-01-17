@@ -1,7 +1,7 @@
 # UNICORN
-
-## Unicorn is a emacs based programming editor with evil (a vim emulator), try to provide immersive programming experience, enjoy !!
+![Unicorn](./img/unicorn-wofont.png)
 ---
+### Unicorn is a emacs based programming editor with evil (a vim emulator), try to provide immersive programming experience, enjoy !!
 
 ## Prerequisites
 
@@ -15,7 +15,6 @@ Unicorn requires fonts for better display
   - [all the icons](https://github.com/domtronn/all-the-icons.el/tree/master/fonts)  
 
 - git config
-
 ``` shell
 # make sure git add proxy before installing, especially for quelpa mechanism
 git config --http.proxy http://127.0.0.1:1080
@@ -28,16 +27,18 @@ git config --global credential.helper store
 ```
 
 - global tools
-  - [ripgrep](https://github.com/BurntSushi/ripgrep) in your $PATH
+  - [ripgrep](https://github.com/BurntSushi/ripgrep) in your $PATH for windows user, for ubuntu user
+
+``` shell
+sudo apt install ripgrep
+```
 
 - Python related Packages
-
 ```shell
 pip install pylint yapf isort
 ```
 
 - R language server
-
 ``` shell
 # add Rterm to system path first for ess mode
 install.packages("devtools")
@@ -45,7 +46,6 @@ devtools::install_github("REditorSupport/languageserver")")
 ```
 
 - Markdown support
-
 ``` shell
 sudo apt install markdown
 ```
