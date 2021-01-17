@@ -1,5 +1,6 @@
 # UNICORN
 
+## Unicorn is a emacs based programming editor with evil (a vim emulator), try to provide immersive programming experience, enjoy !!
 ---
 
 ## Prerequisites
@@ -14,6 +15,7 @@ Unicorn requires fonts for better display
   - [all the icons](https://github.com/domtronn/all-the-icons.el/tree/master/fonts)  
 
 - git config
+
 ``` shell
 # make sure git add proxy before installing, especially for quelpa mechanism
 git config --http.proxy http://127.0.0.1:1080
@@ -29,9 +31,11 @@ git config --global credential.helper store
   - [ripgrep](https://github.com/BurntSushi/ripgrep) in your $PATH
 
 - Python related Packages
+
 ```shell
 pip install pylint yapf isort
 ```
+
 - R language server
 
 ``` shell
@@ -40,6 +44,11 @@ install.packages("devtools")
 devtools::install_github("REditorSupport/languageserver")")
 ```
 
+- Markdown support
+
+``` shell
+sudo apt install markdown
+```
 
 - C/C++ packages
   - build [ccls](https://github.com/MaskRay/ccls) language server at $HOME path
@@ -61,11 +70,13 @@ use mirror if you have timeout error.
 
 ## Install
 Unicorn is trying to mimic and simplify spacemacs, and simpler for management, you can copy from the following hub using git the following way, enjoy it!!
+
 ```shell
 git clone git@github.com:peter159/unicorn.git ~/.emacs.d
 ```
 
 For server user, since emacs is running a deamon for server, make a short cut applying something like the below to use it(change the path to your path). Look at [wiki](https://www.emacswiki.org/emacs/EmacsMsWindowsIntegration) to see the explanation of how emacsclient works
+
 ```shell
 # make a shortcut in windows using this path
 C:\msys64\mingw64\bin\emacsclientw.exe -cna C:\msys64\mingw64\bin\runemacs.exe
@@ -81,7 +92,7 @@ Fonts, is sometimes critical for UI thing, here recommend to use `Fira Code Reti
 ## Notes
 
 * tested in emacs 28.05, Ubuntu 20.04, 20210116
-* tested in emacs 27.1, windows 10, 20210117
+* tested in emacs 27.1, windows 10, 20210117, can also download and use unicorn-windows repo as well
 
 
 
