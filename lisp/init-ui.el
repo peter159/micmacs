@@ -1,9 +1,9 @@
 ;;; init-ui.el --- default user interface!!          -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2019  
+;; Copyright (C) 2019
 
 ;; Author:  <peter.linyi@DESKTOP-PMTGUNT>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -49,7 +49,7 @@
 (add-hook 'focus-in-hook 'make-full-screen) ;make full screen even when server killed frame
 
 ;; display time
-(display-time-mode t) 
+(display-time-mode t)
 ;; (setq display-time-24hr-format t) ;; void variable?
 (setq display-time-day-and-date t)
 
@@ -64,7 +64,7 @@
 (use-package doom-modeline
   :ensure t
   :hook ((after-init . doom-modeline-mode)
-         (doom-modeline-mode . setup-custom-doom-modeline))
+	 (doom-modeline-mode . setup-custom-doom-modeline))
   :custom-face
   (doom-modeline-buffer-file ((t (:inherit font-lock-string-face :weight bold))))
   :config
@@ -134,8 +134,8 @@
 (use-package hide-mode-line
   :ensure t
   :hook (((completion-list-mode
-           completion-in-region-mode
-           flycheck-error-list-mode) . hide-mode-line-mode)))
+	   completion-in-region-mode
+	   flycheck-error-list-mode) . hide-mode-line-mode)))
 
 (defun open-init-file()
   (interactive)

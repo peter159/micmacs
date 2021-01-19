@@ -3,7 +3,7 @@
 ;; Copyright (C) 2021  linyi
 
 ;; Author: linyi <linyi@ubun-born-0>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@
 ;; # install.packages("devtools")
 ;; devtools::install_github("REditorSupport/languageserver")")
 
-;; 
+;;
 
 ;;; Code:
 
@@ -37,7 +37,7 @@
   ;;   "Kill buffer and window on ess rterm process termination."
   ;;   (when (not (process-live-p process))
   ;;     (let ((buf (process-buffer process)))
-  ;; 	(when (buffer-live-p buf)
+  ;;	(when (buffer-live-p buf)
   ;;         (with-current-buffer buf
   ;;           (kill-buffer)
   ;;           (ignore-errors (delete-window))
@@ -61,8 +61,8 @@
   (define-key ess-mode-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
   (define-key ess-mode-map (kbd "C--") '(lambda()(interactive)(insert "-")))
   ;; (add-hook 'ess-r-mode (lambda()
-  ;; 			  (set-process-sentinel (get-buffer-process (buffer-name))
-  ;; 						#'ess--kill-rterm-buffer-and-window)))
+  ;;			  (set-process-sentinel (get-buffer-process (buffer-name))
+  ;;						#'ess--kill-rterm-buffer-and-window)))
   )
 
 (provide 'init-lsp-ess)

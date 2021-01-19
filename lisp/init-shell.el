@@ -69,16 +69,17 @@
             (kill-buffer)
             (ignore-errors (delete-window))
             (message "VTerm closed."))))))
-  (defun vterm--other-window()
-    "WORKAROUND to make true environment work when fired up"
-    (interactive)
-    (vterm-other-window)
-    (if (boundp 'pyvenv-virtual-env-name)
-	(if pyvenv-virtual-env-name
-	    (progn
-	      (vterm-send-string "conda deactivate")
-	      (vterm-send-return)
-	      (vterm-clear)))))
+  ;; (defun vterm--other-window()
+  ;;   "WORKAROUND to make true environment work when fired up,
+  ;;    or conda config --set auto_activate_base false"
+  ;;   (interactive)
+  ;;   (vterm-other-window)
+  ;;   (if (boundp 'pyvenv-virtual-env-name)
+  ;; 	(if pyvenv-virtual-env-name
+  ;; 	    (progn
+  ;; 	      (vterm-send-string "conda deactivate")
+  ;; 	      (vterm-send-return)
+  ;; 	      (vterm-clear)))))
   :config
   (add-hook 'vterm-mode-hook (lambda()
 			       (set-process-sentinel (get-buffer-process (buffer-name))
@@ -89,7 +90,9 @@
   (interactive)
   (if (eq window-system 'w32)
       (message "not ready for windows")
-    (vterm--other-window))
+    (vterm-other-window)
+    ;; (vterm--other-window)   ; not need any more if run `conda config --set auto_activate_base false'
+    )
   )
 
 (provide 'init-shell)

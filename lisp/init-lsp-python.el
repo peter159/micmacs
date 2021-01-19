@@ -88,9 +88,9 @@ as the pyenv version then also return nil. This works around https://github.com/
     (exec-path-from-shell-copy-env "PYTHONPATH"))
   ;; Default to Python 3. Prefer the versioned Python binaries since some
   ;; systems stupidly make the unversioned one point at Python 2.
-  (when (and (executable-find "python3")
-             (string= python-shell-interpreter "python3"))
-    (setq python-shell-interpreter "python3"))
+  (when (and (executable-find "python")
+             (string= python-shell-interpreter "python"))
+    (setq python-shell-interpreter "python"))
   (define-key inferior-python-mode-map (kbd "C-j") 'comint-next-input)
   (define-key inferior-python-mode-map (kbd "<up>") 'comint-next-input)
   (define-key inferior-python-mode-map (kbd "C-k") 'comint-previous-input)
@@ -143,7 +143,7 @@ as the pyenv version then also return nil. This works around https://github.com/
 	(setq lsp-python-ms-auto-install-server t
 	      lsp-python-ms-nupkg-channel "stable"
 	      lsp-python-ms-guess-env nil ; set to nil so that `'lsp-python-ms-locate-python`' can work right
-	      ;; lsp-python-ms-python-executable-cmd "python3"
+	      ;; lsp-python-ms-python-executable-cmd "python"
 	      ;; lsp-python-ms-python-executable "/home/linyi/anaconda3/envs/transformers/bin"
 	      )
 	))
