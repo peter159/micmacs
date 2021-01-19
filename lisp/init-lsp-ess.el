@@ -22,7 +22,7 @@
 ;; install R and build essential, this needs a lot of packages, be care to read install.package error
 
 ;; # install.packages("devtools")
-;; devtools::install_github("REditorSupport/languageserver")")
+;; devtools::install_github("REditorSupport/languageserver")
 
 ;;
 
