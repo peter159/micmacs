@@ -14,6 +14,8 @@ tramp
 # anaconda-mode
 # .anaconda-mode
 
+!/site-lisp/
+
 # Org-mode
 .org-id-locations
 *_archive
@@ -56,7 +58,7 @@ custom.el
 # network security
 /network-security.data
 
-# quelpa folder all keep
+# quela folder all keep
 # /quelpa/
 
 # transient folder
