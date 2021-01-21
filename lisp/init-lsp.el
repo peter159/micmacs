@@ -96,10 +96,12 @@
 (use-package lsp-ui
   :ensure t
   :commands lsp-ui-doc-mode)
+
 ;; if you are ivy user
 (use-package lsp-ivy
   :ensure t
   :commands lsp-ivy-workspace-symbol)
+
 (use-package lsp-treemacs
   :ensure t
   :preface
@@ -114,6 +116,14 @@
   :config
   (define-key prog-mode-map (kbd "<f7>") 'toggle-lsp-treemacs-symbols)
   )
+
+(use-package format-all
+  :ensure t
+  :hook
+  (lsp-mode . format-all-mode)
+  :config
+  (define-key lsp-mode-map (kbd "M-f") 'format-all-buffer))
+
 ;; optionally if you want to use debugger
 (use-package dap-mode
   :ensure t)
@@ -127,4 +137,4 @@
 
 (provide 'init-lsp)
 (message "init-lsp loaded in '%.2f' seconds ..." (get-time-diff time-marked))
-;;; init-lsp.el ends here
+;;; init-lsp.el ends here 
