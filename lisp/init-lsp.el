@@ -52,16 +52,13 @@
 	lsp-enable-indentation nil
 	lsp-enable-on-type-formatting nil
 	lsp-enable-symbol-highlighting nil)
-  (add-hook 'lsp-completion-mode-hook (lambda ()
-                                        (when lsp-completion-mode
-                                          (set (make-local-variable 'company-backends)
-                                               (remq 'company-capf company-backends)))))
   :hook ((prog-mode . (lambda ()
 			(unless (derived-mode-p 'emacs-lisp-mode 'lisp-mode)
 			  (lsp-deferred))))
 	 (lsp-mode . (lambda ()
                        ;; Integrate `which-key'
-                       (lsp-enable-which-key-integration))))
+                       (lsp-enable-which-key-integration)))
+	 )
   :bind (:map lsp-mode-map
               ("C-c C-d" . lsp-describe-thing-at-point)
               ([remap xref-find-definitions] . lsp-find-definition)
