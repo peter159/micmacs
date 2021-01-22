@@ -61,7 +61,6 @@
 	company-dabbrev-ignore-case nil
 	company-dabbrev-downcase nil)
   (define-key emacs-lisp-mode-map (kbd "C-M-i") 'company-complete)
-  (define-key emacs-lisp-mode-map (kbd "C-M-k") 'company-files)
   )
 
 (when (>= emacs-major-version 25) 
