@@ -1,3 +1,6 @@
 [submodule "elpa/vterm-20210111.522/build/libvterm-prefix/src/libvterm"]
 	path = elpa/vterm-20210111.522/build/libvterm-prefix/src/libvterm
 	url = https://github.com/neovim/libvterm.git
+[submodule "elpa/vterm-20210121.1400/build/libvterm-prefix/src/libvterm"]
+	path = elpa/vterm-20210121.1400/build/libvterm-prefix/src/libvterm
+	url = https://github.com/neovim/libvterm.git
