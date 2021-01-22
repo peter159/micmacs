@@ -42,7 +42,7 @@
 (setq make-backup-files nil)               ; Forbide to make backup files
 (setq auto-save-default nil)               ; Disable auto save
 (setq create-lockfiles nil)                ; Disable lock files .#filename
-(setq truncate-lines nil)		   ; do not truncate long lines, to avoid wrong display
+(setq truncate-lines t)		   ; do not truncate long lines, to avoid wrong display
 
 (setq-default major-mode 'text-mode)
 
