@@ -68,7 +68,8 @@
     (`(t . t)
      (treemacs-git-mode 'extended))
     (`(t . _)
-     (treemacs-git-mode 'simple))))
+     (treemacs-git-mode 'simple)))
+  (define-key treemacs-mode-map (kbd "f") 'treemacs-ret-action))
 
 (use-package treemacs-evil
   :ensure t
