@@ -37,6 +37,7 @@
   :commands (lsp-enable-which-key-integration
              lsp-format-buffer
              lsp-organize-imports
+	     lsp-ui-doc-enable
              lsp-install-server)
   :init
   (setq read-process-output-max (* 1024 1024)) ; @see https://github.com/emacs-lsp/lsp-mode#performance

@@ -26,8 +26,9 @@
 
 (mark-time-here)
 
+(setq-local unicorn-font-size 12)
 ;; setup english word font and size
-(set-face-attribute 'default nil :font (format "JetBrains Mono-%S" 12)) ; Fira Code Retina-%S; Fira Code Retina-%S
+(set-face-attribute 'default nil :font (format "JetBrains Mono-%S" unicorn-font-size)) ; Fira Code Retina-%S; Fira Code Retina-%S
 ;; (set-face-attribute 'default nil :font (format "Fira Code Retina-%S" 12)) ; Fira Code Retina-%S; Fira Code Retina-%S
 (setq-default line-spacing 0.2)
 
@@ -36,7 +37,7 @@
   (if (display-graphic-p)		;to avoid error 'fontset tty' in linux shell environment
       (set-fontset-font (frame-parameter nil 'font) charset
 			;; (font-spec :family "Microsoft Yahei" :size 12))
-			(font-spec :family "等距更纱黑体 SC" :size 14)))
+			(font-spec :family "等距更纱黑体 SC" :size unicorn-font-size)))
   )
 
 ;; (use-package fontify-face :ensure t)

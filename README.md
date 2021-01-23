@@ -10,8 +10,8 @@ download emacs for [windows](https://github.com/m-parashar/emax64) specially, fo
 Unicorn requires fonts for better display
 
 - Fonts
-  - [Fira Code](https://github.com/tonsky/FiraCode)
   - [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)
+  - [Fira Code](https://github.com/tonsky/FiraCode)
   - [Fira Code Symbol](https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip)
   - [all the icons](https://github.com/domtronn/all-the-icons.el/tree/master/fonts)  
 

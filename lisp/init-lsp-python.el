@@ -32,7 +32,7 @@
 ;;   pip install isort
 ;;   pip install autoflake
 
-(defun petmacs/pyenv-executable-find (command)
+(defun unicorn/pyenv-executable-find (command)
   "Find executable taking pyenv shims into account.
 If the executable is a system executable and not in the same path
 as the pyenv version then also return nil. This works around https://github.com/pyenv/pyenv-which-ext
@@ -54,20 +54,48 @@ as the pyenv version then also return nil. This works around https://github.com/
           executable))
     (executable-find command)))
 
-(defun petmacs/python-execute-file (arg)
+(defun unicorn/python-execute-file (arg)
   "Execute a python script in a shell."
   (interactive "P")
   ;; set compile command to buffer-file-name
   ;; universal argument put compile buffer in comint mode
   (let ((universal-argument t)
         (compile-command (format "%s %s"
-                                 (petmacs/pyenv-executable-find python-shell-interpreter)
+                                 (unicorn/pyenv-executable-find python-shell-interpreter)
                                  (shell-quote-argument (file-name-nondirectory buffer-file-name)))))
     (if arg
         (call-interactively 'compile)
       (compile compile-command t)
       (with-current-buffer (get-buffer "*compilation*")
         (inferior-python-mode)))))
+
+(defun unicorn/python-highlight-breakpoint ()
+  "highlight a break point"
+  (interactive)
+  (highlight-lines-matching-regexp "^[ ]*import ipdb" 'hi-salmon)
+  (highlight-lines-matching-regexp "^[ ]*ipdb.set_trace()" 'hi-salmon))
+
+(defun unicorn/python-insert-breakpoint ()
+  "Add a break point, highlight it."
+  (interactive)
+  (let ((trace  "import ipdb; ipdb.set_trace() # XXX BREAKPOINT")
+	(line (thing-at-point 'line)))
+    (if (and line (string-match trace line))
+	(kill-whole-line)
+      (progn
+	(back-to-indentation)
+	(insert trace)
+	(insert "\n")
+	(python-indent-line)
+	(unicorn/python-highlight-breakpoint)))))
+
+(defun unicorn/python-delete-breakpoint ()
+  "delete break point"
+  (interactive)
+  (save-excursion
+    (goto-char (point-min))
+    (flush-lines "^[ ]*import ipdb")
+    (flush-lines "^[ ]*ipdb.set_trace()")))
 
 (use-package python
   :ensure nil
@@ -96,7 +124,7 @@ as the pyenv version then also return nil. This works around https://github.com/
   (define-key inferior-python-mode-map (kbd "C-k") 'comint-previous-input)
   (define-key inferior-python-mode-map (kbd "<down>") 'comint-previous-input)
   (define-key inferior-python-mode-map (kbd "C-r") 'comint-history-isearch-backward)
-  (define-key python-mode-map (kbd "C-c C-b") 'petmacs/python-execute-file))
+  (define-key python-mode-map (kbd "C-c C-b") 'unicorn/python-execute-file))
 
 ;; (use-package py-isort :ensure t)
 
@@ -124,12 +152,12 @@ as the pyenv version then also return nil. This works around https://github.com/
 ;;              pipenv-uninstall))
 ;; (use-package virtualenvwrapper :ensure t)
 
-;; Format using YAPF
-;; Install: pip install yapf
-(use-package yapfify
-  :ensure t
-  :diminish yapf-mode
-  :hook (python-mode . yapf-mode))
+;; ;; Format using YAPF
+;; ;; Install: pip install yapf
+;; (use-package yapfify
+;;   :ensure t
+;;   :diminish yapf-mode
+;;   :hook (python-mode . yapf-mode))
 
 (if (member 'python-mode petmacs-lsp-active-modes)
     (progn

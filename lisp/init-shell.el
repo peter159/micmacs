@@ -24,8 +24,6 @@
 
 ;;; Code:
 
-;; (setq comint-move-point-for-output t) ;; move point to the end of buffer on new output
-
 (defun open-mintty-terminal ()
   (interactive)
   (if (eq window-system 'w32)
@@ -80,7 +78,13 @@
   ;; 	      (vterm-send-string "conda deactivate")
   ;; 	      (vterm-send-return)
   ;; 	      (vterm-clear)))))
+  :bind
   :config
+  (evil-define-key 'insert vterm-mode-map (kbd "C-p") 'vterm-send-up)
+  (evil-define-key 'insert vterm-mode-map (kbd "C-n") 'vterm-send-down)
+  (evil-define-key 'insert vterm-mode-map (kbd "C-a") 'vterm-send-C-a)
+  (evil-define-key 'insert vterm-mode-map (kbd "C-e") 'vterm-send-C-e)
+  (evil-define-key 'insert vterm-mode-map (kbd "C-k") 'vterm-send-C-k)
   (add-hook 'vterm-mode-hook (lambda()
 			       (set-process-sentinel (get-buffer-process (buffer-name))
 						     #'vterm--kill-vterm-buffer-and-window))))
