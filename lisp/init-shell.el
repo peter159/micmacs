@@ -88,13 +88,15 @@
   (add-hook 'vterm-mode-hook (lambda()
 			       (set-process-sentinel (get-buffer-process (buffer-name))
 						     #'vterm--kill-vterm-buffer-and-window))))
-
+(use-package multi-vterm
+  :ensure t)
 (defun my-shell-here()
   "open shell here and automatically close window when quiting the shell"
   (interactive)
   (if (eq window-system 'w32)
       (message "not ready for windows")
-    (vterm-other-window)
+    (multi-vterm-dedicated-toggle)
+    ;; (vterm-other-window)
     ;; (vterm--other-window)   ; not need any more if run `conda config --set auto_activate_base false'
     )
   )
