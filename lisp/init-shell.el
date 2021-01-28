@@ -85,6 +85,7 @@
   (evil-define-key 'insert vterm-mode-map (kbd "C-a") 'vterm-send-C-a)
   (evil-define-key 'insert vterm-mode-map (kbd "C-e") 'vterm-send-C-e)
   (evil-define-key 'insert vterm-mode-map (kbd "C-k") 'vterm-send-C-k)
+  (evil-define-key 'insert vterm-mode-map (kbd "C-d") 'vterm-send-C-d)
   (add-hook 'vterm-mode-hook (lambda()
 			       (set-process-sentinel (get-buffer-process (buffer-name))
 						     #'vterm--kill-vterm-buffer-and-window))))
