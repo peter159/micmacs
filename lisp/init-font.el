@@ -29,6 +29,7 @@
 (setq-local unicorn-font-size 12)
 ;; setup english word font and size
 (set-face-attribute 'default nil :font (format "JetBrains Mono-%S" unicorn-font-size)) ; Fira Code Retina-%S; Fira Code Retina-%S
+(set-face-attribute 'fixed-pitch-serif nil :family "Iosevka")
 ;; (set-face-attribute 'default nil :font (format "Fira Code Retina-%S" 12)) ; Fira Code Retina-%S; Fira Code Retina-%S
 (setq-default line-spacing 0.2)
 
