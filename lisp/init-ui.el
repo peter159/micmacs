@@ -127,12 +127,12 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
-(load-theme 'doom-dark+ t)
+(load-theme 'doom-acario-light t)
 
 (use-package display-line-numbers-mode
   :ensure nil
   :init
-  (setq-default display-line-numbers-type 'relative)
+  (setq-default display-line-numbers-type 't) ;relative
   (global-display-line-numbers-mode t))
 
 ;; Highlight current line number

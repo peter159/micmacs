@@ -96,7 +96,9 @@
   (interactive)
   (if (eq window-system 'w32)
       (message "not ready for windows")
-    (multi-vterm-dedicated-toggle)
+    (progn
+      (multi-vterm-dedicated-toggle)
+      (evil-window-move-far-right))
     ;; (vterm-other-window)
     ;; (vterm--other-window)   ; not need any more if run `conda config --set auto_activate_base false'
     )
