@@ -127,7 +127,7 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
-(load-theme 'doom-acario-light t)
+(load-theme 'doom-dark+ t)
 
 (use-package display-line-numbers-mode
   :ensure nil

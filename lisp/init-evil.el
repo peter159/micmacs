@@ -173,12 +173,15 @@
 			     (agenda . "calendar")
 			     (projects . "file-directory")
 			     (registers . "database"))
+   initial-buffer-choice (lambda() (get-buffer "*dashboard*"))
    dashboard-set-footer t
    dashboard-footer-icon "\xf00d"
    dashboard-footer-messages '(" The philosophy of immersive programming"))
   :config
   (evil-define-key 'normal dashboard-mode-map
     (kbd "f") 'widget-button-press)
+  (evil-define-key 'normal dashboard-mode-map
+    (kbd "g r") 'dashboard-refresh-buffer)
   :hook
   (after-init . dashboard-setup-startup-hook)
   :custom-face
