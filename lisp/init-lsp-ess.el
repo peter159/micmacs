@@ -46,13 +46,14 @@
   ;; (setq inferior-ess-r-program "/usr/bin/R") ;inferior-R-program-name
   (setq ess-nuke-trailing-whitespace-p t
 	ess-ask-for-ess-directory nil
-	ess-set-style 'RStudio	;'Rstudio-
 	ess-smart-operators t
 	ess-help-own-frame t
 	ess-help-reuse-window nil
-	ess-indent-level 2
-	ess-indent-offset 2
 	ess-offset-continued 'straight)
+  :hook
+  (ess-r-mode . (lambda ()
+		  (setq-local ess-indent-offset 2)
+		  (setq-local ess-set-style 'RStudio)))
   :config
   (require 'ess-site)
   ;; (define-key ess-mode-map (kbd "=") '(lambda()(interactive)(insert " = ")))
@@ -60,9 +61,6 @@
   (define-key ess-mode-map (kbd "M->") '(lambda()(interactive)(insert " %>% ")))
   (define-key ess-mode-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
   (define-key ess-mode-map (kbd "C--") '(lambda()(interactive)(insert "-")))
-  ;; (add-hook 'ess-r-mode (lambda()
-  ;;			  (set-process-sentinel (get-buffer-process (buffer-name))
-  ;;						#'ess--kill-rterm-buffer-and-window)))
   )
 
 (provide 'init-lsp-ess)
