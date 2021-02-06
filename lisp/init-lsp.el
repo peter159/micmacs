@@ -63,6 +63,8 @@
   :bind (:map lsp-mode-map
               ("C-c C-d" . lsp-describe-thing-at-point)
 	      ("C-M-k" . 'company-files)
+	      ;; ("M-f" . 'lsp-format-region)
+	      ;; ("M-S-f" . 'lsp-format-buffer)
               ([remap xref-find-definitions] . lsp-find-definition)
               ([remap xref-find-references] . lsp-find-references))
   :custom-face
@@ -121,6 +123,7 @@
   :hook
   (lsp-mode . format-all-mode)
   :config
+  ;; (remove-hook 'before-save-hook 'format-all--buffer-from-hook)
   (define-key lsp-mode-map (kbd "M-f") 'format-all-buffer))
 
 ;; optionally if you want to use debugger

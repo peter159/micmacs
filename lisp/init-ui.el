@@ -45,6 +45,7 @@
 (defun make-full-screen()
   "make full screen"
   (modify-frame-parameters nil `((fullscreen . fullboth) (maximized . fullscreen))))
+(add-hook 'after-init-hook 'global-display-fill-column-indicator-mode)
 (add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
 (add-hook 'focus-in-hook 'make-full-screen) ;make full screen even when server killed frame
 
