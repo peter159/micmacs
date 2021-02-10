@@ -30,18 +30,11 @@
 
 (mark-time-here)
 
+(defvar ess-mode-map)
+(defvar inferior-ess-mode-map)
+
 (use-package ess
   :ensure t
-  ;; :preface
-  ;; (defun ess--kill-rterm-buffer-and-window (process event)
-  ;;   "Kill buffer and window on ess rterm process termination."
-  ;;   (when (not (process-live-p process))
-  ;;     (let ((buf (process-buffer process)))
-  ;;	(when (buffer-live-p buf)
-  ;;         (with-current-buffer buf
-  ;;           (kill-buffer)
-  ;;           (ignore-errors (delete-window))
-  ;;           (message "*R* term closed."))))))
   :init
   ;; (setq inferior-ess-r-program "/usr/bin/R") ;inferior-R-program-name
   (setq ess-nuke-trailing-whitespace-p t
@@ -59,7 +52,13 @@
   ;; (define-key ess-mode-map (kbd "=") '(lambda()(interactive)(insert " = ")))
   (define-key ess-mode-map (kbd "S-.") '(lambda()(interactive)(insert " > ")))
   (define-key ess-mode-map (kbd "M->") '(lambda()(interactive)(insert " %>% ")))
+  (define-key inferior-ess-mode-map (kbd "M->") '(lambda()(interactive)(insert " %>% ")))
+  (define-key ess-mode-map (kbd "M-I") '(lambda()(interactive)(insert " %in% ")))
+  (define-key inferior-ess-mode-map (kbd "M-I") '(lambda()(interactive)(insert " %in% ")))
+  (define-key ess-mode-map (kbd "M-L") '(lambda()(interactive)(insert " %like% ")))
+  (define-key inferior-ess-mode-map (kbd "M-L") '(lambda()(interactive)(insert " %like% ")))
   (define-key ess-mode-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
+  (define-key inferior-ess-mode-map (kbd "M--") '(lambda()(interactive)(insert " <- ")))
   (define-key ess-mode-map (kbd "C--") '(lambda()(interactive)(insert "-")))
   )
 

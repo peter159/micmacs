@@ -133,7 +133,7 @@
 (use-package display-line-numbers-mode
   :ensure nil
   :init
-  (setq-default display-line-numbers-type 't) ;relative
+  (setq-default display-line-numbers-type 'relative) ;relative
   (global-display-line-numbers-mode t))
 
 ;; Highlight current line number
