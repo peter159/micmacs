@@ -1,9 +1,9 @@
 ;;; init-lsp.el ---                                  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2019  
+;; Copyright (C) 2019
 
 ;; Author:  <peter.linyi@DESKTOP-PMTGUNT>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 ;;; Commentary:
 
-;; 
+;;
 
 ;;; Code:
 
@@ -124,9 +124,10 @@
   :ensure t
   :hook
   (lsp-mode . format-all-mode)
+  (gfm-mode . format-all-mode)
   :config
   ;; (remove-hook 'before-save-hook 'format-all--buffer-from-hook)
-  (define-key lsp-mode-map (kbd "M-f") 'format-all-buffer))
+  (global-set-key (kbd "M-f") 'format-all-buffer))
 
 ;; optionally if you want to use debugger
 (use-package dap-mode
@@ -141,4 +142,4 @@
 
 (provide 'init-lsp)
 (message "init-lsp loaded in '%.2f' seconds ..." (get-time-diff time-marked))
-;;; init-lsp.el ends here 
+;;; init-lsp.el ends here
