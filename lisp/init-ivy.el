@@ -92,7 +92,7 @@
   (setq ivy-count-format "(%d/%d) ")
   (setq ivy-on-del-error-function nil)
 
-  (defun petmacs//ivy-format-function-arrow (cands)
+  (defun unicorn//ivy-format-function-arrow (cands)
     "Transform CANDS into a string for minibuffer."
     (ivy--format-function-generic
      (lambda (str)
@@ -103,7 +103,7 @@
      cands
      "\n"))
 
-  (setq ivy-format-function 'petmacs//ivy-format-function-arrow)
+  (setq ivy-format-function 'unicorn//ivy-format-function-arrow)
   (setq swiper-action-recenter t)
   (setq counsel-find-file-at-point t)
   (setq counsel-yank-pop-separator "\n-------\n")

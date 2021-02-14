@@ -159,7 +159,7 @@ as the pyenv version then also return nil. This works around https://github.com/
 ;;   :diminish yapf-mode
 ;;   :hook (python-mode . yapf-mode))
 
-(if (member 'python-mode petmacs-lsp-active-modes)
+(if (member 'python-mode unicorn-lsp-active-modes)
     (progn
       (use-package lsp-python-ms
 	:ensure t

@@ -28,7 +28,7 @@
 
 ;;; python
 
-(defun petmacs/pyenv-executable-find (command)
+(defun unicorn/pyenv-executable-find (command)
   "Find executable taking pyenv shims into account.
 If the executable is a system executable and not in the same path
 as the pyenv version then also return nil. This works around https://github.com/pyenv/pyenv-which-ext
@@ -50,14 +50,14 @@ as the pyenv version then also return nil. This works around https://github.com/
           executable))
     (executable-find command)))
 
-(defun petmacs/python-execute-file (arg)
+(defun unicorn/python-execute-file (arg)
   "Execute a python script in a shell."
   (interactive "P")
   ;; set compile command to buffer-file-name
   ;; universal argument put compile buffer in comint mode
   (let ((universal-argument t)
         (compile-command (format "%s %s"
-                                 (petmacs/pyenv-executable-find python-shell-interpreter)
+                                 (unicorn/pyenv-executable-find python-shell-interpreter)
                                  (shell-quote-argument (file-name-nondirectory buffer-file-name)))))
     (if arg
         (call-interactively 'compile)
@@ -65,16 +65,16 @@ as the pyenv version then also return nil. This works around https://github.com/
       (with-current-buffer (get-buffer "*compilation*")
         (inferior-python-mode)))))
 
-(defun petmacs/python-execute-file-focus (arg)
+(defun unicorn/python-execute-file-focus (arg)
   "Execute a python script in a shell and switch to the shell buffer in
  `insert state'."
   (interactive "P")
-  (petmacs/python-execute-file arg)
+  (unicorn/python-execute-file arg)
   (switch-to-buffer-other-window "*compilation*")
   (end-of-buffer)
   (evil-insert-state))
 
-(defun petmacs/python-start-or-switch-repl ()
+(defun unicorn/python-start-or-switch-repl ()
   "Start and/or switch to the REPL."
   (interactive)
   (let ((shell-process
@@ -94,7 +94,7 @@ as the pyenv version then also return nil. This works around https://github.com/
     (pop-to-buffer (process-buffer shell-process))
     (evil-insert-state)))
 
-(defun petmacs/error-delegate ()
+(defun unicorn/error-delegate ()
   "Decide which error API to delegate to.
 
 Delegates to flycheck if it is enabled and the next-error buffer
@@ -105,24 +105,24 @@ is not visible. Otherwise delegates to regular Emacs next-error."
       'flycheck
     'emacs))
 
-(defun petmacs/next-error (&optional n reset)
+(defun unicorn/next-error (&optional n reset)
   "Dispatch to flycheck or standard emacs error."
   (interactive "P")
-  (let ((sys (petmacs/error-delegate)))
+  (let ((sys (unicorn/error-delegate)))
     (cond
      ((eq 'flycheck sys) (call-interactively 'flycheck-next-error))
      ((eq 'emacs sys) (call-interactively 'next-error)))))
 
-(defun petmacs/previous-error (&optional n reset)
+(defun unicorn/previous-error (&optional n reset)
   "Dispatch to flycheck or standard emacs error."
   (interactive "P")
-  (let ((sys (petmacs/error-delegate)))
+  (let ((sys (unicorn/error-delegate)))
     (cond
      ((eq 'flycheck sys) (call-interactively 'flycheck-previous-error))
      ((eq 'emacs sys) (call-interactively 'previous-error)))))
 
 
-(defun petmacs/treemacs-project-toggle ()
+(defun unicorn/treemacs-project-toggle ()
   "Toggle and add the current project to treemacs if not already added."
   (interactive)
   (if (eq (treemacs-current-visibility) 'visible)
@@ -135,7 +135,7 @@ is not visible. Otherwise delegates to regular Emacs next-error."
       (treemacs-select-window))))
 
 
-(defun petmacs/toggle-flycheck-error-list ()
+(defun unicorn/toggle-flycheck-error-list ()
   "Toggle flycheck's error list window.
 If the error list is visible, hide it.  Otherwise, show it."
   (interactive)
@@ -145,56 +145,56 @@ If the error list is visible, hide it.  Otherwise, show it."
 
 ;;;; python
 
-(defun petmacs/quit-subjob ()
+(defun unicorn/quit-subjob ()
   "quit runing job in python buffer"
   (interactive)
   (save-excursion
-    (setq petmacs--current-buffer-name (buffer-name))
+    (setq unicorn--current-buffer-name (buffer-name))
     (previous-buffer)
 
-    (setq petmacs--previous-buffer-name (buffer-name))
+    (setq unicorn--previous-buffer-name (buffer-name))
     (switch-to-buffer "*compilation*")
     (comint-quit-subjob)
-    (switch-to-buffer petmacs--previous-buffer-name)
-    (switch-to-buffer petmacs--current-buffer-name)
-    (set-language-environment petmacs-default-language-env)))
+    (switch-to-buffer unicorn--previous-buffer-name)
+    (switch-to-buffer unicorn--current-buffer-name)
+    (set-language-environment unicorn-default-language-env)))
 
-(defun petmacs/windows-python-execute-file (arg)
+(defun unicorn/windows-python-execute-file (arg)
   "execute python file & produce correct chinese outputs"
   (interactive "P")
   (set-language-environment 'Chinese-GB18030)
   (save-some-buffers t)
-  (petmacs/python-execute-file arg)
-  (set-language-environment petmacs-default-language-env))
+  (unicorn/python-execute-file arg)
+  (set-language-environment unicorn-default-language-env))
 
-(defun petmacs/windows-python-execute-file-focus (arg)
+(defun unicorn/windows-python-execute-file-focus (arg)
   "EXECUTE PYTHON FILE & SWITCH TO THE SHELL BUFFER IN INSERT STATE & PRODUCE CORRECT CHINESE OUTPUTS"
   (interactive "P")
   (set-language-environment 'Chinese-GB18030)
   (save-some-buffers t)
-  (petmacs/python-execute-file-focus arg)
-  (set-language-environment petmacs-default-language-env))
+  (unicorn/python-execute-file-focus arg)
+  (set-language-environment unicorn-default-language-env))
 
-(defun petmacs/windows-python-start-or-switch-repl ()
+(defun unicorn/windows-python-start-or-switch-repl ()
   (interactive)
   (set-language-environment 'Chinese-GB18030)
-  (petmacs/python-start-or-switch-repl)
+  (unicorn/python-start-or-switch-repl)
   (other-window -1))
 
-(defun petmacs/python-quit-repl ()
+(defun unicorn/python-quit-repl ()
   (interactive)
   (switch-to-buffer "*Python*")
   (comint-quit-subjob)
   (kill-buffer-and-window)
-  (set-language-environment petmacs-default-language-env))
+  (set-language-environment unicorn-default-language-env))
 
-(defun petmacs/python-interrupt-repl ()
+(defun unicorn/python-interrupt-repl ()
   (interactive)
   (switch-to-buffer "*Python*")
   (comint-interrupt-subjob)
   (other-window -1))
 
-(defun petmacs/pyvenv-workon ()
+(defun unicorn/pyvenv-workon ()
   "switch python virtualenvironment and restart anaconda server"
   (interactive)
   (call-interactively 'pyvenv-workon)
@@ -202,7 +202,7 @@ If the error list is visible, hide it.  Otherwise, show it."
   (pythonic-activate pyvenv-virtual-env)
   )
 
-(defun petmacs/pyvenv-activate ()
+(defun unicorn/pyvenv-activate ()
   "switch python virtualenvironment and restart anaconda server"
   (interactive)
   (call-interactively 'pyvenv-activate)
@@ -210,19 +210,19 @@ If the error list is visible, hide it.  Otherwise, show it."
   (pythonic-activate pyvenv-virtual-env)
   )
 
-(defun petmacs/pyvenv-deactivate ()
+(defun unicorn/pyvenv-deactivate ()
   "deactivate pyvenv & anaconda virtual enironment"
   (interactive)
   (pyvenv-deactivate)
   (pythonic-deactivate))
 
-(defun petmacs/python-highlight-breakpoint ()
+(defun unicorn/python-highlight-breakpoint ()
   "highlight a break point"
   (interactive)
   (highlight-lines-matching-regexp "^[ ]*import ipdb" 'hi-pink)
   (highlight-lines-matching-regexp "^[ ]*ipdb.set_trace()" 'hi-pink))
 
-(defun petmacs/python-insert-breakpoint ()
+(defun unicorn/python-insert-breakpoint ()
   "Add a break point, highlight it."
   (interactive)
   (let ((trace  "import ipdb; ipdb.set_trace() # XXX BREAKPOINT")
@@ -234,9 +234,9 @@ If the error list is visible, hide it.  Otherwise, show it."
 	(insert trace)
 	(insert "\n")
 	(python-indent-line)
-	(petmacs/python-highlight-breakpoint)))))
+	(unicorn/python-highlight-breakpoint)))))
 
-(defun petmacs/python-delete-breakpoint ()
+(defun unicorn/python-delete-breakpoint ()
   "delete break point"
   (interactive)
   (save-excursion
@@ -257,7 +257,7 @@ If the error list is visible, hide it.  Otherwise, show it."
             (lambda ()
               ;; (bind-key "C-c C-z" #'kill-buffer-and-window inferior-python-mode-map)
               (process-query-on-exit-flag (get-process "Python"))))
-  (define-key python-mode-map (kbd "C-c C-b") 'petmacs/python-execute-file))
+  (define-key python-mode-map (kbd "C-c C-b") 'unicorn/python-execute-file))
 
 (use-package pyvenv :ensure t)
 

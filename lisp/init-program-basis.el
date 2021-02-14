@@ -69,9 +69,9 @@
 ;; (use-package pretty-fonts
 ;;   :ensure nil
 ;;   :defer nil
-;;   :hook (after-make-frame-functions . petmacs/complete-setup-pretty-code)
+;;   :hook (after-make-frame-functions . unicorn/complete-setup-pretty-code)
 ;;   :preface
-;;   (defun petmacs/complete-setup-pretty-code ()
+;;   (defun unicorn/complete-setup-pretty-code ()
 ;;     (require 'pretty-fonts)
 ;;     (pretty-fonts-add-hook 'prog-mode-hook pretty-fonts-fira-code-alist)
 ;;     (pretty-fonts-add-hook 'org-mode-hook  pretty-fonts-fira-code-alist)
@@ -94,7 +94,7 @@
 ;; 	#xe3d0 #xe3d1 #xe3d2 #xe3d4)))
 ;;     )
 ;;   :init
-;;   (petmacs/complete-setup-pretty-code))
+;;   (unicorn/complete-setup-pretty-code))
 
 (use-package electric-operator
   :ensure t

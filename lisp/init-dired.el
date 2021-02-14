@@ -51,7 +51,7 @@
   (dired-mode . dired-omit-mode)
   ;; (dired-mode . evil-motion-state)	;fixed "/" search, but ret/gg/Sg not working, suggest to use ranger
   :preface
-  (defun petmacs/dired-goto-parent-directory ()
+  (defun unicorn/dired-goto-parent-directory ()
     "go up a level using same buffer"
     (interactive)
     (find-alternate-file ".."))
@@ -78,7 +78,7 @@
 
   (evil-define-key 'normal dired-mode-map (kbd "RET") 'dired-find-alternate-file) 
   ;; was dired-up-director
-  (evil-define-key 'normal dired-mode-map (kbd "C-u") 'petmacs/dired-goto-parent-directory)
+  (evil-define-key 'normal dired-mode-map (kbd "C-u") 'unicorn/dired-goto-parent-directory)
   ;; kill current buffer when leaving dired mode
   (evil-define-key 'normal dired-mode-map (kbd "q") 'kill-this-buffer)
   :init

@@ -26,14 +26,14 @@
 
 (mark-time-here)
 
-(defvar petmacs-evil-leader-key "<SPC>"
+(defvar unicorn-evil-leader-key "<SPC>"
   "Evil leader key.")
 
 (evil-leader/set-leader "<SPC>")
 (evil-major-leader/set-leader "\,")
 
 (evil-leader/set-key
-  ;; "'"   'petmacs/pop-eshell
+  ;; "'"   'unicorn/pop-eshell
   "'"   'my-shell-here
   "?"   'counsel-descbinds
   "/"   'counsel-projectile-rg
@@ -42,16 +42,16 @@
   "Ts"  'counsel-load-theme
   "TF"  'toggle-frame-fullscreen
   "TM"  'maximize-window
-  "TAB" 'petmacs/alternate-buffer
+  "TAB" 'unicorn/alternate-buffer
   "d"   'xref-pop-marker-stack)
 
 ;; leader-a application family
 (which-key-add-key-based-replacements
-  (format "%s a" petmacs-evil-leader-key) "application")
+  (format "%s a" unicorn-evil-leader-key) "application")
 (which-key-add-key-based-replacements
-  (format "%s ao" petmacs-evil-leader-key) "org")
+  (format "%s ao" unicorn-evil-leader-key) "org")
 (which-key-add-key-based-replacements
-  (format "%s aC" petmacs-evil-leader-key) "clock")
+  (format "%s aC" unicorn-evil-leader-key) "clock")
 (evil-leader/set-key
   "ad"  'deer
   "ap"  'list-processes
@@ -80,27 +80,27 @@
 
 ;; leader-q family
 (which-key-add-key-based-replacements
-  (format "%s q" petmacs-evil-leader-key) "quit")
+  (format "%s q" unicorn-evil-leader-key) "quit")
 (evil-leader/set-key
-  "qq" 'petmacs/frame-killer
+  "qq" 'unicorn/frame-killer
   "qQ" 'kill-emacs
   "qh" 'suspend-frame
   "qR" 'restart-emacs)
 
 ;; leader-h family
 (which-key-add-key-based-replacements
-  (format "%s h" petmacs-evil-leader-key) "helps")
+  (format "%s h" unicorn-evil-leader-key) "helps")
 (evil-leader/set-key
   "hdf" 'counsel-describe-function
   "hdv" 'counsel-describe-variable)
 
 ;; leader-f family
 (which-key-add-key-based-replacements
-  (format "%s f" petmacs-evil-leader-key) "files")
+  (format "%s f" unicorn-evil-leader-key) "files")
 (which-key-add-key-based-replacements
-  (format "%s fy" petmacs-evil-leader-key) "copy")
+  (format "%s fy" unicorn-evil-leader-key) "copy")
 (which-key-add-key-based-replacements
-  (format "%s fv" petmacs-evil-leader-key) "variable")
+  (format "%s fv" unicorn-evil-leader-key) "variable")
 (evil-leader/set-key
   "ff"  'counsel-find-file
   "fj"  'dired-jump
@@ -109,10 +109,10 @@
   "fT"  'treemacs-find-file
   "fL"  'counsel-locate
   "fr"  'counsel-recentf
-  "fR"  'petmacs/rename-current-buffer-file
+  "fR"  'unicorn/rename-current-buffer-file
   "fs"  'save-buffer
   "fS"  'evil-write-all
-  "fc"  'petmacs/copy-file
+  "fc"  'unicorn/copy-file
   "fi"  'insert-file
   "fb"  'counsel-bookmark
   "fB"  'treemacs-bookmark
@@ -121,16 +121,16 @@
   "fvp" 'add-file-local-variable-prop-line
   "fCu" 'dos2unix
   "fCd" 'unix2dos
-  "fyy" 'petmacs/copy-file-path
-  "fyY" 'petmacs/projectile-copy-file-path
-  "fyd" 'petmacs/copy-directory-path
-  "fyn" 'petmacs/copy-file-name
-  "fec" 'petmacs/find-custom-file
-  "fed" 'petmacs/find-dotfile)
+  "fyy" 'unicorn/copy-file-path
+  "fyY" 'unicorn/projectile-copy-file-path
+  "fyd" 'unicorn/copy-directory-path
+  "fyn" 'unicorn/copy-file-name
+  "fec" 'unicorn/find-custom-file
+  "fed" 'unicorn/find-dotfile)
 
 ;; leader-g family
 (which-key-add-key-based-replacements
-  (format "%s g" petmacs-evil-leader-key) "git")
+  (format "%s g" unicorn-evil-leader-key) "git")
 (evil-leader/set-key
   "gc"  'magit-clone
   "gff" 'magit-find-file
@@ -147,31 +147,31 @@
 
 ;; leader-i insert family
 (which-key-add-key-based-replacements
-  (format "%s i" petmacs-evil-leader-key) "insert")
+  (format "%s i" unicorn-evil-leader-key) "insert")
 (evil-leader/set-key
   "is" 'ivy-yasnippet)
 
 ;; leader-p family
 (which-key-add-key-based-replacements
-  (format "%s p" petmacs-evil-leader-key) "project")
+  (format "%s p" unicorn-evil-leader-key) "project")
 (evil-leader/set-key
   "p SPC" 'counsel-projectile
-  "p'"    'petmacs/projectile-pop-eshell
-  "pt"    'petmacs/treemacs-project-toggle
+  "p'"    'unicorn/projectile-pop-eshell
+  "pt"    'unicorn/treemacs-project-toggle
   "pb"    'counsel-projectile-switch-to-buffer
   "pd"    'counsel-projectile-find-dir
   "pp"    'counsel-projectile-switch-project
   "pf"    'counsel-projectile-find-file
   "pr"    'projectile-recentf
   "po"    'org-projectile/goto-todos
-  "pl"    'petmacs/ivy-persp-switch-project
+  "pl"    'unicorn/ivy-persp-switch-project
   "pv"    'projectile-vc)
 
 ;; leader-j family
 (which-key-add-key-based-replacements
-  (format "%s j" petmacs-evil-leader-key) "jumps")
+  (format "%s j" unicorn-evil-leader-key) "jumps")
 (evil-leader/set-key
-  "ji" 'petmacs/counsel-jump-in-buffer
+  "ji" 'unicorn/counsel-jump-in-buffer
   "jw" 'evil-avy-goto-word-or-subword-1
   "jD" 'deer-jump-other-window
   "jd" 'deer
@@ -180,7 +180,7 @@
 
 ;; leader-e family
 (which-key-add-key-based-replacements
-  (format "%s e" petmacs-evil-leader-key) "error")
+  (format "%s e" unicorn-evil-leader-key) "error")
 (evil-leader/set-key
   "eb" 'flycheck-buffer
   "ec" 'flycheck-clear
@@ -196,16 +196,16 @@
 
 ;; leader-b family
 (which-key-add-key-based-replacements
-  (format "%s b" petmacs-evil-leader-key) "buffers")
+  (format "%s b" unicorn-evil-leader-key) "buffers")
 (evil-leader/set-key
   "bb" 'ivy-switch-buffer
   "bd" 'kill-this-buffer
-  "bR" 'petmacs/revert-current-buffer
-  "bs" 'petmacs/goto-scratch-buffer
+  "bR" 'unicorn/revert-current-buffer
+  "bs" 'unicorn/goto-scratch-buffer
   "bx" 'kill-buffer-and-window
   "bk" 'kill-buffer
-  "bh" 'petmacs/goto-dashboard
-  "bY" 'petmacs/copy-whole-buffer-to-clipboard
+  "bh" 'unicorn/goto-dashboard
+  "bY" 'unicorn/copy-whole-buffer-to-clipboard
   "ba" 'persp-add-buffer
   "br" 'persp-remove-buffer
   "bi" 'imenu-list-smart-toggle
@@ -214,16 +214,16 @@
 
 ;; leader-t family
 (which-key-add-key-based-replacements
-  (format "%s t" petmacs-evil-leader-key) "toggle")
+  (format "%s t" unicorn-evil-leader-key) "toggle")
 (evil-leader/set-key
   "t-" 'centered-cursor-mode
   "ts" 'flycheck-mode)
 
 ;; leader-w family
 (which-key-add-key-based-replacements
-  (format "%s w" petmacs-evil-leader-key) "window")
+  (format "%s w" unicorn-evil-leader-key) "window")
 (evil-leader/set-key
-  "wm"  'petmacs/toggle-maximize-buffer
+  "wm"  'unicorn/toggle-maximize-buffer
   "wH"  'evil-window-move-far-left
   "wL"  'evil-window-move-far-right
   "wJ"  'evil-window-move-very-bottom
@@ -243,7 +243,7 @@
 
 ;; leader-o family
 (which-key-add-key-based-replacements
-  (format "%s o" petmacs-evil-leader-key) "yours")
+  (format "%s o" unicorn-evil-leader-key) "yours")
 (evil-leader/set-key
   "ow"  'whitespace-cleanup
   "obs" 'bookmark-set
@@ -253,41 +253,41 @@
 
 ;;;; major mode specific keybinding
 (which-key-add-key-based-replacements
-  (format "%s m" petmacs-evil-leader-key) "major mode cmds")
+  (format "%s m" unicorn-evil-leader-key) "major mode cmds")
 
-(defun petmacs//set-key-prefix-name (key name)
-  (which-key-add-key-based-replacements (format "%s m%s" petmacs-evil-leader-key key) name)
+(defun unicorn//set-key-prefix-name (key name)
+  (which-key-add-key-based-replacements (format "%s m%s" unicorn-evil-leader-key key) name)
   (which-key-add-key-based-replacements (format ", %s" key) name))
 
-(petmacs//set-key-prefix-name "c" "compile")
-(petmacs//set-key-prefix-name "d" "debug")
-(petmacs//set-key-prefix-name "g" "goto")
-(petmacs//set-key-prefix-name "s" "REPL")
-(petmacs//set-key-prefix-name "h" "help")
-(petmacs//set-key-prefix-name "v" "virtualenv")
+(unicorn//set-key-prefix-name "c" "compile")
+(unicorn//set-key-prefix-name "d" "debug")
+(unicorn//set-key-prefix-name "g" "goto")
+(unicorn//set-key-prefix-name "s" "REPL")
+(unicorn//set-key-prefix-name "h" "help")
+(unicorn//set-key-prefix-name "v" "virtualenv")
 
 ;;;; major mode specific keybinding
-(petmacs//setup-default-key-name "m" "major mode cmds")
-(petmacs//setup-major-mode-key-name "=" "format")
-(petmacs//setup-major-mode-key-name "b" "backend")
-(petmacs//setup-major-mode-key-name "c" "compile")
-(petmacs//setup-major-mode-key-name "d" "debug")
-(petmacs//setup-major-mode-key-name "g" "goto")
-(petmacs//setup-major-mode-key-name "G" "goto other window")
-(petmacs//setup-major-mode-key-name "p" "peek")
-(petmacs//setup-major-mode-key-name "F" "folders")
-(petmacs//setup-major-mode-key-name "r" "refactor")
-(petmacs//setup-major-mode-key-name "rg" "generate")
-(petmacs//setup-major-mode-key-name "ra" "assign/add")
-(petmacs//setup-major-mode-key-name "s" "REPL")
-(petmacs//setup-major-mode-key-name "t" "test")
-(petmacs//setup-major-mode-key-name "T" "toggles")
-(petmacs//setup-major-mode-key-name "h" "help")
-(petmacs//setup-major-mode-key-name "v" "virtualenv")
-(petmacs//setup-major-mode-key-name "vp" "pipenv")
+(unicorn//setup-default-key-name "m" "major mode cmds")
+(unicorn//setup-major-mode-key-name "=" "format")
+(unicorn//setup-major-mode-key-name "b" "backend")
+(unicorn//setup-major-mode-key-name "c" "compile")
+(unicorn//setup-major-mode-key-name "d" "debug")
+(unicorn//setup-major-mode-key-name "g" "goto")
+(unicorn//setup-major-mode-key-name "G" "goto other window")
+(unicorn//setup-major-mode-key-name "p" "peek")
+(unicorn//setup-major-mode-key-name "F" "folders")
+(unicorn//setup-major-mode-key-name "r" "refactor")
+(unicorn//setup-major-mode-key-name "rg" "generate")
+(unicorn//setup-major-mode-key-name "ra" "assign/add")
+(unicorn//setup-major-mode-key-name "s" "REPL")
+(unicorn//setup-major-mode-key-name "t" "test")
+(unicorn//setup-major-mode-key-name "T" "toggles")
+(unicorn//setup-major-mode-key-name "h" "help")
+(unicorn//setup-major-mode-key-name "v" "virtualenv")
+(unicorn//setup-major-mode-key-name "vp" "pipenv")
 
 ;;; lsp major mode settings
-(dolist (mode petmacs-lsp-active-modes)
+(dolist (mode unicorn-lsp-active-modes)
   (evil-leader/set-key-for-mode mode
     ;; format
     "m=b" #'lsp-format-buffer
@@ -298,15 +298,15 @@
     "mgd" #'xref-find-definitions
     "mgD" #'lsp-find-declaration
     "mgi" #'lsp-find-implementation
-    "mgk" #'petmacs/lsp-avy-goto-word
-    "mgK" #'petmacs/lsp-avy-goto-symbol
+    "mgk" #'unicorn/lsp-avy-goto-word
+    "mgK" #'unicorn/lsp-avy-goto-symbol
     "mgM" #'lsp-ui-imenu
     ;; goto other window
-    "mGr" #'petmacs/lsp-find-references-other-window
-    "mGt" #'petmacs/lsp-find-type-definition-other-window
-    "mGd" #'petmacs/lsp-find-definition-other-window
-    "mGD" #'petmacs/lsp-find-declaration-other-window
-    "mGi" #'petmacs/lsp-find-implementation-other-window
+    "mGr" #'unicorn/lsp-find-references-other-window
+    "mGt" #'unicorn/lsp-find-type-definition-other-window
+    "mGd" #'unicorn/lsp-find-definition-other-window
+    "mGD" #'unicorn/lsp-find-declaration-other-window
+    "mGi" #'unicorn/lsp-find-implementation-other-window
     ;; peek
     "mpd" #'lsp-ui-peek-find-definitions
     "mpi" #'lsp-ui-peek-find-implementation
@@ -323,9 +323,9 @@
     ;; toggles
     "mTd" #'lsp-ui-doc-mode
     "mTs" #'lsp-ui-sideline-mode
-    "mTF" #'petmacs/lsp-ui-doc-func
-    "mTS" #'petmacs/lsp-ui-sideline-symb
-    "mTI" #'petmacs/lsp-ui-sideline-ignore-duplicate
+    "mTF" #'unicorn/lsp-ui-doc-func
+    "mTS" #'unicorn/lsp-ui-sideline-symb
+    "mTI" #'unicorn/lsp-ui-sideline-ignore-duplicate
     "mTl" #'lsp-lens-mode
     ;; folders
     "mFs" #'lsp-workspace-folders-switch
@@ -344,12 +344,12 @@
 (evil-leader/set-key-for-mode 'python-mode "mgG" 'anaconda-mode-find-definitions-other-window)
 (evil-leader/set-key-for-mode 'python-mode "mgu" 'anaconda-mode-find-references)
 (evil-leader/set-key-for-mode 'python-mode "msb" 'python-shell-send-buffer)
-(evil-leader/set-key-for-mode 'python-mode "mck" 'petmacs/quit-subjob)
+(evil-leader/set-key-for-mode 'python-mode "mck" 'unicorn/quit-subjob)
 (evil-leader/set-key-for-mode 'python-mode "mdb" 'unicorn/python-insert-breakpoint)
 (evil-leader/set-key-for-mode 'python-mode "mdd" 'unicorn/python-delete-breakpoint)
 (evil-leader/set-key-for-mode 'python-mode "mdh" 'unicorn/python-highlight-breakpoint)
-(evil-leader/set-key-for-mode 'python-mode "msk" 'petmacs/python-interrupt-repl)
-(evil-leader/set-key-for-mode 'python-mode "msq" 'petmacs/python-quit-repl)
+(evil-leader/set-key-for-mode 'python-mode "msk" 'unicorn/python-interrupt-repl)
+(evil-leader/set-key-for-mode 'python-mode "msq" 'unicorn/python-quit-repl)
 (evil-leader/set-key-for-mode 'python-mode "msr" 'python-shell-send-region)
 (evil-leader/set-key-for-mode 'python-mode "mva" 'pyvenv-activate)
 (evil-leader/set-key-for-mode 'python-mode "mvd" 'pyvenv-deactivate)
@@ -357,14 +357,14 @@
 
 (if (eq system-type 'windows-nt)
     (progn
-      (evil-leader/set-key-for-mode 'python-mode "mcc" 'petmacs/windows-python-execute-file)
-      (evil-leader/set-key-for-mode 'python-mode "mcC" 'petmacs/windows-python-execute-file-focus)
-      (evil-leader/set-key-for-mode 'python-mode "msi" 'petmacs/windows-python-start-or-switch-repl)
+      (evil-leader/set-key-for-mode 'python-mode "mcc" 'unicorn/windows-python-execute-file)
+      (evil-leader/set-key-for-mode 'python-mode "mcC" 'unicorn/windows-python-execute-file-focus)
+      (evil-leader/set-key-for-mode 'python-mode "msi" 'unicorn/windows-python-start-or-switch-repl)
       )
   (progn
-    (evil-leader/set-key-for-mode 'python-mode "mcc" 'petmacs/python-execute-file)
-    (evil-leader/set-key-for-mode 'python-mode "mcC" 'petmacs/python-execute-file-focus)
-    (evil-leader/set-key-for-mode 'python-mode "msi" 'petmacs/python-start-or-switch-repl)
+    (evil-leader/set-key-for-mode 'python-mode "mcc" 'unicorn/python-execute-file)
+    (evil-leader/set-key-for-mode 'python-mode "mcC" 'unicorn/python-execute-file-focus)
+    (evil-leader/set-key-for-mode 'python-mode "msi" 'unicorn/python-start-or-switch-repl)
     ))
 
 ;;;; evil jump
@@ -373,7 +373,7 @@
 (evil-define-minor-mode-key 'normal 'anaconda-mode (kbd "gd") 'anaconda-mode-find-definitions)
 (evil-define-minor-mode-key 'normal 'anaconda-mode (kbd "gD") 'anaconda-mode-find-definitions-other-window)
 ;; python mode overwrite
-(evil-define-key 'normal emacs-lisp-mode-map (kbd "gD") 'petmacs/evil-goto-definition-other-window)
+(evil-define-key 'normal emacs-lisp-mode-map (kbd "gD") 'unicorn/evil-goto-definition-other-window)
 
 (provide 'leader-key-binding)
 (message "leader-key-binding loaded in '%.2f' seconds" (get-time-diff time-marked))

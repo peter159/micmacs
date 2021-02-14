@@ -26,27 +26,27 @@
 
 (mark-time-here)
 
-(defun petmacs/ivy-persp-switch-project-advice (project)
+(defun unicorn/ivy-persp-switch-project-advice (project)
   (let ((persp-reset-windows-on-nil-window-conf t))
     (persp-switch project)))
 
-(defun petmacs/ivy-persp-switch-project (arg)
+(defun unicorn/ivy-persp-switch-project (arg)
   (interactive "P")
   (require 'counsel-projectile)
   (advice-add 'counsel-projectile-switch-project-action
-	      :before #'petmacs/ivy-persp-switch-project-advice)
+	      :before #'unicorn/ivy-persp-switch-project-advice)
   (ivy-read "Switch to Project Perspective: "
             (if (projectile-project-p)
                 (cons (abbreviate-file-name (projectile-project-root))
 		      (projectile-relevant-known-projects))
 	      projectile-known-projects)
             :action #'counsel-projectile-switch-project-action
-            :caller 'petmacs/ivy-persp-switch-project)
+            :caller 'unicorn/ivy-persp-switch-project)
   (advice-remove 'counsel-projectile-switch-project-action
-                 'petmacs/ivy-persp-switch-project-advice))
+                 'unicorn/ivy-persp-switch-project-advice))
 
 ;; from https://gist.github.com/3402786
-(defun petmacs/toggle-maximize-buffer ()
+(defun unicorn/toggle-maximize-buffer ()
   "Maximize buffer"
   (interactive)
   (save-excursion
@@ -59,7 +59,7 @@
 
 
 ;; https://tsdh.wordpress.com/2007/03/28/deleting-windows-vertically-or-horizontally/
-(defun petmacs/maximize-horizontally ()
+(defun unicorn/maximize-horizontally ()
   "Delete all windows to the left and right of the current window."
   (interactive)
   (require 'windmove)
@@ -69,7 +69,7 @@
     (while (condition-case nil (windmove-right) (error nil))
       (delete-window))))
 
-(defun petmacs/maximize-vertically ()
+(defun unicorn/maximize-vertically ()
   "Delete all windows above and below the current window."
   (interactive)
   (require 'windmove)
@@ -79,7 +79,7 @@
     (while (condition-case nil (windmove-down) (error nil))
       (delete-window))))
 
-(defun petmacs/evil-goto-definition-other-window ()
+(defun unicorn/evil-goto-definition-other-window ()
   "Jump to definition around point in other window."
   (interactive)
   (let ((pos (point)))
@@ -98,36 +98,36 @@
   (interactive)
   (set-buffer-file-coding-system 'undecided-dos nil))
 
-(defun petmacs/copy-file ()
+(defun unicorn/copy-file ()
   "Write the file under new name."
   (interactive)
   (call-interactively 'write-file))
 
-(defun petmacs/hidden-dos-eol ()
+(defun unicorn/hidden-dos-eol ()
   "Do not show ^M in files containing mixed UNIX and DOS line endings"
   (interactive)
   (unless buffer-display-table
     (setq buffer-display-table (make-display-table)))
   (aset buffer-display-table ?\^M []))
 
-(defun petmacs/remove-dos-eol ()
+(defun unicorn/remove-dos-eol ()
   "Replace DOS eol CR LF with Unix eolns CR"
   (interactive)
   (goto-char (point-min))
   (while (search-forward "\r" nil t) (replace-match "")))
 
-(defun petmacs/goto-dashboard ()
+(defun unicorn/goto-dashboard ()
   "goto Home buffer"
   (interactive)
   (switch-to-buffer "*dashboard*"))
 
-(defun petmacs/goto-scratch-buffer ()
+(defun unicorn/goto-scratch-buffer ()
   "goto Home buffer"
   (interactive)
   (switch-to-buffer "*scratch*"))
 
 ;; Revert buffer
-(defun petmacs/revert-current-buffer ()
+(defun unicorn/revert-current-buffer ()
   "Revert the current buffer."
   (interactive)
   (message "Revert this buffer.")
@@ -137,16 +137,16 @@
     (if (fboundp 'fancy-widen)
         (fancy-widen)))
   (revert-buffer t t))
-(bind-key "<f5>" #'petmacs/revert-current-buffer)
+(bind-key "<f5>" #'unicorn/revert-current-buffer)
 (if (eq system-type 'darwin)
-    (bind-key "s-r" #'petmacs/revert-current-buffer))
+    (bind-key "s-r" #'unicorn/revert-current-buffer))
 
-(defun petmacs/copy-whole-buffer-to-clipboard ()
+(defun unicorn/copy-whole-buffer-to-clipboard ()
   "Copy entire buffer to clipboard"
   (interactive)
   (clipboard-kill-ring-save (point-min) (point-max)))
 
-(defun petmacs/counsel-jump-in-buffer ()
+(defun unicorn/counsel-jump-in-buffer ()
   "Jump in buffer with `counsel-imenu' or `counsel-org-goto' if in org-mode"
   (interactive)
   (call-interactively
@@ -154,7 +154,7 @@
     ((eq major-mode 'org-mode) 'counsel-org-goto)
     (t 'counsel-imenu))))
 
-(defun petmacs/rename-current-buffer-file (&optional arg)
+(defun unicorn/rename-current-buffer-file (&optional arg)
   "Rename the current buffer and the file it is visiting.
 If the buffer isn't visiting a file, ask if it should
 be saved to a file, or just renamed.
@@ -216,7 +216,7 @@ initialized with the current filename."
                 ;; ?\a = C-g, ?\e = Esc and C-[
                 ((memq key '(?\a ?\e)) (keyboard-quit))))))))
 
-(defun petmacs--file-path ()
+(defun unicorn--file-path ()
   "Retrieve the file path of the current buffer.
 
 Returns:
@@ -225,39 +225,39 @@ Returns:
   (when-let (file-path (buffer-file-name))
     (file-truename file-path)))
 
-(defun petmacs/copy-directory-path ()
+(defun unicorn/copy-directory-path ()
   "Copy and show the directory path of the current buffer.
 
 If the buffer is not visiting a file, use the `list-buffers-directory'
 variable as a fallback to display the directory, useful in buffers like the
 ones created by `magit' and `dired'."
   (interactive)
-  (if-let (directory-path (petmacs--directory-path))
+  (if-let (directory-path (unicorn--directory-path))
       (message "%s" (kill-new directory-path))
     (message "WARNING: Current buffer does not have a directory!")))
 
-(defun petmacs/copy-file-path ()
+(defun unicorn/copy-file-path ()
   "Copy and show the file path of the current buffer."
   (interactive)
-  (if-let (file-path (petmacs--file-path))
+  (if-let (file-path (unicorn--file-path))
       (message "%s" (kill-new file-path))
     (message "WARNING: Current buffer is not attached to a file!")))
 
-(defun petmacs/copy-file-name ()
+(defun unicorn/copy-file-name ()
   "Copy and show the file name of the current buffer."
   (interactive)
-  (if-let (file-name (file-name-nondirectory (petmacs--file-path)))
+  (if-let (file-name (file-name-nondirectory (unicorn--file-path)))
       (message "%s" (kill-new file-name))
     (message "WARNING: Current buffer is not attached to a file!")))
 
-(defun petmacs/projectile-copy-file-path ()
+(defun unicorn/projectile-copy-file-path ()
   "Copy and show the file path relative to project root."
   (interactive)
-  (if-let (file-path (petmacs--projectile-file-path))
+  (if-let (file-path (unicorn--projectile-file-path))
       (message "%s" (kill-new file-path))
     (message "WARNING: Current buffer is not visiting a file!")))
 
-(defun petmacs/pop-eshell (arg)
+(defun unicorn/pop-eshell (arg)
   "Pop a shell in a side window.
 Pass arg to ‘shell’."
   (interactive "P")
@@ -270,11 +270,11 @@ Pass arg to ‘shell’."
     '((side . right)
       (window-width . fit-window-to-buffer)))))
 
-(defun petmacs/projectile-pop-eshell ()
+(defun unicorn/projectile-pop-eshell ()
   "Open a term buffer at projectile project root."
   (interactive)
   (let ((default-directory (projectile-project-root)))
-    (call-interactively 'petmacs/pop-eshell)))
+    (call-interactively 'unicorn/pop-eshell)))
 
 
 ;; Recompile site-lisp directory
@@ -286,18 +286,18 @@ Pass arg to ‘shell’."
         (async-byte-recompile-directory dir)
       (byte-recompile-directory dir 0 t))))
 
-(defun petmacs/find-dotfile ()
+(defun unicorn/find-dotfile ()
   "Edit the `dotfile', in the current window."
   (interactive)
   (find-file "~/.emacs.d/init.el"))
   ;; (find-file-existing (concat user-emacs-directory "init.el")))
 
-(defun petmacs/find-custom-file ()
+(defun unicorn/find-custom-file ()
   "Edit the `dotfile', in the current window."
   (interactive)
   (find-file-existing (concat user-emacs-directory "custom.el")))
 
-(defun petmacs/alternate-buffer (&optional window)
+(defun unicorn/alternate-buffer (&optional window)
   "Switch back and forth between current and last buffer in the
 current window."
   (interactive)
@@ -310,7 +310,7 @@ current window."
                  (mapcar #'car (window-prev-buffers window)))
      nil t)))
 
-(defun petmacs/frame-killer ()
+(defun unicorn/frame-killer ()
   "Kill server buffer and hide the main Emacs window"
   (interactive)
   (condition-case nil
@@ -318,15 +318,15 @@ current window."
     (error
      (make-frame-invisible nil 1))))
 
-(defun petmacs//setup-default-key-name (key desc)
+(defun unicorn//setup-default-key-name (key desc)
   (which-key-add-key-based-replacements
-    (format "%s %s" petmacs-evil-leader-key key) desc)
+    (format "%s %s" unicorn-evil-leader-key key) desc)
   (which-key-add-key-based-replacements
-    (format "%s %s" petmacs-evil-major-leader-insert-default-key key) desc))
+    (format "%s %s" unicorn-evil-major-leader-insert-default-key key) desc))
 
-(defun petmacs//setup-major-mode-key-name (key name)
-  (which-key-add-key-based-replacements (format "%s m%s" petmacs-evil-leader-key key) name)
-  (which-key-add-key-based-replacements (format "%s m%s" petmacs-evil-major-leader-insert-default-key key) name)
+(defun unicorn//setup-major-mode-key-name (key name)
+  (which-key-add-key-based-replacements (format "%s m%s" unicorn-evil-leader-key key) name)
+  (which-key-add-key-based-replacements (format "%s m%s" unicorn-evil-major-leader-insert-default-key key) name)
   (which-key-add-key-based-replacements (format ", %s" key) name))
 
 (provide 'leader-core-functions)

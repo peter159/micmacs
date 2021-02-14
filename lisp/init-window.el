@@ -94,13 +94,13 @@
 (use-package shackle
   :ensure t
   :preface
-  (defun petmacs/shackle-popup-message-buffer ()
+  (defun unicorn/shackle-popup-message-buffer ()
     "View message buffer."
     (interactive)
     (ignore-errors
       (display-buffer "*Messages*")))
 
-  (defun petmacs/shackle-popup-compilation-buffer ()
+  (defun unicorn/shackle-popup-compilation-buffer ()
     "View compilation buffer."
     (interactive)
     (ignore-errors

@@ -32,14 +32,14 @@
 ;; LLVM_HOME=/home/software/llvm
 ;; export PATH=$LLVM_HOME/bin:$PATH
 ;; export LD_LIBRARY_PATH=$LLVM_HOME/lib:$LD_LIBRARY_PATH
-(defvar petmacs-default-mode-for-headers 'c++-mode
+(defvar unicorn-default-mode-for-headers 'c++-mode
   "default default mode for .h header files, Can be `c-mode' or `c++-mode'")
 
 (use-package cc-mode
   :defer t
   :init
   (add-to-list 'auto-mode-alist
-	       `("\\.h\\'" . ,petmacs-default-mode-for-headers))
+	       `("\\.h\\'" . ,unicorn-default-mode-for-headers))
   (setq lsp-clients-clangd-args
 	'("-j=4" "-log=verbose" "-background-index"
 	  ;; -cross-file-rename is vaild since clangd-10

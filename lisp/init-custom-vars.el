@@ -24,10 +24,10 @@
 
 ;;; Code:
 
-(defvar petmacs-evil-major-leader-insert-default-key "M-m"
+(defvar unicorn-evil-major-leader-insert-default-key "M-m"
   "Evil leader key in evil insert mode.")
 
-(defvar petmacs-lsp-active-modes '(
+(defvar unicorn-lsp-active-modes '(
 				   c-mode
 				   c++-mode
 				   python-mode

@@ -66,14 +66,14 @@
   (require 'evil-anzu)
   (evil-mode)
   (progn
-    (defun petmacs//evil-visual-shift-left ()
+    (defun unicorn//evil-visual-shift-left ()
       "evil left shift without losing selection"
       (interactive)
       (call-interactively 'evil-shift-left)
       (evil-normal-state)
       (evil-visual-restore))
 
-    (defun petmacs//evil-visual-shift-right ()
+    (defun unicorn//evil-visual-shift-right ()
       "evil right shift without losing selection"
       (interactive)
       (call-interactively 'evil-shift-right)
@@ -81,8 +81,8 @@
       (evil-visual-restore))
 
     ;; Overload shifts so that they don't lose the selection
-    (define-key evil-visual-state-map (kbd "<") 'petmacs//evil-visual-shift-left)
-    (define-key evil-visual-state-map (kbd ">") 'petmacs//evil-visual-shift-right)
+    (define-key evil-visual-state-map (kbd "<") 'unicorn//evil-visual-shift-left)
+    (define-key evil-visual-state-map (kbd ">") 'unicorn//evil-visual-shift-right)
     (define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
     (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
     (define-key evil-insert-state-map (kbd "C-y") 'yank)

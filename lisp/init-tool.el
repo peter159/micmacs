@@ -46,8 +46,8 @@
   (let ((new-descriptions
          ;; being higher in this list means the replacement is applied later
          '(
-           ("petmacs/\\(.+\\)" . "\\1")
-           ("petmacs/toggle-\\(.+\\)" . "\\1")
+           ("unicorn/\\(.+\\)" . "\\1")
+           ("unicorn/toggle-\\(.+\\)" . "\\1")
            ("avy-goto-word-or-subword-1" . "avy word")
            ("shell-command" . "shell cmd")
            ("universal-argument" . "universal arg")
