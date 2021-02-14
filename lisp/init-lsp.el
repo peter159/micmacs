@@ -45,7 +45,7 @@
 	lsp-auto-guess-root nil
 	lsp-keep-workspace-alive nil
 	lsp-completion-provider t
-	lsp-signature-auto-activate t	; show arg list and not documentation in eldoc next 3 lines
+	lsp-signature-auto-activate t	; show arg list and not document in eldoc with next 3 lines
 	lsp-signature-render-documentation nil
 	lsp-eldoc-enable-hover t
 	lsp-headerline-breadcrumb-enable t ;https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
@@ -126,7 +126,6 @@
   (lsp-mode . format-all-mode)
   (gfm-mode . format-all-mode)
   :config
-  ;; (remove-hook 'before-save-hook 'format-all--buffer-from-hook)
   (global-set-key (kbd "M-f") 'format-all-buffer))
 
 ;; optionally if you want to use debugger
