@@ -1,0 +1,24 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '(("www.baidu.com"
+  [url-cookie "NOJS" "1" "Tue, 07-Feb-2051 08:14:25 GMT" "/" "www.baidu.com" nil])
+ (".google.com"
+  [url-cookie "NID" "209=npfqfmhKasuwJ8s0vnSY2RezNWAkTOWdFq4Yzxx4_7XC0uJb9VkAgdHaXQVKv1wPjTjwM8CBKKt2flzoRkDMBUT17gnukbNE8nfL6C_MEdraVeXKs3vGvPagXshniAPam3yR4-5dLQYs8GIUk0Ij-8iHPWt8jtJ4nXBjCb-z8rw" "Mon, 16-Aug-2021 08:15:12 GMT" "/" ".google.com" nil]
+  [url-cookie "CGIC" "" "Fri, 13-Aug-2021 08:15:12 GMT" "/complete/search" ".google.com" nil]
+  [url-cookie "CGIC" "" "Fri, 13-Aug-2021 08:15:12 GMT" "/search" ".google.com" nil])
+ (".baidu.com"
+  [url-cookie "BAIDUID" "590B0CCFCD92FB689079D9A6D82BB5E8:FG=1" "Mon Feb 14 08:14:25 2022 GMT" "/" ".baidu.com" nil]
+  [url-cookie "BIDUPSID" "590B0CCFCD92FB68DB4501D31F3A42D0" "Fri Mar 04 11:28:32 2089 GMT" "/" ".baidu.com" nil]
+  [url-cookie "PSTM" "1613290465" "Fri Mar 04 11:28:32 2089 GMT" "/" ".baidu.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '((".google.com"
+  [url-cookie "1P_JAR" "2021-02-14-08" "Tue, 16-Mar-2021 08:15:12 GMT" "/" ".google.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

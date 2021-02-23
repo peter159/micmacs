@@ -26,27 +26,30 @@
 
 (mark-time-here)
 
+;; build ccls from source code: https://github.com/MaskRay/ccls/wiki/Build
 ;; install llvm-10 or above
 ;; Add the following code in your ~/.profile file and reboot
 ;; LLVM 10.0.0 is installed in /home/software/llvm
 ;; LLVM_HOME=/home/software/llvm
 ;; export PATH=$LLVM_HOME/bin:$PATH
 ;; export LD_LIBRARY_PATH=$LLVM_HOME/lib:$LD_LIBRARY_PATH
-(defvar unicorn-default-mode-for-headers 'c++-mode
-  "default default mode for .h header files, Can be `c-mode' or `c++-mode'")
-
 (use-package cc-mode
   :defer t
   :init
   (add-to-list 'auto-mode-alist
 	       `("\\.h\\'" . ,unicorn-default-mode-for-headers))
-  (setq lsp-clients-clangd-args
-	'("-j=4" "-log=verbose" "-background-index"
-	  ;; -cross-file-rename is vaild since clangd-10
-	  "-cross-file-rename"
-	  ;; "--compile-commands-dir=/work/DomainDrivenConsulting/masd/dogen/integration/build/output/clang7/Release"
-	  ))
 
+  ;; C/C++/Objective-C support
+  (use-package ccls
+    :defines projectile-project-root-files-top-down-recurring
+    :hook ((c-mode c++-mode objc-mode cuda-mode) . (lambda () (require 'ccls)))
+    :init
+    (setq ccls-executable (file-truename "~/ccls/Release/ccls"))
+    :config
+    (with-eval-after-load 'projectile
+      (setq projectile-project-root-files-top-down-recurring
+            (append '("compile_commands.json" ".ccls")
+                    projectile-project-root-files-top-down-recurring))))
   :hook ((c-mode c++-mode) . (lambda ()
 			       "Format and add/delete imports."
 			       (add-hook 'before-save-hook #'lsp-format-buffer t t)
@@ -56,23 +59,24 @@
   :config
   (require 'compile))
 
-;; (use-package smart-semicolon
-;;   :defer t
-;;   :hook ((c-mode-common . smart-semicolon-mode)))
+(use-package smart-semicolon
+  :defer t
+  :hook ((c-mode-common . smart-semicolon-mode)))
 
-;; (use-package modern-cpp-font-lock
-;;   :hook (c++-mode . modern-c++-font-lock-mode))
+(use-package modern-cpp-font-lock
+  :hook (c++-mode . modern-c++-font-lock-mode))
 
-;; (use-package cmake-mode
-;;   :mode (("CMakeLists\\.txt\\'" . cmake-mode) ("\\.cmake\\'" . cmake-mode))
-;;   :config
-;;   (add-hook 'cmake-mode-hook (lambda()
-;;                                (add-to-list (make-local-variable 'company-backends)
-;;                                             'company-cmake))))
-;; (use-package google-c-style
-;;   :init
-;;   (add-hook 'c-mode-common-hook 'google-set-c-style)
-;;   (add-hook 'c-mode-common-hook 'google-make-newline-indent))
+(use-package cmake-mode
+  :mode (("CMakeLists\\.txt\\'" . cmake-mode) ("\\.cmake\\'" . cmake-mode))
+  :config
+  (add-hook 'cmake-mode-hook (lambda()
+                               (add-to-list (make-local-variable 'company-backends)
+                                            'company-cmake))))
+(use-package google-c-style
+  :init
+  (add-hook 'c-mode-common-hook 'google-set-c-style)
+  (add-hook 'c-mode-common-hook 'google-make-newline-indent))
+
 
 (provide 'init-c-c++)
 (message "init-c-c++ loaded in '%.2f' seconds ..." (get-time-diff time-marked))

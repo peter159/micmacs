@@ -38,5 +38,8 @@
 				   )
   "Primary major modes of the lsp activated layer.")
 
+(defvar unicorn-default-mode-for-headers 'c++-mode
+  "default default mode for .h header files, Can be `c-mode' or `c++-mode'")
+
 (provide 'init-custom-vars)
 ;;; init-custom-vars.el ends here

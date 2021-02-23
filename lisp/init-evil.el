@@ -173,7 +173,7 @@
 			     (agenda . "calendar")
 			     (projects . "file-directory")
 			     (registers . "database"))
-   initial-buffer-choice (lambda() (get-buffer "*dashboard*"))
+   ;; initial-buffer-choice (lambda() (get-buffer "*dashboard*"))
    dashboard-set-footer t
    dashboard-footer-icon "\xf00d"
    dashboard-footer-messages '(" The philosophy of immersive programming"))

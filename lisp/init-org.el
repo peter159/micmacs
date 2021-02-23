@@ -1,9 +1,9 @@
 ;;; init-org.el ---                                  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2019  
+;; Copyright (C) 2019
 
 ;; Author:  <peter.linyi@DESKTOP-PMTGUNT>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 ;;; Commentary:
 
-;; 
+;;
 
 ;;; Code:
 
@@ -64,6 +64,7 @@
   (defvar load-language-list '((emacs-lisp . t)
                                (perl . t)
                                (python . t)
+			       (R . t)
                                (ruby . t)
                                (js . t)
                                (css . t)
