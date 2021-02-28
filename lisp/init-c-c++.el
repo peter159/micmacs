@@ -19,6 +19,7 @@
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
+;; if need dap mdoe for cpp, refer to here: https://emacs-lsp.github.io/dap-mode/page/configuration/
 
 ;; 
 
@@ -34,6 +35,7 @@
 ;; export PATH=$LLVM_HOME/bin:$PATH
 ;; export LD_LIBRARY_PATH=$LLVM_HOME/lib:$LD_LIBRARY_PATH
 (use-package cc-mode
+  :ensure t
   :defer t
   :init
   (add-to-list 'auto-mode-alist
@@ -60,19 +62,23 @@
   (require 'compile))
 
 (use-package smart-semicolon
+  :ensure t
   :defer t
   :hook ((c-mode-common . smart-semicolon-mode)))
 
 (use-package modern-cpp-font-lock
+  :ensure t
   :hook (c++-mode . modern-c++-font-lock-mode))
 
 (use-package cmake-mode
+  :ensure t
   :mode (("CMakeLists\\.txt\\'" . cmake-mode) ("\\.cmake\\'" . cmake-mode))
   :config
   (add-hook 'cmake-mode-hook (lambda()
                                (add-to-list (make-local-variable 'company-backends)
                                             'company-cmake))))
 (use-package google-c-style
+  :ensure t
   :init
   (add-hook 'c-mode-common-hook 'google-set-c-style)
   (add-hook 'c-mode-common-hook 'google-make-newline-indent))
