@@ -3,7 +3,7 @@
 ;; Copyright (C) 2020  linyi
 
 ;; Author: linyi <linyi@ubu-born-0>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 ;;; Commentary:
 
-;; 
+;;
 
 ;;; Code:
 
@@ -161,19 +161,28 @@ as the pyenv version then also return nil. This works around https://github.com/
 
 (if (member 'python-mode unicorn-lsp-active-modes)
     (progn
-      (use-package lsp-python-ms
+      ;; (use-package lsp-python-ms
+      ;; 	:ensure t
+      ;; 	:hook (pyvenv-mode . (lambda ()
+      ;; 			       (require 'lsp-python-ms)
+      ;; 			       (lsp-deferred)
+      ;; 			       ))
+      ;; 	:init
+      ;; 	(setq lsp-python-ms-auto-install-server t
+      ;; 	      lsp-python-ms-nupkg-channel "stable"
+      ;; 	      lsp-python-ms-guess-env nil ; set to nil so that `'lsp-python-ms-locate-python`' can work right
+      ;; 	      ;; lsp-python-ms-python-executable-cmd "python"
+      ;; 	      ;; lsp-python-ms-python-executable "/home/linyi/anaconda3/envs/transformers/bin"
+      ;; 	      )
+      ;; 	))
+      (use-package lsp-pyright
 	:ensure t
-	:hook (pyvenv-mode . (lambda ()
-			       (require 'lsp-python-ms)
-			       (lsp-deferred)
-			       ))
+	:hook (python-mode . (lambda ()
+                               (require 'lsp-pyright)
+                               (lsp-deferred)))
 	:init
-	(setq lsp-python-ms-auto-install-server t
-	      lsp-python-ms-nupkg-channel "stable"
-	      lsp-python-ms-guess-env nil ; set to nil so that `'lsp-python-ms-locate-python`' can work right
-	      ;; lsp-python-ms-python-executable-cmd "python"
-	      ;; lsp-python-ms-python-executable "/home/linyi/anaconda3/envs/transformers/bin"
-	      )
+	(setq lsp-pyright-typechecking-mode "basic"
+	      lsp-pyright-venv-path (file-truename "~/anaconda3/envs"))
 	))
   (progn
     (use-package anaconda-mode
@@ -193,8 +202,8 @@ as the pyenv version then also return nil. This works around https://github.com/
       :config
       (evil-define-minor-mode-key 'normal 'anaconda-mode (kbd "C-M-i") 'company-anaconda)
       (evil-define-minor-mode-key 'insert 'anaconda-mode (kbd "C-M-i") 'company-anaconda))))
-;; (message "not ready for anaconda"))
+  ;; (message "not ready for anaconda"))
 
-(provide 'init-lsp-python)
-(message "init-python loaded in '%.2f' seconds ..." (get-time-diff time-marked))
+  (provide 'init-lsp-python)
+  (message "init-python loaded in '%.2f' seconds ..." (get-time-diff time-marked))
 ;;; init-lsp-python.el ends here

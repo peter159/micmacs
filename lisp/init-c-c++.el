@@ -83,6 +83,8 @@
   (add-hook 'c-mode-common-hook 'google-set-c-style)
   (add-hook 'c-mode-common-hook 'google-make-newline-indent))
 
+;; run dap-cpptools-setup to setup automatically
+(require 'dap-cpptools)
 
 (provide 'init-c-c++)
 (message "init-c-c++ loaded in '%.2f' seconds ..." (get-time-diff time-marked))
