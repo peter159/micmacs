@@ -1,8 +1,0 @@
-
-[qa]
-flake8==3.8.3
-mypy==0.782
-
-[testing]
-docopt
-pytest<6.0.0
