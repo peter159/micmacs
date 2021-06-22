@@ -94,7 +94,11 @@
     (define-key evil-insert-state-map (kbd "C-k") 'kill-line)
     (define-key evil-insert-state-map (kbd "C-p") 'previous-line)
     (define-key evil-insert-state-map (kbd "C-n") 'next-line)
-    (define-key evil-insert-state-map (kbd "C-d") 'delete-char)))
+    (define-key evil-insert-state-map (kbd "C-d") 'delete-char)
+    (define-key evil-visual-state-map (kbd "C-S-l") 'enlarge-window)
+    (define-key evil-normal-state-map (kbd "C-S-l") 'enlarge-window)
+    (define-key evil-insert-state-map (kbd "C-S-l") 'enlarge-window))
+  )
 
 ;; use 'fd' to escape nearly everything from evil-mode
 (use-package evil-escape
